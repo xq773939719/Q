@@ -19,7 +19,6 @@
     "ios": "9.0"
   },
   "source_files": "QNetwork/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "AFNetworking": [
 
