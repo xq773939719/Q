@@ -8,7 +8,7 @@ platform :ios, '10.0'
 use_frameworks!
 inhibit_all_warnings!
 
-develop_pods_path = '../DevelopPods'
+develop_pods_path = './DevelopPods'
 
 flutter_module_path = develop_pods_path
 load File.join(flutter_module_path, 'flutter_module', '.ios', 'Flutter', 'podhelper.rb')
@@ -90,26 +90,26 @@ end
 def DevelopModules
   
   # 业务层
-  pod 'QBusiness', :path => '../DevelopPods/QBusiness' # 业务
+  pod 'QBusiness', :path => './DevelopPods/QBusiness' # 业务
   
   # Common层
-  pod 'QUtil', :path => '../DevelopPods/QUtil' # 工具
-  pod 'QDevice', :path => '../DevelopPods/QDevice' # 设备
-  pod 'QFeature', :path => '../DevelopPods/QFeature' # 特性
+  pod 'QUtil', :path => './DevelopPods/QUtil' # 工具
+  pod 'QDevice', :path => './DevelopPods/QDevice' # 设备
+  pod 'QFeature', :path => './DevelopPods/QFeature' # 特性
   # Base层
-  pod 'QPlayer', :path => '../DevelopPods/QPlayer'  # 基础播放
-  pod 'QMonitor', :path => '../DevelopPods/QMonitor' # 监控
-  pod 'QTheme', :path => '../DevelopPods/QTheme' # 主题
-  pod 'QRouter', :path => '../DevelopPods/QRouter' # 路由
-  pod 'QNetwork', :path => '../DevelopPods/QNetwork' # 网络
-  pod 'QFile', :path => '../DevelopPods/QFile' # 文件
-  pod 'QData', :path => '../DevelopPods/QData' # 数据库
-  pod 'QLogger', :path => '../DevelopPods/QLogger' # 日志
-  pod 'QTracer', :path => '../DevelopPods/QTracer' # 埋点
-  pod 'QBaseKit', :path => '../DevelopPods/QBaseKit' # 基础UI
+  pod 'QPlayer', :path => './DevelopPods/QPlayer'  # 基础播放
+  pod 'QMonitor', :path => './DevelopPods/QMonitor' # 监控
+  pod 'QTheme', :path => './DevelopPods/QTheme' # 主题
+  pod 'QRouter', :path => './DevelopPods/QRouter' # 路由
+  pod 'QNetwork', :path => './DevelopPods/QNetwork' # 网络
+  pod 'QFile', :path => './DevelopPods/QFile' # 文件
+  pod 'QData', :path => './DevelopPods/QData' # 数据库
+  pod 'QLogger', :path => './DevelopPods/QLogger' # 日志
+  pod 'QTracer', :path => './DevelopPods/QTracer' # 埋点
+  pod 'QBaseKit', :path => './DevelopPods/QBaseKit' # 基础UI
   
   # 框架层
-  pod 'QBase', :path => '../DevelopPods/QBase' # 基础框架
+  pod 'QBase', :path => './DevelopPods/QBase' # 基础框架
 
 end
 
