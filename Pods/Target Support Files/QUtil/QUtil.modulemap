@@ -1,6 +1,0 @@
-framework module QUtil {
-  umbrella header "QUtil-umbrella.h"
-
-  export *
-  module * { export * }
-}

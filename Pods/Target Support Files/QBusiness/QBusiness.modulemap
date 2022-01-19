@@ -1,6 +1,0 @@
-framework module QBusiness {
-  umbrella header "QBusiness-umbrella.h"
-
-  export *
-  module * { export * }
-}

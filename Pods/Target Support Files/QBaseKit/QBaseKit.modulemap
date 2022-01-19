@@ -1,6 +1,0 @@
-framework module QBaseKit {
-  umbrella header "QBaseKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

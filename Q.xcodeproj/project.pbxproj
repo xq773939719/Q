@@ -12,9 +12,6 @@
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
 		15277E662798223400FA882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15277E642798223400FA882E /* LaunchScreen.storyboard */; };
 		15277E692798223400FA882E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E682798223400FA882E /* main.m */; };
-		15277E732798223400FA882E /* QTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E722798223400FA882E /* QTests.m */; };
-		15277E7D2798223400FA882E /* QUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E7C2798223400FA882E /* QUITests.m */; };
-		15277E7F2798223400FA882E /* QUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E7E2798223400FA882E /* QUITestsLaunchTests.m */; };
 		E9A23E33CC760E187257199B /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +43,7 @@
 		15277E672798223400FA882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15277E682798223400FA882E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15277E6E2798223400FA882E /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15277E722798223400FA882E /* QTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTests.m; sourceTree = "<group>"; };
 		15277E782798223400FA882E /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15277E7C2798223400FA882E /* QUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QUITests.m; sourceTree = "<group>"; };
-		15277E7E2798223400FA882E /* QUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QUITestsLaunchTests.m; sourceTree = "<group>"; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
 		E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				15277E552798223300FA882E /* Q */,
-				15277E712798223400FA882E /* QTests */,
-				15277E7B2798223400FA882E /* QUITests */,
 				15277E542798223300FA882E /* Products */,
 				12D629AB8FEE2E57BD3F0259 /* Pods */,
 				F117ED212ED8CC3B2B2E7D2A /* Frameworks */,
@@ -133,23 +125,6 @@
 				15277E682798223400FA882E /* main.m */,
 			);
 			path = Q;
-			sourceTree = "<group>";
-		};
-		15277E712798223400FA882E /* QTests */ = {
-			isa = PBXGroup;
-			children = (
-				15277E722798223400FA882E /* QTests.m */,
-			);
-			path = QTests;
-			sourceTree = "<group>";
-		};
-		15277E7B2798223400FA882E /* QUITests */ = {
-			isa = PBXGroup;
-			children = (
-				15277E7C2798223400FA882E /* QUITests.m */,
-				15277E7E2798223400FA882E /* QUITestsLaunchTests.m */,
-			);
-			path = QUITests;
 			sourceTree = "<group>";
 		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
@@ -354,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15277E732798223400FA882E /* QTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15277E7F2798223400FA882E /* QUITestsLaunchTests.m in Sources */,
-				15277E7D2798223400FA882E /* QUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,33 +488,35 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LookinServer\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter\"",
+					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter/engine\"",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX/FLEX.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch/JSPatch.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/LookinServer/LookinServer.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QBaseKit/QBaseKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QBusiness/QBusiness.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QDevice/QDevice.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QFeature/QFeature.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QUtil/QUtil.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning/RegexKitLite_NoWarning.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
 					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = Q/Info.plist;
@@ -581,31 +555,33 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter\"",
+					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter/engine\"",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch/JSPatch.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QBaseKit/QBaseKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QBusiness/QBusiness.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QDevice/QDevice.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QFeature/QFeature.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QUtil/QUtil.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning/RegexKitLite_NoWarning.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
 					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = Q/Info.plist;
