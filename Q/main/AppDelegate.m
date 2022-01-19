@@ -6,8 +6,8 @@
 //
 
 #import "AppDelegate.h"
-#import <QBaseKit/BaseNavigationController.h>
-#import <QBusiness/LearnViewController.h>
+#import "BaseNavigationController.h"
+#import "LearnViewController.h"
 
 @interface AppDelegate ()
 

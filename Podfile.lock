@@ -30,24 +30,6 @@ PODS:
   - LookinServer (1.0.4)
   - lottie-ios (3.2.3)
   - Masonry (1.1.0)
-  - QBase (0.1.0)
-  - QBaseKit (0.1.0)
-  - QBusiness (0.1.0):
-    - Flutter
-    - QBase
-  - QData (0.1.0)
-  - QDevice (0.1.0)
-  - QFeature (0.1.0)
-  - QFile (0.1.0)
-  - QLogger (0.1.0)
-  - QMonitor (0.1.0)
-  - QNetwork (0.1.0):
-    - AFNetworking
-  - QPlayer (0.1.0)
-  - QRouter (0.1.0)
-  - QTheme (0.1.0)
-  - QTracer (0.1.0)
-  - QUtil (0.1.0)
   - Reachability (3.2)
   - ReactiveCocoa (12.0.0):
     - ReactiveSwift (~> 7.0)
@@ -76,21 +58,6 @@ DEPENDENCIES:
   - LookinServer
   - lottie-ios
   - Masonry
-  - QBase (from `./DevelopPods/QBase`)
-  - QBaseKit (from `./DevelopPods/QBaseKit`)
-  - QBusiness (from `./DevelopPods/QBusiness`)
-  - QData (from `./DevelopPods/QData`)
-  - QDevice (from `./DevelopPods/QDevice`)
-  - QFeature (from `./DevelopPods/QFeature`)
-  - QFile (from `./DevelopPods/QFile`)
-  - QLogger (from `./DevelopPods/QLogger`)
-  - QMonitor (from `./DevelopPods/QMonitor`)
-  - QNetwork (from `./DevelopPods/QNetwork`)
-  - QPlayer (from `./DevelopPods/QPlayer`)
-  - QRouter (from `./DevelopPods/QRouter`)
-  - QTheme (from `./DevelopPods/QTheme`)
-  - QTracer (from `./DevelopPods/QTracer`)
-  - QUtil (from `./DevelopPods/QUtil`)
   - Reachability
   - ReactiveCocoa
   - RegexKitLite-NoWarning
@@ -129,36 +96,6 @@ EXTERNAL SOURCES:
     :path: DevelopPods/flutter_module/.ios/Flutter
   FlutterPluginRegistrant:
     :path: DevelopPods/flutter_module/.ios/Flutter/FlutterPluginRegistrant
-  QBase:
-    :path: "./DevelopPods/QBase"
-  QBaseKit:
-    :path: "./DevelopPods/QBaseKit"
-  QBusiness:
-    :path: "./DevelopPods/QBusiness"
-  QData:
-    :path: "./DevelopPods/QData"
-  QDevice:
-    :path: "./DevelopPods/QDevice"
-  QFeature:
-    :path: "./DevelopPods/QFeature"
-  QFile:
-    :path: "./DevelopPods/QFile"
-  QLogger:
-    :path: "./DevelopPods/QLogger"
-  QMonitor:
-    :path: "./DevelopPods/QMonitor"
-  QNetwork:
-    :path: "./DevelopPods/QNetwork"
-  QPlayer:
-    :path: "./DevelopPods/QPlayer"
-  QRouter:
-    :path: "./DevelopPods/QRouter"
-  QTheme:
-    :path: "./DevelopPods/QTheme"
-  QTracer:
-    :path: "./DevelopPods/QTracer"
-  QUtil:
-    :path: "./DevelopPods/QUtil"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -172,21 +109,6 @@ SPEC CHECKSUMS:
   LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  QBase: a848ed6345f560b92fcbabf230597701dd7f93df
-  QBaseKit: 8c6bd4863b2fb80ca14f277b6422cb99f0c45f13
-  QBusiness: bfb06d813030522562be9e3a007985414f58c0f4
-  QData: edff5260b6f73a29d062ccdc41c174a29126c3b2
-  QDevice: 7ad00b29f77763ce1540715663796e13b8d008b0
-  QFeature: 405506d5590cd7ca3987ffa58148122f6917b9d8
-  QFile: 6e9252f175ac48a362247e123bb227f50077e21a
-  QLogger: 2a90270684e3438f98372873e8fc363ce582de76
-  QMonitor: c1ee8da951d433ae76c6d3dd264904bef15e29fd
-  QNetwork: 7b492b70f99220669865932119e9eed1e3e5165c
-  QPlayer: 7da30bba26554b06913b94c6d5b4555e7ff2230a
-  QRouter: 06910e63277b05928cfb645c3637aa9cd515dd4f
-  QTheme: 5182ef4a880d08acebd9b974f0460fa9145a62e5
-  QTracer: 9c539fc01083ddc35a5381a8d905e31a4387b68d
-  QUtil: 9801add34d507f66b4898601a5ceb98a3c0dab2f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
   ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
@@ -198,6 +120,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 403946ac49f00678d5e2704339ee2c8fc7c5e66d
+PODFILE CHECKSUM: 552803eb65013423ef99de5d552744fd631e9f39
 
 COCOAPODS: 1.11.2

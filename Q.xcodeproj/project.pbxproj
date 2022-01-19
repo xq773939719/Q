@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15277E582798223300FA882E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E572798223300FA882E /* AppDelegate.m */; };
-		15277E5B2798223300FA882E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E5A2798223300FA882E /* SceneDelegate.m */; };
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
-		15277E662798223400FA882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15277E642798223400FA882E /* LaunchScreen.storyboard */; };
-		15277E692798223400FA882E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15277E682798223400FA882E /* main.m */; };
+		1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAC527983AFF00511EFD /* BaseNavigationController.m */; };
+		1598CAD727983AFF00511EFD /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAC927983AFF00511EFD /* BaseWebView.m */; };
+		1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CACC27983AFF00511EFD /* BaseWindow.m */; };
+		1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CACF27983AFF00511EFD /* BaseViewController.m */; };
+		1598CADA27983AFF00511EFD /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAD227983AFF00511EFD /* BaseTabBarViewController.m */; };
+		1598CAE127983B1400511EFD /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE027983B1400511EFD /* LearnViewController.m */; };
+		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
+		1598CAEB27983B3D00511EFD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE727983B3D00511EFD /* SceneDelegate.m */; };
+		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
+		1598CAED27983B3D00511EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE927983B3D00511EFD /* AppDelegate.m */; };
 		E9A23E33CC760E187257199B /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,16 +40,28 @@
 
 /* Begin PBXFileReference section */
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		15277E562798223300FA882E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		15277E572798223300FA882E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15277E592798223300FA882E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		15277E5A2798223300FA882E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		15277E652798223400FA882E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15277E682798223400FA882E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15277E6E2798223400FA882E /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E782798223400FA882E /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1598CAC527983AFF00511EFD /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		1598CAC627983AFF00511EFD /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		1598CAC827983AFF00511EFD /* BaseWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebView.h; sourceTree = "<group>"; };
+		1598CAC927983AFF00511EFD /* BaseWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebView.m; sourceTree = "<group>"; };
+		1598CACC27983AFF00511EFD /* BaseWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWindow.m; sourceTree = "<group>"; };
+		1598CACD27983AFF00511EFD /* BaseWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWindow.h; sourceTree = "<group>"; };
+		1598CACF27983AFF00511EFD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1598CAD027983AFF00511EFD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1598CAD227983AFF00511EFD /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		1598CAD327983AFF00511EFD /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		1598CADF27983B1400511EFD /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
+		1598CAE027983B1400511EFD /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
+		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1598CAE627983B3D00511EFD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1598CAE727983B3D00511EFD /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1598CAE927983B3D00511EFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1598CAEA27983B3D00511EFD /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
 		E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,17 +102,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		152615F5279824B000397ABF /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				15277E562798223300FA882E /* AppDelegate.h */,
-				15277E572798223300FA882E /* AppDelegate.m */,
-				15277E592798223300FA882E /* SceneDelegate.h */,
-				15277E5A2798223300FA882E /* SceneDelegate.m */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +125,236 @@
 		15277E552798223300FA882E /* Q */ = {
 			isa = PBXGroup;
 			children = (
-				152615F5279824B000397ABF /* Delegate */,
 				15277E622798223400FA882E /* Assets.xcassets */,
-				15277E642798223400FA882E /* LaunchScreen.storyboard */,
+				1598CAB827983AFF00511EFD /* base */,
+				1598CADB27983B0B00511EFD /* common */,
 				15277E672798223400FA882E /* Info.plist */,
-				15277E682798223400FA882E /* main.m */,
+				1598CAE527983B3C00511EFD /* main */,
+				1598CADC27983B1400511EFD /* src */,
+				1598CAE227983B2000511EFD /* storyboard */,
 			);
 			path = Q;
+			sourceTree = "<group>";
+		};
+		1598CAB827983AFF00511EFD /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAB927983AFF00511EFD /* Tracer */,
+				1598CABA27983AFF00511EFD /* Monitor */,
+				1598CABB27983AFF00511EFD /* Logger */,
+				1598CABC27983AFF00511EFD /* Util */,
+				1598CABD27983AFF00511EFD /* File */,
+				1598CABE27983AFF00511EFD /* Network */,
+				1598CABF27983AFF00511EFD /* Theme */,
+				1598CAC027983AFF00511EFD /* Device */,
+				1598CAC127983AFF00511EFD /* Feature */,
+				1598CAC227983AFF00511EFD /* Data */,
+				1598CAC327983AFF00511EFD /* BaseKit */,
+				1598CAD427983AFF00511EFD /* Player */,
+				1598CAD527983AFF00511EFD /* Router */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		1598CAB927983AFF00511EFD /* Tracer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tracer;
+			sourceTree = "<group>";
+		};
+		1598CABA27983AFF00511EFD /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		1598CABB27983AFF00511EFD /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		1598CABC27983AFF00511EFD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1598CABD27983AFF00511EFD /* File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		1598CABE27983AFF00511EFD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1598CABF27983AFF00511EFD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1598CAC027983AFF00511EFD /* Device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		1598CAC127983AFF00511EFD /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		1598CAC227983AFF00511EFD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1598CAC327983AFF00511EFD /* BaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAC427983AFF00511EFD /* BaseNavigationController */,
+				1598CAC727983AFF00511EFD /* BaseWebView */,
+				1598CACA27983AFF00511EFD /* BaseView */,
+				1598CACB27983AFF00511EFD /* BaseWindow */,
+				1598CACE27983AFF00511EFD /* BaseViewController */,
+				1598CAD127983AFF00511EFD /* BaseTabBarViewController */,
+			);
+			path = BaseKit;
+			sourceTree = "<group>";
+		};
+		1598CAC427983AFF00511EFD /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAC527983AFF00511EFD /* BaseNavigationController.m */,
+				1598CAC627983AFF00511EFD /* BaseNavigationController.h */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		1598CAC727983AFF00511EFD /* BaseWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAC827983AFF00511EFD /* BaseWebView.h */,
+				1598CAC927983AFF00511EFD /* BaseWebView.m */,
+			);
+			path = BaseWebView;
+			sourceTree = "<group>";
+		};
+		1598CACA27983AFF00511EFD /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		1598CACB27983AFF00511EFD /* BaseWindow */ = {
+			isa = PBXGroup;
+			children = (
+				1598CACC27983AFF00511EFD /* BaseWindow.m */,
+				1598CACD27983AFF00511EFD /* BaseWindow.h */,
+			);
+			path = BaseWindow;
+			sourceTree = "<group>";
+		};
+		1598CACE27983AFF00511EFD /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1598CACF27983AFF00511EFD /* BaseViewController.m */,
+				1598CAD027983AFF00511EFD /* BaseViewController.h */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		1598CAD127983AFF00511EFD /* BaseTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAD227983AFF00511EFD /* BaseTabBarViewController.m */,
+				1598CAD327983AFF00511EFD /* BaseTabBarViewController.h */,
+			);
+			path = BaseTabBarViewController;
+			sourceTree = "<group>";
+		};
+		1598CAD427983AFF00511EFD /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		1598CAD527983AFF00511EFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1598CADB27983B0B00511EFD /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		1598CADC27983B1400511EFD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1598CADD27983B1400511EFD /* business */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1598CADD27983B1400511EFD /* business */ = {
+			isa = PBXGroup;
+			children = (
+				1598CADE27983B1400511EFD /* Learn */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		1598CADE27983B1400511EFD /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				1598CADF27983B1400511EFD /* LearnViewController.h */,
+				1598CAE027983B1400511EFD /* LearnViewController.m */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		1598CAE227983B2000511EFD /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAE327983B2000511EFD /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		1598CAE527983B3C00511EFD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAE627983B3D00511EFD /* AppDelegate.h */,
+				1598CAE927983B3D00511EFD /* AppDelegate.m */,
+				1598CAE827983B3D00511EFD /* main.m */,
+				1598CAEA27983B3D00511EFD /* SceneDelegate.h */,
+				1598CAE727983B3D00511EFD /* SceneDelegate.m */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
@@ -241,7 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15277E662798223400FA882E /* LaunchScreen.storyboard in Resources */,
+				1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +549,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15277E582798223300FA882E /* AppDelegate.m in Sources */,
-				15277E692798223400FA882E /* main.m in Sources */,
-				15277E5B2798223300FA882E /* SceneDelegate.m in Sources */,
+				1598CAD727983AFF00511EFD /* BaseWebView.m in Sources */,
+				1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */,
+				1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */,
+				1598CADA27983AFF00511EFD /* BaseTabBarViewController.m in Sources */,
+				1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */,
+				1598CAEB27983B3D00511EFD /* SceneDelegate.m in Sources */,
+				1598CAED27983B3D00511EFD /* AppDelegate.m in Sources */,
+				1598CAE127983B1400511EFD /* LearnViewController.m in Sources */,
+				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,17 +589,6 @@
 			targetProxy = 15277E792798223400FA882E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		15277E642798223400FA882E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15277E652798223400FA882E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15277E802798223400FA882E /* Debug */ = {
@@ -482,7 +707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,15 +758,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/**",
-					"$(PODS_ROOT)/**",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/**",
-					"$(PODS_ROOT)/**",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -549,7 +768,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,15 +817,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/**",
-					"$(PODS_ROOT)/**",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/**",
-					"$(PODS_ROOT)/**",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};
