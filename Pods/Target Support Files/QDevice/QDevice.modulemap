@@ -1,0 +1,6 @@
+framework module QDevice {
+  umbrella header "QDevice-umbrella.h"
+
+  export *
+  module * { export * }
+}
