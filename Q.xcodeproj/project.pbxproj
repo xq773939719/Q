@@ -18,6 +18,7 @@
 		1598CAEB27983B3D00511EFD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE727983B3D00511EFD /* SceneDelegate.m */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		1598CAED27983B3D00511EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE927983B3D00511EFD /* AppDelegate.m */; };
+		1598CAF027983E0100511EFD /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAEF27983E0100511EFD /* BaseView.m */; };
 		E9A23E33CC760E187257199B /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1598CAE927983B3D00511EFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1598CAEA27983B3D00511EFD /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1598CAEE27983E0100511EFD /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		1598CAEF27983E0100511EFD /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
 		E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,6 +263,8 @@
 		1598CACA27983AFF00511EFD /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				1598CAEE27983E0100511EFD /* BaseView.h */,
+				1598CAEF27983E0100511EFD /* BaseView.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 				1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */,
 				1598CAEB27983B3D00511EFD /* SceneDelegate.m in Sources */,
 				1598CAED27983B3D00511EFD /* AppDelegate.m in Sources */,
+				1598CAF027983E0100511EFD /* BaseView.m in Sources */,
 				1598CAE127983B1400511EFD /* LearnViewController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 			);
