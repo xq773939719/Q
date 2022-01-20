@@ -13,6 +13,7 @@
 #import "BaseApplicationDelegate.h"
 #import "BaseWindowSceneDelegate.h"
 #import "TabBarController.h"
+#import "BaseModuleManager.h"
 
 @implementation CommonEntranceManager
 
@@ -22,6 +23,7 @@
   delegate.window.backgroundColor = UIColor.whiteColor;
   delegate.window.rootViewController = tabBarController;
   [delegate.window makeKeyAndVisible];
+  [self launch];
 }
 
 + (void)launchWithWindowSceneDelegate:(BaseWindowSceneDelegate *)delegate withScene:(BaseScene *)scene {
@@ -32,6 +34,15 @@
   delegate.window.backgroundColor = UIColor.whiteColor;
   delegate.window.rootViewController = tabBarController;
   [delegate.window makeKeyAndVisible];
+  [self launch];
+}
+
++ (void)launch {
+  NSArray *systemModules = @[
+    
+  ];
+  [BaseModuleManager registerModules:systemModules
+                               level:BaseModuleLevelSystem];
 }
 
 @end

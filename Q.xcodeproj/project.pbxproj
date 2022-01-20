@@ -15,6 +15,11 @@
 		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
 		1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */; };
 		1530E43227990C6000E4A8E4 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43127990C6000E4A8E4 /* BaseScene.m */; };
+		1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */; };
+		1530E4412799152900E4A8E4 /* BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4402799152900E4A8E4 /* BaseModule.m */; };
+		1530E445279932D800E4A8E4 /* SystemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E444279932D800E4A8E4 /* SystemModule.m */; };
+		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
+		1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E44D2799337E00E4A8E4 /* BusinessModule.m */; };
 		153958D32798556D009CFDCB /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 		153963F027985A79009CFDCB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963EF27985A79009CFDCB /* TabBarController.m */; };
 		153963F427985AE0009CFDCB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963F327985AE0009CFDCB /* BaseTabBarController.m */; };
@@ -77,6 +82,16 @@
 		1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonEntranceManager.m; sourceTree = "<group>"; };
 		1530E43027990C6000E4A8E4 /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		1530E43127990C6000E4A8E4 /* BaseScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
+		1530E439279914EB00E4A8E4 /* BaseModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleManager.h; sourceTree = "<group>"; };
+		1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModuleManager.m; sourceTree = "<group>"; };
+		1530E43F2799152900E4A8E4 /* BaseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModule.h; sourceTree = "<group>"; };
+		1530E4402799152900E4A8E4 /* BaseModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModule.m; sourceTree = "<group>"; };
+		1530E443279932D800E4A8E4 /* SystemModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemModule.h; sourceTree = "<group>"; };
+		1530E444279932D800E4A8E4 /* SystemModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemModule.m; sourceTree = "<group>"; };
+		1530E4482799334F00E4A8E4 /* CommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModule.h; sourceTree = "<group>"; };
+		1530E4492799334F00E4A8E4 /* CommonModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModule.m; sourceTree = "<group>"; };
+		1530E44C2799337E00E4A8E4 /* BusinessModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BusinessModule.h; path = Q/src/common/Module/BusinessModule/BusinessModule.h; sourceTree = SOURCE_ROOT; };
+		1530E44D2799337E00E4A8E4 /* BusinessModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BusinessModule.m; path = Q/src/common/Module/BusinessModule/BusinessModule.m; sourceTree = SOURCE_ROOT; };
 		153963EE27985A79009CFDCB /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		153963EF27985A79009CFDCB /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		153963F227985AE0009CFDCB /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -302,9 +317,89 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		1530E4382799137200E4A8E4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1530E43D2799150A00E4A8E4 /* BaseModule */,
+				1530E43C279914FB00E4A8E4 /* BaseModuleManager */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1530E43C279914FB00E4A8E4 /* BaseModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				1530E439279914EB00E4A8E4 /* BaseModuleManager.h */,
+				1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */,
+			);
+			path = BaseModuleManager;
+			sourceTree = "<group>";
+		};
+		1530E43D2799150A00E4A8E4 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				1530E43F2799152900E4A8E4 /* BaseModule.h */,
+				1530E4402799152900E4A8E4 /* BaseModule.m */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		1530E442279932B100E4A8E4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1530E44B2799336400E4A8E4 /* BusinessModule */,
+				1530E4472799333200E4A8E4 /* CommonModule */,
+				1530E4462799332A00E4A8E4 /* SystemModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1530E4462799332A00E4A8E4 /* SystemModule */ = {
+			isa = PBXGroup;
+			children = (
+				1530E443279932D800E4A8E4 /* SystemModule.h */,
+				1530E444279932D800E4A8E4 /* SystemModule.m */,
+			);
+			path = SystemModule;
+			sourceTree = "<group>";
+		};
+		1530E4472799333200E4A8E4 /* CommonModule */ = {
+			isa = PBXGroup;
+			children = (
+				1530E4482799334F00E4A8E4 /* CommonModule.h */,
+				1530E4492799334F00E4A8E4 /* CommonModule.m */,
+			);
+			path = CommonModule;
+			sourceTree = "<group>";
+		};
+		1530E44B2799336400E4A8E4 /* BusinessModule */ = {
+			isa = PBXGroup;
+			children = (
+				1530E44C2799337E00E4A8E4 /* BusinessModule.h */,
+				1530E44D2799337E00E4A8E4 /* BusinessModule.m */,
+			);
+			path = BusinessModule;
+			sourceTree = "<group>";
+		};
+		1530E44F2799373E00E4A8E4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1530E4542799376300E4A8E4 /* Modules */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1530E4542799376300E4A8E4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		153963EC27985984009CFDCB /* CommonBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				1530E44F2799373E00E4A8E4 /* Module */,
 				1530E41C2799050500E4A8E4 /* Entrance */,
 				153963FB27985C77009CFDCB /* View */,
 				153963FA27985C6E009CFDCB /* ViewController */,
@@ -447,6 +542,7 @@
 		1598CAB827983AFF00511EFD /* base */ = {
 			isa = PBXGroup;
 			children = (
+				1530E4382799137200E4A8E4 /* Module */,
 				1530E4172799034000E4A8E4 /* BaseFoundation */,
 				1598CAC327983AFF00511EFD /* BaseKit */,
 				1598CAC227983AFF00511EFD /* Data */,
@@ -613,6 +709,7 @@
 		1598CADB27983B0B00511EFD /* common */ = {
 			isa = PBXGroup;
 			children = (
+				1530E442279932B100E4A8E4 /* Module */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -855,8 +952,11 @@
 				15396412279860A3009CFDCB /* TabBarControllerDataProvider.m in Sources */,
 				15A1A57A27987155007CFF64 /* BaseColor.m in Sources */,
 				1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */,
+				1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */,
+				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */,
 				1539640627985D1B009CFDCB /* ThirdNavigationController.m in Sources */,
+				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */,
 				1539641F2798627A009CFDCB /* FeatureViewController.m in Sources */,
 				1539640927985D41009CFDCB /* FeatureNavigationController.m in Sources */,
@@ -866,9 +966,11 @@
 				153963F027985A79009CFDCB /* TabBarController.m in Sources */,
 				1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */,
 				1598CAEB27983B3D00511EFD /* CommonWindowSceneDelegate.m in Sources */,
+				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
 				1530E4202799068400E4A8E4 /* BaseWindowSceneDelegate.m in Sources */,
 				1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */,
+				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1598CAF027983E0100511EFD /* BaseView.m in Sources */,
 				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
