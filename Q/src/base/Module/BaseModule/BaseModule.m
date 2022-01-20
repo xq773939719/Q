@@ -32,7 +32,7 @@
   return self;
 }
 
-# pragma mark - BaseModule protocol
+# pragma mark - BaseModuleProtocol
 - (NSString *)moduleName {
   return nil;
 }
@@ -41,7 +41,7 @@
   return BaseModuleLevelUnknown;
 }
 
-- (void)initModule {
+- (void)didLoadModule {
   return;
 }
 
@@ -49,5 +49,30 @@
   return self.config;
 }
 
+#pragma mark - BaseAppStatusProtocol
+
+- (void)onAppLaunch {
+  
+}
+
+- (void)onAppDidBecomeActive {
+  
+}
+
+- (void)onAppWillEnterForeground {
+  
+}
+
+- (void)onAppWillResignActive {
+  
+}
+
+- (void)onAppDidEnterBackground {
+  
+}
+
+- (void)onAppWillTerminate {
+  
+}
 
 @end

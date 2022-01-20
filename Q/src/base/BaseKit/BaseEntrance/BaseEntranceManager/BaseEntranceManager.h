@@ -9,21 +9,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class BaseApplicationDelegate;
-@class BaseWindowSceneDelegate;
-@class BaseScene;
+@class BaseApplication;
 
-@protocol BaseEntranceProtocal <NSObject>
+@protocol BaseEntranceModuleProtocal
 
-+ (void)launchWithApplicationDelegate:(BaseApplicationDelegate *)delegate;
+// 注册模块
+- (void)registerModules;
 
-+ (void)launchWithWindowSceneDelegate:(BaseWindowSceneDelegate *)delegate withScene:(BaseScene *)scene;
-
-+ (void)launch;
+// 启动模块
+- (void)createModules;
 
 @end
 
-@interface BaseEntranceManager : BaseObject <BaseEntranceProtocal>
+@interface BaseEntranceManager : BaseObject <BaseEntranceModuleProtocal>
+
+- (void)launchWithApplication:(BaseApplication *)application;
 
 @end
 

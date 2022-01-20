@@ -7,13 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BaseAppStatusProtocol.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol BaseObject <NSObject>
+@protocol BaseProtocol
 
 @end
 
-@interface BaseObject : NSObject <BaseObject>
+@interface BaseObject : NSObject <BaseProtocol, BaseAppStatusProtocal>
 
 @end
 

@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,30 +17,18 @@ typedef NS_ENUM(NSUInteger, BaseModuleLevel) {
   BaseModuleLevelBusiness = 2,
 };
 
-@protocol BaseModule <NSObject>
+@protocol BaseModuleProtocol
 
 @required
 
 - (NSString *)moduleName;
 - (BaseModuleLevel)moduleLevel;
 - (NSDictionary *)moduleConfig;
-- (void)initModule;
+- (void)didLoadModule;
 
 @end
 
-@protocol BaseModuleApplicationProtocal <NSObject>
-
-@optional
-- (void)onApplicationLaunch;
-- (void)onApplicationWillEnterForeground;
-- (void)onApplicationDidBecomeActive;
-- (void)onApplicationWillResignActive;
-- (void)onApplicationDidEnterBackground;
-- (void)onApplicationWillTerminate;
-
-@end
-
-@interface BaseModule : NSObject <BaseModule>
+@interface BaseModule : BaseObject <BaseModuleProtocol>
 
 - (instancetype)initWithConfig:(NSDictionary *)config;
 

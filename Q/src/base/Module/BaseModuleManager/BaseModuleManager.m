@@ -8,6 +8,8 @@
 #import "BaseModuleManager.h"
 #import "BaseModule.h"
 
+typedef void(^ForEachBaseModuleBlock)(BaseModule *module);
+
 @interface BaseModuleManager ()
 
 @property(nonatomic, copy) NSDictionary *configs;
@@ -68,22 +70,29 @@
 - (void)createModules {
   NSArray *modules = self.moduleArray;
   [modules enumerateObjectsUsingBlock:^(NSDictionary *moduleInfo, NSUInteger idx, BOOL * _Nonnull stop) {
-    [self createModule:moduleInfo];
+    BaseModule *module = [self createModule:moduleInfo];
+    if (module) {
+      [module didLoadModule];
+    }
   }];
 }
 
-- (BOOL)createModule:(NSDictionary *)module {
-  BaseModuleLevel level = (BaseModuleLevel) ([module[@"level"] integerValue]);
-  Class class = (Class) module[@"class"];
-  NSDictionary *config = module[@"config"];
+- (BaseModule *)createModule:(NSDictionary *)moduleInfo {
+  BaseModuleLevel level = (BaseModuleLevel) ([moduleInfo[@"level"] integerValue]);
+  Class class = (Class) moduleInfo[@"class"];
+  NSDictionary *config = moduleInfo[@"config"];
 
+  if ([self queryModuleWithClass:class]) {
+    return nil;
+  }
+  
   NSMutableDictionary *combinedConfig = [NSMutableDictionary dictionary];
   [combinedConfig setValuesForKeysWithDictionary:self.configs];
   [combinedConfig setValuesForKeysWithDictionary:config];
 
-  BaseModule *model = [[class alloc] init];
-  if (!model) {
-    return NO;
+  BaseModule *module = [[class alloc] init];
+  if (!module) {
+    return nil;
   }
   
   NSMutableArray *currentLevelModules = self.moduleMap[@(level)];
@@ -93,7 +102,7 @@
     [currentLevelModules addObject:module];
   }
 
-  return YES;
+  return module;
 }
 
 - (BaseModule *)queryModuleWithClass:(Class)class {
@@ -111,6 +120,90 @@
     * levelArrayStop = queriedModule != nil;
   }];
   return queriedModule;
+}
+
+- (void)runForEachModule:(ForEachBaseModuleBlock)block {
+  if (!block) {
+    return;
+  }
+  NSArray *modules = nil;
+  @synchronized (self) {
+    modules = [[self.moduleMap allValues] copy];
+  }
+  
+  [modules enumerateObjectsUsingBlock:^(NSArray *levelArray, NSUInteger idx, BOOL * _Nonnull levelArrayStop) {
+    if (levelArray) {
+      [levelArray enumerateObjectsUsingBlock:^(BaseModule *module, NSUInteger idx, BOOL * _Nonnull moduleStop) {
+        block(module);
+      }];
+    }
+  }];
+  
+}
+
+- (void)runForEachModule:(ForEachBaseModuleBlock)block level:(BaseModuleLevel)level {
+  if (!block) {
+    return;
+  }
+  
+  NSArray *modules = nil;
+  @synchronized (self) {
+    modules = [self.moduleMap[@(level)] copy];
+  }
+  
+  for (BaseModule *module in modules) {
+    block(module);
+  }
+}
+
+# pragma mark - BaseAppStatusProtocol
+
+- (void)onAppLaunch {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppLaunch)]) {
+      [module onAppLaunch];
+    }
+  }];
+}
+
+- (void)onAppDidBecomeActive {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppDidBecomeActive)]) {
+      [module onAppDidBecomeActive];
+    }
+  }];
+}
+
+- (void)onAppWillEnterForeground {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppWillEnterForeground)]) {
+      [module onAppWillEnterForeground];
+    }
+  }];
+}
+
+- (void)onAppWillResignActive {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppWillResignActive)]) {
+      [module onAppWillResignActive];
+    }
+  }];
+}
+
+- (void)onAppDidEnterBackground {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppDidEnterBackground)]) {
+      [module onAppDidEnterBackground];
+    }
+  }];
+}
+
+- (void)onAppWillTerminate {
+  [self runForEachModule:^(BaseModule *module) {
+    if ([module respondsToSelector:@selector(onAppWillTerminate)]) {
+      [module onAppWillTerminate];
+    }
+  }];
 }
 
 @end

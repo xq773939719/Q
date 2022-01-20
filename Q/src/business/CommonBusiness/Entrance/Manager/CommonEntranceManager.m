@@ -9,40 +9,58 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BaseScene.h"
-#import "BaseApplicationDelegate.h"
-#import "BaseWindowSceneDelegate.h"
+#import "BaseApplication.h"
+#import "BaseWindow.h"
 #import "TabBarController.h"
 #import "BaseModuleManager.h"
+#import "CommonPlayerModule.h"
 
 @implementation CommonEntranceManager
 
-+ (void)launchWithApplicationDelegate:(BaseApplicationDelegate *)delegate {
+- (void)launchWithApplication:(BaseApplication *)application {
+  [super launchWithApplication:application];
   TabBarController *tabBarController = [TabBarController share];
-  delegate.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
-  delegate.window.backgroundColor = UIColor.whiteColor;
-  delegate.window.rootViewController = tabBarController;
-  [delegate.window makeKeyAndVisible];
-  [self launch];
+  
+  application.window = [[BaseWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
+  application.window.backgroundColor = UIColor.whiteColor;
+  application.window.rootViewController = tabBarController;
+  [application.window makeKeyAndVisible];
 }
 
-+ (void)launchWithWindowSceneDelegate:(BaseWindowSceneDelegate *)delegate withScene:(BaseScene *)scene {
-  UIWindowScene *windowScene = (UIWindowScene *)scene;
-  TabBarController *tabBarController = [TabBarController share];
-  delegate.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-  delegate.window.frame = UIScreen.mainScreen.bounds;
-  delegate.window.backgroundColor = UIColor.whiteColor;
-  delegate.window.rootViewController = tabBarController;
-  [delegate.window makeKeyAndVisible];
-  [self launch];
-}
-
-+ (void)launch {
+- (void)registerModules {
   NSArray *systemModules = @[
-    
+    [CommonPlayerModule class],
   ];
   [BaseModuleManager registerModules:systemModules
                                level:BaseModuleLevelSystem];
+}
+
+- (void)createModules {
+  [BaseModuleManager createModules];
+}
+
+- (void)onAppLaunch {
+  [[BaseModuleManager share] onAppLaunch];
+}
+
+- (void)onAppDidBecomeActive {
+  [[BaseModuleManager share] onAppDidBecomeActive];
+}
+
+- (void)onAppWillEnterForeground {
+  [[BaseModuleManager share] onAppWillEnterForeground];
+}
+
+- (void)onAppWillResignActive {
+  [[BaseModuleManager share] onAppWillResignActive];
+}
+
+- (void)onAppDidEnterBackground {
+  [[BaseModuleManager share] onAppDidEnterBackground];
+}
+
+- (void)onAppWillTerminate {
+  [[BaseModuleManager share] onAppWillTerminate];
 }
 
 @end

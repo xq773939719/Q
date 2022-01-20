@@ -9,7 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class BaseWindow;
+
 @interface BaseApplication : UIApplication
+
+@property (nonatomic, strong) BaseWindow *window;
 
 @end
 

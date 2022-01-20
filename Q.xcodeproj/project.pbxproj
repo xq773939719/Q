@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
 		1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */; };
-		1530E4202799068400E4A8E4 /* BaseWindowSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41F2799068400E4A8E4 /* BaseWindowSceneDelegate.m */; };
 		1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4232799071400E4A8E4 /* BaseApplication.m */; };
 		1530E4272799073700E4A8E4 /* CommonApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4262799073700E4A8E4 /* CommonApplication.m */; };
 		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
 		1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */; };
-		1530E43227990C6000E4A8E4 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43127990C6000E4A8E4 /* BaseScene.m */; };
 		1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */; };
 		1530E4412799152900E4A8E4 /* BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4402799152900E4A8E4 /* BaseModule.m */; };
 		1530E445279932D800E4A8E4 /* SystemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E444279932D800E4A8E4 /* SystemModule.m */; };
 		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
 		1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E44D2799337E00E4A8E4 /* BusinessModule.m */; };
+		1530E45827993AC100E4A8E4 /* CommonPlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */; };
 		153958D32798556D009CFDCB /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 		153963F027985A79009CFDCB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963EF27985A79009CFDCB /* TabBarController.m */; };
 		153963F427985AE0009CFDCB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963F327985AE0009CFDCB /* BaseTabBarController.m */; };
@@ -38,7 +37,6 @@
 		1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CACC27983AFF00511EFD /* BaseWindow.m */; };
 		1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CACF27983AFF00511EFD /* BaseViewController.m */; };
 		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
-		1598CAEB27983B3D00511EFD /* CommonWindowSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE927983B3D00511EFD /* CommonAppDelegate.m */; };
 		1598CAF027983E0100511EFD /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAEF27983E0100511EFD /* BaseView.m */; };
@@ -70,8 +68,6 @@
 		15277E782798223400FA882E /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1530E4192799046900E4A8E4 /* BaseApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplicationDelegate.h; sourceTree = "<group>"; };
 		1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplicationDelegate.m; sourceTree = "<group>"; };
-		1530E41E2799068400E4A8E4 /* BaseWindowSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWindowSceneDelegate.h; sourceTree = "<group>"; };
-		1530E41F2799068400E4A8E4 /* BaseWindowSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWindowSceneDelegate.m; sourceTree = "<group>"; };
 		1530E4222799071400E4A8E4 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
 		1530E4232799071400E4A8E4 /* BaseApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
 		1530E4252799073700E4A8E4 /* CommonApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonApplication.h; sourceTree = "<group>"; };
@@ -80,8 +76,6 @@
 		1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEntranceManager.m; sourceTree = "<group>"; };
 		1530E42C279909AA00E4A8E4 /* CommonEntranceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonEntranceManager.h; sourceTree = "<group>"; };
 		1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonEntranceManager.m; sourceTree = "<group>"; };
-		1530E43027990C6000E4A8E4 /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
-		1530E43127990C6000E4A8E4 /* BaseScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
 		1530E439279914EB00E4A8E4 /* BaseModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleManager.h; sourceTree = "<group>"; };
 		1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModuleManager.m; sourceTree = "<group>"; };
 		1530E43F2799152900E4A8E4 /* BaseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModule.h; sourceTree = "<group>"; };
@@ -92,6 +86,9 @@
 		1530E4492799334F00E4A8E4 /* CommonModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModule.m; sourceTree = "<group>"; };
 		1530E44C2799337E00E4A8E4 /* BusinessModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BusinessModule.h; path = Q/src/common/Module/BusinessModule/BusinessModule.h; sourceTree = SOURCE_ROOT; };
 		1530E44D2799337E00E4A8E4 /* BusinessModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BusinessModule.m; path = Q/src/common/Module/BusinessModule/BusinessModule.m; sourceTree = SOURCE_ROOT; };
+		1530E45627993AC100E4A8E4 /* CommonPlayerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonPlayerModule.h; sourceTree = "<group>"; };
+		1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonPlayerModule.m; sourceTree = "<group>"; };
+		1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppStatusProtocol.h; sourceTree = "<group>"; };
 		153963EE27985A79009CFDCB /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		153963EF27985A79009CFDCB /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		153963F227985AE0009CFDCB /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -126,10 +123,8 @@
 		1598CAD027983AFF00511EFD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1598CAE627983B3D00511EFD /* CommonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAppDelegate.h; sourceTree = "<group>"; };
-		1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonWindowSceneDelegate.m; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1598CAE927983B3D00511EFD /* CommonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAppDelegate.m; sourceTree = "<group>"; };
-		1598CAEA27983B3D00511EFD /* CommonWindowSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonWindowSceneDelegate.h; sourceTree = "<group>"; };
 		1598CAEE27983E0100511EFD /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		1598CAEF27983E0100511EFD /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		15A1A57827987155007CFF64 /* BaseColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseColor.h; sourceTree = "<group>"; };
@@ -209,6 +204,7 @@
 		1530E4172799034000E4A8E4 /* BaseFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				1530E4592799408C00E4A8E4 /* BaseProtocol */,
 				153963FC27985C8E009CFDCB /* BaseObject */,
 			);
 			path = BaseFoundation;
@@ -228,19 +224,8 @@
 			children = (
 				1530E437279912A800E4A8E4 /* Manager */,
 				1530E4362799129D00E4A8E4 /* Application */,
-				1530E4352799128100E4A8E4 /* WindowSceneDelegate */,
-				1530E4342799127300E4A8E4 /* AppDelegate */,
 			);
 			path = Entrance;
-			sourceTree = "<group>";
-		};
-		1530E41D2799066000E4A8E4 /* BaseWindowSceneDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1530E41E2799068400E4A8E4 /* BaseWindowSceneDelegate.h */,
-				1530E41F2799068400E4A8E4 /* BaseWindowSceneDelegate.m */,
-			);
-			path = BaseWindowSceneDelegate;
 			sourceTree = "<group>";
 		};
 		1530E421279906FA00E4A8E4 /* BaseApplication */ = {
@@ -256,20 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
-				1530E42F27990C4F00E4A8E4 /* BaseScene */,
-				1530E41D2799066000E4A8E4 /* BaseWindowSceneDelegate */,
 				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
 			);
 			path = BaseEntrance;
-			sourceTree = "<group>";
-		};
-		1530E42F27990C4F00E4A8E4 /* BaseScene */ = {
-			isa = PBXGroup;
-			children = (
-				1530E43027990C6000E4A8E4 /* BaseScene.h */,
-				1530E43127990C6000E4A8E4 /* BaseScene.m */,
-			);
-			path = BaseScene;
 			sourceTree = "<group>";
 		};
 		1530E433279911D400E4A8E4 /* BaseEntranceManager */ = {
@@ -290,18 +264,10 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		1530E4352799128100E4A8E4 /* WindowSceneDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1598CAEA27983B3D00511EFD /* CommonWindowSceneDelegate.h */,
-				1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */,
-			);
-			path = WindowSceneDelegate;
-			sourceTree = "<group>";
-		};
 		1530E4362799129D00E4A8E4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1530E4342799127300E4A8E4 /* AppDelegate */,
 				1530E4252799073700E4A8E4 /* CommonApplication.h */,
 				1530E4262799073700E4A8E4 /* CommonApplication.m */,
 			);
@@ -392,8 +358,26 @@
 		1530E4542799376300E4A8E4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1530E45527993A2300E4A8E4 /* CommonPlayerModule */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		1530E45527993A2300E4A8E4 /* CommonPlayerModule */ = {
+			isa = PBXGroup;
+			children = (
+				1530E45627993AC100E4A8E4 /* CommonPlayerModule.h */,
+				1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */,
+			);
+			path = CommonPlayerModule;
+			sourceTree = "<group>";
+		};
+		1530E4592799408C00E4A8E4 /* BaseProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */,
+			);
+			path = BaseProtocol;
 			sourceTree = "<group>";
 		};
 		153963EC27985984009CFDCB /* CommonBusiness */ = {
@@ -948,7 +932,6 @@
 				1539640027985CBA009CFDCB /* BaseObject.m in Sources */,
 				1539642227986290009CFDCB /* HomeViewController.m in Sources */,
 				1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */,
-				1530E43227990C6000E4A8E4 /* BaseScene.m in Sources */,
 				15396412279860A3009CFDCB /* TabBarControllerDataProvider.m in Sources */,
 				15A1A57A27987155007CFF64 /* BaseColor.m in Sources */,
 				1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */,
@@ -958,6 +941,7 @@
 				1539640627985D1B009CFDCB /* ThirdNavigationController.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */,
+				1530E45827993AC100E4A8E4 /* CommonPlayerModule.m in Sources */,
 				1539641F2798627A009CFDCB /* FeatureViewController.m in Sources */,
 				1539640927985D41009CFDCB /* FeatureNavigationController.m in Sources */,
 				1539641C27986268009CFDCB /* ThirdViewController.m in Sources */,
@@ -965,10 +949,8 @@
 				1530E4272799073700E4A8E4 /* CommonApplication.m in Sources */,
 				153963F027985A79009CFDCB /* TabBarController.m in Sources */,
 				1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */,
-				1598CAEB27983B3D00511EFD /* CommonWindowSceneDelegate.m in Sources */,
 				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
-				1530E4202799068400E4A8E4 /* BaseWindowSceneDelegate.m in Sources */,
 				1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1598CAF027983E0100511EFD /* BaseView.m in Sources */,
@@ -1124,6 +1106,7 @@
 			baseConfigurationReference = 2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1158,7 +1141,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PODS_ROOT)/**",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = Q/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1191,6 +1174,7 @@
 			baseConfigurationReference = DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1223,7 +1207,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PODS_ROOT)/**",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = Q/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

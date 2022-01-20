@@ -9,16 +9,41 @@
 
 @implementation BaseEntranceManager
 
-+ (void)launchWithApplicationDelegate:(BaseApplicationDelegate *)delegate {
-  NSAssert(NO, @"no implement");
+- (void)launchWithApplication:(BaseApplication *)application{
+  [self registerModules];
+  [self createModules];
 }
 
-+ (void)launchWithWindowSceneDelegate:(BaseWindowSceneDelegate *)delegate withScene:(BaseScene *)scene {
-  NSAssert(NO, @"no implement");
+- (void)registerModules {
+  NSAssert(NO, @"No implement");
 }
 
-+ (void)launch {
-  NSAssert(NO, @"no implement");
+- (void)createModules {
+  NSAssert(NO, @"No implement");
+}
+
+- (void)onAppLaunch {
+  
+}
+
+- (void)onAppDidBecomeActive {
+  
+}
+
+- (void)onAppWillEnterForeground {
+  
+}
+
+- (void)onAppWillResignActive {
+  
+}
+
+- (void)onAppDidEnterBackground {
+  
+}
+
+- (void)onAppWillTerminate {
+  
 }
 
 @end

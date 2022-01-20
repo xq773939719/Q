@@ -7,11 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BaseObject.h"
 #import "BaseModule.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseModuleManager : NSObject
+@interface BaseModuleManager: BaseObject
 
 + (instancetype)share;
 
