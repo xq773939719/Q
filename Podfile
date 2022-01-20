@@ -58,6 +58,11 @@ def ThridPartyModules
 
   # YYKit
   pod 'YYKit'
+  # pod 'YYModel'
+  # pod 'YYText'
+  # pod 'YYCache'
+  # pod 'YYImage'
+  # pod 'YYWebImage'
 
   # gRPC
   # pod 'gRPC'
