@@ -8,7 +8,7 @@
 #import "CommonWindowSceneDelegate.h"
 
 #import "BaseScene.h"
-#import "CommonEntrance.h"
+#import "CommonEntranceManager.h"
 
 @interface CommonWindowSceneDelegate ()
 
@@ -19,7 +19,7 @@
 
 - (void)scene:(BaseScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
   if (@available(iOS 13.0, *)) {
-    [CommonEntrance launchWithWindowSceneDelegate:self withScene:scene];
+    [CommonEntranceManager launchWithWindowSceneDelegate:self withScene:scene];
   }
 }
 

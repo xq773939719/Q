@@ -5,7 +5,7 @@
 //  Created by XQ on 2022/1/20.
 //
 
-#import "CommonEntrance.h"
+#import "CommonEntranceManager.h"
 
 #import <UIKit/UIKit.h>
 
@@ -14,7 +14,7 @@
 #import "BaseWindowSceneDelegate.h"
 #import "TabBarController.h"
 
-@implementation CommonEntrance
+@implementation CommonEntranceManager
 
 + (void)launchWithApplicationDelegate:(BaseApplicationDelegate *)delegate {
   TabBarController *tabBarController = [TabBarController share];

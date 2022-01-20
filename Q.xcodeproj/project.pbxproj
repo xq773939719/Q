@@ -12,8 +12,8 @@
 		1530E4202799068400E4A8E4 /* BaseWindowSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41F2799068400E4A8E4 /* BaseWindowSceneDelegate.m */; };
 		1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4232799071400E4A8E4 /* BaseApplication.m */; };
 		1530E4272799073700E4A8E4 /* CommonApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4262799073700E4A8E4 /* CommonApplication.m */; };
-		1530E42B2799097B00E4A8E4 /* BaseEntrance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntrance.m */; };
-		1530E42E279909AA00E4A8E4 /* CommonEntrance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42D279909AA00E4A8E4 /* CommonEntrance.m */; };
+		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
+		1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */; };
 		1530E43227990C6000E4A8E4 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43127990C6000E4A8E4 /* BaseScene.m */; };
 		153958D32798556D009CFDCB /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 		153963F027985A79009CFDCB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963EF27985A79009CFDCB /* TabBarController.m */; };
@@ -71,10 +71,10 @@
 		1530E4232799071400E4A8E4 /* BaseApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
 		1530E4252799073700E4A8E4 /* CommonApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonApplication.h; sourceTree = "<group>"; };
 		1530E4262799073700E4A8E4 /* CommonApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonApplication.m; sourceTree = "<group>"; };
-		1530E4292799097B00E4A8E4 /* BaseEntrance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEntrance.h; sourceTree = "<group>"; };
-		1530E42A2799097B00E4A8E4 /* BaseEntrance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEntrance.m; sourceTree = "<group>"; };
-		1530E42C279909AA00E4A8E4 /* CommonEntrance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonEntrance.h; sourceTree = "<group>"; };
-		1530E42D279909AA00E4A8E4 /* CommonEntrance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonEntrance.m; sourceTree = "<group>"; };
+		1530E4292799097B00E4A8E4 /* BaseEntranceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEntranceManager.h; sourceTree = "<group>"; };
+		1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEntranceManager.m; sourceTree = "<group>"; };
+		1530E42C279909AA00E4A8E4 /* CommonEntranceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonEntranceManager.h; sourceTree = "<group>"; };
+		1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonEntranceManager.m; sourceTree = "<group>"; };
 		1530E43027990C6000E4A8E4 /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		1530E43127990C6000E4A8E4 /* BaseScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
 		153963EE27985A79009CFDCB /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 				1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */,
 				1530E4252799073700E4A8E4 /* CommonApplication.h */,
 				1530E4262799073700E4A8E4 /* CommonApplication.m */,
-				1530E42C279909AA00E4A8E4 /* CommonEntrance.h */,
-				1530E42D279909AA00E4A8E4 /* CommonEntrance.m */,
+				1530E42C279909AA00E4A8E4 /* CommonEntranceManager.h */,
+				1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */,
 			);
 			path = Entrance;
 			sourceTree = "<group>";
@@ -244,11 +244,10 @@
 		1530E4282799096100E4A8E4 /* BaseEntrance */ = {
 			isa = PBXGroup;
 			children = (
+				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
 				1530E42F27990C4F00E4A8E4 /* BaseScene */,
 				1530E41D2799066000E4A8E4 /* BaseWindowSceneDelegate */,
 				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
-				1530E4292799097B00E4A8E4 /* BaseEntrance.h */,
-				1530E42A2799097B00E4A8E4 /* BaseEntrance.m */,
 			);
 			path = BaseEntrance;
 			sourceTree = "<group>";
@@ -260,6 +259,15 @@
 				1530E43127990C6000E4A8E4 /* BaseScene.m */,
 			);
 			path = BaseScene;
+			sourceTree = "<group>";
+		};
+		1530E433279911D400E4A8E4 /* BaseEntranceManager */ = {
+			isa = PBXGroup;
+			children = (
+				1530E4292799097B00E4A8E4 /* BaseEntranceManager.h */,
+				1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */,
+			);
+			path = BaseEntranceManager;
 			sourceTree = "<group>";
 		};
 		153963EC27985984009CFDCB /* CommonBusiness */ = {
@@ -810,7 +818,7 @@
 				1539641927986256009CFDCB /* MineViewController.m in Sources */,
 				1539640027985CBA009CFDCB /* BaseObject.m in Sources */,
 				1539642227986290009CFDCB /* HomeViewController.m in Sources */,
-				1530E42E279909AA00E4A8E4 /* CommonEntrance.m in Sources */,
+				1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */,
 				1530E43227990C6000E4A8E4 /* BaseScene.m in Sources */,
 				15396412279860A3009CFDCB /* TabBarControllerDataProvider.m in Sources */,
 				15A1A57A27987155007CFF64 /* BaseColor.m in Sources */,
@@ -830,7 +838,7 @@
 				1530E4202799068400E4A8E4 /* BaseWindowSceneDelegate.m in Sources */,
 				1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */,
 				1598CAF027983E0100511EFD /* BaseView.m in Sources */,
-				1530E42B2799097B00E4A8E4 /* BaseEntrance.m in Sources */,
+				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

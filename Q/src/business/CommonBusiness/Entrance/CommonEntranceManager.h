@@ -1,11 +1,11 @@
 //
-//  CommonEntrance.h
+//  CommonEntranceManager.h
 //  Q
 //
 //  Created by XQ on 2022/1/20.
 //
 
-#import "BaseEntrance.h"
+#import "BaseEntranceManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class BaseWindowSceneDelegate;
 @class BaseScene;
 
-@interface CommonEntrance : BaseEntrance
+@interface CommonEntranceManager : BaseEntranceManager
 
 + (void)launchWithApplicationDelegate:(BaseApplicationDelegate *)delegate;
 

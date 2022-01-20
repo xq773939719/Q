@@ -1,5 +1,5 @@
 //
-//  BaseEntrance.h
+//  BaseEntranceManager.h
 //  Q
 //
 //  Created by XQ on 2022/1/20.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseEntrance : BaseObject
+@interface BaseEntranceManager : BaseObject
 
 @end
 
