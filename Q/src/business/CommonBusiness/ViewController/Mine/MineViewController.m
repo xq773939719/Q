@@ -7,8 +7,11 @@
 
 #import "MineViewController.h"
 #import <Flutter/Flutter.h>
+#import <Chronos/Chronos.h>
 
 @interface MineViewController ()
+
+@property (nonatomic, strong) CRONView *chronosView;
 
 @end
 
@@ -20,6 +23,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  self.chronosView = [CRONView new];
+  self.chronosView.frame = self.view.bounds;
+  self.chronosView.backgroundColor = [UIColor orangeColor];
+  [self.view addSubview:self.chronosView];
 }
 
 @end
@@ -33,5 +40,4 @@
  [self.view addSubview:flutterVC.view];
  [self.navigationController pushViewController:flutterVC animated:YES];
  self.navigationController.navigationBar.hidden = YES;
- 
  */

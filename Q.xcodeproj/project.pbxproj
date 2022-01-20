@@ -19,7 +19,9 @@
 		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
 		1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E44D2799337E00E4A8E4 /* BusinessModule.m */; };
 		1530E45827993AC100E4A8E4 /* CommonPlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */; };
-		153958D32798556D009CFDCB /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
+		1530E47827996F4200E4A8E4 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47427996ECA00E4A8E4 /* Chronos.framework */; platformFilter = ios; };
+		1530E47927996F4200E4A8E4 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47427996ECA00E4A8E4 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 		153963F027985A79009CFDCB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963EF27985A79009CFDCB /* TabBarController.m */; };
 		153963F427985AE0009CFDCB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963F327985AE0009CFDCB /* BaseTabBarController.m */; };
 		1539640027985CBA009CFDCB /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963FF27985CBA009CFDCB /* BaseObject.m */; };
@@ -60,6 +62,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1530E47A27996F4200E4A8E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1530E47927996F4200E4A8E4 /* Chronos.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +105,11 @@
 		1530E45627993AC100E4A8E4 /* CommonPlayerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonPlayerModule.h; sourceTree = "<group>"; };
 		1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonPlayerModule.m; sourceTree = "<group>"; };
 		1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppStatusProtocol.h; sourceTree = "<group>"; };
+		1530E46627996AE200E4A8E4 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chronos.framework; sourceTree = "<group>"; };
+		1530E46927996B8C00E4A8E4 /* Chronos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Chronos; sourceTree = "<group>"; };
+		1530E47027996E3A00E4A8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1530E47427996ECA00E4A8E4 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = "../chronos/build-ios/Release-iphoneos/Chronos.framework"; sourceTree = "<group>"; };
 		153963EE27985A79009CFDCB /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		153963EF27985A79009CFDCB /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		153963F227985AE0009CFDCB /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -139,7 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153958D32798556D009CFDCB /* Pods_Q.framework in Frameworks */,
+				1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */,
+				1530E47827996F4200E4A8E4 /* Chronos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +194,7 @@
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
+				1530E46927996B8C00E4A8E4 /* Chronos */,
 				15277E552798223300FA882E /* Q */,
 				15277E542798223300FA882E /* Products */,
 				12D629AB8FEE2E57BD3F0259 /* Pods */,
@@ -736,6 +759,10 @@
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1530E47427996ECA00E4A8E4 /* Chronos.framework */,
+				1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */,
+				1530E47027996E3A00E4A8E4 /* UIKit.framework */,
+				1530E46627996AE200E4A8E4 /* Chronos.framework */,
 				E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */,
 			);
 			name = Frameworks;
@@ -754,6 +781,7 @@
 				15277E502798223300FA882E /* Frameworks */,
 				15277E512798223300FA882E /* Resources */,
 				D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */,
+				1530E47A27996F4200E4A8E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -899,7 +927,7 @@
 			name = "[CP-User] Run Flutter Build flutter_module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/DevelopPods/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/DevelopPods/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
 		};
 		D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1112,6 +1140,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
@@ -1137,6 +1166,7 @@
 					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter/engine\"",
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1180,6 +1210,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
@@ -1203,6 +1234,7 @@
 					"\"${PODS_ROOT}/../../DevelopPods/flutter_module/.ios/Flutter/engine\"",
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
