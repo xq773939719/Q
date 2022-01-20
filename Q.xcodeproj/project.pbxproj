@@ -211,14 +211,10 @@
 		1530E41C2799050500E4A8E4 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
-				1598CAE627983B3D00511EFD /* CommonAppDelegate.h */,
-				1598CAE927983B3D00511EFD /* CommonAppDelegate.m */,
-				1598CAEA27983B3D00511EFD /* CommonWindowSceneDelegate.h */,
-				1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */,
-				1530E4252799073700E4A8E4 /* CommonApplication.h */,
-				1530E4262799073700E4A8E4 /* CommonApplication.m */,
-				1530E42C279909AA00E4A8E4 /* CommonEntranceManager.h */,
-				1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */,
+				1530E437279912A800E4A8E4 /* Manager */,
+				1530E4362799129D00E4A8E4 /* Application */,
+				1530E4352799128100E4A8E4 /* WindowSceneDelegate */,
+				1530E4342799127300E4A8E4 /* AppDelegate */,
 			);
 			path = Entrance;
 			sourceTree = "<group>";
@@ -268,6 +264,42 @@
 				1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */,
 			);
 			path = BaseEntranceManager;
+			sourceTree = "<group>";
+		};
+		1530E4342799127300E4A8E4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAE627983B3D00511EFD /* CommonAppDelegate.h */,
+				1598CAE927983B3D00511EFD /* CommonAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1530E4352799128100E4A8E4 /* WindowSceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1598CAEA27983B3D00511EFD /* CommonWindowSceneDelegate.h */,
+				1598CAE727983B3D00511EFD /* CommonWindowSceneDelegate.m */,
+			);
+			path = WindowSceneDelegate;
+			sourceTree = "<group>";
+		};
+		1530E4362799129D00E4A8E4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1530E4252799073700E4A8E4 /* CommonApplication.h */,
+				1530E4262799073700E4A8E4 /* CommonApplication.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1530E437279912A800E4A8E4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1530E42C279909AA00E4A8E4 /* CommonEntranceManager.h */,
+				1530E42D279909AA00E4A8E4 /* CommonEntranceManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		153963EC27985984009CFDCB /* CommonBusiness */ = {
