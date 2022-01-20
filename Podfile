@@ -1,7 +1,7 @@
 install! 'cocoapods'
 
 workspace 'Q'
- source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 
@@ -64,6 +64,9 @@ def ThridPartyModules
   # pod 'YYImage'
   # pod 'YYWebImage'
 
+  # 日志框架
+  pod 'CocoaLumberjack', '~>2.4'
+  
   # gRPC
   # pod 'gRPC'
   # pod 'gRPC-Core'
@@ -91,7 +94,9 @@ end
 #------ 开发组件 ------#
 # !!! 不要忘记注释相应的模块
 def DevelopModule
-
+  # 视频播放
+  pod 'QIJKPlayer', :path => './DevelopPods/QIJKPlayer'
+  
 end
 
 # Pods for Q

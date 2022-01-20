@@ -19,9 +19,21 @@
 		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
 		1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E44D2799337E00E4A8E4 /* BusinessModule.m */; };
 		1530E45827993AC100E4A8E4 /* CommonPlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */; };
-		1530E47827996F4200E4A8E4 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47427996ECA00E4A8E4 /* Chronos.framework */; platformFilter = ios; };
-		1530E47927996F4200E4A8E4 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47427996ECA00E4A8E4 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
+		1530E481279970DB00E4A8E4 /* File.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1530E480279970DB00E4A8E4 /* File.xcassets */; };
+		1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4B32799813300E4A8E4 /* libc++.tbd */; };
+		1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47027996E3A00E4A8E4 /* UIKit.framework */; };
+		1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D22799855B00E4A8E4 /* OpenGLES.framework */; };
+		1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */; };
+		1530E4D62799856D00E4A8E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D52799856D00E4A8E4 /* AVFoundation.framework */; };
+		1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D72799857300E4A8E4 /* Metal.framework */; };
+		1530E4DA2799858100E4A8E4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D92799858100E4A8E4 /* CoreMedia.framework */; };
+		1530E4DC2799858800E4A8E4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DB2799858800E4A8E4 /* CoreVideo.framework */; };
+		1530E4DE2799859000E4A8E4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DD2799859000E4A8E4 /* MediaPlayer.framework */; };
+		1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DF279985A000E4A8E4 /* QuartzCore.framework */; };
+		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
+		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
+		1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
 		153963F027985A79009CFDCB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963EF27985A79009CFDCB /* TabBarController.m */; };
 		153963F427985AE0009CFDCB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963F327985AE0009CFDCB /* BaseTabBarController.m */; };
 		1539640027985CBA009CFDCB /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 153963FF27985CBA009CFDCB /* BaseObject.m */; };
@@ -34,6 +46,8 @@
 		1539641C27986268009CFDCB /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1539641B27986268009CFDCB /* ThirdViewController.m */; };
 		1539641F2798627A009CFDCB /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1539641E2798627A009CFDCB /* FeatureViewController.m */; };
 		1539642227986290009CFDCB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1539642127986290009CFDCB /* HomeViewController.m */; };
+		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
+		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAC527983AFF00511EFD /* BaseNavigationController.m */; };
 		1598CAD727983AFF00511EFD /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAC927983AFF00511EFD /* BaseWebView.m */; };
 		1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CACC27983AFF00511EFD /* BaseWindow.m */; };
@@ -42,7 +56,12 @@
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE927983B3D00511EFD /* CommonAppDelegate.m */; };
 		1598CAF027983E0100511EFD /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAEF27983E0100511EFD /* BaseView.m */; };
+		159BFFA42799DAC800406C51 /* BaseLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLog.m */; };
+		159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA62799E1A800406C51 /* LoggerEngine.m */; };
 		15A1A57A27987155007CFF64 /* BaseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1A57927987155007CFF64 /* BaseColor.m */; };
+		15A45CF32799D2B800017F8A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF22799D2B800017F8A /* Logger.m */; };
+		15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF92799D2DF00017F8A /* LoggerSystem.m */; };
+		15A45D052799D36100017F8A /* BaseLogConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45D032799D36100017F8A /* BaseLogConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +82,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1530E47A27996F4200E4A8E4 /* Embed Frameworks */ = {
+		1530E5182799990000E4A8E4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1530E47927996F4200E4A8E4 /* Chronos.framework in Embed Frameworks */,
+				1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,11 +124,22 @@
 		1530E45627993AC100E4A8E4 /* CommonPlayerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonPlayerModule.h; sourceTree = "<group>"; };
 		1530E45727993AC100E4A8E4 /* CommonPlayerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonPlayerModule.m; sourceTree = "<group>"; };
 		1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppStatusProtocol.h; sourceTree = "<group>"; };
-		1530E46627996AE200E4A8E4 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chronos.framework; sourceTree = "<group>"; };
-		1530E46927996B8C00E4A8E4 /* Chronos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Chronos; sourceTree = "<group>"; };
 		1530E47027996E3A00E4A8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1530E47427996ECA00E4A8E4 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = "../chronos/build-ios/Release-iphoneos/Chronos.framework"; sourceTree = "<group>"; };
+		1530E480279970DB00E4A8E4 /* File.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = File.xcassets; path = Resource/File.xcassets; sourceTree = "<group>"; };
+		1530E4B32799813300E4A8E4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1530E4D22799855B00E4A8E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1530E4D52799856D00E4A8E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1530E4D72799857300E4A8E4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		1530E4D92799858100E4A8E4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1530E4DB2799858800E4A8E4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1530E4DD2799859000E4A8E4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1530E4DF279985A000E4A8E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		153963EE27985A79009CFDCB /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		153963EF27985A79009CFDCB /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		153963F227985AE0009CFDCB /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -134,6 +164,7 @@
 		1539641E2798627A009CFDCB /* FeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureViewController.m; sourceTree = "<group>"; };
 		1539642027986290009CFDCB /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1539642127986290009CFDCB /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1598CAC527983AFF00511EFD /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1598CAC627983AFF00511EFD /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1598CAC827983AFF00511EFD /* BaseWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebView.h; sourceTree = "<group>"; };
@@ -148,8 +179,18 @@
 		1598CAE927983B3D00511EFD /* CommonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAppDelegate.m; sourceTree = "<group>"; };
 		1598CAEE27983E0100511EFD /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		1598CAEF27983E0100511EFD /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		159BFFA22799DAC800406C51 /* BaseLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLog.m; sourceTree = "<group>"; };
+		159BFFA32799DAC800406C51 /* BaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLog.h; sourceTree = "<group>"; };
+		159BFFA52799E1A800406C51 /* LoggerEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerEngine.h; sourceTree = "<group>"; };
+		159BFFA62799E1A800406C51 /* LoggerEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerEngine.m; sourceTree = "<group>"; };
 		15A1A57827987155007CFF64 /* BaseColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseColor.h; sourceTree = "<group>"; };
 		15A1A57927987155007CFF64 /* BaseColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseColor.m; sourceTree = "<group>"; };
+		15A45CF12799D2B800017F8A /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		15A45CF22799D2B800017F8A /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		15A45CF42799D2DF00017F8A /* LoggerSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerSystem.h; sourceTree = "<group>"; };
+		15A45CF92799D2DF00017F8A /* LoggerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerSystem.m; sourceTree = "<group>"; };
+		15A45D032799D36100017F8A /* BaseLogConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogConfiguration.m; sourceTree = "<group>"; };
+		15A45D042799D36100017F8A /* BaseLogConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogConfiguration.h; sourceTree = "<group>"; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
 		E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,8 +201,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1530E4D62799856D00E4A8E4 /* AVFoundation.framework in Frameworks */,
+				1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */,
+				1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */,
+				1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */,
+				1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */,
+				1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */,
+				1530E4DA2799858100E4A8E4 /* CoreMedia.framework in Frameworks */,
 				1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */,
-				1530E47827996F4200E4A8E4 /* Chronos.framework in Frameworks */,
+				1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */,
+				1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */,
+				1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */,
+				1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */,
+				1530E4DC2799858800E4A8E4 /* CoreVideo.framework in Frameworks */,
+				1530E4DE2799859000E4A8E4 /* MediaPlayer.framework in Frameworks */,
+				1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +248,10 @@
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
-				1530E46927996B8C00E4A8E4 /* Chronos */,
-				15277E552798223300FA882E /* Q */,
-				15277E542798223300FA882E /* Products */,
-				12D629AB8FEE2E57BD3F0259 /* Pods */,
 				F117ED212ED8CC3B2B2E7D2A /* Frameworks */,
+				12D629AB8FEE2E57BD3F0259 /* Pods */,
+				15277E542798223300FA882E /* Products */,
+				15277E552798223300FA882E /* Q */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,8 +271,8 @@
 				15277E622798223400FA882E /* Assets.xcassets */,
 				15277E672798223400FA882E /* Info.plist */,
 				1598CAE827983B3D00511EFD /* main.m */,
+				1598CAE327983B2000511EFD /* LaunchScreen.storyboard */,
 				1598CADC27983B1400511EFD /* src */,
-				1598CAE227983B2000511EFD /* storyboard */,
 			);
 			path = Q;
 			sourceTree = "<group>";
@@ -403,14 +456,23 @@
 			path = BaseProtocol;
 			sourceTree = "<group>";
 		};
+		1530E47F2799708A00E4A8E4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		153963EC27985984009CFDCB /* CommonBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				1530E47F2799708A00E4A8E4 /* Resource */,
 				1530E44F2799373E00E4A8E4 /* Module */,
 				1530E41C2799050500E4A8E4 /* Entrance */,
 				153963FB27985C77009CFDCB /* View */,
 				153963FA27985C6E009CFDCB /* ViewController */,
 				153963F927985C5A009CFDCB /* Controller */,
+				1530E480279970DB00E4A8E4 /* File.xcassets */,
 			);
 			path = CommonBusiness;
 			sourceTree = "<group>";
@@ -585,6 +647,16 @@
 		1598CABB27983AFF00511EFD /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				159BFFA52799E1A800406C51 /* LoggerEngine.h */,
+				159BFFA62799E1A800406C51 /* LoggerEngine.m */,
+				159BFFA32799DAC800406C51 /* BaseLog.h */,
+				159BFFA22799DAC800406C51 /* BaseLog.m */,
+				15A45D042799D36100017F8A /* BaseLogConfiguration.h */,
+				15A45D032799D36100017F8A /* BaseLogConfiguration.m */,
+				15A45CF42799D2DF00017F8A /* LoggerSystem.h */,
+				15A45CF92799D2DF00017F8A /* LoggerSystem.m */,
+				15A45CF12799D2B800017F8A /* Logger.h */,
+				15A45CF22799D2B800017F8A /* Logger.m */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -739,14 +811,6 @@
 			path = business;
 			sourceTree = "<group>";
 		};
-		1598CAE227983B2000511EFD /* storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				1598CAE327983B2000511EFD /* LaunchScreen.storyboard */,
-			);
-			path = storyboard;
-			sourceTree = "<group>";
-		};
 		15A1A5772798713E007CFF64 /* BaseColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -759,10 +823,22 @@
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1530E47427996ECA00E4A8E4 /* Chronos.framework */,
+				1596B77A2799BF8500C28DF6 /* Chronos.framework */,
+				1530E4E827998D7E00E4A8E4 /* libbz2.tbd */,
+				1530E4E727998D7400E4A8E4 /* libz.tbd */,
+				1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */,
+				1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */,
+				1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */,
+				1530E4DF279985A000E4A8E4 /* QuartzCore.framework */,
+				1530E4DD2799859000E4A8E4 /* MediaPlayer.framework */,
+				1530E4DB2799858800E4A8E4 /* CoreVideo.framework */,
+				1530E4D92799858100E4A8E4 /* CoreMedia.framework */,
+				1530E4D72799857300E4A8E4 /* Metal.framework */,
+				1530E4D52799856D00E4A8E4 /* AVFoundation.framework */,
+				1530E4D22799855B00E4A8E4 /* OpenGLES.framework */,
+				1530E4B32799813300E4A8E4 /* libc++.tbd */,
 				1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */,
 				1530E47027996E3A00E4A8E4 /* UIKit.framework */,
-				1530E46627996AE200E4A8E4 /* Chronos.framework */,
 				E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */,
 			);
 			name = Frameworks;
@@ -781,7 +857,7 @@
 				15277E502798223300FA882E /* Frameworks */,
 				15277E512798223300FA882E /* Resources */,
 				D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */,
-				1530E47A27996F4200E4A8E4 /* Embed Frameworks */,
+				1530E5182799990000E4A8E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -876,6 +952,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */,
+				1530E481279970DB00E4A8E4 /* File.xcassets in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,7 +1004,7 @@
 			name = "[CP-User] Run Flutter Build flutter_module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/DevelopPods/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/DevelopPods/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -956,12 +1033,14 @@
 				1539640327985CFD009CFDCB /* MineNavigationController.m in Sources */,
 				1598CAD727983AFF00511EFD /* BaseWebView.m in Sources */,
 				1539640C27985DA5009CFDCB /* HomeNavigationController.m in Sources */,
+				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
 				1539641927986256009CFDCB /* MineViewController.m in Sources */,
 				1539640027985CBA009CFDCB /* BaseObject.m in Sources */,
 				1539642227986290009CFDCB /* HomeViewController.m in Sources */,
 				1530E42E279909AA00E4A8E4 /* CommonEntranceManager.m in Sources */,
 				15396412279860A3009CFDCB /* TabBarControllerDataProvider.m in Sources */,
 				15A1A57A27987155007CFF64 /* BaseColor.m in Sources */,
+				159BFFA42799DAC800406C51 /* BaseLog.m in Sources */,
 				1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */,
 				1530E44E2799337E00E4A8E4 /* BusinessModule.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
@@ -982,7 +1061,10 @@
 				1598CAED27983B3D00511EFD /* CommonAppDelegate.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1598CAF027983E0100511EFD /* BaseView.m in Sources */,
+				159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */,
 				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
+				15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */,
+				15A45D052799D36100017F8A /* BaseLogConfiguration.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,6 +1219,7 @@
 				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
@@ -1167,15 +1250,21 @@
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Q/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于搜索附近设备";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "用于搜索附近设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍照、扫一扫";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "用于下载";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1190,12 +1279,189 @@
 					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/glm/Release-iphoneos",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X.X;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX/FLEX.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch/JSPatch.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LookinServer/LookinServer.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning/RegexKitLite_NoWarning.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/flutter_module/.ios/Flutter/engine\"",
+					"-iframework",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LookinServer\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/QIJKPlayer/QIJKPlayer/SDK\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge\"",
+					"-iframework",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/flutter_module/.ios/Flutter\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"iconv\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"App\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FLEX\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Flutter\"",
+					"-framework",
+					"\"FlutterPluginRegistrant\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"JSPatch\"",
+					"-framework",
+					"\"LookinServer\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"RegexKitLite_NoWarning\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SSZipArchive\"",
+					"-framework",
+					"\"SceneKit\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"WebViewJavascriptBridge\"",
+					"-framework",
+					"\"YYKit\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				USE_HEADERMAP = YES;
 			};
 			name = Debug;
 		};
@@ -1207,6 +1473,7 @@
 				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
@@ -1235,15 +1502,21 @@
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Q/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于搜索附近设备";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "用于搜索附近设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍照、扫一扫";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "用于下载";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1258,12 +1531,175 @@
 					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/glm/Release-iphoneos",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X.X;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch/JSPatch.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning/RegexKitLite_NoWarning.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/flutter_module/.ios/Flutter/engine\"",
+					"-iframework",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSPatch\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/QIJKPlayer/QIJKPlayer/SDK\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RegexKitLite-NoWarning\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WebViewJavascriptBridge\"",
+					"-iframework",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
+					"-iframework",
+					"\"${PODS_ROOT}/../DevelopPods/flutter_module/.ios/Flutter\"",
+					"-iframework",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"iconv\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"App\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Flutter\"",
+					"-framework",
+					"\"FlutterPluginRegistrant\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"JSPatch\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"RegexKitLite_NoWarning\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SSZipArchive\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"WebViewJavascriptBridge\"",
+					"-framework",
+					"\"YYKit\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				USE_HEADERMAP = YES;
 			};
 			name = Release;
 		};

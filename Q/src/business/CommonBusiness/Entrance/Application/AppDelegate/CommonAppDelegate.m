@@ -28,7 +28,6 @@
 
 - (BOOL)application:(BaseApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-  
   [self.commonEntranceManager launchWithApplication:application];
   [self.commonEntranceManager onAppLaunch];
   
