@@ -9,7 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseApplicationDelegate : UIResponder <UIApplicationDelegate>
+@class BaseEntranceManager;
+
+@protocol BaseApplicationEntranceProtocol <NSObject>
+
+@required
+- (BaseEntranceManager *)onDelegateInit;
+
+@end
+
+@interface BaseApplicationDelegate : UIResponder <UIApplicationDelegate, BaseApplicationEntranceProtocol>
+
+@property (nonatomic, strong, readonly) BaseEntranceManager *entranceManager;
 
 @end
 

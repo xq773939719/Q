@@ -8,5 +8,7 @@
 #ifndef CommonHeader_h
 #define CommonHeader_h
 
+#import "CommonApplicationDelegate.h"
+#import "CommonEntranceManager.h"
 
 #endif /* CommonHeader_h */

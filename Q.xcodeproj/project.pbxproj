@@ -18,13 +18,12 @@
 		1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F173279A756C00A7482A /* TabBarControllerDataProvider.m */; };
 		1527F195279A756C00A7482A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F178279A756C00A7482A /* HomeViewController.m */; };
 		1527F196279A756C00A7482A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F17C279A756C00A7482A /* ThirdViewController.m */; };
-		1527F197279A756C00A7482A /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F17D279A756C00A7482A /* LearnViewController.m */; };
 		1527F198279A756C00A7482A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F180279A756C00A7482A /* MineViewController.m */; };
 		1527F199279A756C00A7482A /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F183279A756C00A7482A /* FeatureViewController.m */; };
-		1527F19A279A756C00A7482A /* BusinessEntaranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F188279A756C00A7482A /* BusinessEntaranceManager.m */; };
-		1527F19B279A756C00A7482A /* CommonApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F18A279A756C00A7482A /* CommonApplication.m */; };
-		1527F19C279A756C00A7482A /* CommonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F18C279A756C00A7482A /* CommonAppDelegate.m */; };
+		1527F19A279A756C00A7482A /* BizEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F188279A756C00A7482A /* BizEntranceManager.m */; };
+		1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */; };
 		1527F19F279A75D400A7482A /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F19D279A75D400A7482A /* BusinessModule.m */; };
+		1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */; };
 		1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */; };
 		1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4232799071400E4A8E4 /* BaseApplication.m */; };
 		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
@@ -119,22 +118,18 @@
 		1527F171279A756C00A7482A /* TabBarControllerDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerDataProvider.h; sourceTree = "<group>"; };
 		1527F172279A756C00A7482A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		1527F173279A756C00A7482A /* TabBarControllerDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerDataProvider.m; sourceTree = "<group>"; };
-		1527F176279A756C00A7482A /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
 		1527F178279A756C00A7482A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1527F179279A756C00A7482A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1527F17B279A756C00A7482A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		1527F17C279A756C00A7482A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		1527F17D279A756C00A7482A /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		1527F17F279A756C00A7482A /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		1527F180279A756C00A7482A /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		1527F182279A756C00A7482A /* FeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
 		1527F183279A756C00A7482A /* FeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureViewController.m; sourceTree = "<group>"; };
-		1527F187279A756C00A7482A /* BusinessEntaranceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessEntaranceManager.h; sourceTree = "<group>"; };
-		1527F188279A756C00A7482A /* BusinessEntaranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessEntaranceManager.m; sourceTree = "<group>"; };
-		1527F18A279A756C00A7482A /* CommonApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonApplication.m; sourceTree = "<group>"; };
-		1527F18C279A756C00A7482A /* CommonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAppDelegate.m; sourceTree = "<group>"; };
-		1527F18D279A756C00A7482A /* CommonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAppDelegate.h; sourceTree = "<group>"; };
-		1527F18E279A756C00A7482A /* CommonApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonApplication.h; sourceTree = "<group>"; };
+		1527F187279A756C00A7482A /* BizEntranceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizEntranceManager.h; sourceTree = "<group>"; };
+		1527F188279A756C00A7482A /* BizEntranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BizEntranceManager.m; sourceTree = "<group>"; };
+		1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessApplicationDelegate.m; sourceTree = "<group>"; };
+		1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessApplicationDelegate.h; sourceTree = "<group>"; };
 		1527F19D279A75D400A7482A /* BusinessModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModule.m; sourceTree = "<group>"; };
 		1527F19E279A75D400A7482A /* BusinessModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModule.h; sourceTree = "<group>"; };
 		1527F1A1279A775400A7482A /* BaseModuleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleHeader.h; sourceTree = "<group>"; };
@@ -143,6 +138,8 @@
 		1527F1AC279A7DBE00A7482A /* LoggerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerHeader.h; sourceTree = "<group>"; };
 		1527F1AD279A7EE900A7482A /* BaseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
 		1527F1AE279A805B00A7482A /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		1527F1B0279A855800A7482A /* CommonApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonApplicationDelegate.h; sourceTree = "<group>"; };
+		1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonApplicationDelegate.m; sourceTree = "<group>"; };
 		1530E4192799046900E4A8E4 /* BaseApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplicationDelegate.h; sourceTree = "<group>"; };
 		1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplicationDelegate.m; sourceTree = "<group>"; };
 		1530E4222799071400E4A8E4 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
@@ -311,17 +308,10 @@
 		1527F135279A714800A7482A /* CommonKit */ = {
 			isa = PBXGroup;
 			children = (
-				1527F139279A714800A7482A /* CommonEntrance */,
+				1527F13A279A714800A7482A /* CommonEntranceManager */,
+				1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */,
 			);
 			path = CommonKit;
-			sourceTree = "<group>";
-		};
-		1527F139279A714800A7482A /* CommonEntrance */ = {
-			isa = PBXGroup;
-			children = (
-				1527F13A279A714800A7482A /* CommonEntranceManager */,
-			);
-			path = CommonEntrance;
 			sourceTree = "<group>";
 		};
 		1527F13A279A714800A7482A /* CommonEntranceManager */ = {
@@ -336,8 +326,8 @@
 		1527F161279A756C00A7482A /* BizBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				1527F186279A756C00A7482A /* BizEntranceManager */,
 				1527F162279A756C00A7482A /* Controller */,
-				1527F184279A756C00A7482A /* Entrance */,
 				1527F174279A756C00A7482A /* View */,
 				1527F175279A756C00A7482A /* ViewController */,
 			);
@@ -413,10 +403,8 @@
 		1527F175279A756C00A7482A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1527F176279A756C00A7482A /* LearnViewController.h */,
 				1527F177279A756C00A7482A /* Home */,
 				1527F17A279A756C00A7482A /* Third */,
-				1527F17D279A756C00A7482A /* LearnViewController.m */,
 				1527F17E279A756C00A7482A /* Mine */,
 				1527F181279A756C00A7482A /* Feature */,
 			);
@@ -459,41 +447,13 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		1527F184279A756C00A7482A /* Entrance */ = {
+		1527F186279A756C00A7482A /* BizEntranceManager */ = {
 			isa = PBXGroup;
 			children = (
-				1527F186279A756C00A7482A /* BusinessEntranceManager */,
-				1527F189279A756C00A7482A /* Application */,
+				1527F187279A756C00A7482A /* BizEntranceManager.h */,
+				1527F188279A756C00A7482A /* BizEntranceManager.m */,
 			);
-			path = Entrance;
-			sourceTree = "<group>";
-		};
-		1527F186279A756C00A7482A /* BusinessEntranceManager */ = {
-			isa = PBXGroup;
-			children = (
-				1527F187279A756C00A7482A /* BusinessEntaranceManager.h */,
-				1527F188279A756C00A7482A /* BusinessEntaranceManager.m */,
-			);
-			path = BusinessEntranceManager;
-			sourceTree = "<group>";
-		};
-		1527F189279A756C00A7482A /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				1527F18A279A756C00A7482A /* CommonApplication.m */,
-				1527F18B279A756C00A7482A /* AppDelegate */,
-				1527F18E279A756C00A7482A /* CommonApplication.h */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		1527F18B279A756C00A7482A /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1527F18C279A756C00A7482A /* CommonAppDelegate.m */,
-				1527F18D279A756C00A7482A /* CommonAppDelegate.h */,
-			);
-			path = AppDelegate;
+			path = BizEntranceManager;
 			sourceTree = "<group>";
 		};
 		1527F1A7279A7CAE00A7482A /* LoggerEngine */ = {
@@ -539,6 +499,15 @@
 				15A45CF92799D2DF00017F8A /* LoggerSystem.m */,
 			);
 			path = LoggerSystem;
+			sourceTree = "<group>";
+		};
+		1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1527F1B0279A855800A7482A /* CommonApplicationDelegate.h */,
+				1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */,
+			);
+			path = CommonApplicationDelegate;
 			sourceTree = "<group>";
 		};
 		1530E4172799034000E4A8E4 /* BaseFoundation */ = {
@@ -870,6 +839,8 @@
 		1598CADD27983B1400511EFD /* business */ = {
 			isa = PBXGroup;
 			children = (
+				1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */,
+				1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */,
 				1527F161279A756C00A7482A /* BizBusiness */,
 			);
 			path = business;
@@ -1101,20 +1072,20 @@
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				1598CAD627983AFF00511EFD /* BaseNavigationController.m in Sources */,
-				1527F19A279A756C00A7482A /* BusinessEntaranceManager.m in Sources */,
+				1527F19A279A756C00A7482A /* BizEntranceManager.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1598CAD827983AFF00511EFD /* BaseWindow.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				1530E4242799071400E4A8E4 /* BaseApplication.m in Sources */,
-				1527F19C279A756C00A7482A /* CommonAppDelegate.m in Sources */,
+				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				153963F427985AE0009CFDCB /* BaseTabBarController.m in Sources */,
 				1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */,
-				1527F19B279A756C00A7482A /* CommonApplication.m in Sources */,
 				1598CAD927983AFF00511EFD /* BaseViewController.m in Sources */,
+				1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */,
 				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
@@ -1129,7 +1100,6 @@
 				15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */,
 				15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
-				1527F197279A756C00A7482A /* LearnViewController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
 			);

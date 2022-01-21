@@ -1,15 +1,15 @@
 //
-//  BusinessEntaranceManager.m
+//  BizEntaranceManager.m
 //  Q
 //
 //  Created by XQ on 2022/1/21.
 //
 
-#import "BusinessEntaranceManager.h"
+#import "BizEntranceManager.h"
 
 #import "TabBarController.h"
 
-@implementation BusinessEntaranceManager
+@implementation BizEntranceManager
 
 - (void)launchWithApplication:(BaseApplication *)application {
   [super launchWithApplication:application];
