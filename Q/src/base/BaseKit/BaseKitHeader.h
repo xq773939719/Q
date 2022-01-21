@@ -10,6 +10,6 @@
 
 #import "BaseApplicationDelegate/BaseApplicationDelegate.h"
 #import "BaseEntranceManager/BaseEntranceManager.h"
-#import "BaseApplication/UIApplication+Base.h"
+#import "Application/UIApplication+Base.h"
 
 #endif /* BaseKitHeader_h */

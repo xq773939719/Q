@@ -48,6 +48,11 @@
   [self.view addSubview:self.playerController.view];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
+  [self.playerController stop];
+}
+
 @end
 
 /*

@@ -41,16 +41,15 @@ def ThridPartyModules
   pod 'Masonry'
 
   # 响应式
-  pod 'ReactiveCocoa'
+  pod 'ReactiveObjC'
 
   # 图片
   pod 'SDWebImage'
 
   # 动画
-  pod 'lottie-ios'
+  pod 'lottie-ios', '<= 2.5.3'
 
   # 数据解析
-  pod 'SwiftyJSON'
   pod 'JSONModel'
 
   # 数据库
@@ -64,6 +63,12 @@ def ThridPartyModules
   # pod 'YYImage'
   # pod 'YYWebImage'
 
+  # FaceBook SDK
+  pod 'FBSDKCoreKit'
+  
+  # Firebase SDK
+  pod 'Firebase'
+  
   # 日志框架
   pod 'CocoaLumberjack', '<= 3.0'
   
@@ -79,8 +84,8 @@ def ThridPartyModules
   pod 'Toast'
 
   # JS热修复 交互
-  pod 'JSPatch'
-  pod 'WebViewJavascriptBridge'
+  # pod 'JSPatch'
+  # pod 'WebViewJavascriptBridge'
 
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
