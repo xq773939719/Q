@@ -29,13 +29,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  [self addTextField];
-  
+  [self addTextField]; 
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  
+  self.tabBarController.tabBar.hidden = NO;
   NSTimeInterval time = 2;
   [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
     FlutterViewController *flutterVC = [[FlutterViewController alloc]init];
@@ -45,6 +44,7 @@
     [self.view addSubview:flutterVC.view];
     [self.navigationController pushViewController:flutterVC animated:YES];
     self.navigationController.navigationBar.hidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
   } repeats:NO];
 }
 
