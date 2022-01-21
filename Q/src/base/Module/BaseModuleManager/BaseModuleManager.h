@@ -7,12 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BaseObject.h"
 #import "BaseModule.h"
+#import "BaseAppStatusProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseModuleManager: BaseObject
+@interface BaseModuleManager: NSObject <BaseAppStatusProtocal>
 
 + (instancetype)share;
 

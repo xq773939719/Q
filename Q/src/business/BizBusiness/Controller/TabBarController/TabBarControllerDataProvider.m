@@ -15,7 +15,7 @@
 
 @implementation TabBarControllerDataProvider
 
-- (NSArray<BaseNavigationController *> *)childViewControllers {
+- (NSArray<UINavigationController *> *)childViewControllers {
   return @[
     [HomeNavigationController share],
     [FeatureNavigationController share],

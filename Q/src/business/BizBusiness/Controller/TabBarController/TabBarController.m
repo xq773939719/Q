@@ -40,8 +40,8 @@
 
 - (void)initViewController {
   self.dataProvider = [TabBarControllerDataProvider new];
-  NSArray<BaseNavigationController *> *childViewControllers = [self.dataProvider childViewControllers];
-  for (BaseViewController* childViewController in childViewControllers) {
+  NSArray<UINavigationController *> *childViewControllers = [self.dataProvider childViewControllers];
+  for (UIViewController* childViewController in childViewControllers) {
     [self addChildViewController:childViewController];
   }
   

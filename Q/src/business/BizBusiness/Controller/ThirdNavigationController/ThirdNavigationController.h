@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ThirdNavigationController : BaseNavigationController
+@interface ThirdNavigationController : UINavigationController
 
 + (instancetype)share;
 

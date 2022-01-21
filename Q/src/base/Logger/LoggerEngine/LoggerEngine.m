@@ -7,24 +7,62 @@
 
 #import "LoggerEngine.h"
 
-#import "BaseLogConfiguration.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "BaseLoggerConfiguration.h"
+
+#import "DDLog.h"
+#import "DDMultiFormatter.h"
+#import "DDDispatchQueueLogFormatter.h"
+#import "DDTTYLogger.h"
+#import "DDFileLogger.h"
+
+#import "LoggerFileManager.h"
 
 @interface LoggerEngine ()
 
 @property (nonatomic, strong) DDLog *log;
+@property (nonatomic, strong) DDFileLogger *fileLogger;
 
 @end
 
 @implementation LoggerEngine
 
-- (instancetype)initWithConfiguration:(BaseLogConfiguration *)configuration {
+- (instancetype)initWithConfiguration:(BaseLoggerConfiguration *)configuration {
   self = [super init];
   if (self) {
-    self.log = [DDLog new];
+    [self initLog:configuration];
+    [self initFileLogger:configuration];
   }
   
   return self;
+}
+
+- (void)initLog:(BaseLoggerConfiguration *)configuration {
+  if (configuration.logDirectory) {
+    self.log = [DDLog new];
+  } else {
+    self.log = [DDLog sharedInstance];
+  }
+  [self.log addLogger:[DDTTYLogger sharedInstance] withLevel:(DDLogLevel)configuration.ttylevel];
+  [self.log addLogger:[DDTTYLogger sharedInstance] withLevel:(DDLogLevel)configuration.aslevel];
+}
+
+- (void)initFileLogger:(BaseLoggerConfiguration *)configuration {
+  DDMultiFormatter *formatter = [DDMultiFormatter new];
+  [formatter addFormatter:[[DDDispatchQueueLogFormatter alloc] initWithMode:DDDispatchQueueLogFormatterModeNonShareble]];
+  if (!self.fileLogger) {
+    LoggerFileManager *fileManager = nil;
+    if (configuration.logDirectory) {
+      fileManager = [[LoggerFileManager alloc] initWithLogsDirectory:configuration.logDirectory];
+    } else {
+      fileManager = [[LoggerFileManager alloc] init];
+    }
+    self.fileLogger = [[DDFileLogger alloc] initWithLogFileManager:fileManager];
+    self.fileLogger.logFormatter = formatter;
+    self.fileLogger.maximumFileSize = 2 * 1024 * 1024;
+    self.fileLogger.logFileManager.maximumNumberOfLogFiles = configuration.maximumNumberOfLogFiles;
+    self.fileLogger.logFileManager.logFilesDiskQuota = configuration.limitOfSizeInMetaBytes * 1024 * 1024;
+    self.fileLogger.doNotReuseLogFiles = YES;
+  }
 }
 
 - (void)log:(BOOL)asynchronous level:(LoggerLevel)level flag:(LoggerFlag) flag file:(const char *)file function:(const char *)function line:(NSUInteger)line tag:(NSString *)tag format:(NSString *)format, ... {

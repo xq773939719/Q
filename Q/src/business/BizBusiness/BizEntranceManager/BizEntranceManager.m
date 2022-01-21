@@ -11,24 +11,17 @@
 
 @implementation BizEntranceManager
 
-- (void)launchWithApplication:(BaseApplication *)application {
+- (void)launchWithApplication:(UIApplication *)application {
   [super launchWithApplication:application];
   TabBarController *tabBarController = [TabBarController share];
-  
-  application.window = [[BaseWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
+  application.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
   application.window.backgroundColor = UIColor.whiteColor;
   application.window.rootViewController = tabBarController;
   [application.window makeKeyAndVisible];
 }
 
-- (void)registerModules {
-  [super registerModules];
-  NSArray *businessModules = @[
-    
-  ];
-  [BaseModuleManager registerModules:businessModules
-                               level:BaseModuleLevelBusiness];
+- (NSArray<Class> *)businessModules {
+  return @[];
 }
-
 
 @end

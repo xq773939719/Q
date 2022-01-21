@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TabBarController : BaseTabBarController
+@interface TabBarController : UITabBarController
 
 + (instancetype)share;
 

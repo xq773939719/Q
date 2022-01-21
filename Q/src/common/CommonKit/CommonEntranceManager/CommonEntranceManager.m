@@ -7,23 +7,38 @@
 
 #import "CommonEntranceManager.h"
 
-#import "LoggerModule.h"
 #import "PlayerModule.h"
 
 @implementation CommonEntranceManager
 
-- (void)launchWithApplication:(BaseApplication *)application {
+- (void)launchWithApplication:(UIApplication *)application {
   [super launchWithApplication:application];
 }
 
 - (void)registerModules {
   [super registerModules];
+  
+  // 注册系统组件
+  NSArray *systemModuls = @[
+    
+  ];
+  [BaseModuleManager registerModules:systemModuls
+                               level:BaseModuleLevelSystem];
+  
+  // 注册通用组件
   NSArray *commonModules = @[
-    [LoggerModule class],
     [PlayerModule class],
   ];
   [BaseModuleManager registerModules:commonModules
                                level:BaseModuleLevelCommon];
+  
+  // 业务组件延迟到在子类注册
+  [BaseModuleManager registerModules:[self businessModules]
+                               level:BaseModuleLevelBusiness];
+}
+
+- (NSArray<Class> *)businessModules {
+  return @[];
 }
 
 @end

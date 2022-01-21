@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseObject.h"
+
+#import "BaseAppStatusProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,7 +29,7 @@ typedef NS_ENUM(NSUInteger, BaseModuleLevel) {
 
 @end
 
-@interface BaseModule : BaseObject <BaseModuleProtocol>
+@interface BaseModule : NSObject <BaseModuleProtocol, BaseAppStatusProtocal>
 
 - (instancetype)initWithConfig:(NSDictionary *)config;
 

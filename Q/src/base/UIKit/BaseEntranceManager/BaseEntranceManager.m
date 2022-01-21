@@ -10,7 +10,7 @@
 
 @implementation BaseEntranceManager
 
-- (void)launchWithApplication:(BaseApplication *)application{
+- (void)launchWithApplication:(UIApplication *)application{
   [self registerModules];
   [self createModules];
 }

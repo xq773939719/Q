@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class BaseLogConfiguration;
+@class BaseLoggerConfiguration;
 
 typedef void (^LoggerCheckHandler)(NSString *message);
 
@@ -19,7 +19,7 @@ typedef void (^LoggerCheckHandler)(NSString *message);
 
 @property (nonatomic, strong) LoggerCheckHandler checkHandler;
 
-- (instancetype)initWithConfiguration:(BaseLogConfiguration *)configuration;
+- (instancetype)initWithConfiguration:(BaseLoggerConfiguration *)configuration;
 
 - (void)log:(BOOL)asynchronous level:(LoggerLevel)level flag:(LoggerFlag)flag file:(const char *)file function:(const char *)function line:(NSUInteger)line tag:(NSString *)tag format:(NSString *)format args:(va_list)args;
 

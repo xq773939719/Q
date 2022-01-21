@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BaseNavigationController;
 
-@interface TabBarControllerDataProvider : BaseObject
+@interface TabBarControllerDataProvider : NSObject
 
-- (NSArray<BaseNavigationController *> *)childViewControllers;
+- (NSArray<UINavigationController *> *)childViewControllers;
 
 @end
 

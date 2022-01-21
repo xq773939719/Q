@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 typedef NS_OPTIONS(NSUInteger, LoggerFlag){
   LoggerFlagError      = (1 << 0),
   LoggerFlagWarn    = (1 << 1),
@@ -59,5 +57,3 @@ void SetLoggerSystem(id<LoggerSystemProtocol> loggerSystem);
 
 void LoggerOutput(LoggerLevel flag, const char * file, const char * function, NSUInteger line, id tag, NSString * format, ...);
 void LoggerOutputV(LoggerLevel flag, const char * file, const char * function, NSUInteger line, id tag, NSString * format, va_list args);
-
-NS_ASSUME_NONNULL_END

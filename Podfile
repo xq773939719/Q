@@ -65,7 +65,7 @@ def ThridPartyModules
   # pod 'YYWebImage'
 
   # 日志框架
-  pod 'CocoaLumberjack', '~>2.4'
+  pod 'CocoaLumberjack', '<= 3.0'
   
   # gRPC
   # pod 'gRPC'

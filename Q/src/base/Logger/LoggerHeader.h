@@ -8,10 +8,11 @@
 #ifndef LoggerHeader_h
 #define LoggerHeader_h
 
-#import "LoggerEngine.h"
-#import "BaseLoggerConfiguration.h"
 #import "BaseLogger/BaseLogger.h"
-#import "LoggerSystem/LoggerSystem.h"
 #import "Logger/Logger.h"
+
+//#import "BaseLoggerConfiguration.h"
+//#import "LoggerEngine/LoggerEngine.h"
+//#import "LoggerSystem/LoggerSystem.h"
 
 #endif /* LoggerHeader_h */

@@ -12,9 +12,10 @@
 int main(int argc, char * argv[]) {
   NSString * appDelegateClassName;
   NSString * applicationClassName;
+  LoggerEngineDefaultCreate(0, YES, YES);
   @autoreleasepool {
-    // Setup code that might create autoreleased objects goes here.
-    applicationClassName = NSStringFromClass([BaseApplication class]);
+    LoggerVerbose(@"[main] -> %@", @"启动");
+    applicationClassName = NSStringFromClass([UIApplication class]);
     appDelegateClassName = NSStringFromClass([BusinessApplicationDelegate class]);
   }
   

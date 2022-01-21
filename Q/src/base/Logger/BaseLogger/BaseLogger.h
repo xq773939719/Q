@@ -22,4 +22,4 @@ FOUNDATION_EXTERN void LoggerInnerDebugV(const char *file, const char *function,
 FOUNDATION_EXTERN void LoggerInnerVerboseV(const char *file, const char *function, NSUInteger line, id tag, NSString *fmt, va_list args) NS_FORMAT_FUNCTION(5,0);
 
 FOUNDATION_EXTERN LoggerEngine *LoggerEngineDefault(void);
-FOUNDATION_EXTERN void LoggerEngineDefaultCreate(void);
+FOUNDATION_EXTERN void LoggerEngineDefaultCreate(NSInteger limitOfSizeInMetaBytes, BOOL mmapEnabled, BOOL zipEnabled);

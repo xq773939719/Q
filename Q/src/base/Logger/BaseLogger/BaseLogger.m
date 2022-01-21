@@ -96,10 +96,13 @@ LoggerEngine *LoggerEngineDefault() {
   return defaultEngine;
 }
 
-void LoggerEngineDefaultCreate() {
+void LoggerEngineDefaultCreate(NSInteger limitOfSizeInMetaBytes, BOOL mmapEnabled, BOOL zipEnabled) {
   BaseLoggerConfiguration *configuration = [BaseLoggerConfiguration defaultConfiguration];
+  if (limitOfSizeInMetaBytes != 0) {
+    configuration.limitOfSizeInMetaBytes = limitOfSizeInMetaBytes;
+  }
+  configuration.mmapEnabled = mmapEnabled;
+  configuration.zipEnabled = zipEnabled;
   defaultEngine = [[LoggerEngine alloc] initWithConfiguration:configuration];
   SetLoggerSystem([LoggerSystem new]);
 }
-
-

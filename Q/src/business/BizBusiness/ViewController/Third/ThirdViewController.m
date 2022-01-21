@@ -19,7 +19,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.view.backgroundColor = [BaseColor blueColor];
+  self.view.backgroundColor = [UIColor blueColor];
 }
 
 @end
