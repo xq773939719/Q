@@ -9,6 +9,7 @@
 
 @interface FeatureViewController ()
 
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 @implementation FeatureViewController
@@ -29,14 +30,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  [self addTextField]; 
+  [self addTextField];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
   self.tabBarController.tabBar.hidden = NO;
   NSTimeInterval time = 2;
-  [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
+  self.timer = [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
     FlutterViewController *flutterVC = [[FlutterViewController alloc]init];
     [self addChildViewController:flutterVC];
     flutterVC.view.frame = self.view.bounds;
@@ -46,6 +47,11 @@
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
   } repeats:NO];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
+  [self.timer invalidate];
 }
 
 @end
