@@ -8,7 +8,6 @@
 #import <Foundation/Foundation.h>
 
 #import "BaseAppStatusProtocol.h"
-#import "Logger.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

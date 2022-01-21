@@ -103,16 +103,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3961D01D-9DFD-4BA2-8041-CB3AA8C643D7"
+            uuid = "059D61E1-8A4F-4A3F-A6DD-19DBE149B64A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Q/src/base/Logger/LoggerEngine.m"
+            filePath = "Q/src/business/BizBusiness/Entrance/BusinessEntranceManager/BusinessEntaranceManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-log:level:flag:file:function:line:tag:format:args:"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "-launchWithApplication:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
