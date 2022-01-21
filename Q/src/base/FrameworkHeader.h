@@ -32,6 +32,10 @@
 #import "DDFileLogger.h"
 //
 
+#import <Flutter/Flutter.h>
+#import <Chronos/Chronos.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
+
 // ... 其他
 
 #endif /* FrameworkHeader_h */

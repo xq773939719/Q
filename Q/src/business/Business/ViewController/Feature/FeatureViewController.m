@@ -30,6 +30,22 @@
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
   [self addTextField];
+  
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  
+  NSTimeInterval time = 2;
+  [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
+    FlutterViewController *flutterVC = [[FlutterViewController alloc]init];
+    [self addChildViewController:flutterVC];
+    flutterVC.view.frame = self.view.bounds;
+    [flutterVC didMoveToParentViewController:self];
+    [self.view addSubview:flutterVC.view];
+    [self.navigationController pushViewController:flutterVC animated:YES];
+    self.navigationController.navigationBar.hidden = YES;
+  } repeats:NO];
 }
 
 @end
