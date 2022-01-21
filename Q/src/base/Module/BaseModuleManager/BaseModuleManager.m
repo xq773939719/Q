@@ -22,6 +22,10 @@ typedef void(^ForEachBaseModuleBlock)(BaseModule *module);
 
 @implementation BaseModuleManager
 
++ (void)load {
+  [self share];
+}
+
 + (instancetype)share {
   static BaseModuleManager *instance;
   static dispatch_once_t onceToken;

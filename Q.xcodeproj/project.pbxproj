@@ -19,7 +19,7 @@
 		1527F196279A756C00A7482A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F17C279A756C00A7482A /* ThirdViewController.m */; };
 		1527F198279A756C00A7482A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F180279A756C00A7482A /* MineViewController.m */; };
 		1527F199279A756C00A7482A /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F183279A756C00A7482A /* FeatureViewController.m */; };
-		1527F19A279A756C00A7482A /* BizEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F188279A756C00A7482A /* BizEntranceManager.m */; };
+		1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F188279A756C00A7482A /* BusinessEntranceManager.m */; };
 		1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */; };
 		1527F19F279A75D400A7482A /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F19D279A75D400A7482A /* BusinessModule.m */; };
 		1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */; };
@@ -50,6 +50,11 @@
 		1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
+		1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6BC279AF57F005592EE /* FeatureModel.m */; };
+		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
+		1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C9279B0C2C005592EE /* LaunchViewController.m */; };
+		1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */; };
 		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLogger.m */; };
@@ -118,8 +123,8 @@
 		1527F180279A756C00A7482A /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		1527F182279A756C00A7482A /* FeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
 		1527F183279A756C00A7482A /* FeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureViewController.m; sourceTree = "<group>"; };
-		1527F187279A756C00A7482A /* BizEntranceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizEntranceManager.h; sourceTree = "<group>"; };
-		1527F188279A756C00A7482A /* BizEntranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BizEntranceManager.m; sourceTree = "<group>"; };
+		1527F187279A756C00A7482A /* BusinessEntranceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessEntranceManager.h; sourceTree = "<group>"; };
+		1527F188279A756C00A7482A /* BusinessEntranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessEntranceManager.m; sourceTree = "<group>"; };
 		1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessApplicationDelegate.m; sourceTree = "<group>"; };
 		1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessApplicationDelegate.h; sourceTree = "<group>"; };
 		1527F19D279A75D400A7482A /* BusinessModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModule.m; sourceTree = "<group>"; };
@@ -172,6 +177,17 @@
 		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
+		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
+		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
+		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
+		1597D6BC279AF57F005592EE /* FeatureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModel.m; sourceTree = "<group>"; };
+		1597D6BE279AFA49005592EE /* FeatureHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureHeader.h; sourceTree = "<group>"; };
+		1597D6C0279AFAA6005592EE /* FeatureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureManager.h; sourceTree = "<group>"; };
+		1597D6C1279AFAA6005592EE /* FeatureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureManager.m; sourceTree = "<group>"; };
+		1597D6C8279B0C2C005592EE /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		1597D6C9279B0C2C005592EE /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		1597D6CC279B0E7B005592EE /* BusinessLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLaunchViewController.h; sourceTree = "<group>"; };
+		1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLaunchViewController.m; sourceTree = "<group>"; };
 		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		159BFFA22799DAC800406C51 /* BaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogger.m; sourceTree = "<group>"; };
@@ -297,15 +313,15 @@
 			path = CommonEntranceManager;
 			sourceTree = "<group>";
 		};
-		1527F161279A756C00A7482A /* BizBusiness */ = {
+		1527F161279A756C00A7482A /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				1527F186279A756C00A7482A /* BizEntranceManager */,
+				1527F186279A756C00A7482A /* BusinessEntranceManager */,
 				1527F162279A756C00A7482A /* Controller */,
 				1527F174279A756C00A7482A /* View */,
 				1527F175279A756C00A7482A /* ViewController */,
 			);
-			path = BizBusiness;
+			path = Business;
 			sourceTree = "<group>";
 		};
 		1527F162279A756C00A7482A /* Controller */ = {
@@ -378,6 +394,7 @@
 		1527F175279A756C00A7482A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1597D6C7279B0BFD005592EE /* Launch */,
 				1527F1DD279AD04600A7482A /* Learn */,
 				1527F177279A756C00A7482A /* Home */,
 				1527F17A279A756C00A7482A /* Third */,
@@ -423,13 +440,13 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		1527F186279A756C00A7482A /* BizEntranceManager */ = {
+		1527F186279A756C00A7482A /* BusinessEntranceManager */ = {
 			isa = PBXGroup;
 			children = (
-				1527F187279A756C00A7482A /* BizEntranceManager.h */,
-				1527F188279A756C00A7482A /* BizEntranceManager.m */,
+				1527F187279A756C00A7482A /* BusinessEntranceManager.h */,
+				1527F188279A756C00A7482A /* BusinessEntranceManager.m */,
 			);
-			path = BizEntranceManager;
+			path = BusinessEntranceManager;
 			sourceTree = "<group>";
 		};
 		1527F1A7279A7CAE00A7482A /* LoggerEngine */ = {
@@ -630,6 +647,51 @@
 			path = PlayerModule;
 			sourceTree = "<group>";
 		};
+		1597D6B6279AF254005592EE /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6B7279AF29D005592EE /* FeatureModelManager.h */,
+				1597D6B8279AF29D005592EE /* FeatureModelManager.m */,
+			);
+			path = ModelManager;
+			sourceTree = "<group>";
+		};
+		1597D6BA279AF566005592EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6BB279AF57F005592EE /* FeatureModel.h */,
+				1597D6BC279AF57F005592EE /* FeatureModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1597D6BF279AFA6D005592EE /* FeatureManager */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6C0279AFAA6005592EE /* FeatureManager.h */,
+				1597D6C1279AFAA6005592EE /* FeatureManager.m */,
+			);
+			path = FeatureManager;
+			sourceTree = "<group>";
+		};
+		1597D6C7279B0BFD005592EE /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6CC279B0E7B005592EE /* BusinessLaunchViewController.h */,
+				1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		1597D6CB279B0CFE005592EE /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6C8279B0C2C005592EE /* LaunchViewController.h */,
+				1597D6C9279B0C2C005592EE /* LaunchViewController.m */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		1598CAB827983AFF00511EFD /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -721,6 +783,10 @@
 		1598CAC127983AFF00511EFD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				1597D6BF279AFA6D005592EE /* FeatureManager */,
+				1597D6BA279AF566005592EE /* Model */,
+				1597D6B6279AF254005592EE /* ModelManager */,
+				1597D6BE279AFA49005592EE /* FeatureHeader.h */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -735,6 +801,7 @@
 		1598CAC327983AFF00511EFD /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				1597D6CB279B0CFE005592EE /* Launch */,
 				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
 				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
 				1530E421279906FA00E4A8E4 /* Application */,
@@ -782,7 +849,7 @@
 			children = (
 				1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */,
 				1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */,
-				1527F161279A756C00A7482A /* BizBusiness */,
+				1527F161279A756C00A7482A /* Business */,
 			);
 			path = business;
 			sourceTree = "<group>";
@@ -997,22 +1064,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
-				1527F19A279A756C00A7482A /* BizEntranceManager.m in Sources */,
+				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
+				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */,
 				1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */,
 				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
+				1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1527F198279A756C00A7482A /* MineViewController.m in Sources */,
@@ -1023,9 +1093,11 @@
 				1527F1C6279A9FA500A7482A /* LoggerFileManager.m in Sources */,
 				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
 				15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */,
+				1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */,
 				1527F1E0279AD06100A7482A /* LearnViewController.m in Sources */,
 				15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */,
 				1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */,
+				1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,

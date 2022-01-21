@@ -11,5 +11,6 @@
 #import "BaseApplicationDelegate/BaseApplicationDelegate.h"
 #import "BaseEntranceManager/BaseEntranceManager.h"
 #import "Application/UIApplication+Base.h"
+#import "Launch/LaunchViewController.h"
 
 #endif /* BaseKitHeader_h */

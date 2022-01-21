@@ -6,7 +6,7 @@
 //
 
 #import "BusinessApplicationDelegate.h"
-#import "BizEntranceManager.h"
+#import "BusinessEntranceManager.h"
 
 @interface BusinessApplicationDelegate ()
 
@@ -16,7 +16,7 @@
 
 - (BaseEntranceManager *)onDelegateInit {
   // 提供整体的业务切换      
-  return [BizEntranceManager new];
+  return [BusinessEntranceManager new];
 }
 
 @end

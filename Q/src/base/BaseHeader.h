@@ -12,5 +12,6 @@
 #import "LoggerHeader.h"
 #import "BaseKitHeader.h"
 #import "BaseModuleHeader.h"
+#import "FeatureHeader.h"
 
 #endif /* BaseHeader_h */

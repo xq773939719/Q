@@ -12,16 +12,21 @@
 #import "FeatureNavigationController.h"
 #import "ThirdNavigationController.h"
 #import "MineNavigationController.h"
+#import "LearnNavigationController.h"
 
 @implementation TabBarControllerDataProvider
 
 - (NSArray<UINavigationController *> *)childViewControllers {
-  return @[
-    [HomeNavigationController share],
-    [FeatureNavigationController share],
-    [ThirdNavigationController share],
-    [MineNavigationController share]
-  ];
+  
+  NSMutableArray *array = [NSMutableArray array];
+  
+  [array addObject: [HomeNavigationController share]];
+  [array addObject: [FeatureNavigationController share]];
+  [array addObject: [ThirdNavigationController share]];
+  [array addObject: [MineNavigationController share]];
+  [array addObject: [LearnNavigationController share]];
+
+  return [array copy];
 }
 
 @end

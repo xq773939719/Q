@@ -11,8 +11,4 @@
 #import "BaseLogger/BaseLogger.h"
 #import "Logger/Logger.h"
 
-//#import "BaseLoggerConfiguration.h"
-//#import "LoggerEngine/LoggerEngine.h"
-//#import "LoggerSystem/LoggerSystem.h"
-
 #endif /* LoggerHeader_h */

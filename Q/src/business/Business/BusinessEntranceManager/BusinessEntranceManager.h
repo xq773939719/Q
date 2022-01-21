@@ -1,5 +1,5 @@
 //
-//  BizEntranceManager.h
+//  BusinessEntranceManager.h
 //  Q
 //
 //  Created by XQ on 2022/1/21.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BizEntranceManager : CommonEntranceManager
+@interface BusinessEntranceManager : CommonEntranceManager
 
 @end
 
