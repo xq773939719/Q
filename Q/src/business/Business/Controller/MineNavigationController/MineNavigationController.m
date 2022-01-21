@@ -34,7 +34,7 @@
       [MineViewController new]
     ]];
   }
-  self.tabBarItem.title = @"四";
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
   return self;
 }
 

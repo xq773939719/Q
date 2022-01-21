@@ -10,7 +10,10 @@
 
 #import "BaseApplicationDelegate/BaseApplicationDelegate.h"
 #import "BaseEntranceManager/BaseEntranceManager.h"
-#import "Application/UIApplication+Base.h"
 #import "Launch/LaunchViewController.h"
+#import "ViewController/ViewController.h"
+//扩展
+#import "Application/UIApplication+Base.h"
+#import "ViewController/UIViewController+Configuration.h"
 
 #endif /* BaseKitHeader_h */

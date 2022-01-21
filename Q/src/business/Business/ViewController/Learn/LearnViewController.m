@@ -13,8 +13,23 @@
 
 @implementation LearnViewController
 
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    self.viewControllerName = @"学习";
+    self.tabBarTitle = @"学习";
+  }
+  return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  [self addTextField];
 }
 
 @end

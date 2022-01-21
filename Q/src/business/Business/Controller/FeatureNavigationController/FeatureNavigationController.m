@@ -29,12 +29,12 @@
 - (instancetype)init
 {
   self = [super init];
-  if (self) {
+  if (self) { 
     [self setViewControllers: @[
       [FeatureViewController new]
     ]];
   }
-  self.tabBarItem.title = @"二";
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
   return self;
 }
 

@@ -34,7 +34,7 @@
       [HomeViewController new]
     ]];
   }
-  self.tabBarItem.title = @"一";
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
   return self;
 }
 

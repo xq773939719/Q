@@ -13,13 +13,23 @@
 
 @implementation HomeViewController
 
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    self.viewControllerName = @"主页";
+    self.tabBarTitle = @"主页";
+  }
+  return self;
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.view.backgroundColor = [UIColor redColor];
+  [self addTextField];
 }
 
 @end

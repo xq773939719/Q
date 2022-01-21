@@ -34,7 +34,7 @@
       [ThirdViewController new]
     ]];
   }
-  self.tabBarItem.title = @"三";
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
   return self;
 }
 

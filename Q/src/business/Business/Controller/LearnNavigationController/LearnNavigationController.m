@@ -33,7 +33,8 @@
       [LearnViewController new]
     ]];
   }
-  self.tabBarItem.title = @"学";
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
+
   return self;
 }
 

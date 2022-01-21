@@ -13,13 +13,24 @@
 
 @implementation ThirdViewController
 
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    self.viewControllerName = @"引擎";
+    self.tabBarTitle = @"引擎";
+  }
+  return self;
+}
+
+
 - (void)viewDidLoad {
   [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.view.backgroundColor = [UIColor blueColor];
+  [self addTextField];
 }
 
 @end

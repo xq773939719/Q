@@ -55,6 +55,8 @@
 		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
 		1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C9279B0C2C005592EE /* LaunchViewController.m */; };
 		1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */; };
+		1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D5279B156E005592EE /* UIViewController+Configuration.m */; };
+		1597D6D9279B1BA9005592EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D8279B1BA9005592EE /* ViewController.m */; };
 		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLogger.m */; };
@@ -188,6 +190,10 @@
 		1597D6C9279B0C2C005592EE /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		1597D6CC279B0E7B005592EE /* BusinessLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLaunchViewController.h; sourceTree = "<group>"; };
 		1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLaunchViewController.m; sourceTree = "<group>"; };
+		1597D6D4279B156E005592EE /* UIViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Configuration.h"; sourceTree = "<group>"; };
+		1597D6D5279B156E005592EE /* UIViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Configuration.m"; sourceTree = "<group>"; };
+		1597D6D7279B1BA9005592EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1597D6D8279B1BA9005592EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		159BFFA22799DAC800406C51 /* BaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogger.m; sourceTree = "<group>"; };
@@ -692,6 +698,17 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		1597D6D0279B12FD005592EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
+				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
+				1597D6D7279B1BA9005592EE /* ViewController.h */,
+				1597D6D8279B1BA9005592EE /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		1598CAB827983AFF00511EFD /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -801,6 +818,7 @@
 		1598CAC327983AFF00511EFD /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				1597D6D0279B12FD005592EE /* ViewController */,
 				1597D6CB279B0CFE005592EE /* Launch */,
 				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
 				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
@@ -1070,6 +1088,7 @@
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
+				1597D6D9279B1BA9005592EE /* ViewController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
@@ -1101,6 +1120,7 @@
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
+				1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

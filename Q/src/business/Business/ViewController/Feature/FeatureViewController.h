@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeatureViewController : UIViewController
+@interface FeatureViewController : ViewController
 
 @end
 

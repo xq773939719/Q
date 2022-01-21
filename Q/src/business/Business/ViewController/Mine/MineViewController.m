@@ -19,17 +19,23 @@
 
 @implementation MineViewController
 
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    self.viewControllerName = @"我的";
+    self.tabBarTitle = @"我的";
+  }
+  return self;
+}
+
+
 - (void)viewDidLoad {
   [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.view.autoresizesSubviews = YES;
-  self.chronosView = [CRONView new];
-  self.chronosView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height / 2);
-  self.chronosView.backgroundColor = [UIColor orangeColor];
-  [self.view addSubview:self.chronosView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -39,13 +45,20 @@
   NSURL *url = [NSURL URLWithString:@"http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"];
 
   self.playerController = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:options];
-  self.playerController.view.frame = CGRectMake(0, self.view.bounds.size.height / 2, self.view.bounds.size.width, self.view.bounds.size.height / 2);
+  self.playerController.view.frame = self.view.bounds;
   self.playerController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
   self.playerController.view.backgroundColor = [UIColor darkGrayColor];
   self.playerController.scalingMode = IJKMPMovieScalingModeAspectFit;
   self.playerController.shouldAutoplay = YES;
   [self.playerController prepareToPlay];
   [self.view addSubview:self.playerController.view];
+  
+  self.view.autoresizesSubviews = YES;
+  self.chronosView = [CRONView new];
+  self.chronosView.frame = self.view.bounds;
+  self.chronosView.backgroundColor = [UIColor clearColor];
+  [self.view addSubview:self.chronosView];
+  [self addTextField];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
