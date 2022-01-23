@@ -9,29 +9,39 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UITextField *textField;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  LoggerInfo(@"[ViewController] -> viewDidLoad(params): %@", self.params);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
   self.view.backgroundColor = [UIColor grayColor];
-  
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  self.navigationController.navigationBar.hidden = self.hideNavigationBar;
+  self.tabBarController.tabBar.hidden = self.hideTabBar;
 }
 
 // 测试
 - (void)addTextField {
-  UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-  textField.text = self.viewControllerName ?: @"1111";
-  textField.font = [UIFont boldSystemFontOfSize:25];
-  [self.view addSubview:textField];
+  if (self.textField) {
+    return;
+  }
+  self.textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+  self.textField.text = self.viewControllerName ?: @"1111";
+  self.textField.font = [UIFont boldSystemFontOfSize:25];
+  [self.view addSubview:self.textField];
 
-  [textField mas_makeConstraints:^(MASConstraintMaker *make) {
+  [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
     make.center.mas_equalTo(self.view);
 
   }];

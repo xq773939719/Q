@@ -13,6 +13,10 @@
 
 @implementation HomeViewController
 
++ (void)initialize {
+  [[Router share] registerScheme:@"q://vc/home" withClass:[self class]];
+}
+
 - (instancetype)init
 {
   self = [super init];

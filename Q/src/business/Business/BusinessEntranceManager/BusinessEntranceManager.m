@@ -26,14 +26,18 @@
   [application.window makeKeyAndVisible];
 }
 
+- (UIViewController *)rootViewController {
+  TabBarController *tabBarController = [TabBarController share];
+  return tabBarController;
+}
+
 - (NSArray<Class> *)businessModules {
   return @[];
 }
 
 - (void)showRootViewController {
-  TabBarController *tabBarController = [TabBarController share];
   UIApplication *application = [UIApplication sharedApplication];
-  application.window.rootViewController = tabBarController;
+  application.window.rootViewController = self.rootNavigationController;
 }
 
 @end

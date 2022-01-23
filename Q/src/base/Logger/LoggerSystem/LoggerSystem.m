@@ -11,6 +11,10 @@
 
 @implementation LoggerSystem
 
++ (void)load {
+  LoggerEngineDefaultCreate(0, YES, YES);
+}
+
 - (void)log:(LoggerLevel)flag file:(const char *)file function:(const char *)function line:(NSUInteger)line tag:(id)tag format:(NSString *)format args:(va_list)args {
   switch (flag) {
     case LoggerLevelError: LoggerInnerErrorV(file, function, line, tag, format, args); break;

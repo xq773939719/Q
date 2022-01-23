@@ -14,6 +14,11 @@
 
 @implementation FeatureViewController
 
++ (void)initialize {
+  [[Router share] registerScheme:@"q://vc/feature" withClass:[self class]];
+  [[Router share] registerScheme:@"q://vc/flutter" withClass:[FlutterViewController class]];
+}
+
 - (instancetype)init
 {
   self = [super init];
@@ -38,14 +43,7 @@
   self.tabBarController.tabBar.hidden = NO;
   NSTimeInterval time = 2;
   self.timer = [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
-    FlutterViewController *flutterVC = [[FlutterViewController alloc]init];
-    [self addChildViewController:flutterVC];
-    flutterVC.view.frame = self.view.bounds;
-    [flutterVC didMoveToParentViewController:self];
-    [self.view addSubview:flutterVC.view];
-    [self.navigationController pushViewController:flutterVC animated:YES];
-    self.navigationController.navigationBar.hidden = YES;
-    self.tabBarController.tabBar.hidden = YES;
+    [[Router share] route:@"q://vc/flutter" withParams:@{}];
   } repeats:NO];
 }
 

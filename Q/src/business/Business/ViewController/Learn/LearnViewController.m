@@ -13,6 +13,10 @@
 
 @implementation LearnViewController
 
++ (void)initialize {
+  [[Router share] registerScheme:@"q://vc/learn" withClass:[self class]];
+}
+
 - (instancetype)init
 {
   self = [super init];

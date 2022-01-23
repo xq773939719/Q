@@ -7,12 +7,30 @@
 
 #import "BaseEntranceManager.h"
 #import "BaseModuleManager.h"
+#import "Router.h"
+
+@interface BaseEntranceManager ()
+
+@property (nonatomic, strong) UINavigationController *rootNavigationController;
+
+@end
 
 @implementation BaseEntranceManager
 
 - (void)launchWithApplication:(UIApplication *)application{
+  [self initNavigation];
   [self registerModules];
   [self createModules];
+}
+
+- (void)initNavigation {
+  self.rootNavigationController = [[UINavigationController alloc] initWithRootViewController:[self rootViewController]];
+  [[Router share] configRootNavigationController:self.rootNavigationController];
+}
+
+- (UIViewController *)rootViewController {
+  NSAssert(NO, @"子类未实现该方法");
+  return nil;
 }
 
 - (void)registerModules {

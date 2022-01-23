@@ -13,5 +13,6 @@
 #import "BaseKitHeader.h"
 #import "BaseModuleHeader.h"
 #import "FeatureHeader.h"
+#import "RouterHeader.h"
 
 #endif /* BaseHeader_h */

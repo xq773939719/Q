@@ -19,7 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *navigationTitle;
 
-  // ...
+// ...
+
+@property (nonatomic, assign) BOOL hideTabBar;
+@property (nonatomic, assign) BOOL hideNavigationBar;
 
 @end
 

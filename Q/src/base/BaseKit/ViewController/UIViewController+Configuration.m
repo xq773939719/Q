@@ -15,6 +15,9 @@ static NSString *tabBarTitleKey = @"tabBarTitleKey";
 static NSString *tabBarIconKey = @"tabBarIconKey";
 static NSString *navigationTitleKey = @"navigationTitleKey";
 
+static NSString *hideTabBarKey = @"hideTabBar";
+static NSString *hideNavigationBarKey = @"hideNavigationBar";
+
 @implementation UIViewController (Configuration)
 
 - (void)setViewControllerName:(NSString *)viewControllerName {
@@ -55,6 +58,22 @@ static NSString *navigationTitleKey = @"navigationTitleKey";
 
 - (NSString *)navigationTitle {
   return objc_getAssociatedObject(self, &navigationTitleKey);
+}
+
+- (void)setHideTabBar:(BOOL)hideTabBar {
+  objc_setAssociatedObject(self, &hideTabBarKey, @(hideTabBar), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (BOOL)hideTabBar {
+  return objc_getAssociatedObject(self, &hideTabBarKey);
+}
+
+- (void)setHideNavigationBar:(BOOL)hideNavigationBar {
+  objc_setAssociatedObject(self, &hideNavigationBarKey, @(hideNavigationBar), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (BOOL)hideNavigationBar {
+  return objc_getAssociatedObject(self, &hideNavigationBarKey);
 }
 
 @end

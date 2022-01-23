@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150AA274279D9E7600AEC946 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AA273279D9E7600AEC946 /* Router.m */; };
+		150AA277279D9E9400AEC946 /* RouteMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AA276279D9E9400AEC946 /* RouteMap.m */; };
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
 		1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F13C279A714800A7482A /* CommonEntranceManager.m */; };
 		1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F165279A756C00A7482A /* ThirdNavigationController.m */; };
@@ -98,6 +100,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150AA272279D9E7600AEC946 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		150AA273279D9E7600AEC946 /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		150AA275279D9E9400AEC946 /* RouteMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteMap.h; sourceTree = "<group>"; };
+		150AA276279D9E9400AEC946 /* RouteMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteMap.m; sourceTree = "<group>"; };
+		150AA279279DA11500AEC946 /* RouterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterHeader.h; sourceTree = "<group>"; };
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,6 +267,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		150AA271279D9E0500AEC946 /* RouteMap */ = {
+			isa = PBXGroup;
+			children = (
+				150AA275279D9E9400AEC946 /* RouteMap.h */,
+				150AA276279D9E9400AEC946 /* RouteMap.m */,
+			);
+			path = RouteMap;
+			sourceTree = "<group>";
+		};
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
@@ -364,8 +380,8 @@
 		1527F169279A756C00A7482A /* MineNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				1527F16A279A756C00A7482A /* MineNavigationController.m */,
 				1527F16B279A756C00A7482A /* MineNavigationController.h */,
+				1527F16A279A756C00A7482A /* MineNavigationController.m */,
 			);
 			path = MineNavigationController;
 			sourceTree = "<group>";
@@ -413,8 +429,8 @@
 		1527F177279A756C00A7482A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1527F178279A756C00A7482A /* HomeViewController.m */,
 				1527F179279A756C00A7482A /* HomeViewController.h */,
+				1527F178279A756C00A7482A /* HomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -838,6 +854,10 @@
 		1598CAD527983AFF00511EFD /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				150AA271279D9E0500AEC946 /* RouteMap */,
+				150AA272279D9E7600AEC946 /* Router.h */,
+				150AA273279D9E7600AEC946 /* Router.m */,
+				150AA279279DA11500AEC946 /* RouterHeader.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1086,6 +1106,7 @@
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
+				150AA274279D9E7600AEC946 /* Router.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
 				1597D6D9279B1BA9005592EE /* ViewController.m in Sources */,
@@ -1111,6 +1132,7 @@
 				1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */,
 				1527F1C6279A9FA500A7482A /* LoggerFileManager.m in Sources */,
 				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
+				150AA277279D9E9400AEC946 /* RouteMap.m in Sources */,
 				15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */,
 				1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */,
 				1527F1E0279AD06100A7482A /* LearnViewController.m in Sources */,

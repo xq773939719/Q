@@ -11,7 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class UINavigationController;
+@class UIViewController;
+
 @protocol BaseEntranceModuleProtocal
+
+// 根视图控制器
+- (UIViewController *)rootViewController;
 
 // 注册模块
 - (void)registerModules;
@@ -22,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface BaseEntranceManager : NSObject <BaseEntranceModuleProtocal, BaseAppStatusProtocal>
+
+// 根导航控制器
+@property (nonatomic, strong, readonly) UINavigationController *rootNavigationController;
 
 - (void)launchWithApplication:(UIApplication *)application;
 
