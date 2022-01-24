@@ -1,19 +1,39 @@
 //
-//  ViewController.m
+//  BaseViewController.m
 //  Q
 //
-//  Created by XQ on 2022/1/22.
+//  Created by XQ on 2022/1/24.
 //
 
-#import "ViewController.h"
+#import "BaseViewController.h"
 
-@interface ViewController ()
+@interface BaseViewController ()
 
 @property (nonatomic, strong) UITextField *textField;
 
 @end
 
-@implementation ViewController
+@implementation BaseViewController
+
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    [self initProperties];
+  }
+  return self;
+}
+
+- (void)initProperties {
+  self.viewControllerName = @"ViewControllerName";
+  self.params = @{};
+  self.statusBarStyle = UIStatusBarStyleLightContent;
+  self.hideTabBar = NO;
+  self.tabBarTitle = @"TabBarTitle";
+  self.tabBarIcon = @"";
+  self.navigationTitle = @"NavigationTitle";
+  self.hideNavigationBar = NO;
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -31,7 +51,15 @@
   self.tabBarController.tabBar.hidden = self.hideTabBar;
 }
 
-// 测试
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return self.statusBarStyle;
+}
+
+- (BOOL)prefersStatusBarHidden {
+  return NO;
+}
+
+  // 测试
 - (void)addTextField {
   if (self.textField) {
     return;
@@ -40,11 +68,12 @@
   self.textField.text = self.viewControllerName ?: @"1111";
   self.textField.font = [UIFont boldSystemFontOfSize:25];
   [self.view addSubview:self.textField];
-
+  
   [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
     make.center.mas_equalTo(self.view);
-
+    
   }];
 }
+
 
 @end

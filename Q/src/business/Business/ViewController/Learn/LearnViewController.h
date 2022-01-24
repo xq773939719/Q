@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LearnViewController : ViewController
+@interface LearnViewController : BaseViewController
 
 @end
 

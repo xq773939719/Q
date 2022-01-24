@@ -11,14 +11,19 @@
 
 static NSString *viewControllerNameKey = @"viewControllerNameKey";
 static NSString *paramsKey = @"paramsKey";
-static NSString *tabBarTitleKey = @"tabBarTitleKey";
-static NSString *tabBarIconKey = @"tabBarIconKey";
-static NSString *navigationTitleKey = @"navigationTitleKey";
+
+static NSString *statusStyleKey = @"statusStyle";
 
 static NSString *hideTabBarKey = @"hideTabBar";
+static NSString *tabBarTitleKey = @"tabBarTitleKey";
+static NSString *tabBarIconKey = @"tabBarIconKey";
+
 static NSString *hideNavigationBarKey = @"hideNavigationBar";
+static NSString *navigationTitleKey = @"navigationTitleKey";
 
 @implementation UIViewController (Configuration)
+
+#pragma mark - ViewController
 
 - (void)setViewControllerName:(NSString *)viewControllerName {
   objc_setAssociatedObject(self, &viewControllerNameKey, viewControllerName, OBJC_ASSOCIATION_RETAIN);
@@ -34,6 +39,24 @@ static NSString *hideNavigationBarKey = @"hideNavigationBar";
 
 - (NSDictionary *)params {
   return objc_getAssociatedObject(self, &paramsKey);
+}
+
+- (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
+  objc_setAssociatedObject(self, &statusStyleKey, @(statusBarStyle), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (UIStatusBarStyle)statusBarStyle {
+  return (UIStatusBarStyle)objc_getAssociatedObject(self, &statusStyleKey);
+}
+
+#pragma mark - Tab
+
+- (void)setHideTabBar:(BOOL)hideTabBar {
+  objc_setAssociatedObject(self, &hideTabBarKey, @(hideTabBar), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (BOOL)hideTabBar {
+  return [objc_getAssociatedObject(self, &hideTabBarKey) boolValue];
 }
 
 - (void)setTabBarTitle:(NSString *)tabBarTitle {
@@ -52,28 +75,22 @@ static NSString *hideNavigationBarKey = @"hideNavigationBar";
   return objc_getAssociatedObject(self, &tabBarIconKey);
 }
 
-- (void)setNavigationTitle:(NSString *)navigationTitle {
-  objc_setAssociatedObject(self, &navigationTitleKey, navigationTitle, OBJC_ASSOCIATION_RETAIN);
-}
-
-- (NSString *)navigationTitle {
-  return objc_getAssociatedObject(self, &navigationTitleKey);
-}
-
-- (void)setHideTabBar:(BOOL)hideTabBar {
-  objc_setAssociatedObject(self, &hideTabBarKey, @(hideTabBar), OBJC_ASSOCIATION_ASSIGN);
-}
-
-- (BOOL)hideTabBar {
-  return objc_getAssociatedObject(self, &hideTabBarKey);
-}
+#pragma mark - Navigation
 
 - (void)setHideNavigationBar:(BOOL)hideNavigationBar {
   objc_setAssociatedObject(self, &hideNavigationBarKey, @(hideNavigationBar), OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (BOOL)hideNavigationBar {
-  return objc_getAssociatedObject(self, &hideNavigationBarKey);
+  return [objc_getAssociatedObject(self, &hideNavigationBarKey) boolValue];
+}
+
+- (void)setNavigationTitle:(NSString *)navigationTitle {
+  objc_setAssociatedObject(self, &navigationTitleKey, navigationTitle, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSString *)navigationTitle {
+  return objc_getAssociatedObject(self, &navigationTitleKey);
 }
 
 @end

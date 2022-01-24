@@ -11,10 +11,13 @@
 #import "BaseApplicationDelegate/BaseApplicationDelegate.h"
 #import "BaseEntranceManager/BaseEntranceManager.h"
 #import "Launch/LaunchViewController.h"
-#import "ViewController/ViewController.h"
 
+// 基类
+#import "ViewController/BaseViewController.h"
+#import "ViewController/BaseNavigationController.h"
+#import "ViewController/BaseTabBarController.h"
 
-//扩展
+// 扩展
 #import "Application/UIApplication+Base.h"
 #import "ViewController/UIViewController+Configuration.h"
 

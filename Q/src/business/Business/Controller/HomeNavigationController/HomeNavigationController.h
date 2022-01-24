@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeNavigationController : UINavigationController
+@interface HomeNavigationController : BaseNavigationController
 
 + (instancetype)share;
 

@@ -50,6 +50,10 @@
 		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
 		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
 		1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
+		154EBD74279E579C0048CFF5 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD73279E579C0048CFF5 /* Util.m */; };
+		154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD82279E6B440048CFF5 /* BaseTabBarController.m */; };
+		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
+		154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
@@ -58,7 +62,6 @@
 		1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C9279B0C2C005592EE /* LaunchViewController.m */; };
 		1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */; };
 		1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D5279B156E005592EE /* UIViewController+Configuration.m */; };
-		1597D6D9279B1BA9005592EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D8279B1BA9005592EE /* ViewController.m */; };
 		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLogger.m */; };
@@ -185,6 +188,15 @@
 		1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		154EBD71279E578E0048CFF5 /* UtilHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilHeader.h; sourceTree = "<group>"; };
+		154EBD72279E579C0048CFF5 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		154EBD73279E579C0048CFF5 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		154EBD81279E6B440048CFF5 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		154EBD82279E6B440048CFF5 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		154EBD84279E6B590048CFF5 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		154EBD85279E6B590048CFF5 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -199,8 +211,6 @@
 		1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLaunchViewController.m; sourceTree = "<group>"; };
 		1597D6D4279B156E005592EE /* UIViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Configuration.h"; sourceTree = "<group>"; };
 		1597D6D5279B156E005592EE /* UIViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Configuration.m"; sourceTree = "<group>"; };
-		1597D6D7279B1BA9005592EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1597D6D8279B1BA9005592EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		159BFFA22799DAC800406C51 /* BaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogger.m; sourceTree = "<group>"; };
@@ -389,8 +399,8 @@
 		1527F16C279A756C00A7482A /* FeatureNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				1527F16D279A756C00A7482A /* FeatureNavigationController.m */,
 				1527F16E279A756C00A7482A /* FeatureNavigationController.h */,
+				1527F16D279A756C00A7482A /* FeatureNavigationController.m */,
 			);
 			path = FeatureNavigationController;
 			sourceTree = "<group>";
@@ -719,8 +729,12 @@
 			children = (
 				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
 				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
-				1597D6D7279B1BA9005592EE /* ViewController.h */,
-				1597D6D8279B1BA9005592EE /* ViewController.m */,
+				154EBD81279E6B440048CFF5 /* BaseTabBarController.h */,
+				154EBD82279E6B440048CFF5 /* BaseTabBarController.m */,
+				154EBD84279E6B590048CFF5 /* BaseViewController.h */,
+				154EBD85279E6B590048CFF5 /* BaseViewController.m */,
+				154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */,
+				154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -781,6 +795,9 @@
 		1598CABC27983AFF00511EFD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				154EBD71279E578E0048CFF5 /* UtilHeader.h */,
+				154EBD72279E579C0048CFF5 /* Util.h */,
+				154EBD73279E579C0048CFF5 /* Util.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1103,17 +1120,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
+				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
+				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
-				1597D6D9279B1BA9005592EE /* ViewController.m in Sources */,
+				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
+				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
 				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,

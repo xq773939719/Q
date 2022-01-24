@@ -24,7 +24,7 @@
 }
 
 - (void)initNavigation {
-  self.rootNavigationController = [[UINavigationController alloc] initWithRootViewController:[self rootViewController]];
+  self.rootNavigationController = [[BaseNavigationController alloc] initWithRootViewController:[self rootViewController]];
   [[Router share] configRootNavigationController:self.rootNavigationController];
 }
 

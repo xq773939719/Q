@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LearnNavigationController : UINavigationController
+@interface LearnNavigationController : BaseNavigationController
 
 + (instancetype)share;
 
