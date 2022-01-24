@@ -8,6 +8,8 @@
 #ifndef BaseHeader_h
 #define BaseHeader_h
 
+#import "Q-Bridging-Header.h"
+
 #import "FrameworkHeader.h"
 #import "LoggerHeader.h"
 #import "BaseKitHeader.h"

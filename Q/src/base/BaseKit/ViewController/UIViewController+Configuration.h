@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *params;
 
 // 状态栏配置
+@property (nonatomic, assign) BOOL hideStatusBar;
 @property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
 // Tab配置

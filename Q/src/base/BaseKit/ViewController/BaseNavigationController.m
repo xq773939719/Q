@@ -15,11 +15,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
 }
 
 - (UIViewController *)childViewControllerForStatusBarStyle {
   return self.topViewController;
 }
 
+- (UIViewController *)childViewControllerForStatusBarHidden {
+  return self.topViewController;
+}
 
 @end

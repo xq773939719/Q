@@ -24,6 +24,7 @@
   application.window.rootViewController = launchViewController;
   application.window.backgroundColor = UIColor.whiteColor;
   [application.window makeKeyAndVisible];
+
 }
 
 - (UIViewController *)rootViewController {
@@ -35,9 +36,24 @@
   return @[];
 }
 
+#pragma mark - BaseEntranceModuleProtocal
 - (void)showRootViewController {
   UIApplication *application = [UIApplication sharedApplication];
   application.window.rootViewController = self.rootNavigationController;
+  [self configTheme];
+}
+
+#pragma mark - private method
+// 全局配置
+- (void)configTheme {
+  [UITabBar appearance].tintColor = [UIColor colorNamed:@"TintColor"];
+  [UITabBar appearance].backgroundColor = [UIColor colorNamed:@"ForegroundColor"];
+  
+  // 导航栏背景颜色
+  [[UINavigationBar appearance] setBarTintColor:[UIColor clearColor]];
+  // 导航栏返回按钮、自定义UIBarButtonItem颜色
+  [[UINavigationBar appearance] setTintColor:[UIColor colorNamed:@"TintColor"]];
+
 }
 
 @end

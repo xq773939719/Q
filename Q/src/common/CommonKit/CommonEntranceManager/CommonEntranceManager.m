@@ -15,6 +15,7 @@
   [super launchWithApplication:application];
 }
 
+#pragma mark - BaseEntranceModuleProtocal
 - (void)registerModules {
   [super registerModules];
   

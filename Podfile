@@ -90,6 +90,9 @@ def ThridPartyModules
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
 
+  # 主题框架
+  pod 'SwiftTheme'
+  
   #------ 调试组件 ------#
   pod 'LookinServer', :configurations => ['Debug']
   pod 'FLEX', :configurations => ['Debug']   # Xcode界面调试工具

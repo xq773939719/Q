@@ -9,8 +9,6 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic, strong) UITextField *textField;
-
 @end
 
 @implementation BaseViewController
@@ -27,10 +25,14 @@
 - (void)initProperties {
   self.viewControllerName = @"ViewControllerName";
   self.params = @{};
-  self.statusBarStyle = UIStatusBarStyleLightContent;
+  
+  self.hideStatusBar = NO;
+  self.statusBarStyle = UIStatusBarStyleDefault;
+  
   self.hideTabBar = NO;
   self.tabBarTitle = @"TabBarTitle";
   self.tabBarIcon = @"";
+  
   self.navigationTitle = @"NavigationTitle";
   self.hideNavigationBar = NO;
 }
@@ -38,11 +40,11 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   LoggerInfo(@"[ViewController] -> viewDidLoad(params): %@", self.params);
+  self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -56,24 +58,13 @@
 }
 
 - (BOOL)prefersStatusBarHidden {
-  return NO;
+  return self.hideStatusBar;
 }
 
-  // 测试
-- (void)addTextField {
-  if (self.textField) {
-    return;
-  }
-  self.textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-  self.textField.text = self.viewControllerName ?: @"1111";
-  self.textField.font = [UIFont boldSystemFontOfSize:25];
-  [self.view addSubview:self.textField];
-  
-  [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
-    make.center.mas_equalTo(self.view);
-    
-  }];
-}
 
+//  [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//    make.center.mas_equalTo(self.view);
+//
+//  }];
 
 @end

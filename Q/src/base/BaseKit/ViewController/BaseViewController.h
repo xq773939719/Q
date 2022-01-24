@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
 
-- (void)addTextField;
-
 @end
 
 NS_ASSUME_NONNULL_END

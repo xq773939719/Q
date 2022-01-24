@@ -54,6 +54,7 @@
 		154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD82279E6B440048CFF5 /* BaseTabBarController.m */; };
 		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
 		154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */; };
+		154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
@@ -62,7 +63,6 @@
 		1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C9279B0C2C005592EE /* LaunchViewController.m */; };
 		1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */; };
 		1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D5279B156E005592EE /* UIViewController+Configuration.m */; };
-		1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1598CAE327983B2000511EFD /* LaunchScreen.storyboard */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
 		159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLogger.m */; };
 		159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA62799E1A800406C51 /* LoggerEngine.m */; };
@@ -197,6 +197,7 @@
 		154EBD85279E6B590048CFF5 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -211,7 +212,6 @@
 		1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLaunchViewController.m; sourceTree = "<group>"; };
 		1597D6D4279B156E005592EE /* UIViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Configuration.h"; sourceTree = "<group>"; };
 		1597D6D5279B156E005592EE /* UIViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Configuration.m"; sourceTree = "<group>"; };
-		1598CAE327983B2000511EFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		159BFFA22799DAC800406C51 /* BaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogger.m; sourceTree = "<group>"; };
 		159BFFA32799DAC800406C51 /* BaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogger.h; sourceTree = "<group>"; };
@@ -311,10 +311,10 @@
 			children = (
 				1598CAE827983B3D00511EFD /* main.m */,
 				15277E672798223400FA882E /* Info.plist */,
-				1598CAE327983B2000511EFD /* LaunchScreen.storyboard */,
 				15277E622798223400FA882E /* Assets.xcassets */,
+				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
 				1598CADC27983B1400511EFD /* src */,
-				1527F1E9279AD7D600A7482A /* swift */,
+				1527F1E9279AD7D600A7482A /* bridge */,
 			);
 			path = Q;
 			sourceTree = "<group>";
@@ -348,17 +348,18 @@
 		1527F161279A756C00A7482A /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				154EBD8A279E9BC00048CFF5 /* ViewControllers */,
 				1527F186279A756C00A7482A /* BusinessEntranceManager */,
-				1527F162279A756C00A7482A /* Controller */,
+				1527F162279A756C00A7482A /* NavigationController */,
 				1527F174279A756C00A7482A /* View */,
-				1527F175279A756C00A7482A /* ViewController */,
 			);
 			path = Business;
 			sourceTree = "<group>";
 		};
-		1527F162279A756C00A7482A /* Controller */ = {
+		1527F162279A756C00A7482A /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				1527F175279A756C00A7482A /* MainViewController */,
 				1527F1E1279AD06600A7482A /* LearnNavigationController */,
 				1527F163279A756C00A7482A /* ThirdNavigationController */,
 				1527F166279A756C00A7482A /* HomeNavigationController */,
@@ -366,7 +367,7 @@
 				1527F16C279A756C00A7482A /* FeatureNavigationController */,
 				1527F16F279A756C00A7482A /* TabBarController */,
 			);
-			path = Controller;
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		1527F163279A756C00A7482A /* ThirdNavigationController */ = {
@@ -408,10 +409,10 @@
 		1527F16F279A756C00A7482A /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				1527F170279A756C00A7482A /* TabBarController.m */,
 				1527F171279A756C00A7482A /* TabBarControllerDataProvider.h */,
-				1527F172279A756C00A7482A /* TabBarController.h */,
 				1527F173279A756C00A7482A /* TabBarControllerDataProvider.m */,
+				1527F172279A756C00A7482A /* TabBarController.h */,
+				1527F170279A756C00A7482A /* TabBarController.m */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -423,7 +424,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1527F175279A756C00A7482A /* ViewController */ = {
+		1527F175279A756C00A7482A /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1597D6C7279B0BFD005592EE /* Launch */,
@@ -433,7 +434,7 @@
 				1527F17E279A756C00A7482A /* Mine */,
 				1527F181279A756C00A7482A /* Feature */,
 			);
-			path = ViewController;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		1527F177279A756C00A7482A /* Home */ = {
@@ -577,12 +578,12 @@
 			path = LearnNavigationController;
 			sourceTree = "<group>";
 		};
-		1527F1E9279AD7D600A7482A /* swift */ = {
+		1527F1E9279AD7D600A7482A /* bridge */ = {
 			isa = PBXGroup;
 			children = (
 				1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */,
 			);
-			path = swift;
+			path = bridge;
 			sourceTree = "<group>";
 		};
 		1530E4182799043800E4A8E4 /* BaseApplicationDelegate */ = {
@@ -677,6 +678,37 @@
 				1530E45727993AC100E4A8E4 /* PlayerModule.m */,
 			);
 			path = PlayerModule;
+			sourceTree = "<group>";
+		};
+		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
+				154EBD8C279E9BF80048CFF5 /* IJKVIewController */,
+				154EBD8B279E9BE00048CFF5 /* FlutterViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		154EBD8B279E9BE00048CFF5 /* FlutterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlutterViewController;
+			sourceTree = "<group>";
+		};
+		154EBD8C279E9BF80048CFF5 /* IJKVIewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IJKVIewController;
+			sourceTree = "<group>";
+		};
+		154EBD8D279E9C0D0048CFF5 /* EngineViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EngineViewController;
 			sourceTree = "<group>";
 		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
@@ -1041,8 +1073,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1598CAE427983B2000511EFD /* LaunchScreen.storyboard in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
+				154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,6 +1375,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1552,6 +1585,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

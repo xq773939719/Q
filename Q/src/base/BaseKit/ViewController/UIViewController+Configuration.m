@@ -12,6 +12,7 @@
 static NSString *viewControllerNameKey = @"viewControllerNameKey";
 static NSString *paramsKey = @"paramsKey";
 
+static NSString *hideStatusBarKey = @"hideStatusBar";
 static NSString *statusStyleKey = @"statusStyle";
 
 static NSString *hideTabBarKey = @"hideTabBar";
@@ -41,12 +42,22 @@ static NSString *navigationTitleKey = @"navigationTitleKey";
   return objc_getAssociatedObject(self, &paramsKey);
 }
 
+#pragma mark - 状态栏
+
+- (void)setHideStatusBar:(BOOL)hideStatusBar {
+  objc_setAssociatedObject(self, &hideStatusBarKey, @(hideStatusBar), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (BOOL)hideStatusBar {
+  return [objc_getAssociatedObject(self, &hideStatusBarKey) boolValue];
+}
+
 - (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
   objc_setAssociatedObject(self, &statusStyleKey, @(statusBarStyle), OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (UIStatusBarStyle)statusBarStyle {
-  return (UIStatusBarStyle)objc_getAssociatedObject(self, &statusStyleKey);
+  return (UIStatusBarStyle)[objc_getAssociatedObject(self, &statusStyleKey) integerValue];
 }
 
 #pragma mark - Tab
