@@ -13,7 +13,7 @@
 
 @implementation FeatureViewController
 
-+ (void)init {
++ (void)load {
   [[Router share] registerScheme:@"q://vc/feature" withClass:[self class]];
 }
 
