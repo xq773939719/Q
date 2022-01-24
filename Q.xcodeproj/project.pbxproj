@@ -55,6 +55,11 @@
 		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
 		154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */; };
 		154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */; };
+		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
+		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
+		154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */; };
+		154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA3279EC90B0048CFF5 /* EngineViewController.m */; };
+		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
@@ -198,6 +203,18 @@
 		154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		154EBD90279EB8BB0048CFF5 /* LearnCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnCellModel.h; sourceTree = "<group>"; };
+		154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnCellModel.m; sourceTree = "<group>"; };
+		154EBD93279EB90D0048CFF5 /* LearnDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnDataProvider.h; sourceTree = "<group>"; };
+		154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnDataProvider.m; sourceTree = "<group>"; };
+		154EBD96279EBA160048CFF5 /* ProtocolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolHeader.h; sourceTree = "<group>"; };
+		154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelProviderProtocol.h; sourceTree = "<group>"; };
+		154EBD9C279EC8CC0048CFF5 /* IJKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKViewController.h; sourceTree = "<group>"; };
+		154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKViewController.m; sourceTree = "<group>"; };
+		154EBDA2279EC90B0048CFF5 /* EngineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineViewController.h; sourceTree = "<group>"; };
+		154EBDA3279EC90B0048CFF5 /* EngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineViewController.m; sourceTree = "<group>"; };
+		154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessFlutterViewController.h; sourceTree = "<group>"; };
+		154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessFlutterViewController.m; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -556,6 +573,8 @@
 			isa = PBXGroup;
 			children = (
 				1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */,
+				154EBD96279EBA160048CFF5 /* ProtocolHeader.h */,
+				154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -565,6 +584,10 @@
 			children = (
 				1527F1DE279AD06100A7482A /* LearnViewController.h */,
 				1527F1DF279AD06100A7482A /* LearnViewController.m */,
+				154EBD90279EB8BB0048CFF5 /* LearnCellModel.h */,
+				154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */,
+				154EBD93279EB90D0048CFF5 /* LearnDataProvider.h */,
+				154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -685,21 +708,25 @@
 			children = (
 				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
 				154EBD8C279E9BF80048CFF5 /* IJKVIewController */,
-				154EBD8B279E9BE00048CFF5 /* FlutterViewController */,
+				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		154EBD8B279E9BE00048CFF5 /* FlutterViewController */ = {
+		154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */ = {
 			isa = PBXGroup;
 			children = (
+				154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */,
+				154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */,
 			);
-			path = FlutterViewController;
+			path = BusinessFlutterViewController;
 			sourceTree = "<group>";
 		};
 		154EBD8C279E9BF80048CFF5 /* IJKVIewController */ = {
 			isa = PBXGroup;
 			children = (
+				154EBD9C279EC8CC0048CFF5 /* IJKViewController.h */,
+				154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */,
 			);
 			path = IJKVIewController;
 			sourceTree = "<group>";
@@ -707,6 +734,8 @@
 		154EBD8D279E9C0D0048CFF5 /* EngineViewController */ = {
 			isa = PBXGroup;
 			children = (
+				154EBDA2279EC90B0048CFF5 /* EngineViewController.h */,
+				154EBDA3279EC90B0048CFF5 /* EngineViewController.m */,
 			);
 			path = EngineViewController;
 			sourceTree = "<group>";
@@ -1163,18 +1192,22 @@
 				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
+				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
 				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
+				154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */,
 				1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */,
+				154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */,
 				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */,
+				154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1527F198279A756C00A7482A /* MineViewController.m in Sources */,
@@ -1191,6 +1224,7 @@
 				15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */,
 				1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */,
 				1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */,
+				154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,

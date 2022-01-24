@@ -11,7 +11,7 @@
 
 @interface TabBarController ()
 
-@property (nonatomic, strong) TabBarControllerDataProvider *dataProvider;
+@property (nonatomic, strong) TabBarControllerDataProvider<BaseModelProviderProtocol> *dataProvider;
 
 @end
 
@@ -38,7 +38,7 @@
 
 - (void)createViewControllers {
   self.dataProvider = [TabBarControllerDataProvider new];
-  NSArray<UINavigationController *> *childViewControllers = [self.dataProvider childViewControllers];
+  NSArray<UINavigationController *> *childViewControllers = [self.dataProvider models];
   for (UIViewController* childViewController in childViewControllers) {
     [self addChildViewController:childViewController];
   }

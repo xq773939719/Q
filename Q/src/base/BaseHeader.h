@@ -15,6 +15,7 @@
 #import "BaseKitHeader.h"
 #import "BaseModuleHeader.h"
 #import "FeatureHeader.h"
+#import "ProtocolHeader.h"
 #import "RouterHeader.h"
 #import "UtilHeader.h"
 

@@ -103,22 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "059D61E1-8A4F-4A3F-A6DD-19DBE149B64A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Q/src/business/BizBusiness/Entrance/BusinessEntranceManager/BusinessEntaranceManager.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-launchWithApplication:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D01EFFBB-3C8B-439D-856F-4CB0FA550062"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -129,22 +113,6 @@
             startingLineNumber = "82"
             endingLineNumber = "82"
             landmarkName = "-log:level:flag:file:function:line:tag:format:args:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "69958BC0-0DF0-4E48-BEFA-FD94947A382C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Q/src/business/BizBusiness/BizEntranceManager/BizEntranceManager.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-showRootViewController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

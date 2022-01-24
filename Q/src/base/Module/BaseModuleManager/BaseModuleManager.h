@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "BaseModule.h"
-#import "BaseAppStatusProtocol.h"
+#import "ProtocolHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

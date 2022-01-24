@@ -16,7 +16,7 @@
 
 @implementation TabBarControllerDataProvider
 
-- (NSArray<UINavigationController *> *)childViewControllers {
+- (NSArray<UINavigationController *> *)models {
   
   NSMutableArray *array = [NSMutableArray array];
   

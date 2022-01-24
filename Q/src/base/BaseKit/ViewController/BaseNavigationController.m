@@ -18,6 +18,11 @@
   self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear: animated];
+  [self setHideNavigationBar:YES];
+}
+
 - (UIViewController *)childViewControllerForStatusBarStyle {
   return self.topViewController;
 }

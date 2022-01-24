@@ -34,23 +34,30 @@
   self.tabBarIcon = @"";
   
   self.navigationTitle = @"NavigationTitle";
-  self.hideNavigationBar = NO;
+  self.hideNavigationBar = YES;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  LoggerInfo(@"[ViewController] -> viewDidLoad(params): %@", self.params);
+  LoggerInfo(@"[BaseViewController] -> viewDidLoad(params): %@", self.params);
   self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  BOOL hideNavigationBar = self.hideNavigationBar;
+  BOOL hideTabBar = self.hideTabBar;
+  self.navigationController.navigationBar.hidden = hideNavigationBar;
+  self.tabBarController.tabBar.hidden = hideTabBar;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  self.navigationController.navigationBar.hidden = self.hideNavigationBar;
-  self.tabBarController.tabBar.hidden = self.hideTabBar;
+
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

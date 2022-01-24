@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define RGBA(r, g, b, a)     [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
 #define HEX(str)             [Util colorFromHex:str];
 
+typedef void(^BaseClickCallback)(void);
+
 @class UIColor;
 
 @interface Util : NSObject
