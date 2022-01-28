@@ -752,6 +752,13 @@
 			path = Object;
 			sourceTree = "<group>";
 		};
+		158C122627A409B10071FD9E /* proto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = proto;
+			sourceTree = "<group>";
+		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,6 +973,7 @@
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
+				158C122627A409B10071FD9E /* proto */,
 				1598CAB827983AFF00511EFD /* base */,
 				1598CADD27983B1400511EFD /* business */,
 				1598CADB27983B0B00511EFD /* common */,

@@ -74,9 +74,12 @@ def ThridPartyModules
   pod 'CocoaLumberjack', '<= 3.0'
   
   # gRPC
-   pod 'gRPC'
-   pod 'gRPC-Core'
-   pod 'gRPC-ProtoRPC'
+  pod 'gRPC'
+  pod 'gRPC-Core'
+  pod 'gRPC-ProtoRPC'
+  
+  # proto
+  pod 'Protobuf'
 
   # 压缩解压
   pod 'SSZipArchive'
