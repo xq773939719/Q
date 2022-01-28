@@ -60,6 +60,7 @@
 		154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */; };
 		154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA3279EC90B0048CFF5 /* EngineViewController.m */; };
 		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
+		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
@@ -215,6 +216,8 @@
 		154EBDA3279EC90B0048CFF5 /* EngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineViewController.m; sourceTree = "<group>"; };
 		154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessFlutterViewController.h; sourceTree = "<group>"; };
 		154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessFlutterViewController.m; sourceTree = "<group>"; };
+		158C122327A3A5F30071FD9E /* NSObject+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Method.h"; sourceTree = "<group>"; };
+		158C122427A3A5F30071FD9E /* NSObject+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Method.m"; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -740,6 +743,15 @@
 			path = EngineViewController;
 			sourceTree = "<group>";
 		};
+		158C122227A3A5B70071FD9E /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				158C122327A3A5F30071FD9E /* NSObject+Method.h */,
+				158C122427A3A5F30071FD9E /* NSObject+Method.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,6 +924,7 @@
 		1598CAC327983AFF00511EFD /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				158C122227A3A5B70071FD9E /* Object */,
 				1597D6D0279B12FD005592EE /* ViewController */,
 				1597D6CB279B0CFE005592EE /* Launch */,
 				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
@@ -1198,6 +1211,7 @@
 				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
 				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
+				158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,

@@ -54,6 +54,7 @@ def ThridPartyModules
 
   # 数据库
   pod 'FMDB'
+  pod 'RealmSwift'
 
   # YYKit
   pod 'YYKit'
@@ -73,9 +74,9 @@ def ThridPartyModules
   pod 'CocoaLumberjack', '<= 3.0'
   
   # gRPC
-  # pod 'gRPC'
-  # pod 'gRPC-Core'
-  # pod 'gRPC-ProtoRPC'
+   pod 'gRPC'
+   pod 'gRPC-Core'
+   pod 'gRPC-ProtoRPC'
 
   # 压缩解压
   pod 'SSZipArchive'

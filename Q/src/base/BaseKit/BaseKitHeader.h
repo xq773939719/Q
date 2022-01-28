@@ -18,6 +18,7 @@
 #import "ViewController/BaseTabBarController.h"
 
 // 扩展
+#import "Object/NSObject+Method.h"
 #import "Application/UIApplication+Base.h"
 #import "ViewController/UIViewController+Configuration.h"
 
