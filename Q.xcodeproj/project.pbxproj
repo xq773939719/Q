@@ -36,7 +36,6 @@
 		1530E445279932D800E4A8E4 /* SystemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E444279932D800E4A8E4 /* SystemModule.m */; };
 		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
 		1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E45727993AC100E4A8E4 /* PlayerModule.m */; };
-		1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */; };
 		1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4B32799813300E4A8E4 /* libc++.tbd */; };
 		1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47027996E3A00E4A8E4 /* UIKit.framework */; };
 		1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D22799855B00E4A8E4 /* OpenGLES.framework */; };
@@ -61,6 +60,8 @@
 		154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA3279EC90B0048CFF5 /* EngineViewController.m */; };
 		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
 		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
+		158C123027A40D720071FD9E /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 158C122A27A40D720071FD9E /* build.sh */; };
+		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; };
 		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
@@ -75,6 +76,7 @@
 		15A45CF32799D2B800017F8A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF22799D2B800017F8A /* Logger.m */; };
 		15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF92799D2DF00017F8A /* LoggerSystem.m */; };
 		15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */; };
+		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +220,10 @@
 		154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessFlutterViewController.m; sourceTree = "<group>"; };
 		158C122327A3A5F30071FD9E /* NSObject+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Method.h"; sourceTree = "<group>"; };
 		158C122427A3A5F30071FD9E /* NSObject+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Method.m"; sourceTree = "<group>"; };
+		158C122927A40D720071FD9E /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Person.proto; sourceTree = "<group>"; };
+		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -243,9 +249,9 @@
 		15A45CF92799D2DF00017F8A /* LoggerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerSystem.m; sourceTree = "<group>"; };
 		15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoggerConfiguration.m; sourceTree = "<group>"; };
 		15A45D042799D36100017F8A /* BaseLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoggerConfiguration.h; sourceTree = "<group>"; };
+		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
-		E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +266,6 @@
 				1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */,
 				1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */,
 				1530E4DA2799858100E4A8E4 /* CoreMedia.framework in Frameworks */,
-				1530E47D27996F8700E4A8E4 /* Pods_Q.framework in Frameworks */,
 				1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */,
 				1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */,
 				1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */,
@@ -268,6 +273,7 @@
 				1530E4DC2799858800E4A8E4 /* CoreVideo.framework in Frameworks */,
 				1530E4DE2799859000E4A8E4 /* MediaPlayer.framework in Frameworks */,
 				1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */,
+				C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +337,11 @@
 			children = (
 				1598CAE827983B3D00511EFD /* main.m */,
 				15277E672798223400FA882E /* Info.plist */,
-				15277E622798223400FA882E /* Assets.xcassets */,
 				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
-				1598CADC27983B1400511EFD /* src */,
+				15277E622798223400FA882E /* Assets.xcassets */,
 				1527F1E9279AD7D600A7482A /* bridge */,
+				158C122727A40D720071FD9E /* proto */,
+				1598CADC27983B1400511EFD /* src */,
 			);
 			path = Q;
 			sourceTree = "<group>";
@@ -752,11 +759,39 @@
 			path = Object;
 			sourceTree = "<group>";
 		};
-		158C122627A409B10071FD9E /* proto */ = {
+		158C122727A40D720071FD9E /* proto */ = {
 			isa = PBXGroup;
 			children = (
+				158C122A27A40D720071FD9E /* build.sh */,
+				158C122B27A40D720071FD9E /* Class */,
+				158C122827A40D720071FD9E /* Person */,
 			);
 			path = proto;
+			sourceTree = "<group>";
+		};
+		158C122827A40D720071FD9E /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				158C122927A40D720071FD9E /* Person.proto */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		158C122B27A40D720071FD9E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				158C122C27A40D720071FD9E /* Person */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		158C122C27A40D720071FD9E /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				158C123A27A419590071FD9E /* Person.pbobjc.h */,
+				158C123927A419590071FD9E /* Person.pbobjc.m */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
@@ -973,7 +1008,6 @@
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				158C122627A409B10071FD9E /* proto */,
 				1598CAB827983AFF00511EFD /* base */,
 				1598CADD27983B1400511EFD /* business */,
 				1598CADB27983B0B00511EFD /* common */,
@@ -1010,7 +1044,7 @@
 				1530E4B32799813300E4A8E4 /* libc++.tbd */,
 				1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */,
 				1530E47027996E3A00E4A8E4 /* UIKit.framework */,
-				E555D12AA334E9D4FEFD4457 /* Pods_Q.framework */,
+				1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1123,6 +1157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158C123027A40D720071FD9E /* build.sh in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
 				154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -1201,6 +1236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
 				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
 				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
@@ -1599,9 +1635,16 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = "${PODS_ROOT}";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"${PODS_ROOT}",
+					"$(SRCROOT)/Q/src/**",
+					"$(SRCROOT)/Q/proto/Class/**",
+				);
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Q/src/**",
+					"$(SRCROOT)/Q/proto/Class/**",
+				);
 				USE_HEADERMAP = YES;
 			};
 			name = Debug;
@@ -1794,9 +1837,16 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Q/Q-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = "${PODS_ROOT}";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"${PODS_ROOT}",
+					"$(SRCROOT)/Q/src/**",
+					"$(SRCROOT)/Q/proto/Class/**",
+				);
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Q/src/**",
+					"$(SRCROOT)/Q/proto/Class/**",
+				);
 				USE_HEADERMAP = YES;
 			};
 			name = Release;
