@@ -1,5 +1,5 @@
 //
-//  EngineViewController.h
+//  BaseViewController.h
 //  Q
 //
 //  Created by XQ on 2022/1/24.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EngineViewController : BaseViewController
+@interface BaseViewController : UIViewController
 
 @end
 

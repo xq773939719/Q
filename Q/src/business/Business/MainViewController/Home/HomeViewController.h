@@ -1,5 +1,5 @@
 //
-//  FeatureNavigationController.h
+//  HomeViewController.h
 //  Q
 //
 //  Created by XQ on 2022/1/19.
@@ -9,9 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeatureNavigationController : BaseNavigationController
-
-+ (instancetype)share;
+@interface HomeViewController : BaseViewController
 
 @end
 

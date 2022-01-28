@@ -224,6 +224,8 @@
 		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		158C123D27A447350071FD9E /* FoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
+		158C123E27A448820071FD9E /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
@@ -339,7 +341,7 @@
 				15277E672798223400FA882E /* Info.plist */,
 				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
 				15277E622798223400FA882E /* Assets.xcassets */,
-				1527F1E9279AD7D600A7482A /* bridge */,
+				158C123C27A446060071FD9E /* foundation */,
 				158C122727A40D720071FD9E /* proto */,
 				1598CADC27983B1400511EFD /* src */,
 			);
@@ -357,6 +359,7 @@
 		1527F135279A714800A7482A /* CommonKit */ = {
 			isa = PBXGroup;
 			children = (
+				158C123E27A448820071FD9E /* CommonHeader.h */,
 				1527F13A279A714800A7482A /* CommonEntranceManager */,
 				1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */,
 			);
@@ -375,6 +378,7 @@
 		1527F161279A756C00A7482A /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				1527F175279A756C00A7482A /* MainViewController */,
 				154EBD8A279E9BC00048CFF5 /* ViewControllers */,
 				1527F186279A756C00A7482A /* BusinessEntranceManager */,
 				1527F162279A756C00A7482A /* NavigationController */,
@@ -386,7 +390,6 @@
 		1527F162279A756C00A7482A /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				1527F175279A756C00A7482A /* MainViewController */,
 				1527F1E1279AD06600A7482A /* LearnNavigationController */,
 				1527F163279A756C00A7482A /* ThirdNavigationController */,
 				1527F166279A756C00A7482A /* HomeNavigationController */,
@@ -561,13 +564,6 @@
 				1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */,
 			);
 			path = CommonApplicationDelegate;
-			sourceTree = "<group>";
-		};
-		1527F1B3279A8F4100A7482A /* LoggerFileDelegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoggerFileDelegate;
 			sourceTree = "<group>";
 		};
 		1527F1BD279A9EFF00A7482A /* LoggerFileManager */ = {
@@ -794,6 +790,18 @@
 			path = Person;
 			sourceTree = "<group>";
 		};
+		158C123C27A446060071FD9E /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				158C123D27A447350071FD9E /* FoundationHeader.h */,
+				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
+				1527F1E9279AD7D600A7482A /* bridge */,
+				1598CAB827983AFF00511EFD /* base */,
+				1598CADB27983B0B00511EFD /* common */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -858,7 +866,6 @@
 			isa = PBXGroup;
 			children = (
 				1527F1AD279A7EE900A7482A /* BaseHeader.h */,
-				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
 				1598CAC327983AFF00511EFD /* BaseKit */,
 				1598CAC227983AFF00511EFD /* Data */,
 				1598CAC027983AFF00511EFD /* Device */,
@@ -896,7 +903,6 @@
 			isa = PBXGroup;
 			children = (
 				1527F1BD279A9EFF00A7482A /* LoggerFileManager */,
-				1527F1B3279A8F4100A7482A /* LoggerFileDelegate */,
 				1527F1AB279A7D4000A7482A /* LoggerSystem */,
 				1527F1AA279A7CDE00A7482A /* BaseLoggerConfiguration */,
 				1527F1A9279A7CD200A7482A /* Logger */,
@@ -1008,9 +1014,7 @@
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				1598CAB827983AFF00511EFD /* base */,
 				1598CADD27983B1400511EFD /* business */,
-				1598CADB27983B0B00511EFD /* common */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -1452,7 +1456,10 @@
 					"$(PROJECT_DIR)/**",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Q/**",
+				);
 				INFOPLIST_FILE = Q/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
@@ -1635,17 +1642,10 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					"${PODS_ROOT}",
-					"$(SRCROOT)/Q/src/**",
-					"$(SRCROOT)/Q/proto/Class/**",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Q/src/**",
-					"$(SRCROOT)/Q/proto/Class/**",
-				);
-				USE_HEADERMAP = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -1669,7 +1669,10 @@
 					"$(PROJECT_DIR)/**",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Q/**",
+				);
 				INFOPLIST_FILE = Q/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
@@ -1837,17 +1840,10 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Q/Q-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					"${PODS_ROOT}",
-					"$(SRCROOT)/Q/src/**",
-					"$(SRCROOT)/Q/proto/Class/**",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Q/src/**",
-					"$(SRCROOT)/Q/proto/Class/**",
-				);
-				USE_HEADERMAP = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};

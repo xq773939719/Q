@@ -6,6 +6,7 @@ source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 use_frameworks!
+use_modular_headers!
 inhibit_all_warnings!
 
 develop_pods_path = './DevelopPods'
@@ -39,12 +40,19 @@ def ThridPartyModules
 
   # 布局
   pod 'Masonry'
+  pod 'YogaKit'
 
   # 响应式
   pod 'ReactiveObjC'
 
   # 图片
   pod 'SDWebImage'
+  
+  # UICollectionView
+  pod 'IGListKit'
+  
+  # CrashReporter
+  pod 'PLCrashReporter'
 
   # 动画
   pod 'lottie-ios', '<= 2.5.3'
@@ -58,12 +66,11 @@ def ThridPartyModules
 
   # YYKit
   pod 'YYKit'
-  # pod 'YYModel'
-  # pod 'YYText'
-  # pod 'YYCache'
-  # pod 'YYImage'
-  # pod 'YYWebImage'
 
+  # PromiseKit
+  pod "PromiseKit"
+  pod 'PromisesSwift'
+  
   # FaceBook SDK
   pod 'FBSDKCoreKit'
   
@@ -71,7 +78,7 @@ def ThridPartyModules
   pod 'Firebase'
   
   # 日志框架
-  pod 'CocoaLumberjack', '<= 3.0'
+  pod 'CocoaLumberjack'
   
   # gRPC
   pod 'gRPC'
@@ -88,14 +95,21 @@ def ThridPartyModules
   pod 'Toast'
 
   # JS热修复 交互
-  # pod 'JSPatch'
-  # pod 'WebViewJavascriptBridge'
+   pod 'JSPatch'
+   pod 'WebViewJavascriptBridge'
 
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
 
   # 主题框架
   pod 'SwiftTheme'
+  
+  # 跨平台
+  # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
+  pod 'React', :path => './DevelopPods/ReactNative/node_modules/react-native', :subspecs => [
+  
+  ]
+  
   
   #------ 调试组件 ------#
   pod 'LookinServer', :configurations => ['Debug']
