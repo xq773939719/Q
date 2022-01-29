@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BaseEntranceModuleProtocal
 
+// 视窗
+@property (nonatomic, strong) UIWindow *window;
+
 // 根视图控制器
 - (UIViewController *)rootViewController;
 

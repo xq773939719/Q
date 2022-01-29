@@ -66,4 +66,8 @@
   return _entranceManager;
 }
 
+- (UIWindow *)window {
+  return [self.entranceManager window];
+}
+
 @end

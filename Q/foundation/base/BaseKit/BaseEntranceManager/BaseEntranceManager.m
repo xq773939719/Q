@@ -17,7 +17,10 @@
 
 @implementation BaseEntranceManager
 
+@synthesize window = _window;
+
 - (void)launchWithApplication:(UIApplication *)application{
+  self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
   [self initNavigation];
   [self registerModules];
   [self createModules];

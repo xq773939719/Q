@@ -20,11 +20,9 @@
   [super launchWithApplication:application];
   BusinessLaunchViewController *launchViewController = [BusinessLaunchViewController new];
   launchViewController.delegate = self;
-  application.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-  application.window.rootViewController = launchViewController;
-  application.window.backgroundColor = UIColor.whiteColor;
-  [application.window makeKeyAndVisible];
-
+  self.window.rootViewController = launchViewController;
+  self.window.backgroundColor = UIColor.whiteColor;
+  [self.window makeKeyAndVisible];
 }
 
 - (UIViewController *)rootViewController {
@@ -38,8 +36,7 @@
 
 #pragma mark - BaseEntranceModuleProtocal
 - (void)showRootViewController {
-  UIApplication *application = [UIApplication sharedApplication];
-  application.window.rootViewController = self.rootNavigationController;
+  self.window.rootViewController = self.rootNavigationController;
   [self configTheme];
 }
 

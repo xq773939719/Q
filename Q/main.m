@@ -18,5 +18,6 @@ int main(int argc, char * argv[]) {
     appDelegateClassName = NSStringFromClass([BusinessApplicationDelegate class]);
   }
   
+
   return UIApplicationMain(argc, argv, applicationClassName, appDelegateClassName);
 }

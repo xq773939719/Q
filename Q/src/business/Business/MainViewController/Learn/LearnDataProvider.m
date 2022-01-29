@@ -34,9 +34,16 @@
   LearnCellModel *engineModel = [LearnCellModel new];
   engineModel.title = @"Engine";
   engineModel.onCLick = ^{
-    [[Router share] route:@"q://vc/engine" withParams:@{}];
+      [[Router share] route:@"q://vc/engine" withParams:@{}];
   };
   [array addObject:engineModel];
+  
+  LearnCellModel *rnModel = [LearnCellModel new];
+  rnModel.title = @"ReactNative";
+  rnModel.onCLick = ^{
+    [[Router share] route:@"q://vc/rn" withParams:@{}];
+  };
+  [array addObject:rnModel];
   
   return [array copy];
 }
