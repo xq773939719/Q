@@ -45,7 +45,7 @@
   rnModel.onCLick = ^{
     [[Router share] route:BUSINESS_REACT_NATIVE_VIEW_CONTROLLER withParams:nil];
   };
-  [array addObject:rnModel];
+  // [array addObject:rnModel];
   
   LearnCellModel *openGLModel = [LearnCellModel new];
   openGLModel.title = @"OpenGL";
