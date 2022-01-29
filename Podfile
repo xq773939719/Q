@@ -3,17 +3,18 @@ install! 'cocoapods'
 workspace 'Q'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 use_frameworks!
 use_modular_headers!
 inhibit_all_warnings!
+set_arc_compatibility_flag!
 
-develop_pods_path = './DevelopPods'
+develop_path = './Develop'
 
-flutter_module_path = develop_pods_path
+flutter_module_path = develop_path
 load File.join(flutter_module_path, 'flutter_module', '.ios', 'Flutter', 'podhelper.rb')
-
+load File.join(develop_path, 'QRn', 'QRN.rb')
 
 #------ 业务组件 ------#
 def BusinessModules
@@ -81,9 +82,9 @@ def ThridPartyModules
   pod 'CocoaLumberjack'
   
   # gRPC
-  pod 'gRPC'
-  pod 'gRPC-Core'
-  pod 'gRPC-ProtoRPC'
+  # pod 'gRPC'
+  # pod 'gRPC-Core'
+  # pod 'gRPC-ProtoRPC'
   
   # proto
   pod 'Protobuf'
@@ -106,11 +107,7 @@ def ThridPartyModules
   
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
-  pod 'React', :path => './DevelopPods/ReactNative/node_modules/react-native', :subspecs => [
-  
-  ]
-  
-  
+
   #------ 调试组件 ------#
   pod 'LookinServer', :configurations => ['Debug']
   pod 'FLEX', :configurations => ['Debug']   # Xcode界面调试工具
@@ -121,7 +118,7 @@ end
 # !!! 不要忘记注释相应的模块
 def DevelopModule
   # 视频播放
-  pod 'QIJKPlayer', :path => './DevelopPods/QIJKPlayer'
+  pod 'QIJKPlayer', :path => './Develop/QIJKPlayer'
   
 end
 
@@ -130,6 +127,8 @@ target 'Q' do
   # Comment the next line if you don't want to use dynamic frameworks
   # Flutter
   install_all_flutter_pods(flutter_module_path)
+  install_qrn()
+
   DevelopModule()
   ThridPartyModules()
   BaseModules()

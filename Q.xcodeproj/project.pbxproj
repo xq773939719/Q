@@ -29,6 +29,9 @@
 		1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1D8279AC69100A7482A /* UIApplication+Base.m */; };
 		1527F1E0279AD06100A7482A /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1DF279AD06100A7482A /* LearnViewController.m */; };
 		1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1E3279AD09A00A7482A /* LearnNavigationController.m */; };
+		152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */; };
+		152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
+		152FD08C27A4FD62000DCBFE /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */; };
 		1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */; };
 		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
 		1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */; };
@@ -48,7 +51,6 @@
 		1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DF279985A000E4A8E4 /* QuartzCore.framework */; };
 		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
 		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
-		1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
 		154EBD74279E579C0048CFF5 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD73279E579C0048CFF5 /* Util.m */; };
 		154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD82279E6B440048CFF5 /* BaseTabBarController.m */; };
 		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
@@ -166,6 +168,10 @@
 		1527F1E3279AD09A00A7482A /* LearnNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnNavigationController.m; sourceTree = "<group>"; };
 		1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Q-Bridging-Header.h"; sourceTree = "<group>"; };
+		152FD08127A4FBA5000DCBFE /* ReactHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactHeader.h; sourceTree = "<group>"; };
+		152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		152FD08A27A4FD62000DCBFE /* ReactNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
+		152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
 		1530E4192799046900E4A8E4 /* BaseApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplicationDelegate.h; sourceTree = "<group>"; };
 		1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplicationDelegate.m; sourceTree = "<group>"; };
 		1530E4292799097B00E4A8E4 /* BaseEntranceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEntranceManager.h; sourceTree = "<group>"; };
@@ -265,13 +271,14 @@
 				1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */,
 				1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */,
 				1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */,
+				152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */,
 				1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */,
 				1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */,
 				1530E4DA2799858100E4A8E4 /* CoreMedia.framework in Frameworks */,
 				1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */,
-				1530E4E6279985BB00E4A8E4 /* AudioToolbox.framework in Frameworks */,
 				1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */,
 				1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */,
+				152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */,
 				1530E4DC2799858800E4A8E4 /* CoreVideo.framework in Frameworks */,
 				1530E4DE2799859000E4A8E4 /* MediaPlayer.framework in Frameworks */,
 				1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */,
@@ -615,6 +622,33 @@
 			path = bridge;
 			sourceTree = "<group>";
 		};
+		152FD08227A4FBAF000DCBFE /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				158C123D27A447350071FD9E /* FoundationHeader.h */,
+				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
+				152FD08327A4FBC2000DCBFE /* React */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		152FD08327A4FBC2000DCBFE /* React */ = {
+			isa = PBXGroup;
+			children = (
+				152FD08127A4FBA5000DCBFE /* ReactHeader.h */,
+			);
+			path = React;
+			sourceTree = "<group>";
+		};
+		152FD08D27A4FD65000DCBFE /* ReactNativeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				152FD08A27A4FD62000DCBFE /* ReactNativeViewController.h */,
+				152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */,
+			);
+			path = ReactNativeViewController;
+			sourceTree = "<group>";
+		};
 		1530E4182799043800E4A8E4 /* BaseApplicationDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,6 +746,7 @@
 		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
 				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
 				154EBD8C279E9BF80048CFF5 /* IJKVIewController */,
 				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
@@ -793,8 +828,7 @@
 		158C123C27A446060071FD9E /* foundation */ = {
 			isa = PBXGroup;
 			children = (
-				158C123D27A447350071FD9E /* FoundationHeader.h */,
-				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
+				152FD08227A4FBAF000DCBFE /* Header */,
 				1527F1E9279AD7D600A7482A /* bridge */,
 				1598CAB827983AFF00511EFD /* base */,
 				1598CADB27983B0B00511EFD /* common */,
@@ -1032,6 +1066,7 @@
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */,
 				1596B77A2799BF8500C28DF6 /* Chronos.framework */,
 				1530E4E827998D7E00E4A8E4 /* libbz2.tbd */,
 				1530E4E727998D7400E4A8E4 /* libz.tbd */,
@@ -1214,7 +1249,7 @@
 			name = "[CP-User] Run Flutter Build flutter_module Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/DevelopPods/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/Develop/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1247,6 +1282,7 @@
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
+				152FD08C27A4FD62000DCBFE /* ReactNativeViewController.m in Sources */,
 				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
@@ -1361,6 +1397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1420,6 +1457,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
