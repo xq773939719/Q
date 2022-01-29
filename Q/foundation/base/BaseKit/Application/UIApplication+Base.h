@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIApplication (Base)
 
-@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, weak) UIWindow *window;
 
 @end
 

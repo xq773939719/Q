@@ -23,6 +23,7 @@
 
 - (void)launchWithApplication:(UIApplication *)application{
   self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+  application.window = self.window;
   [self initNavigation];
   [self registerModules];
   [self createModules];

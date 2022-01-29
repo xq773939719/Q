@@ -13,7 +13,7 @@ static NSString *windowKey = @"windowKey";
 @implementation UIApplication (Base)
 
 - (void)setWindow:(UIWindow *)window {
-  objc_setAssociatedObject(self, &windowKey, window, OBJC_ASSOCIATION_RETAIN);
+  objc_setAssociatedObject(self, &windowKey, window, OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (UIWindow *)window {
