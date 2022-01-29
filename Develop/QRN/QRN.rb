@@ -7,7 +7,7 @@ def install_qrn()
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
   )
-  use_flipper!()
+  # use_flipper!()
 
   pre_install do |installer|
     # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289

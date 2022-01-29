@@ -55,6 +55,9 @@ def ThridPartyModules
   # CrashReporter
   pod 'PLCrashReporter'
 
+  # Socket 库
+  pod 'CocoaAsyncSocket'  
+
   # 动画
   pod 'lottie-ios', '<= 2.5.3'
 
