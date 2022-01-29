@@ -13,10 +13,6 @@
 
 @implementation ThirdViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/third" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];

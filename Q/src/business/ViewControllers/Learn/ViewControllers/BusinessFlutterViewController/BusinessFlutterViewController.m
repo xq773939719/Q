@@ -15,10 +15,6 @@
 
 @implementation BusinessFlutterViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/business_flutter" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];

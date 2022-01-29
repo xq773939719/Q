@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)registerScheme:(NSString *)scheme withClass:(Class)className;
 
-- (BOOL)route:(NSString *)scheme withParams:(NSDictionary *)params;
+- (BOOL)route:(NSString *)scheme withParams:(nullable NSDictionary *)params;
 
 @end
 

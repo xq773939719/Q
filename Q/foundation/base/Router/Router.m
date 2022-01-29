@@ -56,7 +56,7 @@
   }
   
   UIViewController *viewController = [[class alloc] init];
-  viewController.params = params;
+  viewController.params = params ?: @{};
   [self.rootNavigationController pushViewController:viewController animated:YES];
   return YES;
 }

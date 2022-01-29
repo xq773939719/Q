@@ -9,6 +9,7 @@
 #define RouterHeader_h
 
 #import "Router.h"
-#import "RouteMap.h"
+#import "RouteMap/RouteMap.h"
+#import "RouteManager/RouteManager.h"
 
 #endif /* RouterHeader_h */

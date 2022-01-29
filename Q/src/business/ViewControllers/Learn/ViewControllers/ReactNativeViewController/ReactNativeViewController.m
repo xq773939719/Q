@@ -15,10 +15,6 @@
 
 @implementation ReactNativeViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/rn" withClass:[self class]];
-}
-
 - (void)viewDidLoad {
   [super viewDidLoad];
 }

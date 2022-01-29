@@ -13,10 +13,6 @@
 
 @implementation MineViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/mine" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UINavigationController;
 @class UIViewController;
+@class RouteManager;
 
 @protocol BaseEntranceModuleProtocal
 
@@ -20,13 +21,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIWindow *window;
 
 // 根视图控制器
-- (UIViewController *)rootViewController;
+@property (nonatomic, strong) UIViewController *rootViewController;
+
+// 路由管理员
+@property (nonatomic, strong) RouteManager *routeManager;
 
 // 注册模块
 - (void)registerModules;
 
 // 启动模块
 - (void)createModules;
+
+// 注册VC
+- (void)registerViewControllers;
 
 @end
 

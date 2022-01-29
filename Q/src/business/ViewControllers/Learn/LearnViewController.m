@@ -21,10 +21,6 @@ NSString *cellId = @"LearnViewControllerCellId";
 
 @implementation LearnViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/learn" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];

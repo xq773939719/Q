@@ -17,13 +17,16 @@
 
 @implementation BaseEntranceManager
 
-@synthesize window = _window;
+@synthesize window;
+@synthesize rootViewController;
+@synthesize routeManager;
 
 - (void)launchWithApplication:(UIApplication *)application{
   self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
   [self initNavigation];
   [self registerModules];
   [self createModules];
+  [self registerViewControllers];
 }
 
 - (void)initNavigation {
@@ -46,6 +49,10 @@
 
 - (void)createModules {
   [BaseModuleManager createModules];
+}
+
+- (void)registerViewControllers {
+  
 }
 
 - (void)onAppLaunch {

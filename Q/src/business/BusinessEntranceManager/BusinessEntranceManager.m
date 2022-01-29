@@ -9,6 +9,7 @@
 
 #import "TabBarController.h"
 #import "BusinessLaunchViewController.h"
+#import "BusinessRouteManager.h"
 
 @interface BusinessEntranceManager () <LaunchViewControllerProtocol>
 
@@ -30,11 +31,19 @@
   return tabBarController;
 }
 
+- (RouteManager *)routeManager {
+  return [BusinessRouteManager new];
+}
+
 - (NSArray<Class> *)businessModules {
   return @[];
 }
 
-#pragma mark - BaseEntranceModuleProtocal
+- (void)registerViewControllers {
+  [self.routeManager registerViewControllers];
+}
+
+#pragma mark - LaunchViewControllerProtocol
 - (void)showRootViewController {
   self.window.rootViewController = self.rootNavigationController;
   [self configTheme];

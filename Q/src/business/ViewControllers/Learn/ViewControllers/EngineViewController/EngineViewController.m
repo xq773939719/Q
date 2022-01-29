@@ -15,10 +15,6 @@
 
 @implementation EngineViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/engine" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];

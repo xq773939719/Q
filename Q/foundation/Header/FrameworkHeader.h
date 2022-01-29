@@ -8,9 +8,6 @@
 #ifndef FrameworkHeader_h
 #define FrameworkHeader_h
 
-@import JSPatch;
-@import AFNetworking;
-
 #import <AFNetworking/AFNetworking.h>
 
 #import <Chronos/Chronos.h>
@@ -32,6 +29,9 @@
 #import <LookinServer/LookinServer.h>
 
 #import <Masonry/Masonry.h>
+#import "Metal/MetalHeader.h"
+
+#import "OpenGL/GLHeader.h"
 
 #import <PromiseKit/PromiseKit.h>
 

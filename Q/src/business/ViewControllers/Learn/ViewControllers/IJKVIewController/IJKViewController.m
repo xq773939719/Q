@@ -15,10 +15,6 @@
 
 @implementation IJKViewController
 
-+ (void)load {
-  [[Router share] registerScheme:@"q://vc/ijk" withClass:[self class]];
-}
-
 - (instancetype)init
 {
   self = [super init];
