@@ -56,7 +56,10 @@ def ThridPartyModules
   pod 'PLCrashReporter'
 
   # Socket 库
-  pod 'CocoaAsyncSocket'  
+  pod 'CocoaAsyncSocket'
+  
+  # JSON Dictionary
+  pod 'MJExtension'
 
   # 动画
   pod 'lottie-ios', '<= 2.5.3'
