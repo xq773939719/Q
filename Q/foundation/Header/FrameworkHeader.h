@@ -13,12 +13,13 @@
 #import <Chronos/Chronos.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
-#import <Firebase/Firebase.h>
+// #import <Firebase/Firebase.h>
 #import <Flutter/Flutter.h>
-
 #import <FBLPromises/FBLPromises.h>
 #import <FLEX/FLEX.h>
 #import <FMDB/FMDB.h>
+
+#import <GPUImage/GPUImage.h>
 
 #import <IGListKit/IGListKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
@@ -43,6 +44,7 @@
 #import <RegexKitLite_NoWarning/RegexKitLite.h>
 
 #import <SDWebImage/SDWebImage.h>
+#import <SocketRocket/SocketRocket.h>
 #import <SSZipArchive/SSZipArchive.h>
 
 #import <Toast/Toast.h>

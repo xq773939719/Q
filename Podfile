@@ -44,7 +44,10 @@ def ThridPartyModules
   pod 'YogaKit'
 
   # 响应式
+  pod 'ReactiveCocoa'
   pod 'ReactiveObjC'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # 图片
   pod 'SDWebImage'
@@ -79,10 +82,10 @@ def ThridPartyModules
   pod 'PromisesSwift'
   
   # FaceBook SDK
-  pod 'FBSDKCoreKit'
+  # pod 'FBSDKCoreKit'
   
   # Firebase SDK
-  pod 'Firebase'
+  # pod 'Firebase'
   
   # 日志框架
   pod 'CocoaLumberjack'
@@ -102,14 +105,33 @@ def ThridPartyModules
   pod 'Toast'
 
   # JS热修复 交互
-   pod 'JSPatch'
-   pod 'WebViewJavascriptBridge'
+  pod 'JSPatch'
+  pod 'WebViewJavascriptBridge'
 
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
 
   # 主题框架
   pod 'SwiftTheme'
+  
+  pod 'GRDB.swift'
+  
+  pod 'ReachabilitySwift'
+  
+  pod 'Charts'
+  pod 'ChartsRealm'
+  
+  pod 'SwiftDate'
+  
+  # pod 'Alamofire'
+
+  pod 'SwifterSwift'
+  pod 'SQLite.swift'
+  pod 'SwiftLint'
+  
+  pod 'SocketRocket'
+  
+  pod 'GPUImage'
   
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
