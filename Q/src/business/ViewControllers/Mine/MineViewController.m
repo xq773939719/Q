@@ -13,15 +13,14 @@
 
 @implementation MineViewController
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    self.viewControllerName = @"我的";
-
-    self.hideStatusBar = YES;
-  }
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.viewControllerName = @"我的";
+        
+        self.hideStatusBar = YES;
+    }
+    return self;
 }
 
 @end

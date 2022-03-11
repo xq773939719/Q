@@ -22,62 +22,62 @@
 @synthesize routeManager;
 
 - (void)launchWithApplication:(UIApplication *)application{
-  self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-  application.window = self.window;
-  [self initNavigation];
-  [self registerModules];
-  [self createModules];
-  [self registerViewControllers];
+    self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    application.window = self.window;
+    [self initNavigation];
+    [self registerModules];
+    [self createModules];
+    [self registerViewControllers];
 }
 
 - (void)initNavigation {
-  self.rootNavigationController = [[BaseNavigationController alloc] initWithRootViewController:[self rootViewController]];
-  [[Router share] configRootNavigationController:self.rootNavigationController];
+    self.rootNavigationController = [[BaseNavigationController alloc] initWithRootViewController:[self rootViewController]];
+    [[Router share] configRootNavigationController:self.rootNavigationController];
 }
 
 - (UIViewController *)rootViewController {
-  NSAssert(NO, @"子类未实现该方法");
-  return nil;
+    NSAssert(NO, @"子类未实现该方法");
+    return nil;
 }
 
 - (void)registerModules {
-  NSArray *systemModules = @[
-    
-  ];
-  [BaseModuleManager registerModules:systemModules
-                               level:BaseModuleLevelSystem];
+    NSArray *systemModules = @[
+        
+    ];
+    [BaseModuleManager registerModules:systemModules
+                                 level:BaseModuleLevelSystem];
 }
 
 - (void)createModules {
-  [BaseModuleManager createModules];
+    [BaseModuleManager createModules];
 }
 
 - (void)registerViewControllers {
-  
+    
 }
 
 - (void)onAppLaunch {
-  [[BaseModuleManager share] onAppLaunch];
+    [[BaseModuleManager share] onAppLaunch];
 }
 
 - (void)onAppDidBecomeActive {
-  [[BaseModuleManager share] onAppDidBecomeActive];
+    [[BaseModuleManager share] onAppDidBecomeActive];
 }
 
 - (void)onAppWillEnterForeground {
-  [[BaseModuleManager share] onAppWillEnterForeground];
+    [[BaseModuleManager share] onAppWillEnterForeground];
 }
 
 - (void)onAppWillResignActive {
-  [[BaseModuleManager share] onAppWillResignActive];
+    [[BaseModuleManager share] onAppWillResignActive];
 }
 
 - (void)onAppDidEnterBackground {
-  [[BaseModuleManager share] onAppDidEnterBackground];
+    [[BaseModuleManager share] onAppDidEnterBackground];
 }
 
 - (void)onAppWillTerminate {
-  [[BaseModuleManager share] onAppWillTerminate];
+    [[BaseModuleManager share] onAppWillTerminate];
 }
 
 @end

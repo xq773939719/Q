@@ -17,16 +17,16 @@
 @implementation TabBarControllerDataProvider
 
 - (NSArray<UINavigationController *> *)models {
-  
-  NSMutableArray *array = [NSMutableArray array];
-  
-  [array addObject: [HomeNavigationController share]];
-  [array addObject: [FeatureNavigationController share]];
-  [array addObject: [ThirdNavigationController share]];
-  [array addObject: [MineNavigationController share]];
-  [array addObject: [LearnNavigationController share]];
-
-  return [array copy];
+    
+    NSMutableArray *array = [NSMutableArray array];
+    
+    [array addObject: [HomeNavigationController share]];
+    [array addObject: [FeatureNavigationController share]];
+    [array addObject: [ThirdNavigationController share]];
+    [array addObject: [MineNavigationController share]];
+    [array addObject: [LearnNavigationController share]];
+    
+    return [array copy];
 }
 
 @end

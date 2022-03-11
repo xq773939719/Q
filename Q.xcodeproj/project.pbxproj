@@ -63,6 +63,7 @@
 		154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */; };
 		154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA3279EC90B0048CFF5 /* EngineViewController.m */; };
 		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
+		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
 		157530AE27A538650075C149 /* RouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530AD27A538650075C149 /* RouteManager.m */; };
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
@@ -231,6 +232,8 @@
 		154EBDA3279EC90B0048CFF5 /* EngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineViewController.m; sourceTree = "<group>"; };
 		154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessFlutterViewController.h; sourceTree = "<group>"; };
 		154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessFlutterViewController.m; sourceTree = "<group>"; };
+		155B9EEE27DB302F00358B50 /* ReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
+		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
 		157530A627A533930075C149 /* MetalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalHeader.h; sourceTree = "<group>"; };
 		157530AC27A538650075C149 /* RouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteManager.h; sourceTree = "<group>"; };
 		157530AD27A538650075C149 /* RouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteManager.m; sourceTree = "<group>"; };
@@ -768,6 +771,7 @@
 		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
 				152FD09127A52DBA000DCBFE /* OpenGLViewController */,
 				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
 				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
@@ -802,6 +806,15 @@
 				154EBDA3279EC90B0048CFF5 /* EngineViewController.m */,
 			);
 			path = EngineViewController;
+			sourceTree = "<group>";
+		};
+		155B9EED27DB2FFF00358B50 /* ReactiveViewController */ = {
+			isa = PBXGroup;
+			children = (
+				155B9EEE27DB302F00358B50 /* ReactiveViewController.h */,
+				155B9EEF27DB302F00358B50 /* ReactiveViewController.m */,
+			);
+			path = ReactiveViewController;
 			sourceTree = "<group>";
 		};
 		157530A527A533860075C149 /* Metal */ = {
@@ -1354,6 +1367,7 @@
 				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
 				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
+				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,

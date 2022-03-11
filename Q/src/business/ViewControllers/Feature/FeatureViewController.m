@@ -13,14 +13,13 @@
 
 @implementation FeatureViewController
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    self.viewControllerName = @"特征";
-    
-  }
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.viewControllerName = @"特征";
+        
+    }
+    return self;
 }
 
 @end

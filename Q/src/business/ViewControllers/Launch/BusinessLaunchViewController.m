@@ -19,10 +19,10 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  NSTimeInterval time = 2;
-  [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
-    [self.delegate showRootViewController];
-  } repeats:NO];
+    NSTimeInterval time = 1;
+    [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
+        [self.delegate showRootViewController];
+    } repeats:NO];
 }
 
 

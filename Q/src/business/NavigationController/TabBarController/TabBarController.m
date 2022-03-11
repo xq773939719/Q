@@ -18,31 +18,31 @@
 @implementation TabBarController
 
 + (void)load {
-  [self share];
+    [self share];
 }
 
 + (instancetype)share {
-  static TabBarController * instance;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    if (!instance) {
-      instance = [TabBarController new];
-    }
-  });
-  return instance;
+    static TabBarController * instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!instance) {
+            instance = [TabBarController new];
+        }
+    });
+    return instance;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  [self createViewControllers];
+    [self createViewControllers];
 }
 
 - (void)createViewControllers {
-  self.dataProvider = [TabBarControllerDataProvider new];
-  NSArray<UINavigationController *> *childViewControllers = [self.dataProvider models];
-  for (UIViewController* childViewController in childViewControllers) {
-    [self addChildViewController:childViewController];
-  }
-
+    self.dataProvider = [TabBarControllerDataProvider new];
+    NSArray<UINavigationController *> *childViewControllers = [self.dataProvider models];
+    for (UIViewController* childViewController in childViewControllers) {
+        [self addChildViewController:childViewController];
+    }
+    
 }
 
 

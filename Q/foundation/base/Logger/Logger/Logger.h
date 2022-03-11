@@ -8,21 +8,21 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_OPTIONS(NSUInteger, LoggerFlag){
-  LoggerFlagError      = (1 << 0),
-  LoggerFlagWarn    = (1 << 1),
-  LoggerFlagInfo       = (1 << 2),
-  LoggerFlagDebug      = (1 << 3),
-  LoggerFlagVerbose    = (1 << 4)
+    LoggerFlagError      = (1 << 0),
+    LoggerFlagWarn    = (1 << 1),
+    LoggerFlagInfo       = (1 << 2),
+    LoggerFlagDebug      = (1 << 3),
+    LoggerFlagVerbose    = (1 << 4)
 };
 
 typedef NS_ENUM(NSUInteger, LoggerLevel) {
-  LoggerLevelOff = 0,
-  LoggerLevelError = (1 << 0),
-  LoggerLevelWarn = (LoggerLevelError | 1 << 1),
-  LoggerLevelInfo = (LoggerLevelWarn | 1 << 2),
-  LoggerLevelDebug = (LoggerLevelInfo | 1 << 3),
-  LoggerLevelVerbose = (LoggerLevelDebug | 1 << 4),
-  LoggerLevelAll = NSUIntegerMax
+    LoggerLevelOff = 0,
+    LoggerLevelError = (1 << 0),
+    LoggerLevelWarn = (LoggerLevelError | 1 << 1),
+    LoggerLevelInfo = (LoggerLevelWarn | 1 << 2),
+    LoggerLevelDebug = (LoggerLevelInfo | 1 << 3),
+    LoggerLevelVerbose = (LoggerLevelDebug | 1 << 4),
+    LoggerLevelAll = NSUIntegerMax
 };
 
 #define LoggerError(frmt, ...) LoggerOutput(LoggerLevelError, __FILE__, __PRETTY_FUNCTION__, __LINE__, nil, frmt, ##__VA_ARGS__)

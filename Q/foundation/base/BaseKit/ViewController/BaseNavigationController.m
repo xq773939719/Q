@@ -14,21 +14,21 @@
 @implementation BaseNavigationController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
+    [super viewDidLoad];
+    self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-  [super viewDidAppear: animated];
-  [self setHideNavigationBar:YES];
+    [super viewDidAppear: animated];
+    [self setHideNavigationBar:YES];
 }
 
 - (UIViewController *)childViewControllerForStatusBarStyle {
-  return self.topViewController;
+    return self.topViewController;
 }
 
 - (UIViewController *)childViewControllerForStatusBarHidden {
-  return self.topViewController;
+    return self.topViewController;
 }
 
 @end

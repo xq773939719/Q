@@ -13,14 +13,13 @@
 
 @implementation ThirdViewController
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    self.viewControllerName = @"引擎";
-    
-  }
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.viewControllerName = @"引擎";
+        
+    }
+    return self;
 }
 
 @end

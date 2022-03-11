@@ -12,7 +12,7 @@ NSString *moduleName = @"PlayerModule";
 @implementation PlayerModule
 
 - (NSString *)moduleName {
-  return moduleName;
+    return moduleName;
 }
 
 - (void)didLoadModule {

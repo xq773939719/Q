@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LearnCellModel : NSObject
 
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) BaseClickCallback onCLick;
+@property (nonatomic, strong) BaseClickCallback onClick;
 
 @end
 

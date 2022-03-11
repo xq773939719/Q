@@ -15,29 +15,28 @@
 @implementation LearnNavigationController
 
 + (instancetype)share {
-  static LearnNavigationController * instance;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    if (!instance) {
-      instance = [[[self class] alloc] init];
-    }
-  });
-  return instance;
+    static LearnNavigationController * instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!instance) {
+            instance = [[[self class] alloc] init];
+        }
+    });
+    return instance;
 }
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    [self setViewControllers: @[
-      [LearnViewController new]
-    ]];
-  }
-  
-  self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
-  self.tabBarItem.image = [UIImage imageNamed: @"learn"];
-  
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self setViewControllers: @[
+            [LearnViewController new]
+        ]];
+    }
+    
+    self.tabBarItem.title = self.viewControllers.firstObject.tabBarTitle;
+    self.tabBarItem.image = [UIImage imageNamed: @"learn"];
+    
+    return self;
 }
 
 @end

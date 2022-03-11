@@ -18,56 +18,56 @@
 @implementation BaseApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"启动");
-  [self.entranceManager launchWithApplication:application];
-  [self.entranceManager onAppLaunch];
-  return YES;
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"启动");
+    [self.entranceManager launchWithApplication:application];
+    [self.entranceManager onAppLaunch];
+    return YES;
 }
 
 # pragma mark - BaseApplicationEntranceProtocol
 - (BaseEntranceManager *)onDelegateInit {
-  // 子类需要实现
-  return nil;
+    // 子类需要实现
+    return nil;
 }
 
 #pragma mark - UIApplicationDelegate
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要进入前台");
-  [self.entranceManager onAppWillEnterForeground];
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要进入前台");
+    [self.entranceManager onAppWillEnterForeground];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经激活");
-  [self.entranceManager onAppDidBecomeActive];
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经激活");
+    [self.entranceManager onAppDidBecomeActive];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要失活");
-  [self.entranceManager onAppWillResignActive];
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要失活");
+    [self.entranceManager onAppWillResignActive];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经进入后台");
-  [self.entranceManager onAppDidEnterBackground];
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经进入后台");
+    [self.entranceManager onAppDidEnterBackground];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-  LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经终止");
-  [self.entranceManager onAppWillTerminate];
+    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经终止");
+    [self.entranceManager onAppWillTerminate];
 }
 
 #pragma mark - getter
 
 - (BaseEntranceManager *)entranceManager {
-  if (!_entranceManager) {
-    _entranceManager = [self onDelegateInit];
-  }
-  return _entranceManager;
+    if (!_entranceManager) {
+        _entranceManager = [self onDelegateInit];
+    }
+    return _entranceManager;
 }
 
 - (UIWindow *)window {
-  return [self.entranceManager window];
+    return [self.entranceManager window];
 }
 
 @end

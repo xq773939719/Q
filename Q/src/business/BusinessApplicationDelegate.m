@@ -15,8 +15,8 @@
 @implementation BusinessApplicationDelegate
 
 - (BaseEntranceManager *)onDelegateInit {
-  // 提供整体的业务切换
-  return [BusinessEntranceManager new];
+    // 提供整体的业务切换
+    return [BusinessEntranceManager new];
 }
 
 @end

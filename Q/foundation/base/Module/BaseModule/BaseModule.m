@@ -15,64 +15,63 @@
 
 @implementation BaseModule
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    self.config = [NSDictionary dictionary];
-  }
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.config = [NSDictionary dictionary];
+    }
+    return self;
 }
 
 - (instancetype)initWithConfig: (NSDictionary *)config {
-  self = [self init];
-  if (self) {
-    self.config = [config copy];
-  }
-  return self;
+    self = [self init];
+    if (self) {
+        self.config = [config copy];
+    }
+    return self;
 }
 
 # pragma mark - BaseModuleProtocol
 - (NSString *)moduleName {
-  return nil;
+    return nil;
 }
 
 - (BaseModuleLevel)moduleLevel {
-  return BaseModuleLevelUnknown;
+    return BaseModuleLevelUnknown;
 }
 
 - (void)didLoadModule {
-  return;
+    return;
 }
 
 - (nonnull NSDictionary *)moduleConfig {
-  return self.config;
+    return self.config;
 }
 
 #pragma mark - BaseAppStatusProtocol
 
 - (void)onAppLaunch {
-  
+    
 }
 
 - (void)onAppDidBecomeActive {
-  
+    
 }
 
 - (void)onAppWillEnterForeground {
-  
+    
 }
 
 - (void)onAppWillResignActive {
-  
+    
 }
 
 - (void)onAppDidEnterBackground {
-  
+    
 }
 
 - (void)onAppWillTerminate {
-  
+    
 }
 
 @end

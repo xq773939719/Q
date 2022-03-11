@@ -19,5 +19,6 @@
 #define BUSINESS_ENGINE_VIEW_CONTROLLER @"q://vc/engine"
 #define BUSINESS_REACT_NATIVE_VIEW_CONTROLLER @"q://vc/rn"
 #define BUSINESS_OPENGL_VIEW_CONTROLLER @"q://vc/openGL"
+#define BUSINESS_REACTIVE_VIEW_CONTROLLER @"q://vc/reactive"
 
 #endif /* BusinessRouteDefine_h */

@@ -16,14 +16,14 @@
 }
 
 - (void)log:(LoggerLevel)flag file:(const char *)file function:(const char *)function line:(NSUInteger)line tag:(id)tag format:(NSString *)format args:(va_list)args {
-  switch (flag) {
-    case LoggerLevelError: LoggerInnerErrorV(file, function, line, tag, format, args); break;
-    case LoggerLevelWarn: LoggerInnerWarnV(file, function, line, tag, format, args); break;
-    case LoggerLevelInfo: LoggerInnerInfoV(file, function, line, tag, format, args); break;
-    case LoggerLevelDebug: LoggerInnerDebugV(file, function, line, tag, format, args); break;
-    case LoggerLevelVerbose: LoggerInnerVerboseV(file, function, line, tag, format, args); break;
-    default: break;
-  }
+    switch (flag) {
+        case LoggerLevelError: LoggerInnerErrorV(file, function, line, tag, format, args); break;
+        case LoggerLevelWarn: LoggerInnerWarnV(file, function, line, tag, format, args); break;
+        case LoggerLevelInfo: LoggerInnerInfoV(file, function, line, tag, format, args); break;
+        case LoggerLevelDebug: LoggerInnerDebugV(file, function, line, tag, format, args); break;
+        case LoggerLevelVerbose: LoggerInnerVerboseV(file, function, line, tag, format, args); break;
+        default: break;
+    }
 }
 
 @end

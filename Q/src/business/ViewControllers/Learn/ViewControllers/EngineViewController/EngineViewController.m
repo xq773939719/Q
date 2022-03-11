@@ -17,19 +17,19 @@
 
 - (instancetype)init
 {
-  self = [super init];
-  if (self) {
-    self.hideNavigationBar = YES;
-  }
-  return self;
+    self = [super init];
+    if (self) {
+        self.hideNavigationBar = YES;
+    }
+    return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-  self.chronosView = [CRONView new];
-  self.chronosView.frame = self.view.bounds;
-  self.chronosView.backgroundColor = [UIColor clearColor];
-  [self.view addSubview:self.chronosView];
+    [super viewWillAppear:animated];
+    self.chronosView = [CRONView new];
+    self.chronosView.frame = self.view.bounds;
+    self.chronosView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:self.chronosView];
 }
 
 @end

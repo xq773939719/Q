@@ -13,14 +13,13 @@
 
 @implementation HomeViewController
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    self.viewControllerName = @"主页";
-    
-  }
-  return self;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.viewControllerName = @"主页";
+        
+    }
+    return self;
 }
 
 @end

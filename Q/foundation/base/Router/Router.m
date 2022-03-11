@@ -18,47 +18,47 @@
 @implementation Router
 
 + (void)load {
-  [self share];
+    [self share];
 }
 
 + (instancetype)share {
-  static Router *instance;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    if (!instance) {
-      instance = [Router new];
-    }
-  });
-  return instance;
+    static Router *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!instance) {
+            instance = [Router new];
+        }
+    });
+    return instance;
 }
 
 - (void)configRootNavigationController:(UINavigationController *)rootNavigationController {
-  self.rootNavigationController = rootNavigationController;
+    self.rootNavigationController = rootNavigationController;
 }
 
 - (instancetype)init
 {
-  self = [super init];
-  if (self) {
-    self.routeMap = [RouteMap new];
-  }
-  return self;
+    self = [super init];
+    if (self) {
+        self.routeMap = [RouteMap new];
+    }
+    return self;
 }
 
 - (BOOL)registerScheme:(NSString *)scheme withClass:(Class)className {
-  return [self.routeMap registerScheme:scheme withClass:className];
+    return [self.routeMap registerScheme:scheme withClass:className];
 }
 
 - (BOOL)route:(NSString *)scheme withParams:(NSDictionary *)params {
-  Class class = [self.routeMap getClass:scheme];
-  if (!class) {
-    return NO;
-  }
-  
-  UIViewController *viewController = [[class alloc] init];
-  viewController.params = params ?: @{};
-  [self.rootNavigationController pushViewController:viewController animated:YES];
-  return YES;
+    Class class = [self.routeMap getClass:scheme];
+    if (!class) {
+        return NO;
+    }
+    
+    UIViewController *viewController = [[class alloc] init];
+    viewController.params = params ?: @{};
+    [self.rootNavigationController pushViewController:viewController animated:YES];
+    return YES;
 }
 
 @end

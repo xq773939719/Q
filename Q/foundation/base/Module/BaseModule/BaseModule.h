@@ -12,10 +12,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, BaseModuleLevel) {
-  BaseModuleLevelUnknown = -1,
-  BaseModuleLevelSystem = 0,
-  BaseModuleLevelCommon = 1,
-  BaseModuleLevelBusiness = 2,
+    BaseModuleLevelUnknown = -1,
+    BaseModuleLevelSystem = 0,
+    BaseModuleLevelCommon = 1,
+    BaseModuleLevelBusiness = 2,
 };
 
 @protocol BaseModuleProtocol
