@@ -3,4 +3,54 @@
    uuid = "180AC9F4-6A43-4345-B1D1-C9F13347C2C3"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A324E204-86C8-4D25-86ED-C3BC1EEC71B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Q/src/business/ViewControllers/Learn/ViewControllers/ReactiveViewController/ReactiveModel.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "text"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A324E204-86C8-4D25-86ED-C3BC1EEC71B3 - 2e9609aeebd6c892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ReactiveModel text]"
+                  moduleName = "Q"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xq/Code/Q/Q/src/business/ViewControllers/Learn/ViewControllers/ReactiveViewController/ReactiveModel.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "A324E204-86C8-4D25-86ED-C3BC1EEC71B3 - d1681244a9fa6dfc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ReactiveModel setText:]"
+                  moduleName = "Q"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xq/Code/Q/Q/src/business/ViewControllers/Learn/ViewControllers/ReactiveViewController/ReactiveModel.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -6,10 +6,12 @@
 //
 
 #import "ReactiveViewController.h"
+#import "ReactiveViewModel.h"
 
 @interface ReactiveViewController () <UITextFieldDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) ReactiveViewModel *viewModel;
 
 @end
 
@@ -18,10 +20,15 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        [self initData];
         [self setup];
         [self observe];
     }
     return self;
+}
+
+- (void)initData {
+    [self.textField bindViewModel:self.viewModel];
 }
 
 - (void)setup {
@@ -35,9 +42,10 @@
 }
 
 - (void)observe {
-    [[self.textField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
-        LoggerInfo(@"[ReactiveViewController]%s, %@", __func__, x);
-    }];
+//    [[self.textField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
+//        LoggerInfo(@"[ReactiveViewController]%s, %@", __func__, x);
+//    }];
+    
 }
 
 #pragma mark - privat method
@@ -51,6 +59,13 @@
         _textField.minimumFontSize = 20;
     }
     return _textField;
+}
+
+- (ReactiveViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [ReactiveViewModel new];
+    }
+    return _viewModel;
 }
 
 @end
