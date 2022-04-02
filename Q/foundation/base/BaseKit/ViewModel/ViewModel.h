@@ -1,6 +1,5 @@
 //
 //  ViewModel.h
-//  Q
 //
 //  Created by XQ on 2022/3/11.
 //
@@ -9,11 +8,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewModel : NSObject
+@protocol ViewModel <NSObject>
 
-@property (nonatomic, weak) UIView *delegate;
+/// ① 绑定Model
+- (BOOL)bind;
 
-- (void)bind;
+/// ② 装载UI
+- (BOOL)setup;
+
+@end
+
+@interface ViewModel : NSObject <ViewModel>
+
+@property (nonatomic, weak) UIViewController *delegate;
+
+- (void)setupModel;
+- (void)bindOnModelChange;
+- (void)setupView;
+- (void)bindOnViewChange;
 
 @end
 

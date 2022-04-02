@@ -1,6 +1,5 @@
 //
-//  UIView+ViewModel.h
-//  Q
+//  UIViewController+View.h
 //
 //  Created by XQ on 2022/3/11.
 //
@@ -9,9 +8,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (ViewModel)
+@interface UIViewController (View)
 
-- (void)bindViewModel:(ViewModel *)viewModel;
+- (void)addSubview:(UIView *)view;
 
 @end
 

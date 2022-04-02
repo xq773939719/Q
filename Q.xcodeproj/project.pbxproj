@@ -65,7 +65,7 @@
 		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
 		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
 		155B9EF527DB681B00358B50 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EF427DB681B00358B50 /* ViewModel.m */; };
-		155B9EFB27DB6F5800358B50 /* UIView+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFA27DB6F5800358B50 /* UIView+ViewModel.m */; };
+		155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFA27DB6F5800358B50 /* UIViewController+View.m */; };
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
 		157530AE27A538650075C149 /* RouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530AD27A538650075C149 /* RouteManager.m */; };
@@ -240,8 +240,8 @@
 		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
 		155B9EF327DB681B00358B50 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = Q/foundation/base/BaseKit/VIewModel/ViewModel.h; sourceTree = SOURCE_ROOT; };
 		155B9EF427DB681B00358B50 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = Q/foundation/base/BaseKit/VIewModel/ViewModel.m; sourceTree = SOURCE_ROOT; };
-		155B9EF927DB6F5800358B50 /* UIView+ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewModel.h"; sourceTree = "<group>"; };
-		155B9EFA27DB6F5800358B50 /* UIView+ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewModel.m"; sourceTree = "<group>"; };
+		155B9EF927DB6F5800358B50 /* UIViewController+View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+View.h"; sourceTree = "<group>"; };
+		155B9EFA27DB6F5800358B50 /* UIViewController+View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+View.m"; sourceTree = "<group>"; };
 		155B9EFC27DB701A00358B50 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
 		155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewModel.m; sourceTree = "<group>"; };
 		155B9EFF27DB707700358B50 /* ReactiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveModel.h; sourceTree = "<group>"; };
@@ -833,15 +833,6 @@
 			path = ReactiveViewController;
 			sourceTree = "<group>";
 		};
-		155B9EF127DB678400358B50 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				155B9EF927DB6F5800358B50 /* UIView+ViewModel.h */,
-				155B9EFA27DB6F5800358B50 /* UIView+ViewModel.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		155B9EF227DB678800358B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -981,14 +972,16 @@
 		1597D6D0279B12FD005592EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
-				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
+				154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */,
+				154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */,
 				154EBD81279E6B440048CFF5 /* BaseTabBarController.h */,
 				154EBD82279E6B440048CFF5 /* BaseTabBarController.m */,
 				154EBD84279E6B590048CFF5 /* BaseViewController.h */,
 				154EBD85279E6B590048CFF5 /* BaseViewController.m */,
-				154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */,
-				154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */,
+				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
+				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
+				155B9EF927DB6F5800358B50 /* UIViewController+View.h */,
+				155B9EFA27DB6F5800358B50 /* UIViewController+View.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1104,7 +1097,6 @@
 			isa = PBXGroup;
 			children = (
 				155B9EF227DB678800358B50 /* ViewModel */,
-				155B9EF127DB678400358B50 /* View */,
 				158C122227A3A5B70071FD9E /* Object */,
 				1597D6D0279B12FD005592EE /* ViewController */,
 				1597D6CB279B0CFE005592EE /* Launch */,
@@ -1344,7 +1336,7 @@
 		};
 		62A35F9F04A016EF8C7831A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -1416,7 +1408,7 @@
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
-				155B9EFB27DB6F5800358B50 /* UIView+ViewModel.m in Sources */,
+				155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,

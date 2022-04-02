@@ -1,6 +1,5 @@
 //
 //  LearnViewController.h
-//  Q
 //
 //  Created by XQ on 2022/1/21.
 //

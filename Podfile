@@ -64,8 +64,10 @@ def ThridPartyModules
   # JSON Dictionary
   pod 'MJExtension'
 
+  pod "Aspects"
+  
   # 动画
-  pod 'lottie-ios', '<= 2.5.3'
+  pod 'lottie-ios'
 
   # 数据解析
   pod 'JSONModel'
@@ -89,6 +91,7 @@ def ThridPartyModules
   
   # 日志框架
   pod 'CocoaLumberjack'
+  pod "NSLogger"
   
   # gRPC
   # pod 'gRPC'
@@ -111,6 +114,17 @@ def ThridPartyModules
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
 
+  # 图像
+  pod 'GPUImage'
+  
+  # UI
+  pod 'ComponentKit'
+  
+  # Crash 防护
+  pod 'JJException'
+  
+  pod 'SocketRocket'
+  
   # 主题框架
   pod 'SwiftTheme'
   
@@ -128,10 +142,6 @@ def ThridPartyModules
   pod 'SwifterSwift'
   pod 'SQLite.swift'
   pod 'SwiftLint'
-  
-  pod 'SocketRocket'
-  
-  pod 'GPUImage'
   
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'

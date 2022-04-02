@@ -1,6 +1,5 @@
 //
 //  BaseViewController.h
-//  Q
 //
 //  Created by XQ on 2022/1/24.
 //
@@ -9,7 +8,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : UIViewController
+@class ViewModel;
+
+@protocol ViewModelBindable <NSObject>
+
+- (void)bindViewModel:(ViewModel *)viewModel;
+
+@end
+
+@interface BaseViewController : UIViewController <ViewModelBindable>
+
+@property (nonatomic, strong, readonly) NSMutableArray<ViewModel *> *viewModels;
 
 @end
 

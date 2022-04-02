@@ -1,6 +1,5 @@
 //
 //  BaseKitHeader.h
-//  Q
 //
 //  Created by XQ on 2022/1/21.
 //
@@ -20,7 +19,7 @@
 
 // 扩展
 #import "Object/NSObject+Method.h"
-#import "View/UIView+ViewModel.h"
+#import "ViewController/UIViewController+View.h"
 #import "Application/UIApplication+Base.h"
 #import "ViewController/UIViewController+Configuration.h"
 

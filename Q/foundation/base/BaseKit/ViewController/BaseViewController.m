@@ -1,13 +1,15 @@
 //
 //  BaseViewController.m
-//  Q
 //
 //  Created by XQ on 2022/1/24.
 //
 
 #import "BaseViewController.h"
+#import "BaseKitHeader.h"
 
 @interface BaseViewController ()
+
+@property (nonatomic, strong) NSMutableArray<ViewModel *> *viewModels;
 
 @end
 
@@ -72,6 +74,15 @@
     return self.hideStatusBar;
 }
 
+- (void)bindViewModel:(ViewModel *)viewModel {
+    if (!viewModel) {
+        return;
+    }
+    viewModel.delegate = self;
+    [viewModel bind];
+    [self.viewModels addObject:viewModel];
+}
+
 #pragma mark - private method
 
 - (void)initProperties {
@@ -87,11 +98,8 @@
     
     self.navigationTitle = @"NavigationTitle";
     self.hideNavigationBar = YES;
+    
+    self.viewModels = [NSMutableArray array];
 }
-
-//  [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//    make.center.mas_equalTo(self.view);
-//
-//  }];
 
 @end
