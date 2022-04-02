@@ -20,6 +20,10 @@ NSString *cellId = @"LearnViewControllerCellId";
 
 @implementation LearnViewController
 
++ (NSString *)scheme {
+    return @"q://vc/learn";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

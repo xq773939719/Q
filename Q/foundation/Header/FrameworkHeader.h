@@ -58,8 +58,18 @@
 #import <WebViewJavascriptBridge/WebViewJavascriptBridge.h>
 
 // ... 其他
-
-// Swift
-#import "Q-Bridging-Header.h"
+#import "Charts-Swift.h"
+#import "ChartsRealm-Swift.h"
+#import "GRDB-Swift.h"
+#import "Promises-Swift.h"
+#import "Reachability-Swift.h"
+#import "RealmSwift-Swift.h"
+#import "ReactiveSwift-Swift.h"
+#import "ReactiveCocoa-Swift.h"
+#import "RxCocoa-Swift.h"
+#import "RxRelay-Swift.h"
+#import "RxSwift-Swift.h"
+#import "SwiftDate-Swift.h"
+#import "SwiftTheme-Swift.h"
 
 #endif /* FrameworkHeader_h */

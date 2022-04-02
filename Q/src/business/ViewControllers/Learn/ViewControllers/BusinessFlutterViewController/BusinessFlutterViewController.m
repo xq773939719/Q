@@ -14,6 +14,10 @@
 
 @implementation BusinessFlutterViewController
 
++ (NSString *)scheme {
+    return @"q://vc/business_flutter";
+}
+
 - (instancetype)init
 {
     self = [super init];
@@ -33,7 +37,6 @@
     [self.flutter.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(self.view);
     }];
-    
 }
 
 @end

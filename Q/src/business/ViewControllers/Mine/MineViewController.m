@@ -12,6 +12,10 @@
 
 @implementation MineViewController
 
++ (NSString *)scheme {
+    return @"q://vc/mine";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

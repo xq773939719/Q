@@ -14,6 +14,10 @@
 
 @implementation IJKViewController
 
++ (NSString *)scheme {
+    return @"q://vc/ijjk";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

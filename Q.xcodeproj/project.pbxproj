@@ -86,6 +86,10 @@
 		15A45CF32799D2B800017F8A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF22799D2B800017F8A /* Logger.m */; };
 		15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF92799D2DF00017F8A /* LoggerSystem.m */; };
 		15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */; };
+		15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5327F864F6009018D8 /* SwiftViewController.swift */; };
+		15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5B27F869A8009018D8 /* YYKitViewController.m */; };
+		15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */; };
+		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -251,7 +255,6 @@
 		157530AD27A538650075C149 /* RouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteManager.m; sourceTree = "<group>"; };
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
-		157530B327A53E400075C149 /* BusinessRouteDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteDefine.h; sourceTree = "<group>"; };
 		158C122327A3A5F30071FD9E /* NSObject+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Method.h"; sourceTree = "<group>"; };
 		158C122427A3A5F30071FD9E /* NSObject+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Method.m"; sourceTree = "<group>"; };
 		158C122927A40D720071FD9E /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Person.proto; sourceTree = "<group>"; };
@@ -285,6 +288,13 @@
 		15A45CF92799D2DF00017F8A /* LoggerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerSystem.m; sourceTree = "<group>"; };
 		15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoggerConfiguration.m; sourceTree = "<group>"; };
 		15A45D042799D36100017F8A /* BaseLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoggerConfiguration.h; sourceTree = "<group>"; };
+		15C50A5327F864F6009018D8 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		15C50A5A27F869A8009018D8 /* YYKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
+		15C50A5B27F869A8009018D8 /* YYKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitViewController.m; sourceTree = "<group>"; };
+		15C50A5E27F87F42009018D8 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +383,7 @@
 		15277E552798223300FA882E /* Q */ = {
 			isa = PBXGroup;
 			children = (
+				1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */,
 				1598CAE827983B3D00511EFD /* main.m */,
 				15277E672798223400FA882E /* Info.plist */,
 				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
@@ -632,21 +643,13 @@
 			path = LearnNavigationController;
 			sourceTree = "<group>";
 		};
-		1527F1E9279AD7D600A7482A /* bridge */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */,
-			);
-			path = bridge;
-			sourceTree = "<group>";
-		};
 		152FD08227A4FBAF000DCBFE /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				157530A527A533860075C149 /* Metal */,
-				152FD09A27A52F4C000DCBFE /* OpenGL */,
 				158C123D27A447350071FD9E /* FoundationHeader.h */,
 				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
+				157530A527A533860075C149 /* Metal */,
+				152FD09A27A52F4C000DCBFE /* OpenGL */,
 				152FD08327A4FBC2000DCBFE /* React */,
 			);
 			path = Header;
@@ -783,12 +786,16 @@
 		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
-				152FD09127A52DBA000DCBFE /* OpenGLViewController */,
-				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
+				15C50A6127F89907009018D8 /* ThreadViewController */,
+				15C50A5D27F87F33009018D8 /* AFNetworkingViewController */,
+				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
 				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
 				154EBD8C279E9BF80048CFF5 /* IJKVIewController */,
-				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
+				152FD09127A52DBA000DCBFE /* OpenGLViewController */,
+				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
+				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
+				15C50A5227F864DB009018D8 /* SwiftViewController */,
+				15C50A4F27F8646E009018D8 /* YYKitViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -864,7 +871,6 @@
 			children = (
 				157530B027A53B8B0075C149 /* BusinessRouteManager.h */,
 				157530B127A53B8B0075C149 /* BusinessRouteManager.m */,
-				157530B327A53E400075C149 /* BusinessRouteDefine.h */,
 			);
 			path = RouteManager;
 			sourceTree = "<group>";
@@ -917,7 +923,6 @@
 			isa = PBXGroup;
 			children = (
 				152FD08227A4FBAF000DCBFE /* Header */,
-				1527F1E9279AD7D600A7482A /* bridge */,
 				1598CAB827983AFF00511EFD /* base */,
 				1598CADB27983B0B00511EFD /* common */,
 			);
@@ -1159,6 +1164,41 @@
 			path = business;
 			sourceTree = "<group>";
 		};
+		15C50A4F27F8646E009018D8 /* YYKitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15C50A5A27F869A8009018D8 /* YYKitViewController.h */,
+				15C50A5B27F869A8009018D8 /* YYKitViewController.m */,
+			);
+			path = YYKitViewController;
+			sourceTree = "<group>";
+		};
+		15C50A5227F864DB009018D8 /* SwiftViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15C50A5327F864F6009018D8 /* SwiftViewController.swift */,
+			);
+			path = SwiftViewController;
+			sourceTree = "<group>";
+		};
+		15C50A5D27F87F33009018D8 /* AFNetworkingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15C50A5E27F87F42009018D8 /* AFNetworkingViewController.h */,
+				15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */,
+			);
+			path = AFNetworkingViewController;
+			sourceTree = "<group>";
+		};
+		15C50A6127F89907009018D8 /* ThreadViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15C50A6227F89921009018D8 /* ThreadViewController.h */,
+				15C50A6327F89921009018D8 /* ThreadViewController.m */,
+			);
+			path = ThreadViewController;
+			sourceTree = "<group>";
+		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1398,11 +1438,14 @@
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
+				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
+				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
 				152FD08C27A4FD62000DCBFE /* ReactNativeViewController.m in Sources */,
 				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
+				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
 				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
@@ -1418,6 +1461,7 @@
 				158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */,
+				15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */,
@@ -1800,6 +1844,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Q/**";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Q/Q-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2000,6 +2046,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Q/**";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Q/Q-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
@@ -2013,6 +2061,7 @@
 		15277E862798223400FA882E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2031,6 +2080,7 @@
 		15277E872798223400FA882E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2049,6 +2099,7 @@
 		15277E892798223400FA882E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
@@ -2065,6 +2116,7 @@
 		15277E8A2798223400FA882E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXFP8TLN85;

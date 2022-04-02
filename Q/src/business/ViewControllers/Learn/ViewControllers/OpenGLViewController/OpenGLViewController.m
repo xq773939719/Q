@@ -12,6 +12,10 @@
 
 @implementation OpenGLViewController
 
++ (NSString *)scheme {
+    return @"q://vc/gl";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

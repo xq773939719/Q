@@ -12,6 +12,10 @@
 
 @implementation HomeViewController
 
++ (NSString *)scheme {
+    return @"q://vc/home";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

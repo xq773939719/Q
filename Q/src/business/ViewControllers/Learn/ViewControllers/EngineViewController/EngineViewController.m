@@ -14,6 +14,10 @@
 
 @implementation EngineViewController
 
++ (NSString *)scheme {
+    return @"q://vc/engine";
+}
+
 - (instancetype)init
 {
     self = [super init];

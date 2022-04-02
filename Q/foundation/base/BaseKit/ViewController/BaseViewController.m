@@ -15,6 +15,11 @@
 
 @implementation BaseViewController
 
++ (NSString *)scheme {
+    NSAssert(NO, @"未实现Scheme");
+    return @"";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -32,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    LoggerInfo(@"[BaseViewController] -> viewDidLoad(params): %@", self.params);
+    LoggerInfo(@"viewDidLoad(params): %@", self.params);
     self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
 }
 
@@ -65,6 +70,9 @@
     [super viewDidDisappear:animated];
 }
 
+- (void)dealloc {
+    LoggerInfo(@"dealloc: %@", [self class]);
+}
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return self.statusBarStyle;
@@ -98,8 +106,14 @@
     
     self.navigationTitle = @"NavigationTitle";
     self.hideNavigationBar = YES;
-    
-    self.viewModels = [NSMutableArray array];
+}
+
+- (NSArray<ViewModel *> *)viewModels {
+    if (_viewModels) {
+        return _viewModels;
+    }
+    _viewModels = [NSMutableArray array];
+    return _viewModels;
 }
 
 @end

@@ -14,6 +14,10 @@
 
 @implementation ReactNativeViewController
 
++ (NSString *)scheme {
+    return @"q://vc/rn";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

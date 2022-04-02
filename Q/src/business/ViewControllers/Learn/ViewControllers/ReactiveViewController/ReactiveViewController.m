@@ -15,6 +15,10 @@
 
 @implementation ReactiveViewController
 
++ (NSString *)scheme {
+    return @"q://vc/reactive";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

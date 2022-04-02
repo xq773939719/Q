@@ -12,6 +12,10 @@
 
 @implementation FeatureViewController
 
++ (NSString *)scheme {
+    return @"q://vc/feature";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

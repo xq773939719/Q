@@ -142,7 +142,11 @@ def ThridPartyModules
   pod 'SwifterSwift'
   pod 'SQLite.swift'
   pod 'SwiftLint'
+  pod 'SnapKit'
+  # pod 'Quick'
+  # pod 'Nimble'
   
+
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
 

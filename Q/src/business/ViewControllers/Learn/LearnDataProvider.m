@@ -7,7 +7,17 @@
 #import "LearnDataProvider.h"
 
 #import "LearnCellModel.h"
-#import "BusinessRouteDefine.h"
+
+#import "BusinessFlutterViewController.h"
+#import "IJKViewController.h"
+#import "EngineViewController.h"
+#import "ReactNativeViewController.h"
+#import "OpenGLViewController.h"
+#import "ReactiveViewController.h"
+#import "AFNetworkingViewController.h"
+#import "YYKitViewController.h"
+#import "Q-Swift.h"
+#import "ThreadViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -21,44 +31,65 @@
     LearnCellModel *flutterModel = [LearnCellModel new];
     flutterModel.title = @"Flutter";
     flutterModel.onClick = ^{
-        [[Router share] route:BUSINESS_FLUTTER_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[BusinessFlutterViewController scheme] withParams:nil];
     };
-    [array addObject:flutterModel];
+    // [array addObject:flutterModel];
     
     LearnCellModel *ijkModel = [LearnCellModel new];
     ijkModel.title = @"IJK";
     ijkModel.onClick = ^{
-        [[Router share] route:BUSINESS_IJK_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[IJKViewController scheme] withParams:nil];
     };
-    [array addObject:ijkModel];
+    // [array addObject:ijkModel];
     
     LearnCellModel *engineModel = [LearnCellModel new];
     engineModel.title = @"Engine";
     engineModel.onClick = ^{
-        [[Router share] route:BUSINESS_ENGINE_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[EngineViewController scheme] withParams:nil];
     };
-    [array addObject:engineModel];
+    // [array addObject:engineModel];
     
     LearnCellModel *rnModel = [LearnCellModel new];
     rnModel.title = @"ReactNative";
     rnModel.onClick = ^{
-        [[Router share] route:BUSINESS_REACT_NATIVE_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[ReactNativeViewController scheme] withParams:nil];
     };
     // [array addObject:rnModel];
     
     LearnCellModel *openGLModel = [LearnCellModel new];
     openGLModel.title = @"OpenGL";
     openGLModel.onClick = ^{
-        [[Router share] route:BUSINESS_OPENGL_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[OpenGLViewController scheme] withParams:nil];
     };
-    [array addObject:openGLModel];
+    // [array addObject:openGLModel];
     
     LearnCellModel *reactiveModel = [LearnCellModel new];
     reactiveModel.title = @"Reactive";
     reactiveModel.onClick = ^{
-        [[Router share] route:BUSINESS_REACTIVE_VIEW_CONTROLLER withParams:nil];
+        [[Router share] route:[ReactiveViewController scheme] withParams:nil];
     };
     [array addObject:reactiveModel];
+    
+    LearnCellModel *afModel = [LearnCellModel new];
+    afModel.title = @"AF";
+    afModel.onClick = ^{
+        [[Router share] route:[AFNetworkingViewController scheme] withParams:nil];
+    };
+    [array addObject:afModel];
+    
+    LearnCellModel *yyKitModel = [LearnCellModel new];
+    yyKitModel.title = @"YYKit";
+    yyKitModel.onClick = ^{
+        [[Router share] route:[YYKitViewController scheme] withParams:nil];
+    };
+    [array addObject:yyKitModel];
+    
+    LearnCellModel *swiftModel = [LearnCellModel new];
+    swiftModel.title = @"Swift";
+    swiftModel.onClick = ^{
+        [[Router share] route:[SwiftViewController scheme] withParams:nil];
+    };
+    [array addObject:swiftModel];
     
     return [array copy];
 }

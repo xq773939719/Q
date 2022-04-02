@@ -12,6 +12,10 @@
 
 @implementation ThirdViewController
 
++ (NSString *)scheme {
+    return @"q://vc/third";
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
