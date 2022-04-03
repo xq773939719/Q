@@ -786,7 +786,6 @@
 		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				15C50A6127F89907009018D8 /* ThreadViewController */,
 				15C50A5D27F87F33009018D8 /* AFNetworkingViewController */,
 				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
 				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
@@ -795,6 +794,7 @@
 				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
 				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
 				15C50A5227F864DB009018D8 /* SwiftViewController */,
+				15C50A6127F89907009018D8 /* ThreadViewController */,
 				15C50A4F27F8646E009018D8 /* YYKitViewController */,
 			);
 			path = ViewControllers;

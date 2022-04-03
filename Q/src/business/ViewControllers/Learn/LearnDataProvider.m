@@ -57,39 +57,46 @@
     // [array addObject:rnModel];
     
     LearnCellModel *openGLModel = [LearnCellModel new];
-    openGLModel.title = @"OpenGL";
+    openGLModel.title = @"OpenGL学习";
     openGLModel.onClick = ^{
         [[Router share] route:[OpenGLViewController scheme] withParams:nil];
     };
-    // [array addObject:openGLModel];
+     [array addObject:openGLModel];
     
     LearnCellModel *reactiveModel = [LearnCellModel new];
-    reactiveModel.title = @"Reactive";
+    reactiveModel.title = @"Reactive与ViewModel学习";
     reactiveModel.onClick = ^{
         [[Router share] route:[ReactiveViewController scheme] withParams:nil];
     };
     [array addObject:reactiveModel];
     
     LearnCellModel *afModel = [LearnCellModel new];
-    afModel.title = @"AF";
+    afModel.title = @"AFNetworking学习";
     afModel.onClick = ^{
         [[Router share] route:[AFNetworkingViewController scheme] withParams:nil];
     };
     [array addObject:afModel];
     
     LearnCellModel *yyKitModel = [LearnCellModel new];
-    yyKitModel.title = @"YYKit";
+    yyKitModel.title = @"YYKik学习";
     yyKitModel.onClick = ^{
         [[Router share] route:[YYKitViewController scheme] withParams:nil];
     };
     [array addObject:yyKitModel];
     
     LearnCellModel *swiftModel = [LearnCellModel new];
-    swiftModel.title = @"Swift";
+    swiftModel.title = @"Swift语法";
     swiftModel.onClick = ^{
         [[Router share] route:[SwiftViewController scheme] withParams:nil];
     };
     [array addObject:swiftModel];
+    
+    LearnCellModel *threadModel = [LearnCellModel new];
+    threadModel.title = @"多线程";
+    threadModel.onClick = ^{
+        [[Router share] route:[ThreadViewController scheme] withParams:nil];
+    };
+    [array addObject:threadModel];
     
     return [array copy];
 }

@@ -18,10 +18,9 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSTimeInterval time = 1;
-    [NSTimer scheduledTimerWithTimeInterval:time block:^(NSTimer * _Nonnull timer) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.delegate showRootViewController];
-    } repeats:NO];
+    });
 }
 
 
