@@ -22,6 +22,7 @@
 #import <GPUImage/GPUImage.h>
 
 #import <IGListKit/IGListKit.h>
+#import <IGListDiffKit/IGListDiffKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
 #import <JJException/JJException.h>
@@ -58,6 +59,7 @@
 #import <WebViewJavascriptBridge/WebViewJavascriptBridge.h>
 
 // ... 其他
+#import "Alamofire-Swift.h"
 #import "Charts-Swift.h"
 #import "ChartsRealm-Swift.h"
 #import "GRDB-Swift.h"

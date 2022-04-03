@@ -137,7 +137,7 @@ def ThridPartyModules
   
   pod 'SwiftDate'
   
-  # pod 'Alamofire'
+  pod 'Alamofire'
 
   pod 'SwifterSwift'
   pod 'SQLite.swift'
