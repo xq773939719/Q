@@ -31,7 +31,6 @@
 		1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1E3279AD09A00A7482A /* LearnNavigationController.m */; };
 		152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */; };
 		152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
-		152FD08C27A4FD62000DCBFE /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */; };
 		152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD09627A52DDC000DCBFE /* OpenGLViewController.m */; };
 		152FD09927A52EBD000DCBFE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD09827A52EBD000DCBFE /* GLKit.framework */; };
 		1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */; };
@@ -60,9 +59,6 @@
 		154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */; };
 		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
 		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
-		154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */; };
-		154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA3279EC90B0048CFF5 /* EngineViewController.m */; };
-		154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */; };
 		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
 		155B9EF527DB681B00358B50 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EF427DB681B00358B50 /* ViewModel.m */; };
 		155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFA27DB6F5800358B50 /* UIViewController+View.m */; };
@@ -72,8 +68,6 @@
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; };
-		1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1596B77A2799BF8500C28DF6 /* Chronos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
 		1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6BC279AF57F005592EE /* FeatureModel.m */; };
 		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
@@ -109,20 +103,6 @@
 			remoteInfo = Q;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1530E5182799990000E4A8E4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1596B77D2799BF9600C28DF6 /* Chronos.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		150AA272279D9E7600AEC946 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
@@ -180,10 +160,7 @@
 		1527F1E3279AD09A00A7482A /* LearnNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnNavigationController.m; sourceTree = "<group>"; };
 		1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Q-Bridging-Header.h"; sourceTree = "<group>"; };
-		152FD08127A4FBA5000DCBFE /* ReactHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactHeader.h; sourceTree = "<group>"; };
 		152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		152FD08A27A4FD62000DCBFE /* ReactNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
-		152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
 		152FD09527A52DDC000DCBFE /* OpenGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
 		152FD09627A52DDC000DCBFE /* OpenGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		152FD09827A52EBD000DCBFE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -234,12 +211,6 @@
 		154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnDataProvider.m; sourceTree = "<group>"; };
 		154EBD96279EBA160048CFF5 /* ProtocolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolHeader.h; sourceTree = "<group>"; };
 		154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelProviderProtocol.h; sourceTree = "<group>"; };
-		154EBD9C279EC8CC0048CFF5 /* IJKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKViewController.h; sourceTree = "<group>"; };
-		154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKViewController.m; sourceTree = "<group>"; };
-		154EBDA2279EC90B0048CFF5 /* EngineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineViewController.h; sourceTree = "<group>"; };
-		154EBDA3279EC90B0048CFF5 /* EngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineViewController.m; sourceTree = "<group>"; };
-		154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessFlutterViewController.h; sourceTree = "<group>"; };
-		154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessFlutterViewController.m; sourceTree = "<group>"; };
 		155B9EEE27DB302F00358B50 /* ReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
 		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
 		155B9EF327DB681B00358B50 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = Q/foundation/base/BaseKit/VIewModel/ViewModel.h; sourceTree = SOURCE_ROOT; };
@@ -263,7 +234,6 @@
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
 		158C123D27A447350071FD9E /* FoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
 		158C123E27A448820071FD9E /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
-		1596B77A2799BF8500C28DF6 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Framework/Chronos.framework; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
 		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
@@ -316,7 +286,6 @@
 				1530E4DA2799858100E4A8E4 /* CoreMedia.framework in Frameworks */,
 				1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */,
 				1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */,
-				1596B77C2799BF9600C28DF6 /* Chronos.framework in Frameworks */,
 				152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */,
 				1530E4DC2799858800E4A8E4 /* CoreVideo.framework in Frameworks */,
 				1530E4DE2799859000E4A8E4 /* MediaPlayer.framework in Frameworks */,
@@ -650,26 +619,8 @@
 				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
 				157530A527A533860075C149 /* Metal */,
 				152FD09A27A52F4C000DCBFE /* OpenGL */,
-				152FD08327A4FBC2000DCBFE /* React */,
 			);
 			path = Header;
-			sourceTree = "<group>";
-		};
-		152FD08327A4FBC2000DCBFE /* React */ = {
-			isa = PBXGroup;
-			children = (
-				152FD08127A4FBA5000DCBFE /* ReactHeader.h */,
-			);
-			path = React;
-			sourceTree = "<group>";
-		};
-		152FD08D27A4FD65000DCBFE /* ReactNativeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				152FD08A27A4FD62000DCBFE /* ReactNativeViewController.h */,
-				152FD08B27A4FD62000DCBFE /* ReactNativeViewController.m */,
-			);
-			path = ReactNativeViewController;
 			sourceTree = "<group>";
 		};
 		152FD09127A52DBA000DCBFE /* OpenGLViewController */ = {
@@ -787,44 +738,13 @@
 			isa = PBXGroup;
 			children = (
 				15C50A5D27F87F33009018D8 /* AFNetworkingViewController */,
-				154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */,
-				154EBD8D279E9C0D0048CFF5 /* EngineViewController */,
-				154EBD8C279E9BF80048CFF5 /* IJKVIewController */,
 				152FD09127A52DBA000DCBFE /* OpenGLViewController */,
 				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
-				152FD08D27A4FD65000DCBFE /* ReactNativeViewController */,
 				15C50A5227F864DB009018D8 /* SwiftViewController */,
 				15C50A6127F89907009018D8 /* ThreadViewController */,
 				15C50A4F27F8646E009018D8 /* YYKitViewController */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		154EBD8B279E9BE00048CFF5 /* BusinessFlutterViewController */ = {
-			isa = PBXGroup;
-			children = (
-				154EBDA5279EC9A20048CFF5 /* BusinessFlutterViewController.h */,
-				154EBDA6279EC9A20048CFF5 /* BusinessFlutterViewController.m */,
-			);
-			path = BusinessFlutterViewController;
-			sourceTree = "<group>";
-		};
-		154EBD8C279E9BF80048CFF5 /* IJKVIewController */ = {
-			isa = PBXGroup;
-			children = (
-				154EBD9C279EC8CC0048CFF5 /* IJKViewController.h */,
-				154EBD9D279EC8CC0048CFF5 /* IJKViewController.m */,
-			);
-			path = IJKVIewController;
-			sourceTree = "<group>";
-		};
-		154EBD8D279E9C0D0048CFF5 /* EngineViewController */ = {
-			isa = PBXGroup;
-			children = (
-				154EBDA2279EC90B0048CFF5 /* EngineViewController.h */,
-				154EBDA3279EC90B0048CFF5 /* EngineViewController.m */,
-			);
-			path = EngineViewController;
 			sourceTree = "<group>";
 		};
 		155B9EED27DB2FFF00358B50 /* ReactiveViewController */ = {
@@ -1204,7 +1124,6 @@
 			children = (
 				152FD09827A52EBD000DCBFE /* GLKit.framework */,
 				152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */,
-				1596B77A2799BF8500C28DF6 /* Chronos.framework */,
 				1530E4E827998D7E00E4A8E4 /* libbz2.tbd */,
 				1530E4E727998D7400E4A8E4 /* libz.tbd */,
 				1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */,
@@ -1233,13 +1152,10 @@
 			buildConfigurationList = 15277E822798223400FA882E /* Build configuration list for PBXNativeTarget "Q" */;
 			buildPhases = (
 				62A35F9F04A016EF8C7831A5 /* [CP] Check Pods Manifest.lock */,
-				78FE6A3CD4A6FD031F7D7CA4 /* [CP-User] Run Flutter Build flutter_module Script */,
 				15277E4F2798223300FA882E /* Sources */,
 				15277E502798223300FA882E /* Frameworks */,
 				15277E512798223300FA882E /* Resources */,
 				D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */,
-				1530E5182799990000E4A8E4 /* Embed Frameworks */,
-				152FD09027A523B0000DCBFE /* Bundle React Native code and images */,
 			);
 			buildRules = (
 			);
@@ -1356,24 +1272,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		152FD09027A523B0000DCBFE /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native code and images";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nset -e\n\nexport NODE_BINARY=node\n./Develop/QRN/node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
 		62A35F9F04A016EF8C7831A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -1395,16 +1293,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		78FE6A3CD4A6FD031F7D7CA4 /* [CP-User] Run Flutter Build flutter_module Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build flutter_module Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/Develop/flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1442,7 +1330,6 @@
 				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
-				152FD08C27A4FD62000DCBFE /* ReactNativeViewController.m in Sources */,
 				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
@@ -1460,7 +1347,6 @@
 				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
 				158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
-				154EBDA7279EC9A20048CFF5 /* BusinessFlutterViewController.m in Sources */,
 				15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
@@ -1468,7 +1354,6 @@
 				157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */,
 				1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */,
 				1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */,
-				154EBDA4279EC90B0048CFF5 /* EngineViewController.m in Sources */,
 				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */,
 				154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */,
@@ -1489,7 +1374,6 @@
 				15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */,
 				1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */,
 				1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */,
-				154EBD9E279EC8CC0048CFF5 /* IJKViewController.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
@@ -1687,12 +1571,7 @@
 					"@executable_path/Frameworks",
 					"$(SRCROOT)",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/miniunz/Release-iphoneos",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/box2d/Release-iphoneos",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/glm/Release-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1704,8 +1583,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX/FLEX.framework/Headers\"",
 					"-isystem",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
-					"-isystem",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
 					"-isystem",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
 					"-isystem",
@@ -1737,19 +1614,11 @@
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
 					"-iframework",
-					"\"${PODS_ROOT}/../Develop/flutter_module/.ios/Flutter/engine\"",
-					"-iframework",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
-					"-iframework",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
-					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/LookinServer\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
-					"-iframework",
-					"\"${PODS_ROOT}/../Develop/QIJKPlayer/QIJKPlayer/SDK\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
 					"-iframework",
@@ -1764,8 +1633,6 @@
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
-					"-iframework",
-					"\"${PODS_ROOT}/../Develop/flutter_module/.ios/Flutter\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
 				);
@@ -1782,8 +1649,6 @@
 					"-framework",
 					"\"Accelerate\"",
 					"-framework",
-					"\"App\"",
-					"-framework",
 					"\"AssetsLibrary\"",
 					"-framework",
 					"\"CoreFoundation\"",
@@ -1797,10 +1662,6 @@
 					"\"FLEX\"",
 					"-framework",
 					"\"FMDB\"",
-					"-framework",
-					"\"Flutter\"",
-					"-framework",
-					"\"FlutterPluginRegistrant\"",
 					"-framework",
 					"\"Foundation\"",
 					"-framework",
@@ -1903,12 +1764,7 @@
 					"@executable_path/Frameworks",
 					"$(SRCROOT)",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/miniunz/Release-iphoneos",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/box2d/Release-iphoneos",
-					"$(PROJECT_DIR)/Q/base/chronos/build-ios/third-party/glm/Release-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1918,8 +1774,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
 					"-isystem",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
-					"-isystem",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers\"",
 					"-isystem",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers\"",
 					"-isystem",
@@ -1947,17 +1801,9 @@
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
 					"-iframework",
-					"\"${PODS_ROOT}/../Develop/flutter_module/.ios/Flutter/engine\"",
-					"-iframework",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
-					"-iframework",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
-					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSONModel\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
-					"-iframework",
-					"\"${PODS_ROOT}/../Develop/QIJKPlayer/QIJKPlayer/SDK\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability\"",
 					"-iframework",
@@ -1972,8 +1818,6 @@
 					"\"${PODS_ROOT}/YYKit/Vendor\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit\"",
-					"-iframework",
-					"\"${PODS_ROOT}/../Develop/flutter_module/.ios/Flutter\"",
 					"-iframework",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
 				);
@@ -1990,8 +1834,6 @@
 					"-framework",
 					"\"Accelerate\"",
 					"-framework",
-					"\"App\"",
-					"-framework",
 					"\"AssetsLibrary\"",
 					"-framework",
 					"\"CoreFoundation\"",
@@ -2003,10 +1845,6 @@
 					"\"CoreText\"",
 					"-framework",
 					"\"FMDB\"",
-					"-framework",
-					"\"Flutter\"",
-					"-framework",
-					"\"FlutterPluginRegistrant\"",
 					"-framework",
 					"\"Foundation\"",
 					"-framework",

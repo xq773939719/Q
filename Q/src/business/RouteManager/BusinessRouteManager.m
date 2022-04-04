@@ -14,10 +14,6 @@
 #import "LearnViewController.h"
 
 //
-#import "BusinessFlutterViewController.h"
-#import "IJKViewController.h"
-#import "EngineViewController.h"
-#import "ReactNativeViewController.h"
 #import "OpenGLViewController.h"
 #import "ReactiveViewController.h"
 #import "AFNetworkingViewController.h"
@@ -34,10 +30,6 @@
     [[Router share] registerScheme:[MineViewController scheme] withClass:[MineViewController class]];
     [[Router share] registerScheme:[LearnViewController scheme] withClass:[LearnViewController class]];
     
-    [[Router share] registerScheme:[BusinessFlutterViewController scheme] withClass:[BusinessFlutterViewController class]];
-    [[Router share] registerScheme:[IJKViewController scheme] withClass:[IJKViewController class]];
-    [[Router share] registerScheme:[EngineViewController scheme] withClass:[EngineViewController class]];
-    [[Router share] registerScheme:[ReactNativeViewController scheme] withClass:[ReactNativeViewController class]];
     [[Router share] registerScheme:[OpenGLViewController scheme] withClass:[OpenGLViewController class]];
     [[Router share] registerScheme:[ReactiveViewController scheme] withClass:[ReactiveViewController class]];
     [[Router share] registerScheme:[AFNetworkingViewController scheme] withClass:[AFNetworkingViewController class]];

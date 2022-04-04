@@ -10,12 +10,6 @@ use_modular_headers!
 inhibit_all_warnings!
 set_arc_compatibility_flag!
 
-develop_path = './Develop'
-
-flutter_module_path = develop_path
-load File.join(flutter_module_path, 'flutter_module', '.ios', 'Flutter', 'podhelper.rb')
-load File.join(develop_path, 'QRn', 'QRN.rb')
-
 #------ 业务组件 ------#
 def BusinessModules
 
@@ -159,18 +153,11 @@ end
 #------ 开发组件 ------#
 # !!! 不要忘记注释相应的模块
 def DevelopModule
-  # 视频播放
-  pod 'QIJKPlayer', :path => './Develop/QIJKPlayer'
-  
 end
 
 # Pods for Q
 target 'Q' do
   # Comment the next line if you don't want to use dynamic frameworks
-  # Flutter
-  install_all_flutter_pods(flutter_module_path)
-  install_qrn()
-
   DevelopModule()
   ThridPartyModules()
   BaseModules()

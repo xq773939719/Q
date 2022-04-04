@@ -10,11 +10,9 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Aspects/Aspects.h>
 
-#import <Chronos/Chronos.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <ComponentKit/ComponentKit.h>
 // #import <Firebase/Firebase.h>
-#import <Flutter/Flutter.h>
 #import <FBLPromises/FBLPromises.h>
 #import <FLEX/FLEX.h>
 #import <FMDB/FMDB.h>
@@ -23,12 +21,10 @@
 
 #import <IGListKit/IGListKit.h>
 #import <IGListDiffKit/IGListDiffKit.h>
-#import <IJKMediaFramework/IJKMediaFramework.h>
 
 #import <JJException/JJException.h>
 #import <JSONModel/JSONModel.h>
 
-#import <Lottie/Lottie.h>
 #import <LookinServer/LookinServer.h>
 
 #import <Masonry/Masonry.h>
@@ -40,7 +36,6 @@
 
 #import <PromiseKit/PromiseKit.h>
 
-#import <React/ReactHeader.h>
 #import <Reachability/Reachability.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <Realm/Realm.h>
@@ -63,6 +58,7 @@
 #import "Charts-Swift.h"
 #import "ChartsRealm-Swift.h"
 #import "GRDB-Swift.h"
+#import "Lottie-Swift.h"
 #import "Promises-Swift.h"
 #import "Reachability-Swift.h"
 #import "RealmSwift-Swift.h"
