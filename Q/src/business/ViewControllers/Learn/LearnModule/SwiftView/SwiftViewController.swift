@@ -23,7 +23,7 @@ class SwiftViewController : BaseViewController {
         super.setupViews();
         self.addSubview(self.container)
         self.container.snp.makeConstraints({ make in
-            make.size.equalTo(self.view)
+            make.size.equalTo(self.rootContainer)
         })
     }
     

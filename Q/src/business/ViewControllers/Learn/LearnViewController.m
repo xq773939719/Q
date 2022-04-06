@@ -48,12 +48,12 @@ NSString *cellId = @"LearnViewControllerCellId";
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
+    [self addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.size.equalTo(self.view);
+        make.center.equalTo(self.rootContainer);
+        make.size.equalTo(self.rootContainer);
     }];
 }
 

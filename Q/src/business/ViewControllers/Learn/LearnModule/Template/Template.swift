@@ -24,7 +24,7 @@ class TemplateViewController: BaseViewController {
         super.setupViews()
         self.addSubview(self.container)
         container.snp.makeConstraints { make in
-            make.size.equalTo(self.view)
+            make.size.equalTo(self.rootContainer)
         }
     }
     

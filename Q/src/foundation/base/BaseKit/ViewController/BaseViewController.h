@@ -10,6 +10,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class ViewModel;
 
+@protocol ViewProtocol <NSObject>
+
+- (void)addSubview:(UIView *)view;
+
+@end
+
+
 @protocol RoutableProtocol <NSObject>
 
 + (NSString *)scheme;
@@ -37,9 +44,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface BaseViewController : UIViewController <RoutableProtocol, LogicProtocol, ViewModelProtocol>
+@interface BaseViewController : UIViewController <ViewProtocol, RoutableProtocol, LogicProtocol, ViewModelProtocol>
 
+@property (nonatomic, strong, readonly) UIView *rootContainer;
 @property (nonatomic, strong, readonly) NSMutableArray<ViewModel *> *viewModels;
+
 
 @end
 

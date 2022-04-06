@@ -28,7 +28,7 @@ class WebViewController: BaseViewController, WKUIDelegate {
         super.setupViews()
         self.addSubview(self.webView)
         self.webView.snp.makeConstraints { make in
-            make.size.equalTo(self.view)
+            make.size.equalTo(self.rootContainer)
         }
         let url = URL(string: "https://google.com")
         let request = URLRequest(url: url!)

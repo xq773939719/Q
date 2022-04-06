@@ -62,7 +62,6 @@
 		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
 		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
 		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
-		155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFA27DB6F5800358B50 /* UIViewController+View.m */; };
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
 		157530AE27A538650075C149 /* RouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530AD27A538650075C149 /* RouteManager.m */; };
@@ -220,8 +219,6 @@
 		154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelProviderProtocol.h; sourceTree = "<group>"; };
 		155B9EEE27DB302F00358B50 /* ReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
 		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
-		155B9EF927DB6F5800358B50 /* UIViewController+View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+View.h"; sourceTree = "<group>"; };
-		155B9EFA27DB6F5800358B50 /* UIViewController+View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+View.m"; sourceTree = "<group>"; };
 		155B9EFC27DB701A00358B50 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
 		155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewModel.m; sourceTree = "<group>"; };
 		155B9EFF27DB707700358B50 /* ReactiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveModel.h; sourceTree = "<group>"; };
@@ -943,8 +940,6 @@
 				154EBD85279E6B590048CFF5 /* BaseViewController.m */,
 				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
 				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
-				155B9EF927DB6F5800358B50 /* UIViewController+View.h */,
-				155B9EFA27DB6F5800358B50 /* UIViewController+View.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1381,7 +1376,6 @@
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
-				155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */,
 				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,

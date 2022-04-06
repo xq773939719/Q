@@ -8,6 +8,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class BaseViewController;
+
 @protocol ViewModel <NSObject>
 
 /// ① 绑定Model
@@ -20,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewModel : NSObject <ViewModel>
 
-@property (nonatomic, weak) UIViewController *delegate;
+@property (nonatomic, weak) BaseViewController *delegate;
 
 - (void)setupModel;
 - (void)bindOnModelChange;
