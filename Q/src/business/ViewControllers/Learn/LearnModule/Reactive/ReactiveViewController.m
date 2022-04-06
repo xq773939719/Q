@@ -19,21 +19,13 @@
     return @"q://vc/reactive";
 }
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self initData];
-        // 可基于ViewModel返回值装载UI
-        [self setup];
-    }
-    return self;
-}
-
-- (void)initData {
+- (void)setupData {
+    [super setupData];
     [self bindViewModel:self.viewModel];
 }
 
-- (void)setup {
+- (void)setupViews {
+    [super setupViews];
     [self.viewModel setup];
 }
 

@@ -15,11 +15,20 @@
 
 @implementation BaseViewController
 
++ (void)initialize {
+    NSString *scheme = [self scheme];
+    if (!scheme || scheme.length <= 0) {
+        return;
+    }
+    [[Router share] registerScheme:[self scheme] withClass:[self class]];
+}
+
+#pragma mark - RoutableProtocol
 + (NSString *)scheme {
-    NSAssert(NO, @"未实现Scheme");
     return @"";
 }
 
+#pragma mark - Life circle
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -28,17 +37,17 @@
     return self;
 }
 
-
 - (void)loadView {
     [super loadView];
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     LoggerInfo(@"viewDidLoad(params): %@", self.params);
     self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
+    
+    [self initDefaultViews];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,6 +57,12 @@
     BOOL hideTabBar = self.hideTabBar;
     self.navigationController.navigationBar.hidden = hideNavigationBar;
     self.tabBarController.tabBar.hidden = hideTabBar;
+    
+    [self setupData];
+    [self setupViews];
+    [self loadData:^(BOOL success) {
+        [self updateViews];
+    }];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -82,6 +97,7 @@
     return self.hideStatusBar;
 }
 
+#pragma mark - ViewModelProtocol
 - (void)bindViewModel:(ViewModel *)viewModel {
     if (!viewModel) {
         return;
@@ -114,6 +130,28 @@
     }
     _viewModels = [NSMutableArray array];
     return _viewModels;
+}
+
+#pragma mark - LogicProtocol
+
+- (void)initDefaultViews {
+    
+}
+
+- (void)setupData {
+    
+}
+
+- (void)setupViews {
+    
+}
+
+- (void)loadData:(void (^)(BOOL))callback {
+    
+}
+
+- (void)updateViews {
+    [self.view updateConstraints];
 }
 
 @end

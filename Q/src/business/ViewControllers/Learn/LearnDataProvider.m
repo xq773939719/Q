@@ -66,6 +66,13 @@
     };
     [array addObject:threadModel];
     
+    LearnCellModel *webviewModel = [LearnCellModel new];
+    webviewModel.title = @"WebView学习";
+    webviewModel.onClick = ^{
+        [[Router share] route:[WebViewController scheme] withParams:nil];
+    };
+    [array addObject:webviewModel];
+    
     return [array copy];
 }
 

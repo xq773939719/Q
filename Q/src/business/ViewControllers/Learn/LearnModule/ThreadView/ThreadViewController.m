@@ -15,9 +15,8 @@
 + (NSString *)scheme {
     return @"q://vc/thread";
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)setupViews {
+    [super setupViews];
     [self thread];
     [self dispatch];
     [self operation];

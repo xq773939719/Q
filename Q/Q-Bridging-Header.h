@@ -1,1 +1,1 @@
-#import "./foundation/Header/FoundationHeader.h" // 支持Swift调用OC
+#import "FoundationHeader.h" // 支持Swift调用OC

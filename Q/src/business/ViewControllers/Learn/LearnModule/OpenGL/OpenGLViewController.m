@@ -16,8 +16,4 @@
     return @"q://vc/gl";
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 @end

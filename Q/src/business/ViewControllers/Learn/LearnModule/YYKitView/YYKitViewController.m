@@ -16,8 +16,4 @@
     return @"q://vc/yykit";
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 @end

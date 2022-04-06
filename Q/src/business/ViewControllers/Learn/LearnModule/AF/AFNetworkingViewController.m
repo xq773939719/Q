@@ -16,12 +16,7 @@
     return @"q://vc/af";
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self loadData];
-}
-
-- (void)loadData {
+- (void)loadData:(void (^)(BOOL))callback {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSString *urlString = @"http://baike.baidu.com/api/openapi/BaikeLemmaCardApi";
     [manager GET:urlString

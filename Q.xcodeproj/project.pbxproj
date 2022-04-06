@@ -52,6 +52,8 @@
 		1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DF279985A000E4A8E4 /* QuartzCore.framework */; };
 		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
 		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
+		153C836F27FD66490037BD08 /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C836E27FD66490037BD08 /* BaseWebView.m */; };
+		153C837127FD669A0037BD08 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C837027FD669A0037BD08 /* WebViewController.swift */; };
 		154EBD74279E579C0048CFF5 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD73279E579C0048CFF5 /* Util.m */; };
 		154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD82279E6B440048CFF5 /* BaseTabBarController.m */; };
 		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
@@ -60,7 +62,6 @@
 		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
 		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
 		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
-		155B9EF527DB681B00358B50 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EF427DB681B00358B50 /* ViewModel.m */; };
 		155B9EFB27DB6F5800358B50 /* UIViewController+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFA27DB6F5800358B50 /* UIViewController+View.m */; };
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
@@ -68,6 +69,9 @@
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C127FD6D9F002ECDF1 /* ViewModel.m */; };
+		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
+		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
 		1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6BC279AF57F005592EE /* FeatureModel.m */; };
 		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
@@ -195,6 +199,9 @@
 		1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		153C836D27FD66490037BD08 /* BaseWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebView.h; sourceTree = "<group>"; };
+		153C836E27FD66490037BD08 /* BaseWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebView.m; sourceTree = "<group>"; };
+		153C837027FD669A0037BD08 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		154EBD71279E578E0048CFF5 /* UtilHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilHeader.h; sourceTree = "<group>"; };
 		154EBD72279E579C0048CFF5 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		154EBD73279E579C0048CFF5 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
@@ -213,8 +220,6 @@
 		154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelProviderProtocol.h; sourceTree = "<group>"; };
 		155B9EEE27DB302F00358B50 /* ReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
 		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
-		155B9EF327DB681B00358B50 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = Q/foundation/base/BaseKit/VIewModel/ViewModel.h; sourceTree = SOURCE_ROOT; };
-		155B9EF427DB681B00358B50 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = Q/foundation/base/BaseKit/VIewModel/ViewModel.m; sourceTree = SOURCE_ROOT; };
 		155B9EF927DB6F5800358B50 /* UIViewController+View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+View.h"; sourceTree = "<group>"; };
 		155B9EFA27DB6F5800358B50 /* UIViewController+View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+View.m"; sourceTree = "<group>"; };
 		155B9EFC27DB701A00358B50 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
@@ -234,6 +239,11 @@
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
 		158C123D27A447350071FD9E /* FoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
 		158C123E27A448820071FD9E /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		159269C127FD6D9F002ECDF1 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		159269C227FD6D9F002ECDF1 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		159269C527FD6DED002ECDF1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		159269C727FD77BF002ECDF1 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
+		159269C827FD77BF002ECDF1 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
 		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
@@ -357,7 +367,6 @@
 				15277E672798223400FA882E /* Info.plist */,
 				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
 				15277E622798223400FA882E /* Assets.xcassets */,
-				158C123C27A446060071FD9E /* foundation */,
 				158C122727A40D720071FD9E /* proto */,
 				1598CADC27983B1400511EFD /* src */,
 			);
@@ -592,7 +601,7 @@
 		1527F1DD279AD04600A7482A /* Learn */ = {
 			isa = PBXGroup;
 			children = (
-				154EBD8A279E9BC00048CFF5 /* ViewControllers */,
+				154EBD8A279E9BC00048CFF5 /* LearnModule */,
 				1527F1DE279AD06100A7482A /* LearnViewController.h */,
 				1527F1DF279AD06100A7482A /* LearnViewController.m */,
 				154EBD90279EB8BB0048CFF5 /* LearnCellModel.h */,
@@ -623,13 +632,13 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		152FD09127A52DBA000DCBFE /* OpenGLViewController */ = {
+		152FD09127A52DBA000DCBFE /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
 				152FD09527A52DDC000DCBFE /* OpenGLViewController.h */,
 				152FD09627A52DDC000DCBFE /* OpenGLViewController.m */,
 			);
-			path = OpenGLViewController;
+			path = OpenGL;
 			sourceTree = "<group>";
 		};
 		152FD09A27A52F4C000DCBFE /* OpenGL */ = {
@@ -734,20 +743,39 @@
 			path = PlayerModule;
 			sourceTree = "<group>";
 		};
-		154EBD8A279E9BC00048CFF5 /* ViewControllers */ = {
+		153C836827FD65D70037BD08 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				15C50A5D27F87F33009018D8 /* AFNetworkingViewController */,
-				152FD09127A52DBA000DCBFE /* OpenGLViewController */,
-				155B9EED27DB2FFF00358B50 /* ReactiveViewController */,
-				15C50A5227F864DB009018D8 /* SwiftViewController */,
-				15C50A6127F89907009018D8 /* ThreadViewController */,
-				15C50A4F27F8646E009018D8 /* YYKitViewController */,
+				153C837027FD669A0037BD08 /* WebViewController.swift */,
 			);
-			path = ViewControllers;
+			path = WebView;
 			sourceTree = "<group>";
 		};
-		155B9EED27DB2FFF00358B50 /* ReactiveViewController */ = {
+		153C836927FD65FC0037BD08 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				153C836D27FD66490037BD08 /* BaseWebView.h */,
+				153C836E27FD66490037BD08 /* BaseWebView.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
+			isa = PBXGroup;
+			children = (
+				159269C427FD6DDB002ECDF1 /* Template */,
+				153C836827FD65D70037BD08 /* WebView */,
+				15C50A5D27F87F33009018D8 /* AF */,
+				152FD09127A52DBA000DCBFE /* OpenGL */,
+				155B9EED27DB2FFF00358B50 /* Reactive */,
+				15C50A5227F864DB009018D8 /* SwiftView */,
+				15C50A6127F89907009018D8 /* ThreadView */,
+				15C50A4F27F8646E009018D8 /* YYKitView */,
+			);
+			path = LearnModule;
+			sourceTree = "<group>";
+		};
+		155B9EED27DB2FFF00358B50 /* Reactive */ = {
 			isa = PBXGroup;
 			children = (
 				155B9EEE27DB302F00358B50 /* ReactiveViewController.h */,
@@ -757,14 +785,14 @@
 				155B9EFF27DB707700358B50 /* ReactiveModel.h */,
 				155B9F0027DB707700358B50 /* ReactiveModel.m */,
 			);
-			path = ReactiveViewController;
+			path = Reactive;
 			sourceTree = "<group>";
 		};
 		155B9EF227DB678800358B50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				155B9EF327DB681B00358B50 /* ViewModel.h */,
-				155B9EF427DB681B00358B50 /* ViewModel.m */,
+				159269C227FD6D9F002ECDF1 /* ViewModel.h */,
+				159269C127FD6D9F002ECDF1 /* ViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -847,6 +875,16 @@
 				1598CADB27983B0B00511EFD /* common */,
 			);
 			path = foundation;
+			sourceTree = "<group>";
+		};
+		159269C427FD6DDB002ECDF1 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				159269C527FD6DED002ECDF1 /* Template.swift */,
+				159269C727FD77BF002ECDF1 /* TemplateViewController.h */,
+				159269C827FD77BF002ECDF1 /* TemplateViewController.m */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
@@ -1021,6 +1059,7 @@
 		1598CAC327983AFF00511EFD /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				153C836927FD65FC0037BD08 /* WebView */,
 				155B9EF227DB678800358B50 /* ViewModel */,
 				158C122227A3A5B70071FD9E /* Object */,
 				1597D6D0279B12FD005592EE /* ViewController */,
@@ -1065,6 +1104,7 @@
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
+				158C123C27A446060071FD9E /* foundation */,
 				1598CADD27983B1400511EFD /* business */,
 			);
 			path = src;
@@ -1084,39 +1124,39 @@
 			path = business;
 			sourceTree = "<group>";
 		};
-		15C50A4F27F8646E009018D8 /* YYKitViewController */ = {
+		15C50A4F27F8646E009018D8 /* YYKitView */ = {
 			isa = PBXGroup;
 			children = (
 				15C50A5A27F869A8009018D8 /* YYKitViewController.h */,
 				15C50A5B27F869A8009018D8 /* YYKitViewController.m */,
 			);
-			path = YYKitViewController;
+			path = YYKitView;
 			sourceTree = "<group>";
 		};
-		15C50A5227F864DB009018D8 /* SwiftViewController */ = {
+		15C50A5227F864DB009018D8 /* SwiftView */ = {
 			isa = PBXGroup;
 			children = (
 				15C50A5327F864F6009018D8 /* SwiftViewController.swift */,
 			);
-			path = SwiftViewController;
+			path = SwiftView;
 			sourceTree = "<group>";
 		};
-		15C50A5D27F87F33009018D8 /* AFNetworkingViewController */ = {
+		15C50A5D27F87F33009018D8 /* AF */ = {
 			isa = PBXGroup;
 			children = (
 				15C50A5E27F87F42009018D8 /* AFNetworkingViewController.h */,
 				15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */,
 			);
-			path = AFNetworkingViewController;
+			path = AF;
 			sourceTree = "<group>";
 		};
-		15C50A6127F89907009018D8 /* ThreadViewController */ = {
+		15C50A6127F89907009018D8 /* ThreadView */ = {
 			isa = PBXGroup;
 			children = (
 				15C50A6227F89921009018D8 /* ThreadViewController.h */,
 				15C50A6327F89921009018D8 /* ThreadViewController.m */,
 			);
-			path = ThreadViewController;
+			path = ThreadView;
 			sourceTree = "<group>";
 		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
@@ -1324,15 +1364,18 @@
 				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
 				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
+				159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
 				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
+				159269C627FD6DED002ECDF1 /* Template.swift in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
 				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
+				153C836F27FD66490037BD08 /* BaseWebView.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
 				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
@@ -1343,7 +1386,6 @@
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
-				155B9EF527DB681B00358B50 /* ViewModel.m in Sources */,
 				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
 				158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
@@ -1362,6 +1404,7 @@
 				1527F198279A756C00A7482A /* MineViewController.m in Sources */,
 				1527F192279A756C00A7482A /* FeatureNavigationController.m in Sources */,
 				1527F195279A756C00A7482A /* HomeViewController.m in Sources */,
+				159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */,
 				159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */,
 				1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */,
 				1527F1C6279A9FA500A7482A /* LoggerFileManager.m in Sources */,
@@ -1376,6 +1419,7 @@
 				1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
+				153C837127FD669A0037BD08 /* WebViewController.swift in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
 				1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */,
 			);
@@ -1546,6 +1590,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1715,7 +1760,10 @@
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Q/src/foundation/**",
+					"$(SRCROOT)/Q/src/business",
+				);
 				USE_HEADERMAP = YES;
 			};
 			name = Debug;
@@ -1893,7 +1941,10 @@
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Q/src/foundation/**",
+					"$(SRCROOT)/Q/src/business",
+				);
 				USE_HEADERMAP = YES;
 			};
 			name = Release;
