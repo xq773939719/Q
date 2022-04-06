@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setupModel;
 - (void)bindOnModelChange;
-- (void)setupView;
+- (void)setupViews;
 - (void)bindOnViewChange;
 
 @end

@@ -41,19 +41,19 @@ static NSString *PREFIX_ROUTE = @"q://";
         return NO;
     }
     
-    LoggerInfo(@"[RouteMap] -> 注册scheme: %@, className: %@", scheme, className);
+    LoggerInfo(@"[%@] -> 注册scheme: %@, className: %@", [self class], scheme, className);
     [self.routeMap setObject:className forKey:scheme];
     [self.lock unlock];
     return YES;
 }
 
 - (Class)getClass:(NSString *)scheme {
-    Class class = nil;
+    Class className = nil;
     [self.lock lock];
-    class = [self.routeMap objectForKey:scheme];
+    className = [self.routeMap objectForKey:scheme];
     [self.lock unlock];
-    LoggerInfo(@"[RouteMap] -> 获取scheme: %@, 对应className: %@", scheme, class);
-    return class;
+    LoggerInfo(@"[%@] -> 获取scheme: %@, className: %@", [self class], scheme, className);
+    return className;
 }
 
 @end

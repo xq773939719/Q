@@ -14,5 +14,6 @@
 #import "Protocol/ProtocolHeader.h"
 #import "Router/RouterHeader.h"
 #import "Util/UtilHeader.h"
+#import "Device/DeviceHeader.h"
 
 #endif /* BaseHeader_h */

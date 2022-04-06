@@ -22,5 +22,6 @@
 #import "Object/NSObject+Method.h"
 #import "Application/UIApplication+Base.h"
 #import "ViewController/UIViewController+Configuration.h"
+#import "ViewController/UIViewController+Orientation.h"
 
 #endif /* BaseKitHeader_h */

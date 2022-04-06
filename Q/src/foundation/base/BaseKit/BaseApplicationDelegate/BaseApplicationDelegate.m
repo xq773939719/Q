@@ -17,7 +17,7 @@
 @implementation BaseApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"启动");
+    LoggerInfo(@"[%@] -> %@", [self class], @"启动");
     [self.entranceManager launchWithApplication:application];
     [self.entranceManager onAppLaunch];
     return YES;
@@ -32,27 +32,27 @@
 #pragma mark - UIApplicationDelegate
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要进入前台");
+    LoggerInfo(@"[%@] -> %@", [self class], @"将要进入前台");
     [self.entranceManager onAppWillEnterForeground];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经激活");
+    LoggerInfo(@"[%@] -> %@", [self class], @"已经激活");
     [self.entranceManager onAppDidBecomeActive];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"将要失活");
+    LoggerInfo(@"[%@] -> %@", [self class], @"将要失活");
     [self.entranceManager onAppWillResignActive];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经进入后台");
+    LoggerInfo(@"[%@] -> %@", [self class], @"已经进入后台");
     [self.entranceManager onAppDidEnterBackground];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    LoggerInfo(@"[BaseApplicationDelegate] -> %@", @"已经终止");
+    LoggerInfo(@"[%@] -> %@", [self class], @"已经终止");
     [self.entranceManager onAppWillTerminate];
 }
 

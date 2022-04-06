@@ -1,6 +1,5 @@
 //
 //  TemplateViewController.m
-//  Q
 //
 //  Created by XQ on 2022/4/6.
 //
@@ -14,7 +13,7 @@
 @implementation TemplateViewController
 
 + (NSString *)scheme {
-    return @"";
+    return @"q://vc/xxx";
 }
 
 @end

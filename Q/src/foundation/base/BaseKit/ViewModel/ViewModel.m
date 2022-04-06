@@ -27,12 +27,12 @@
 #pragma mark SetupView
 
 - (BOOL)setup {
-    [self setupView];
+    [self setupViews];
     [self bindOnViewChange];
     return YES;
 }
 
-- (void)setupView {
+- (void)setupViews {
     NSAssert(NO, @"未实现该装载方法");
 }
 

@@ -42,7 +42,6 @@
 }
 
 - (void)initModels {
-    return;
     /*
     NSArray<NSDictionary *> *array = @[
         @{@"key": @"key1", @"status": @(YES)},

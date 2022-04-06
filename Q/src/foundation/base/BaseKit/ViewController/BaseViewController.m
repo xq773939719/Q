@@ -70,7 +70,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    LoggerInfo(@"viewDidLoad(params): %@", self.params);
+    LoggerInfo(@"[%@] -> %@", [self class], self.params);
     self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
     [self initDefaultViews];
 }
@@ -111,7 +111,7 @@
 }
 
 - (void)dealloc {
-    LoggerInfo(@"dealloc: %@", [self class]);
+    LoggerInfo(@"[%@] -> %@", [self class], @"销毁");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -120,6 +120,20 @@
 
 - (BOOL)prefersStatusBarHidden {
     return self.hideStatusBar;
+}
+
+#pragma mark - Origientation
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
 }
 
 #pragma mark - ViewModelProtocol

@@ -1,5 +1,5 @@
 //
-//  TemplateViewController.h
+//  DeviceViewController.h
 //
 //  Created by XQ on 2022/4/6.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TemplateViewController : BaseViewController
+@interface DeviceViewController : BaseViewController
 
 @end
 

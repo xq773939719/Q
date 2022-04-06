@@ -14,6 +14,7 @@
 #import "YYKitViewController.h"
 #import "Q-Swift.h"
 #import "ThreadViewController.h"
+#import "DeviceViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -72,6 +73,13 @@
         [[Router share] route:[WebViewController scheme] withParams:nil];
     };
     [array addObject:webviewModel];
+    
+    LearnCellModel *deviceModel = [LearnCellModel new];
+    deviceModel.title = @"UIDevice学习";
+    deviceModel.onClick = ^{
+        [[Router share] route:[DeviceViewController scheme] withParams:nil];
+    };
+    [array addObject:deviceModel];
     
     return [array copy];
 }

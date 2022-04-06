@@ -71,6 +71,11 @@
 		159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C127FD6D9F002ECDF1 /* ViewModel.m */; };
 		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
 		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
+		159269D127FDDBFD002ECDF1 /* Origientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D027FDDBFD002ECDF1 /* Origientation.m */; };
+		159269D627FDE070002ECDF1 /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */; };
+		159269DA27FDEAA3002ECDF1 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D927FDEAA3002ECDF1 /* Battery.m */; };
+		159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */; };
+		159269E227FDFE4B002ECDF1 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269E127FDFE4B002ECDF1 /* Platform.m */; };
 		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
 		1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6BC279AF57F005592EE /* FeatureModel.m */; };
 		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
@@ -241,6 +246,17 @@
 		159269C527FD6DED002ECDF1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		159269C727FD77BF002ECDF1 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
 		159269C827FD77BF002ECDF1 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
+		159269CE27FDDBC7002ECDF1 /* DeviceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceHeader.h; sourceTree = "<group>"; };
+		159269CF27FDDBFD002ECDF1 /* Origientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Origientation.h; sourceTree = "<group>"; };
+		159269D027FDDBFD002ECDF1 /* Origientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Origientation.m; sourceTree = "<group>"; };
+		159269D427FDE070002ECDF1 /* UIViewController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
+		159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Orientation.m"; sourceTree = "<group>"; };
+		159269D827FDEAA3002ECDF1 /* Battery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
+		159269D927FDEAA3002ECDF1 /* Battery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
+		159269DC27FDEEBB002ECDF1 /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		159269E027FDFE4B002ECDF1 /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		159269E127FDFE4B002ECDF1 /* Platform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
 		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
@@ -760,6 +776,7 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
+				159269DB27FDEE95002ECDF1 /* Device */,
 				159269C427FD6DDB002ECDF1 /* Template */,
 				153C836827FD65D70037BD08 /* WebView */,
 				15C50A5D27F87F33009018D8 /* AF */,
@@ -867,9 +884,9 @@
 		158C123C27A446060071FD9E /* foundation */ = {
 			isa = PBXGroup;
 			children = (
-				152FD08227A4FBAF000DCBFE /* Header */,
 				1598CAB827983AFF00511EFD /* base */,
 				1598CADB27983B0B00511EFD /* common */,
+				152FD08227A4FBAF000DCBFE /* Header */,
 			);
 			path = foundation;
 			sourceTree = "<group>";
@@ -882,6 +899,42 @@
 				159269C827FD77BF002ECDF1 /* TemplateViewController.m */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		159269CD27FDDBA8002ECDF1 /* Origientation */ = {
+			isa = PBXGroup;
+			children = (
+				159269CF27FDDBFD002ECDF1 /* Origientation.h */,
+				159269D027FDDBFD002ECDF1 /* Origientation.m */,
+			);
+			path = Origientation;
+			sourceTree = "<group>";
+		};
+		159269D727FDEA43002ECDF1 /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				159269D827FDEAA3002ECDF1 /* Battery.h */,
+				159269D927FDEAA3002ECDF1 /* Battery.m */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		159269DB27FDEE95002ECDF1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				159269DC27FDEEBB002ECDF1 /* DeviceViewController.h */,
+				159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		159269DF27FDFE2B002ECDF1 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				159269E027FDFE4B002ECDF1 /* Platform.h */,
+				159269E127FDFE4B002ECDF1 /* Platform.m */,
+			);
+			path = Platform;
 			sourceTree = "<group>";
 		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
@@ -940,6 +993,8 @@
 				154EBD85279E6B590048CFF5 /* BaseViewController.m */,
 				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
 				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
+				159269D427FDE070002ECDF1 /* UIViewController+Orientation.h */,
+				159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1029,6 +1084,10 @@
 		1598CAC027983AFF00511EFD /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				159269DF27FDFE2B002ECDF1 /* Platform */,
+				159269D727FDEA43002ECDF1 /* Battery */,
+				159269CD27FDDBA8002ECDF1 /* Origientation */,
+				159269CE27FDDBC7002ECDF1 /* DeviceHeader.h */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -1054,15 +1113,15 @@
 		1598CAC327983AFF00511EFD /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				153C836927FD65FC0037BD08 /* WebView */,
-				155B9EF227DB678800358B50 /* ViewModel */,
+				1527F1A2279A776500A7482A /* BaseKitHeader.h */,
+				1530E421279906FA00E4A8E4 /* Application */,
+				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
+				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
+				1597D6CB279B0CFE005592EE /* Launch */,
 				158C122227A3A5B70071FD9E /* Object */,
 				1597D6D0279B12FD005592EE /* ViewController */,
-				1597D6CB279B0CFE005592EE /* Launch */,
-				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
-				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
-				1530E421279906FA00E4A8E4 /* Application */,
-				1527F1A2279A776500A7482A /* BaseKitHeader.h */,
+				155B9EF227DB678800358B50 /* ViewModel */,
+				153C836927FD65FC0037BD08 /* WebView */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -1355,15 +1414,18 @@
 			files = (
 				157530AE27A538650075C149 /* RouteManager.m in Sources */,
 				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
+				159269D627FDE070002ECDF1 /* UIViewController+Orientation.m in Sources */,
 				155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */,
 				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
 				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
 				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
+				159269D127FDDBFD002ECDF1 /* Origientation.m in Sources */,
 				159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
 				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
+				159269DA27FDEAA3002ECDF1 /* Battery.m in Sources */,
 				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				159269C627FD6DED002ECDF1 /* Template.swift in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
@@ -1372,6 +1434,7 @@
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
 				153C836F27FD66490037BD08 /* BaseWebView.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
+				159269E227FDFE4B002ECDF1 /* Platform.m in Sources */,
 				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
 				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
 				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
@@ -1416,6 +1479,7 @@
 				153C837127FD669A0037BD08 /* WebViewController.swift in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
 				1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */,
+				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,8 +1664,9 @@
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1796,8 +1861,9 @@
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

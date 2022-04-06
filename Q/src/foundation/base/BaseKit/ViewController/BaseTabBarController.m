@@ -1,6 +1,5 @@
   //
   //  BaseTabBarController.m
-  //  Q
   //
   //  Created by XQ on 2022/1/24.
   //
@@ -24,9 +23,26 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    LoggerInfo(@"[BaseTabBarController] -> viewDidLoad(params): %@", self.params);
+    LoggerInfo(@"[%@][%s]-> %@", [self class], __func__, self.params);
     self.navigationController.navigationBar.hidden = self.hideNavigationBar;
     self.tabBarController.tabBar.hidden = self.hideTabBar;
+}
+
+#pragma mark - Origientation
+
+/// 是否自动旋转
+-(BOOL)shouldAutorotate{
+    return self.selectedViewController.shouldAutorotate;
+}
+
+/// 支持哪些屏幕方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return [self.selectedViewController supportedInterfaceOrientations];
+}
+
+/// 默认方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }
 
 

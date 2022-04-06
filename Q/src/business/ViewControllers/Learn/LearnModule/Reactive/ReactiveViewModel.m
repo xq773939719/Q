@@ -31,12 +31,12 @@
 
 - (void)bindOnModelChange {
     [RACObserve(self.model, text) subscribeNext:^(NSString * _Nullable x) {
-        LoggerInfo(@"[ReactiveViewModel]%s, %@", __func__, x);
+        LoggerInfo(@"[%@] -> %s, %@", [self class], __func__, x);
         self.label.text = x;
     }];
 }
 
-- (void)setupView {
+- (void)setupViews {
     [self.delegate addSubview:self.textField1];
     [self.textField1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@40);
