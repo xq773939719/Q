@@ -6,6 +6,7 @@
 
 #import "BaseViewController.h"
 #import "BaseKitHeader.h"
+#import "DebugHeader.h"
 
 @interface BaseViewController ()
 
@@ -192,6 +193,22 @@
 
 - (void)updateViews {
     [self.view updateConstraints];
+}
+
+#pragma mark - Shake
+
+/// 摇一摇弹出debug面板
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [[DebugBubble share] show];
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    
+}
+
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    
 }
 
 @end

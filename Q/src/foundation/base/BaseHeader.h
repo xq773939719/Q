@@ -15,5 +15,6 @@
 #import "Router/RouterHeader.h"
 #import "Util/UtilHeader.h"
 #import "Device/DeviceHeader.h"
+#import "Debug/DebugHeader.h"
 
 #endif /* BaseHeader_h */

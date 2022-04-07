@@ -15,7 +15,8 @@
 
 - (BaseEntranceManager *)onDelegateInit {
     // 提供整体的业务切换
-    return [BusinessEntranceManager new];
+    BusinessEntranceManager *manager = [BusinessEntranceManager new];
+    return manager;
 }
 
 @end

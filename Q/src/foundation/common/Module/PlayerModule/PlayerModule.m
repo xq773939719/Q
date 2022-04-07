@@ -6,7 +6,7 @@
 
 #import "PlayerModule.h"
 
-NSString *moduleName = @"PlayerModule";
+static NSString *moduleName = @"PlayerModule";
 
 @implementation PlayerModule
 

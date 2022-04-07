@@ -7,6 +7,6 @@
 #ifndef CommonHeader_h
 #define CommonHeader_h
 
-#import "CommonKit/CommonHeader.h"
+#import "CommonKit/CommonKitHeader.h"
 
 #endif /* CommonHeader_h */

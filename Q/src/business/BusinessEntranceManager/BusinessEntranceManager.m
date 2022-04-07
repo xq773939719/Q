@@ -5,6 +5,7 @@
 //
 
 #import "BusinessEntranceManager.h"
+#import "CommonHeader.h"
 
 #import "TabBarController.h"
 #import "BusinessLaunchViewController.h"

@@ -19,7 +19,6 @@ class WebViewController: BaseViewController, WKUIDelegate {
         let webConfiguration = WKWebViewConfiguration()
         let webView = BaseWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
-        view?.backgroundColor = UIColor.clear
         return webView
     }()
     

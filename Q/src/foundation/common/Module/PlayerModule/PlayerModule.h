@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlayerModule : SystemModule
+@interface PlayerModule : CommonModule
 
 @end
 

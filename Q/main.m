@@ -9,8 +9,8 @@
 #import "BusinessApplicationDelegate.h"
 
 int main(int argc, char * argv[]) {
-    NSString * appDelegateClassName;
-    NSString * applicationClassName;
+    static NSString * appDelegateClassName;
+    static NSString * applicationClassName;
     @autoreleasepool {
         LoggerInfo(@"[main] -> %@", @"启动");
         applicationClassName = NSStringFromClass([UIApplication class]);

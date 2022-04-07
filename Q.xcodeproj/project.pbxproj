@@ -92,6 +92,10 @@
 		15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5B27F869A8009018D8 /* YYKitViewController.m */; };
 		15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */; };
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
+		15DE7B4C27FEA1DD00454A64 /* DebugPanelDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */; };
+		15DE7B4F27FEA1FE00454A64 /* DebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B4E27FEA1FE00454A64 /* DebugModel.m */; };
+		15DE7B5927FEB2E100454A64 /* DebugBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B5827FEB2E100454A64 /* DebugBubble.m */; };
+		15DE7B5D27FED3CD00454A64 /* DebugLookinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -240,7 +244,7 @@
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
 		158C123D27A447350071FD9E /* FoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
-		158C123E27A448820071FD9E /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		158C123E27A448820071FD9E /* CommonKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonKitHeader.h; sourceTree = "<group>"; };
 		159269C127FD6D9F002ECDF1 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		159269C227FD6D9F002ECDF1 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		159269C527FD6DED002ECDF1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 		159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
 		159269E027FDFE4B002ECDF1 /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 		159269E127FDFE4B002ECDF1 /* Platform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
+		159269E527FE7DBD002ECDF1 /* DebugHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugHeader.h; sourceTree = "<group>"; };
 		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
 		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
 		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
@@ -288,6 +293,14 @@
 		15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		15DE7B4A27FEA1DD00454A64 /* DebugPanelDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugPanelDataProvider.h; sourceTree = "<group>"; };
+		15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugPanelDataProvider.m; sourceTree = "<group>"; };
+		15DE7B4D27FEA1FE00454A64 /* DebugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugModel.h; sourceTree = "<group>"; };
+		15DE7B4E27FEA1FE00454A64 /* DebugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugModel.m; sourceTree = "<group>"; };
+		15DE7B5727FEB2E100454A64 /* DebugBubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugBubble.h; sourceTree = "<group>"; };
+		15DE7B5827FEB2E100454A64 /* DebugBubble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugBubble.m; sourceTree = "<group>"; };
+		15DE7B5B27FED3CD00454A64 /* DebugLookinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugLookinModel.h; sourceTree = "<group>"; };
+		15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugLookinModel.m; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
@@ -397,7 +410,7 @@
 		1527F135279A714800A7482A /* CommonKit */ = {
 			isa = PBXGroup;
 			children = (
-				158C123E27A448820071FD9E /* CommonHeader.h */,
+				158C123E27A448820071FD9E /* CommonKitHeader.h */,
 				1527F13A279A714800A7482A /* CommonEntranceManager */,
 				1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */,
 			);
@@ -937,6 +950,29 @@
 			path = Platform;
 			sourceTree = "<group>";
 		};
+		159269E327FE7D37002ECDF1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				159269E427FE7DB3002ECDF1 /* DebugPanel */,
+				159269E527FE7DBD002ECDF1 /* DebugHeader.h */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		159269E427FE7DB3002ECDF1 /* DebugPanel */ = {
+			isa = PBXGroup;
+			children = (
+				15DE7B5A27FED39A00454A64 /* DebugLookinModel */,
+				15DE7B4A27FEA1DD00454A64 /* DebugPanelDataProvider.h */,
+				15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */,
+				15DE7B4D27FEA1FE00454A64 /* DebugModel.h */,
+				15DE7B4E27FEA1FE00454A64 /* DebugModel.m */,
+				15DE7B5727FEB2E100454A64 /* DebugBubble.h */,
+				15DE7B5827FEB2E100454A64 /* DebugBubble.m */,
+			);
+			path = DebugPanel;
+			sourceTree = "<group>";
+		};
 		1597D6B6279AF254005592EE /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,6 +1041,7 @@
 				1527F1AD279A7EE900A7482A /* BaseHeader.h */,
 				1598CAC327983AFF00511EFD /* BaseKit */,
 				1598CAC227983AFF00511EFD /* Data */,
+				159269E327FE7D37002ECDF1 /* Debug */,
 				1598CAC027983AFF00511EFD /* Device */,
 				1598CAC127983AFF00511EFD /* Feature */,
 				1598CABD27983AFF00511EFD /* File */,
@@ -1211,6 +1248,15 @@
 				15C50A6327F89921009018D8 /* ThreadViewController.m */,
 			);
 			path = ThreadView;
+			sourceTree = "<group>";
+		};
+		15DE7B5A27FED39A00454A64 /* DebugLookinModel */ = {
+			isa = PBXGroup;
+			children = (
+				15DE7B5B27FED3CD00454A64 /* DebugLookinModel.h */,
+				15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */,
+			);
+			path = DebugLookinModel;
 			sourceTree = "<group>";
 		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
@@ -1430,6 +1476,7 @@
 				159269C627FD6DED002ECDF1 /* Template.swift in Sources */,
 				150AA274279D9E7600AEC946 /* Router.m in Sources */,
 				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
+				15DE7B4C27FEA1DD00454A64 /* DebugPanelDataProvider.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
 				153C836F27FD66490037BD08 /* BaseWebView.m in Sources */,
@@ -1448,6 +1495,7 @@
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */,
 				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
+				15DE7B5927FEB2E100454A64 /* DebugBubble.m in Sources */,
 				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */,
 				157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */,
@@ -1457,6 +1505,7 @@
 				1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */,
 				154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */,
 				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
+				15DE7B4F27FEA1FE00454A64 /* DebugModel.m in Sources */,
 				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1527F198279A756C00A7482A /* MineViewController.m in Sources */,
 				1527F192279A756C00A7482A /* FeatureNavigationController.m in Sources */,
@@ -1478,6 +1527,7 @@
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				153C837127FD669A0037BD08 /* WebViewController.swift in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
+				15DE7B5D27FED3CD00454A64 /* DebugLookinModel.m in Sources */,
 				1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
 			);

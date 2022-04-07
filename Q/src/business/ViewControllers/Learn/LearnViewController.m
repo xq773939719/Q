@@ -8,7 +8,7 @@
 #import "LearnDataProvider.h"
 #import "LearnCellModel.h"
 
-NSString *cellId = @"LearnViewControllerCellId";
+static NSString *cellId = @"LearnViewControllerCellId";
 
 @interface LearnViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -28,23 +28,16 @@ NSString *cellId = @"LearnViewControllerCellId";
     self = [super init];
     if (self) {
         self.viewControllerName = @"学习";
-        
-        [self initData];
     }
     return self;
 }
 
-- (void)initData {
+- (void)setupData {
     self.dataProvider = [LearnDataProvider new];
     self.models = self.dataProvider.models;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self initView];
-}
-
-- (void)initView {
+- (void)setupViews {
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -81,8 +74,5 @@ NSString *cellId = @"LearnViewControllerCellId";
     cell.textLabel.text = model.title;
     return cell;
 }
-
-
-
 
 @end
