@@ -4,7 +4,7 @@
 //  Created by XQ on 2022/1/19.
 //
 
-#import "FoundationHeader.h"
+#import "BusinessHeader.h"
 
 @interface BusinessApplicationDelegate : BaseApplicationDelegate
 

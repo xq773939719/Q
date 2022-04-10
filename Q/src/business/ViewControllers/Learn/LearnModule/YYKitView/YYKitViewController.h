@@ -4,7 +4,7 @@
 //  Created by XQ on 2022/4/2.
 //
 
-#import "BaseViewController.h"
+#import "BusinessHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

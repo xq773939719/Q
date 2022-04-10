@@ -153,6 +153,7 @@ end
 #------ 开发组件 ------#
 # !!! 不要忘记注释相应的模块
 def DevelopModule
+  pod 'QTools', :path => '../Develop/QTools'
 end
 
 # Pods for Q

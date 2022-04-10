@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150AA274279D9E7600AEC946 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AA273279D9E7600AEC946 /* Router.m */; };
-		150AA277279D9E9400AEC946 /* RouteMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AA276279D9E9400AEC946 /* RouteMap.m */; };
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
-		1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F13C279A714800A7482A /* CommonEntranceManager.m */; };
 		1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F165279A756C00A7482A /* ThirdNavigationController.m */; };
 		1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F168279A756C00A7482A /* HomeNavigationController.m */; };
 		1527F191279A756C00A7482A /* MineNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F16A279A756C00A7482A /* MineNavigationController.m */; };
@@ -23,23 +20,12 @@
 		1527F199279A756C00A7482A /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F183279A756C00A7482A /* FeatureViewController.m */; };
 		1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F188279A756C00A7482A /* BusinessEntranceManager.m */; };
 		1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */; };
-		1527F19F279A75D400A7482A /* BusinessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F19D279A75D400A7482A /* BusinessModule.m */; };
-		1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */; };
-		1527F1C6279A9FA500A7482A /* LoggerFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1C5279A9FA500A7482A /* LoggerFileManager.m */; };
-		1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1D8279AC69100A7482A /* UIApplication+Base.m */; };
 		1527F1E0279AD06100A7482A /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1DF279AD06100A7482A /* LearnViewController.m */; };
 		1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F1E3279AD09A00A7482A /* LearnNavigationController.m */; };
 		152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */; };
 		152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
 		152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD09627A52DDC000DCBFE /* OpenGLViewController.m */; };
 		152FD09927A52EBD000DCBFE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD09827A52EBD000DCBFE /* GLKit.framework */; };
-		1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */; };
-		1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */; };
-		1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */; };
-		1530E4412799152900E4A8E4 /* BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4402799152900E4A8E4 /* BaseModule.m */; };
-		1530E445279932D800E4A8E4 /* SystemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E444279932D800E4A8E4 /* SystemModule.m */; };
-		1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E4492799334F00E4A8E4 /* CommonModule.m */; };
-		1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1530E45727993AC100E4A8E4 /* PlayerModule.m */; };
 		1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4B32799813300E4A8E4 /* libc++.tbd */; };
 		1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47027996E3A00E4A8E4 /* UIKit.framework */; };
 		1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D22799855B00E4A8E4 /* OpenGLES.framework */; };
@@ -52,50 +38,24 @@
 		1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4DF279985A000E4A8E4 /* QuartzCore.framework */; };
 		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
 		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
-		153C836F27FD66490037BD08 /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C836E27FD66490037BD08 /* BaseWebView.m */; };
 		153C837127FD669A0037BD08 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C837027FD669A0037BD08 /* WebViewController.swift */; };
-		154EBD74279E579C0048CFF5 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD73279E579C0048CFF5 /* Util.m */; };
-		154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD82279E6B440048CFF5 /* BaseTabBarController.m */; };
-		154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD85279E6B590048CFF5 /* BaseViewController.m */; };
-		154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */; };
 		154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */; };
 		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
 		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
 		155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EEF27DB302F00358B50 /* ReactiveViewController.m */; };
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
-		157530AE27A538650075C149 /* RouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530AD27A538650075C149 /* RouteManager.m */; };
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
-		158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C122427A3A5F30071FD9E /* NSObject+Method.m */; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C127FD6D9F002ECDF1 /* ViewModel.m */; };
 		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
 		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
-		159269D127FDDBFD002ECDF1 /* Origientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D027FDDBFD002ECDF1 /* Origientation.m */; };
-		159269D627FDE070002ECDF1 /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */; };
-		159269DA27FDEAA3002ECDF1 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269D927FDEAA3002ECDF1 /* Battery.m */; };
 		159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */; };
-		159269E227FDFE4B002ECDF1 /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269E127FDFE4B002ECDF1 /* Platform.m */; };
-		1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6B8279AF29D005592EE /* FeatureModelManager.m */; };
-		1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6BC279AF57F005592EE /* FeatureModel.m */; };
-		1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C1279AFAA6005592EE /* FeatureManager.m */; };
-		1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6C9279B0C2C005592EE /* LaunchViewController.m */; };
 		1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */; };
-		1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597D6D5279B156E005592EE /* UIViewController+Configuration.m */; };
 		1598CAEC27983B3D00511EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598CAE827983B3D00511EFD /* main.m */; };
-		159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA22799DAC800406C51 /* BaseLogger.m */; };
-		159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BFFA62799E1A800406C51 /* LoggerEngine.m */; };
-		15A45CF32799D2B800017F8A /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF22799D2B800017F8A /* Logger.m */; };
-		15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45CF92799D2DF00017F8A /* LoggerSystem.m */; };
-		15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */; };
 		15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5327F864F6009018D8 /* SwiftViewController.swift */; };
 		15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5B27F869A8009018D8 /* YYKitViewController.m */; };
 		15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */; };
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
-		15DE7B4C27FEA1DD00454A64 /* DebugPanelDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */; };
-		15DE7B4F27FEA1FE00454A64 /* DebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B4E27FEA1FE00454A64 /* DebugModel.m */; };
-		15DE7B5927FEB2E100454A64 /* DebugBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B5827FEB2E100454A64 /* DebugBubble.m */; };
-		15DE7B5D27FED3CD00454A64 /* DebugLookinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,18 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		150AA272279D9E7600AEC946 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
-		150AA273279D9E7600AEC946 /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
-		150AA275279D9E9400AEC946 /* RouteMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteMap.h; sourceTree = "<group>"; };
-		150AA276279D9E9400AEC946 /* RouteMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteMap.m; sourceTree = "<group>"; };
-		150AA279279DA11500AEC946 /* RouterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterHeader.h; sourceTree = "<group>"; };
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15277E6E2798223400FA882E /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E782798223400FA882E /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1527F13B279A714800A7482A /* CommonEntranceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonEntranceManager.h; sourceTree = "<group>"; };
-		1527F13C279A714800A7482A /* CommonEntranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonEntranceManager.m; sourceTree = "<group>"; };
 		1527F164279A756C00A7482A /* ThirdNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdNavigationController.h; sourceTree = "<group>"; };
 		1527F165279A756C00A7482A /* ThirdNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdNavigationController.m; sourceTree = "<group>"; };
 		1527F167279A756C00A7482A /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -153,45 +106,15 @@
 		1527F188279A756C00A7482A /* BusinessEntranceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessEntranceManager.m; sourceTree = "<group>"; };
 		1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessApplicationDelegate.m; sourceTree = "<group>"; };
 		1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessApplicationDelegate.h; sourceTree = "<group>"; };
-		1527F19D279A75D400A7482A /* BusinessModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModule.m; sourceTree = "<group>"; };
-		1527F19E279A75D400A7482A /* BusinessModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModule.h; sourceTree = "<group>"; };
-		1527F1A1279A775400A7482A /* BaseModuleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleHeader.h; sourceTree = "<group>"; };
-		1527F1A2279A776500A7482A /* BaseKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseKitHeader.h; sourceTree = "<group>"; };
-		1527F1AC279A7DBE00A7482A /* LoggerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerHeader.h; sourceTree = "<group>"; };
-		1527F1AD279A7EE900A7482A /* BaseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
-		1527F1AE279A805B00A7482A /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
-		1527F1B0279A855800A7482A /* CommonApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonApplicationDelegate.h; sourceTree = "<group>"; };
-		1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonApplicationDelegate.m; sourceTree = "<group>"; };
-		1527F1C4279A9FA500A7482A /* LoggerFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerFileManager.h; sourceTree = "<group>"; };
-		1527F1C5279A9FA500A7482A /* LoggerFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerFileManager.m; sourceTree = "<group>"; };
-		1527F1D7279AC69100A7482A /* UIApplication+Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Base.h"; sourceTree = "<group>"; };
-		1527F1D8279AC69100A7482A /* UIApplication+Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Base.m"; sourceTree = "<group>"; };
 		1527F1DE279AD06100A7482A /* LearnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
 		1527F1DF279AD06100A7482A /* LearnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		1527F1E2279AD09A00A7482A /* LearnNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnNavigationController.h; sourceTree = "<group>"; };
 		1527F1E3279AD09A00A7482A /* LearnNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnNavigationController.m; sourceTree = "<group>"; };
-		1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Q-Bridging-Header.h"; sourceTree = "<group>"; };
 		152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		152FD09527A52DDC000DCBFE /* OpenGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
 		152FD09627A52DDC000DCBFE /* OpenGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		152FD09827A52EBD000DCBFE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		152FD09D27A52FB2000DCBFE /* GLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHeader.h; sourceTree = "<group>"; };
-		1530E4192799046900E4A8E4 /* BaseApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplicationDelegate.h; sourceTree = "<group>"; };
-		1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApplicationDelegate.m; sourceTree = "<group>"; };
-		1530E4292799097B00E4A8E4 /* BaseEntranceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEntranceManager.h; sourceTree = "<group>"; };
-		1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEntranceManager.m; sourceTree = "<group>"; };
-		1530E439279914EB00E4A8E4 /* BaseModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleManager.h; sourceTree = "<group>"; };
-		1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModuleManager.m; sourceTree = "<group>"; };
-		1530E43F2799152900E4A8E4 /* BaseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModule.h; sourceTree = "<group>"; };
-		1530E4402799152900E4A8E4 /* BaseModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModule.m; sourceTree = "<group>"; };
-		1530E443279932D800E4A8E4 /* SystemModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemModule.h; sourceTree = "<group>"; };
-		1530E444279932D800E4A8E4 /* SystemModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemModule.m; sourceTree = "<group>"; };
-		1530E4482799334F00E4A8E4 /* CommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModule.h; sourceTree = "<group>"; };
-		1530E4492799334F00E4A8E4 /* CommonModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModule.m; sourceTree = "<group>"; };
-		1530E45627993AC100E4A8E4 /* PlayerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerModule.h; sourceTree = "<group>"; };
-		1530E45727993AC100E4A8E4 /* PlayerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerModule.m; sourceTree = "<group>"; };
-		1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppStatusProtocol.h; sourceTree = "<group>"; };
 		1530E47027996E3A00E4A8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1530E4B32799813300E4A8E4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -207,85 +130,32 @@
 		1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
-		153C836D27FD66490037BD08 /* BaseWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebView.h; sourceTree = "<group>"; };
-		153C836E27FD66490037BD08 /* BaseWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebView.m; sourceTree = "<group>"; };
 		153C837027FD669A0037BD08 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		154EBD71279E578E0048CFF5 /* UtilHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilHeader.h; sourceTree = "<group>"; };
-		154EBD72279E579C0048CFF5 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		154EBD73279E579C0048CFF5 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
-		154EBD81279E6B440048CFF5 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
-		154EBD82279E6B440048CFF5 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		154EBD84279E6B590048CFF5 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		154EBD85279E6B590048CFF5 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154EBD90279EB8BB0048CFF5 /* LearnCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnCellModel.h; sourceTree = "<group>"; };
 		154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnCellModel.m; sourceTree = "<group>"; };
 		154EBD93279EB90D0048CFF5 /* LearnDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnDataProvider.h; sourceTree = "<group>"; };
 		154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnDataProvider.m; sourceTree = "<group>"; };
-		154EBD96279EBA160048CFF5 /* ProtocolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolHeader.h; sourceTree = "<group>"; };
-		154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelProviderProtocol.h; sourceTree = "<group>"; };
 		155B9EEE27DB302F00358B50 /* ReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewController.h; sourceTree = "<group>"; };
 		155B9EEF27DB302F00358B50 /* ReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewController.m; sourceTree = "<group>"; };
 		155B9EFC27DB701A00358B50 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
 		155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveViewModel.m; sourceTree = "<group>"; };
 		155B9EFF27DB707700358B50 /* ReactiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveModel.h; sourceTree = "<group>"; };
 		155B9F0027DB707700358B50 /* ReactiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveModel.m; sourceTree = "<group>"; };
-		157530A627A533930075C149 /* MetalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalHeader.h; sourceTree = "<group>"; };
-		157530AC27A538650075C149 /* RouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteManager.h; sourceTree = "<group>"; };
-		157530AD27A538650075C149 /* RouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteManager.m; sourceTree = "<group>"; };
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
-		158C122327A3A5F30071FD9E /* NSObject+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Method.h"; sourceTree = "<group>"; };
-		158C122427A3A5F30071FD9E /* NSObject+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Method.m"; sourceTree = "<group>"; };
 		158C122927A40D720071FD9E /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Person.proto; sourceTree = "<group>"; };
 		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
-		158C123D27A447350071FD9E /* FoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
-		158C123E27A448820071FD9E /* CommonKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonKitHeader.h; sourceTree = "<group>"; };
-		159269C127FD6D9F002ECDF1 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
-		159269C227FD6D9F002ECDF1 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		159269C527FD6DED002ECDF1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		159269C727FD77BF002ECDF1 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
 		159269C827FD77BF002ECDF1 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
-		159269CE27FDDBC7002ECDF1 /* DeviceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceHeader.h; sourceTree = "<group>"; };
-		159269CF27FDDBFD002ECDF1 /* Origientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Origientation.h; sourceTree = "<group>"; };
-		159269D027FDDBFD002ECDF1 /* Origientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Origientation.m; sourceTree = "<group>"; };
-		159269D427FDE070002ECDF1 /* UIViewController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
-		159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Orientation.m"; sourceTree = "<group>"; };
-		159269D827FDEAA3002ECDF1 /* Battery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
-		159269D927FDEAA3002ECDF1 /* Battery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
 		159269DC27FDEEBB002ECDF1 /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
 		159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
-		159269E027FDFE4B002ECDF1 /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
-		159269E127FDFE4B002ECDF1 /* Platform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
-		159269E527FE7DBD002ECDF1 /* DebugHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugHeader.h; sourceTree = "<group>"; };
-		1597D6B7279AF29D005592EE /* FeatureModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModelManager.h; sourceTree = "<group>"; };
-		1597D6B8279AF29D005592EE /* FeatureModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModelManager.m; sourceTree = "<group>"; };
-		1597D6BB279AF57F005592EE /* FeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureModel.h; sourceTree = "<group>"; };
-		1597D6BC279AF57F005592EE /* FeatureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureModel.m; sourceTree = "<group>"; };
-		1597D6BE279AFA49005592EE /* FeatureHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureHeader.h; sourceTree = "<group>"; };
-		1597D6C0279AFAA6005592EE /* FeatureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureManager.h; sourceTree = "<group>"; };
-		1597D6C1279AFAA6005592EE /* FeatureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureManager.m; sourceTree = "<group>"; };
-		1597D6C8279B0C2C005592EE /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
-		1597D6C9279B0C2C005592EE /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		1597D6CC279B0E7B005592EE /* BusinessLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLaunchViewController.h; sourceTree = "<group>"; };
 		1597D6CD279B0E7B005592EE /* BusinessLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLaunchViewController.m; sourceTree = "<group>"; };
-		1597D6D4279B156E005592EE /* UIViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Configuration.h"; sourceTree = "<group>"; };
-		1597D6D5279B156E005592EE /* UIViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Configuration.m"; sourceTree = "<group>"; };
 		1598CAE827983B3D00511EFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		159BFFA22799DAC800406C51 /* BaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogger.m; sourceTree = "<group>"; };
-		159BFFA32799DAC800406C51 /* BaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogger.h; sourceTree = "<group>"; };
-		159BFFA52799E1A800406C51 /* LoggerEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerEngine.h; sourceTree = "<group>"; };
-		159BFFA62799E1A800406C51 /* LoggerEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerEngine.m; sourceTree = "<group>"; };
-		15A45CF12799D2B800017F8A /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		15A45CF22799D2B800017F8A /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
-		15A45CF42799D2DF00017F8A /* LoggerSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerSystem.h; sourceTree = "<group>"; };
-		15A45CF92799D2DF00017F8A /* LoggerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerSystem.m; sourceTree = "<group>"; };
-		15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoggerConfiguration.m; sourceTree = "<group>"; };
-		15A45D042799D36100017F8A /* BaseLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoggerConfiguration.h; sourceTree = "<group>"; };
 		15C50A5327F864F6009018D8 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		15C50A5A27F869A8009018D8 /* YYKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
 		15C50A5B27F869A8009018D8 /* YYKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitViewController.m; sourceTree = "<group>"; };
@@ -293,14 +163,8 @@
 		15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
-		15DE7B4A27FEA1DD00454A64 /* DebugPanelDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugPanelDataProvider.h; sourceTree = "<group>"; };
-		15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugPanelDataProvider.m; sourceTree = "<group>"; };
-		15DE7B4D27FEA1FE00454A64 /* DebugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugModel.h; sourceTree = "<group>"; };
-		15DE7B4E27FEA1FE00454A64 /* DebugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugModel.m; sourceTree = "<group>"; };
-		15DE7B5727FEB2E100454A64 /* DebugBubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugBubble.h; sourceTree = "<group>"; };
-		15DE7B5827FEB2E100454A64 /* DebugBubble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugBubble.m; sourceTree = "<group>"; };
-		15DE7B5B27FED3CD00454A64 /* DebugLookinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugLookinModel.h; sourceTree = "<group>"; };
-		15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugLookinModel.m; sourceTree = "<group>"; };
+		15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
+		15DE7B602802B2B400454A64 /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
@@ -356,15 +220,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		150AA271279D9E0500AEC946 /* RouteMap */ = {
-			isa = PBXGroup;
-			children = (
-				150AA275279D9E9400AEC946 /* RouteMap.h */,
-				150AA276279D9E9400AEC946 /* RouteMap.m */,
-			);
-			path = RouteMap;
-			sourceTree = "<group>";
-		};
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
@@ -397,33 +252,6 @@
 				1598CADC27983B1400511EFD /* src */,
 			);
 			path = Q;
-			sourceTree = "<group>";
-		};
-		1527F12D279A6E8D00A7482A /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				1530E45527993A2300E4A8E4 /* PlayerModule */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		1527F135279A714800A7482A /* CommonKit */ = {
-			isa = PBXGroup;
-			children = (
-				158C123E27A448820071FD9E /* CommonKitHeader.h */,
-				1527F13A279A714800A7482A /* CommonEntranceManager */,
-				1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */,
-			);
-			path = CommonKit;
-			sourceTree = "<group>";
-		};
-		1527F13A279A714800A7482A /* CommonEntranceManager */ = {
-			isa = PBXGroup;
-			children = (
-				1527F13B279A714800A7482A /* CommonEntranceManager.h */,
-				1527F13C279A714800A7482A /* CommonEntranceManager.m */,
-			);
-			path = CommonEntranceManager;
 			sourceTree = "<group>";
 		};
 		1527F162279A756C00A7482A /* NavigationController */ = {
@@ -486,17 +314,9 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
-		1527F174279A756C00A7482A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1527F175279A756C00A7482A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1597D6C7279B0BFD005592EE /* Launch */,
 				1527F1DD279AD04600A7482A /* Learn */,
 				1527F177279A756C00A7482A /* Home */,
 				1527F17A279A756C00A7482A /* Third */,
@@ -551,79 +371,6 @@
 			path = BusinessEntranceManager;
 			sourceTree = "<group>";
 		};
-		1527F1A7279A7CAE00A7482A /* LoggerEngine */ = {
-			isa = PBXGroup;
-			children = (
-				159BFFA52799E1A800406C51 /* LoggerEngine.h */,
-				159BFFA62799E1A800406C51 /* LoggerEngine.m */,
-			);
-			path = LoggerEngine;
-			sourceTree = "<group>";
-		};
-		1527F1A8279A7CBB00A7482A /* BaseLogger */ = {
-			isa = PBXGroup;
-			children = (
-				159BFFA32799DAC800406C51 /* BaseLogger.h */,
-				159BFFA22799DAC800406C51 /* BaseLogger.m */,
-			);
-			path = BaseLogger;
-			sourceTree = "<group>";
-		};
-		1527F1A9279A7CD200A7482A /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				15A45CF12799D2B800017F8A /* Logger.h */,
-				15A45CF22799D2B800017F8A /* Logger.m */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		1527F1AA279A7CDE00A7482A /* BaseLoggerConfiguration */ = {
-			isa = PBXGroup;
-			children = (
-				15A45D042799D36100017F8A /* BaseLoggerConfiguration.h */,
-				15A45D032799D36100017F8A /* BaseLoggerConfiguration.m */,
-			);
-			path = BaseLoggerConfiguration;
-			sourceTree = "<group>";
-		};
-		1527F1AB279A7D4000A7482A /* LoggerSystem */ = {
-			isa = PBXGroup;
-			children = (
-				15A45CF42799D2DF00017F8A /* LoggerSystem.h */,
-				15A45CF92799D2DF00017F8A /* LoggerSystem.m */,
-			);
-			path = LoggerSystem;
-			sourceTree = "<group>";
-		};
-		1527F1AF279A84FA00A7482A /* CommonApplicationDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1B0279A855800A7482A /* CommonApplicationDelegate.h */,
-				1527F1B1279A855800A7482A /* CommonApplicationDelegate.m */,
-			);
-			path = CommonApplicationDelegate;
-			sourceTree = "<group>";
-		};
-		1527F1BD279A9EFF00A7482A /* LoggerFileManager */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1C4279A9FA500A7482A /* LoggerFileManager.h */,
-				1527F1C5279A9FA500A7482A /* LoggerFileManager.m */,
-			);
-			path = LoggerFileManager;
-			sourceTree = "<group>";
-		};
-		1527F1DB279ACA0500A7482A /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				1530E45A279940C100E4A8E4 /* BaseAppStatusProtocol.h */,
-				154EBD96279EBA160048CFF5 /* ProtocolHeader.h */,
-				154EBD98279EBA740048CFF5 /* BaseModelProviderProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
 		1527F1DD279AD04600A7482A /* Learn */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,17 +394,6 @@
 			path = LearnNavigationController;
 			sourceTree = "<group>";
 		};
-		152FD08227A4FBAF000DCBFE /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				158C123D27A447350071FD9E /* FoundationHeader.h */,
-				1527F1E5279AD2EB00A7482A /* FrameworkHeader.h */,
-				157530A527A533860075C149 /* Metal */,
-				152FD09A27A52F4C000DCBFE /* OpenGL */,
-			);
-			path = Header;
-			sourceTree = "<group>";
-		};
 		152FD09127A52DBA000DCBFE /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,121 +403,10 @@
 			path = OpenGL;
 			sourceTree = "<group>";
 		};
-		152FD09A27A52F4C000DCBFE /* OpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				152FD09D27A52FB2000DCBFE /* GLHeader.h */,
-			);
-			path = OpenGL;
-			sourceTree = "<group>";
-		};
-		1530E4182799043800E4A8E4 /* BaseApplicationDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1530E4192799046900E4A8E4 /* BaseApplicationDelegate.h */,
-				1530E41A2799046900E4A8E4 /* BaseApplicationDelegate.m */,
-			);
-			path = BaseApplicationDelegate;
-			sourceTree = "<group>";
-		};
-		1530E421279906FA00E4A8E4 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1D7279AC69100A7482A /* UIApplication+Base.h */,
-				1527F1D8279AC69100A7482A /* UIApplication+Base.m */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		1530E433279911D400E4A8E4 /* BaseEntranceManager */ = {
-			isa = PBXGroup;
-			children = (
-				1530E4292799097B00E4A8E4 /* BaseEntranceManager.h */,
-				1530E42A2799097B00E4A8E4 /* BaseEntranceManager.m */,
-			);
-			path = BaseEntranceManager;
-			sourceTree = "<group>";
-		};
-		1530E4382799137200E4A8E4 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				1530E43D2799150A00E4A8E4 /* BaseModule */,
-				1530E43C279914FB00E4A8E4 /* BaseModuleManager */,
-				1527F1A1279A775400A7482A /* BaseModuleHeader.h */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		1530E43C279914FB00E4A8E4 /* BaseModuleManager */ = {
-			isa = PBXGroup;
-			children = (
-				1530E439279914EB00E4A8E4 /* BaseModuleManager.h */,
-				1530E43A279914EB00E4A8E4 /* BaseModuleManager.m */,
-			);
-			path = BaseModuleManager;
-			sourceTree = "<group>";
-		};
-		1530E43D2799150A00E4A8E4 /* BaseModule */ = {
-			isa = PBXGroup;
-			children = (
-				1530E44B2799336400E4A8E4 /* BusinessModule */,
-				1530E4472799333200E4A8E4 /* CommonModule */,
-				1530E4462799332A00E4A8E4 /* SystemModule */,
-				1530E43F2799152900E4A8E4 /* BaseModule.h */,
-				1530E4402799152900E4A8E4 /* BaseModule.m */,
-			);
-			path = BaseModule;
-			sourceTree = "<group>";
-		};
-		1530E4462799332A00E4A8E4 /* SystemModule */ = {
-			isa = PBXGroup;
-			children = (
-				1530E443279932D800E4A8E4 /* SystemModule.h */,
-				1530E444279932D800E4A8E4 /* SystemModule.m */,
-			);
-			path = SystemModule;
-			sourceTree = "<group>";
-		};
-		1530E4472799333200E4A8E4 /* CommonModule */ = {
-			isa = PBXGroup;
-			children = (
-				1530E4482799334F00E4A8E4 /* CommonModule.h */,
-				1530E4492799334F00E4A8E4 /* CommonModule.m */,
-			);
-			path = CommonModule;
-			sourceTree = "<group>";
-		};
-		1530E44B2799336400E4A8E4 /* BusinessModule */ = {
-			isa = PBXGroup;
-			children = (
-				1527F19E279A75D400A7482A /* BusinessModule.h */,
-				1527F19D279A75D400A7482A /* BusinessModule.m */,
-			);
-			path = BusinessModule;
-			sourceTree = "<group>";
-		};
-		1530E45527993A2300E4A8E4 /* PlayerModule */ = {
-			isa = PBXGroup;
-			children = (
-				1530E45627993AC100E4A8E4 /* PlayerModule.h */,
-				1530E45727993AC100E4A8E4 /* PlayerModule.m */,
-			);
-			path = PlayerModule;
-			sourceTree = "<group>";
-		};
 		153C836827FD65D70037BD08 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
 				153C837027FD669A0037BD08 /* WebViewController.swift */,
-			);
-			path = WebView;
-			sourceTree = "<group>";
-		};
-		153C836927FD65FC0037BD08 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				153C836D27FD66490037BD08 /* BaseWebView.h */,
-				153C836E27FD66490037BD08 /* BaseWebView.m */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -815,32 +440,6 @@
 			path = Reactive;
 			sourceTree = "<group>";
 		};
-		155B9EF227DB678800358B50 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				159269C227FD6D9F002ECDF1 /* ViewModel.h */,
-				159269C127FD6D9F002ECDF1 /* ViewModel.m */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		157530A527A533860075C149 /* Metal */ = {
-			isa = PBXGroup;
-			children = (
-				157530A627A533930075C149 /* MetalHeader.h */,
-			);
-			path = Metal;
-			sourceTree = "<group>";
-		};
-		157530AB27A538520075C149 /* RouteManager */ = {
-			isa = PBXGroup;
-			children = (
-				157530AC27A538650075C149 /* RouteManager.h */,
-				157530AD27A538650075C149 /* RouteManager.m */,
-			);
-			path = RouteManager;
-			sourceTree = "<group>";
-		};
 		157530AF27A53B4E0075C149 /* RouteManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,15 +447,6 @@
 				157530B127A53B8B0075C149 /* BusinessRouteManager.m */,
 			);
 			path = RouteManager;
-			sourceTree = "<group>";
-		};
-		158C122227A3A5B70071FD9E /* Object */ = {
-			isa = PBXGroup;
-			children = (
-				158C122327A3A5F30071FD9E /* NSObject+Method.h */,
-				158C122427A3A5F30071FD9E /* NSObject+Method.m */,
-			);
-			path = Object;
 			sourceTree = "<group>";
 		};
 		158C122727A40D720071FD9E /* proto */ = {
@@ -894,16 +484,6 @@
 			path = Person;
 			sourceTree = "<group>";
 		};
-		158C123C27A446060071FD9E /* foundation */ = {
-			isa = PBXGroup;
-			children = (
-				1598CAB827983AFF00511EFD /* base */,
-				1598CADB27983B0B00511EFD /* common */,
-				152FD08227A4FBAF000DCBFE /* Header */,
-			);
-			path = foundation;
-			sourceTree = "<group>";
-		};
 		159269C427FD6DDB002ECDF1 /* Template */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,24 +492,6 @@
 				159269C827FD77BF002ECDF1 /* TemplateViewController.m */,
 			);
 			path = Template;
-			sourceTree = "<group>";
-		};
-		159269CD27FDDBA8002ECDF1 /* Origientation */ = {
-			isa = PBXGroup;
-			children = (
-				159269CF27FDDBFD002ECDF1 /* Origientation.h */,
-				159269D027FDDBFD002ECDF1 /* Origientation.m */,
-			);
-			path = Origientation;
-			sourceTree = "<group>";
-		};
-		159269D727FDEA43002ECDF1 /* Battery */ = {
-			isa = PBXGroup;
-			children = (
-				159269D827FDEAA3002ECDF1 /* Battery.h */,
-				159269D927FDEAA3002ECDF1 /* Battery.m */,
-			);
-			path = Battery;
 			sourceTree = "<group>";
 		};
 		159269DB27FDEE95002ECDF1 /* Device */ = {
@@ -941,65 +503,6 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
-		159269DF27FDFE2B002ECDF1 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				159269E027FDFE4B002ECDF1 /* Platform.h */,
-				159269E127FDFE4B002ECDF1 /* Platform.m */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		159269E327FE7D37002ECDF1 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				159269E427FE7DB3002ECDF1 /* DebugPanel */,
-				159269E527FE7DBD002ECDF1 /* DebugHeader.h */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		159269E427FE7DB3002ECDF1 /* DebugPanel */ = {
-			isa = PBXGroup;
-			children = (
-				15DE7B5A27FED39A00454A64 /* DebugLookinModel */,
-				15DE7B4A27FEA1DD00454A64 /* DebugPanelDataProvider.h */,
-				15DE7B4B27FEA1DD00454A64 /* DebugPanelDataProvider.m */,
-				15DE7B4D27FEA1FE00454A64 /* DebugModel.h */,
-				15DE7B4E27FEA1FE00454A64 /* DebugModel.m */,
-				15DE7B5727FEB2E100454A64 /* DebugBubble.h */,
-				15DE7B5827FEB2E100454A64 /* DebugBubble.m */,
-			);
-			path = DebugPanel;
-			sourceTree = "<group>";
-		};
-		1597D6B6279AF254005592EE /* ModelManager */ = {
-			isa = PBXGroup;
-			children = (
-				1597D6B7279AF29D005592EE /* FeatureModelManager.h */,
-				1597D6B8279AF29D005592EE /* FeatureModelManager.m */,
-			);
-			path = ModelManager;
-			sourceTree = "<group>";
-		};
-		1597D6BA279AF566005592EE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1597D6BB279AF57F005592EE /* FeatureModel.h */,
-				1597D6BC279AF57F005592EE /* FeatureModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1597D6BF279AFA6D005592EE /* FeatureManager */ = {
-			isa = PBXGroup;
-			children = (
-				1597D6C0279AFAA6005592EE /* FeatureManager.h */,
-				1597D6C1279AFAA6005592EE /* FeatureManager.m */,
-			);
-			path = FeatureManager;
-			sourceTree = "<group>";
-		};
 		1597D6C7279B0BFD005592EE /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1009,193 +512,10 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		1597D6CB279B0CFE005592EE /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				1597D6C8279B0C2C005592EE /* LaunchViewController.h */,
-				1597D6C9279B0C2C005592EE /* LaunchViewController.m */,
-			);
-			path = Launch;
-			sourceTree = "<group>";
-		};
-		1597D6D0279B12FD005592EE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				154EBD87279E6BB50048CFF5 /* BaseNavigationController.h */,
-				154EBD88279E6BB50048CFF5 /* BaseNavigationController.m */,
-				154EBD81279E6B440048CFF5 /* BaseTabBarController.h */,
-				154EBD82279E6B440048CFF5 /* BaseTabBarController.m */,
-				154EBD84279E6B590048CFF5 /* BaseViewController.h */,
-				154EBD85279E6B590048CFF5 /* BaseViewController.m */,
-				1597D6D4279B156E005592EE /* UIViewController+Configuration.h */,
-				1597D6D5279B156E005592EE /* UIViewController+Configuration.m */,
-				159269D427FDE070002ECDF1 /* UIViewController+Orientation.h */,
-				159269D527FDE070002ECDF1 /* UIViewController+Orientation.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		1598CAB827983AFF00511EFD /* base */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1AD279A7EE900A7482A /* BaseHeader.h */,
-				1598CAC327983AFF00511EFD /* BaseKit */,
-				1598CAC227983AFF00511EFD /* Data */,
-				159269E327FE7D37002ECDF1 /* Debug */,
-				1598CAC027983AFF00511EFD /* Device */,
-				1598CAC127983AFF00511EFD /* Feature */,
-				1598CABD27983AFF00511EFD /* File */,
-				1598CABB27983AFF00511EFD /* Logger */,
-				1530E4382799137200E4A8E4 /* Module */,
-				1598CABA27983AFF00511EFD /* Monitor */,
-				1598CABE27983AFF00511EFD /* Network */,
-				1598CAD427983AFF00511EFD /* Player */,
-				1527F1DB279ACA0500A7482A /* Protocol */,
-				1598CAD527983AFF00511EFD /* Router */,
-				1598CABF27983AFF00511EFD /* Theme */,
-				1598CAB927983AFF00511EFD /* Tracer */,
-				1598CABC27983AFF00511EFD /* Util */,
-			);
-			path = base;
-			sourceTree = "<group>";
-		};
-		1598CAB927983AFF00511EFD /* Tracer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tracer;
-			sourceTree = "<group>";
-		};
-		1598CABA27983AFF00511EFD /* Monitor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Monitor;
-			sourceTree = "<group>";
-		};
-		1598CABB27983AFF00511EFD /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1BD279A9EFF00A7482A /* LoggerFileManager */,
-				1527F1AB279A7D4000A7482A /* LoggerSystem */,
-				1527F1AA279A7CDE00A7482A /* BaseLoggerConfiguration */,
-				1527F1A9279A7CD200A7482A /* Logger */,
-				1527F1A8279A7CBB00A7482A /* BaseLogger */,
-				1527F1A7279A7CAE00A7482A /* LoggerEngine */,
-				1527F1AC279A7DBE00A7482A /* LoggerHeader.h */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		1598CABC27983AFF00511EFD /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				154EBD71279E578E0048CFF5 /* UtilHeader.h */,
-				154EBD72279E579C0048CFF5 /* Util.h */,
-				154EBD73279E579C0048CFF5 /* Util.m */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		1598CABD27983AFF00511EFD /* File */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = File;
-			sourceTree = "<group>";
-		};
-		1598CABE27983AFF00511EFD /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		1598CABF27983AFF00511EFD /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		1598CAC027983AFF00511EFD /* Device */ = {
-			isa = PBXGroup;
-			children = (
-				159269DF27FDFE2B002ECDF1 /* Platform */,
-				159269D727FDEA43002ECDF1 /* Battery */,
-				159269CD27FDDBA8002ECDF1 /* Origientation */,
-				159269CE27FDDBC7002ECDF1 /* DeviceHeader.h */,
-			);
-			path = Device;
-			sourceTree = "<group>";
-		};
-		1598CAC127983AFF00511EFD /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				1597D6BF279AFA6D005592EE /* FeatureManager */,
-				1597D6BA279AF566005592EE /* Model */,
-				1597D6B6279AF254005592EE /* ModelManager */,
-				1597D6BE279AFA49005592EE /* FeatureHeader.h */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		1598CAC227983AFF00511EFD /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		1598CAC327983AFF00511EFD /* BaseKit */ = {
-			isa = PBXGroup;
-			children = (
-				1527F1A2279A776500A7482A /* BaseKitHeader.h */,
-				1530E421279906FA00E4A8E4 /* Application */,
-				1530E4182799043800E4A8E4 /* BaseApplicationDelegate */,
-				1530E433279911D400E4A8E4 /* BaseEntranceManager */,
-				1597D6CB279B0CFE005592EE /* Launch */,
-				158C122227A3A5B70071FD9E /* Object */,
-				1597D6D0279B12FD005592EE /* ViewController */,
-				155B9EF227DB678800358B50 /* ViewModel */,
-				153C836927FD65FC0037BD08 /* WebView */,
-			);
-			path = BaseKit;
-			sourceTree = "<group>";
-		};
-		1598CAD427983AFF00511EFD /* Player */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
-		1598CAD527983AFF00511EFD /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				157530AB27A538520075C149 /* RouteManager */,
-				150AA271279D9E0500AEC946 /* RouteMap */,
-				150AA272279D9E7600AEC946 /* Router.h */,
-				150AA273279D9E7600AEC946 /* Router.m */,
-				150AA279279DA11500AEC946 /* RouterHeader.h */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		1598CADB27983B0B00511EFD /* common */ = {
-			isa = PBXGroup;
-			children = (
-				1527F135279A714800A7482A /* CommonKit */,
-				1527F12D279A6E8D00A7482A /* Module */,
-				1527F1AE279A805B00A7482A /* CommonHeader.h */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				158C123C27A446060071FD9E /* foundation */,
+				15DE7B5E2802B27D00454A64 /* header */,
 				1598CADD27983B1400511EFD /* business */,
 			);
 			path = src;
@@ -1204,12 +524,12 @@
 		1598CADD27983B1400511EFD /* business */ = {
 			isa = PBXGroup;
 			children = (
+				1597D6C7279B0BFD005592EE /* Launch */,
 				1527F18D279A756C00A7482A /* BusinessApplicationDelegate.h */,
 				1527F18C279A756C00A7482A /* BusinessApplicationDelegate.m */,
 				1527F186279A756C00A7482A /* BusinessEntranceManager */,
 				1527F162279A756C00A7482A /* NavigationController */,
 				157530AF27A53B4E0075C149 /* RouteManager */,
-				1527F174279A756C00A7482A /* View */,
 				1527F175279A756C00A7482A /* ViewControllers */,
 			);
 			path = business;
@@ -1250,13 +570,13 @@
 			path = ThreadView;
 			sourceTree = "<group>";
 		};
-		15DE7B5A27FED39A00454A64 /* DebugLookinModel */ = {
+		15DE7B5E2802B27D00454A64 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				15DE7B5B27FED3CD00454A64 /* DebugLookinModel.h */,
-				15DE7B5C27FED3CD00454A64 /* DebugLookinModel.m */,
+				15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */,
+				15DE7B602802B2B400454A64 /* BusinessHeader.h */,
 			);
-			path = DebugLookinModel;
+			path = header;
 			sourceTree = "<group>";
 		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
@@ -1458,77 +778,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157530AE27A538650075C149 /* RouteManager.m in Sources */,
 				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
-				159269D627FDE070002ECDF1 /* UIViewController+Orientation.m in Sources */,
 				155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */,
-				1597D6BD279AF57F005592EE /* FeatureModel.m in Sources */,
-				154EBD86279E6B590048CFF5 /* BaseViewController.m in Sources */,
-				15A45CF32799D2B800017F8A /* Logger.m in Sources */,
-				159269D127FDDBFD002ECDF1 /* Origientation.m in Sources */,
-				159269C327FD6D9F002ECDF1 /* ViewModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
-				159BFFA42799DAC800406C51 /* BaseLogger.m in Sources */,
 				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
 				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
-				159269DA27FDEAA3002ECDF1 /* Battery.m in Sources */,
-				1527F19F279A75D400A7482A /* BusinessModule.m in Sources */,
 				159269C627FD6DED002ECDF1 /* Template.swift in Sources */,
-				150AA274279D9E7600AEC946 /* Router.m in Sources */,
-				154EBD74279E579C0048CFF5 /* Util.m in Sources */,
-				15DE7B4C27FEA1DD00454A64 /* DebugPanelDataProvider.m in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
-				153C836F27FD66490037BD08 /* BaseWebView.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
-				159269E227FDFE4B002ECDF1 /* Platform.m in Sources */,
-				154EBD83279E6B440048CFF5 /* BaseTabBarController.m in Sources */,
-				1530E445279932D800E4A8E4 /* SystemModule.m in Sources */,
-				1527F1D9279AC69100A7482A /* UIApplication+Base.m in Sources */,
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
-				1530E43B279914EB00E4A8E4 /* BaseModuleManager.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
-				154EBD89279E6BB50048CFF5 /* BaseNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
-				1597D6CA279B0C2C005592EE /* LaunchViewController.m in Sources */,
-				158C122527A3A5F30071FD9E /* NSObject+Method.m in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */,
-				1530E45827993AC100E4A8E4 /* PlayerModule.m in Sources */,
-				15DE7B5927FEB2E100454A64 /* DebugBubble.m in Sources */,
-				1527F156279A714800A7482A /* CommonEntranceManager.m in Sources */,
 				152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */,
 				157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */,
 				1527F194279A756C00A7482A /* TabBarControllerDataProvider.m in Sources */,
-				1527F1B2279A855800A7482A /* CommonApplicationDelegate.m in Sources */,
-				1530E44A2799334F00E4A8E4 /* CommonModule.m in Sources */,
 				1597D6CE279B0E7B005592EE /* BusinessLaunchViewController.m in Sources */,
 				154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */,
-				1530E41B2799046900E4A8E4 /* BaseApplicationDelegate.m in Sources */,
-				15DE7B4F27FEA1FE00454A64 /* DebugModel.m in Sources */,
-				1530E4412799152900E4A8E4 /* BaseModule.m in Sources */,
 				1527F198279A756C00A7482A /* MineViewController.m in Sources */,
 				1527F192279A756C00A7482A /* FeatureNavigationController.m in Sources */,
 				1527F195279A756C00A7482A /* HomeViewController.m in Sources */,
 				159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */,
-				159BFFA72799E1A800406C51 /* LoggerEngine.m in Sources */,
 				1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */,
-				1527F1C6279A9FA500A7482A /* LoggerFileManager.m in Sources */,
-				1530E42B2799097B00E4A8E4 /* BaseEntranceManager.m in Sources */,
-				150AA277279D9E9400AEC946 /* RouteMap.m in Sources */,
-				15A45CFE2799D2DF00017F8A /* LoggerSystem.m in Sources */,
-				1597D6C2279AFAA6005592EE /* FeatureManager.m in Sources */,
 				1527F1E0279AD06100A7482A /* LearnViewController.m in Sources */,
 				155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */,
-				15A45D052799D36100017F8A /* BaseLoggerConfiguration.m in Sources */,
 				1527F1E4279AD09A00A7482A /* LearnNavigationController.m in Sources */,
-				1597D6B9279AF29D005592EE /* FeatureModelManager.m in Sources */,
 				1527F193279A756C00A7482A /* TabBarController.m in Sources */,
 				1598CAEC27983B3D00511EFD /* main.m in Sources */,
 				153C837127FD669A0037BD08 /* WebViewController.swift in Sources */,
 				1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */,
-				15DE7B5D27FED3CD00454A64 /* DebugLookinModel.m in Sources */,
-				1597D6D6279B156E005592EE /* UIViewController+Configuration.m in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1869,10 +1149,7 @@
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Q/src/foundation/**",
-					"$(SRCROOT)/Q/src/business",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Q/**";
 				USE_HEADERMAP = YES;
 			};
 			name = Debug;
@@ -2051,10 +1328,7 @@
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Q/src/foundation/**",
-					"$(SRCROOT)/Q/src/business",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Q/**";
 				USE_HEADERMAP = YES;
 			};
 			name = Release;

@@ -4,14 +4,14 @@
 //  Created by XQ on 2022/1/24.
 //
 
-#import "FoundationHeader.h"
+#import "BusinessHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LearnCellModel : NSObject
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) BaseClickCallback onClick;
+@property(nonatomic, strong) NSString *title;
+@property(nonatomic, copy) void (^onClick)(void);
 
 @end
 
