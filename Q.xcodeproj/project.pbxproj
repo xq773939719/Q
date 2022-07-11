@@ -46,6 +46,8 @@
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
+		157555C1287C63C500F41968 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; };
+		157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
 		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
@@ -57,8 +59,6 @@
 		15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5B27F869A8009018D8 /* YYKitViewController.m */; };
 		15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */; };
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
-		15D2EE14287C2B5A001B402A /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D2EE11287C2984001B402A /* App.xcframework */; };
-		15D2EE15287C2B5A001B402A /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D2EE11287C2984001B402A /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D2EE17287C4A39001B402A /* Info-Release.plist */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
@@ -83,11 +83,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		15D2EE16287C2B5A001B402A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				15D2EE15287C2B5A001B402A /* App.xcframework in Embed Frameworks */,
+				157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +162,7 @@
 		155B9F0027DB707700358B50 /* ReactiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveModel.m; sourceTree = "<group>"; };
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
+		157555BF287C63BD00F41968 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
 		158C122927A40D720071FD9E /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Person.proto; sourceTree = "<group>"; };
 		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
@@ -183,7 +184,6 @@
 		15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
-		15D2EE11287C2984001B402A /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Release/App.xcframework; sourceTree = "<group>"; };
 		15D2EE17287C4A39001B402A /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		15DE7B602802B2B400454A64 /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 			files = (
 				152FD09927A52EBD000DCBFE /* GLKit.framework in Frameworks */,
 				1530E4D62799856D00E4A8E4 /* AVFoundation.framework in Frameworks */,
-				15D2EE14287C2B5A001B402A /* App.xcframework in Frameworks */,
+				157555C1287C63C500F41968 /* App.xcframework in Frameworks */,
 				1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */,
 				1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */,
 				1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */,
@@ -616,7 +616,7 @@
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15D2EE11287C2984001B402A /* App.xcframework */,
+				157555BF287C63BD00F41968 /* App.xcframework */,
 				152FD09827A52EBD000DCBFE /* GLKit.framework */,
 				152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */,
 				1530E4E827998D7E00E4A8E4 /* libbz2.tbd */,
@@ -952,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1007,7 +1007,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1034,7 +1034,7 @@
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
+					"$(SRCROOT)/Q/**",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1231,7 +1231,7 @@
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
+					"$(SRCROOT)/Q/**",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1476,7 +1476,7 @@
 				15277E812798223400FA882E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		15277E822798223400FA882E /* Build configuration list for PBXNativeTarget "Q" */ = {
 			isa = XCConfigurationList;
@@ -1485,7 +1485,7 @@
 				15277E842798223400FA882E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		15277E852798223400FA882E /* Build configuration list for PBXNativeTarget "QTests" */ = {
 			isa = XCConfigurationList;
@@ -1494,7 +1494,7 @@
 				15277E872798223400FA882E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		15277E882798223400FA882E /* Build configuration list for PBXNativeTarget "QUITests" */ = {
 			isa = XCConfigurationList;
@@ -1503,7 +1503,7 @@
 				15277E8A2798223400FA882E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
