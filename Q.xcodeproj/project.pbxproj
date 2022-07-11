@@ -59,6 +59,7 @@
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
 		15D2EE14287C2B5A001B402A /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D2EE11287C2984001B402A /* App.xcframework */; };
 		15D2EE15287C2B5A001B402A /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D2EE11287C2984001B402A /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D2EE17287C4A39001B402A /* Info-Release.plist */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +97,7 @@
 /* Begin PBXFileReference section */
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		15277E672798223400FA882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15277E672798223400FA882E /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		15277E6E2798223400FA882E /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E782798223400FA882E /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1527F164279A756C00A7482A /* ThirdNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdNavigationController.h; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		15D2EE11287C2984001B402A /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Release/App.xcframework; sourceTree = "<group>"; };
+		15D2EE17287C4A39001B402A /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		15DE7B602802B2B400454A64 /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,7 +268,8 @@
 			children = (
 				1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */,
 				1598CAE827983B3D00511EFD /* main.m */,
-				15277E672798223400FA882E /* Info.plist */,
+				15D2EE17287C4A39001B402A /* Info-Release.plist */,
+				15277E672798223400FA882E /* Info-Debug.plist */,
 				154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */,
 				15277E622798223400FA882E /* Assets.xcassets */,
 				158C122727A40D720071FD9E /* proto */,
@@ -649,6 +652,7 @@
 				15277E512798223300FA882E /* Resources */,
 				D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */,
 				15D2EE16287C2B5A001B402A /* Embed Frameworks */,
+				15D2EE19287C4CA2001B402A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -743,6 +747,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
 				154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -765,6 +770,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15D2EE19287C4CA2001B402A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
 		62A35F9F04A016EF8C7831A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -1019,14 +1042,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/Q/**",
 				);
-				INFOPLIST_FILE = Q/Info.plist;
+				INFOPLIST_FILE = "Q/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于搜索附近设备";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "用于搜索附近设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍照、扫一扫";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "用于下载";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于访问网络";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
@@ -1215,14 +1238,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/Q/**",
 				);
-				INFOPLIST_FILE = Q/Info.plist;
+				INFOPLIST_FILE = "Q/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "👍🏻";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "用于访问媒体库";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于搜索附近设备";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "用于搜索附近设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "用于拍照、扫一扫";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "用于下载";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于投屏";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用于访问网络";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;

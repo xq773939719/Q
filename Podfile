@@ -154,7 +154,7 @@ end
 # !!! 不要忘记注释相应的模块
 def DevelopModule
   pod 'QTools', :path => '../Develop/QTools'
-  pod 'Flutter', :podspec => './Flutter/release/Flutter.podspec'
+  pod 'Flutter', :podspec => './Flutter/debug/Flutter.podspec'
   
 end
 
