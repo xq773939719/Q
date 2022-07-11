@@ -15,6 +15,7 @@
 #import "Q-Swift.h"
 #import "ThreadViewController.h"
 #import "DeviceViewController.h"
+#import "BusinessFlutterViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -80,6 +81,13 @@
         [[Router share] route:[DeviceViewController scheme] withParams:nil];
     };
     [array addObject:deviceModel];
+    
+    LearnCellModel *flutterModel = [LearnCellModel new];
+    flutterModel.title = @"Flutter学习";
+    flutterModel.onClick = ^{
+        [[Router share] route:[BusinessFlutterViewController scheme] withParams:nil];
+    };
+    [array addObject:flutterModel];
     
     return [array copy];
 }

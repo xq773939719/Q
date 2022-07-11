@@ -16,6 +16,7 @@
 #import <FBLPromises/FBLPromises.h>
 #import <FLEX/FLEX.h>
 #import <FMDB/FMDB.h>
+#import <Flutter/Flutter.h>
 
 #import <GPUImage/GPUImage.h>
 
@@ -25,7 +26,7 @@
 #import <JJException/JJException.h>
 #import <JSONModel/JSONModel.h>
 
-//#import <LookinServer/LookinServer.h>
+#import <LookinServer/LookinServer.h>
 
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
