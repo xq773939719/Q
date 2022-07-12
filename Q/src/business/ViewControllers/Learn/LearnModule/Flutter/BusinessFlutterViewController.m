@@ -41,13 +41,13 @@ static BusinessFlutterViewController *instance = nil;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [self.flutter.engine run];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.flutter.engine run];
 }
 
 #pragma mark - Lazy Load
