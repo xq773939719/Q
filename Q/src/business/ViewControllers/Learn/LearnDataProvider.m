@@ -25,71 +25,67 @@
 
 - (NSArray<LearnCellModel *> *)models {
     NSMutableArray *array = [NSMutableArray array];
-    
-    LearnCellModel *openGLModel = [LearnCellModel new];
-    openGLModel.title = @"OpenGL学习";
-    openGLModel.onClick = ^{
-        [[Router share] route:[OpenGLViewController scheme] withParams:nil];
-    };
-     [array addObject:openGLModel];
-    
-    LearnCellModel *reactiveModel = [LearnCellModel new];
-    reactiveModel.title = @"Reactive与ViewModel学习";
-    reactiveModel.onClick = ^{
-        [[Router share] route:[ReactiveViewController scheme] withParams:nil];
-    };
-    [array addObject:reactiveModel];
-    
-    LearnCellModel *afModel = [LearnCellModel new];
-    afModel.title = @"AFNetworking学习";
-    afModel.onClick = ^{
-        [[Router share] route:[AFNetworkingViewController scheme] withParams:nil];
-    };
-    [array addObject:afModel];
-    
-    LearnCellModel *yyKitModel = [LearnCellModel new];
-    yyKitModel.title = @"YYKik学习";
-    yyKitModel.onClick = ^{
-        [[Router share] route:[YYKitViewController scheme] withParams:nil];
-    };
-    [array addObject:yyKitModel];
-    
-    LearnCellModel *swiftModel = [LearnCellModel new];
-    swiftModel.title = @"Swift语法";
-    swiftModel.onClick = ^{
-        [[Router share] route:[SwiftViewController scheme] withParams:nil];
-    };
-    [array addObject:swiftModel];
-    
-    LearnCellModel *threadModel = [LearnCellModel new];
-    threadModel.title = @"多线程";
-    threadModel.onClick = ^{
-        [[Router share] route:[ThreadViewController scheme] withParams:nil];
-    };
-    [array addObject:threadModel];
-    
-    LearnCellModel *webviewModel = [LearnCellModel new];
-    webviewModel.title = @"WebView学习";
-    webviewModel.onClick = ^{
-        [[Router share] route:[WebViewController scheme] withParams:nil];
-    };
-    [array addObject:webviewModel];
-    
-    LearnCellModel *deviceModel = [LearnCellModel new];
-    deviceModel.title = @"UIDevice学习";
-    deviceModel.onClick = ^{
-        [[Router share] route:[DeviceViewController scheme] withParams:nil];
-    };
-    [array addObject:deviceModel];
-    
-    LearnCellModel *flutterModel = [LearnCellModel new];
-    flutterModel.title = @"Flutter学习";
-    flutterModel.onClick = ^{
-        [[Router share] route:[BusinessFlutterViewController scheme] withParams:nil];
-    };
-    [array addObject:flutterModel];
+    NSArray<NSDictionary *> *datas = [[self class] datas];
+    [datas enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        LearnCellModel *cellModel = [LearnCellModel new];
+        cellModel.title = obj[@"title"];
+        cellModel.onClick = ^{
+            [[Router share] route:obj[@"scheme"] withParams:obj[@"params"]];
+        };
+        [array addObject:cellModel];
+    }];
     
     return [array copy];
+}
+
++ (NSArray<NSDictionary *> *)datas {
+    return @[
+        @{
+            @"title": @"OpenGL学习",
+            @"scheme": [OpenGLViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"Reactive与ViewModel学习",
+            @"scheme": [ReactiveViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"AFNetworking学习",
+            @"scheme": [AFNetworkingViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"YYKik学习",
+            @"scheme": [YYKitViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"Swift语法",
+            @"scheme": [SwiftViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"多线程",
+            @"scheme": [ThreadViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"WebView学习",
+            @"scheme": [WebViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"UIDevice学习",
+            @"scheme": [DeviceViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"Flutter学习",
+            @"scheme": [BusinessFlutterViewController scheme],
+            @"params": @{}
+        },
+    ];
 }
 
 @end
