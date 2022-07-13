@@ -24,9 +24,10 @@ class WebViewController: BaseViewController, WKUIDelegate {
     
     override func setupViews() {
         super.setupViews()
-        self.addSubview(self.webView)
+        self.view.addSubview(self.webView)
         self.webView.snp.makeConstraints { make in
-            make.size.equalTo(self.rootContainer)
+            make.top.equalTo(self.view.snp_topMargin)
+            make.bottom.left.right.equalTo(self.view)
         }
         let url = URL(string: "https://www.bilibili.com")
         let request = URLRequest(url: url!)

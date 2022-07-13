@@ -32,11 +32,6 @@ static NSString *cellId = @"LearnViewControllerCellId";
     return self;
 }
 
-- (void)setupData {
-    self.dataProvider = [LearnDataProvider new];
-    self.models = self.dataProvider.models;
-}
-
 - (void)setupViews {
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
@@ -48,6 +43,20 @@ static NSString *cellId = @"LearnViewControllerCellId";
         make.center.equalTo(self.rootContainer);
         make.size.equalTo(self.rootContainer);
     }];
+}
+
+#pragma mark - Lazy Load
+
+- (LearnDataProvider<BaseModelProviderProtocol> *)dataProvider {
+    if (_dataProvider) return _dataProvider;
+    _dataProvider = [LearnDataProvider new];
+    return _dataProvider;
+}
+
+- (NSArray<LearnCellModel *> *)models {
+    if (_models) return _models;
+    _models = self.dataProvider.models;
+    return _models;
 }
 
 #pragma mark - UITableViewDelegate
