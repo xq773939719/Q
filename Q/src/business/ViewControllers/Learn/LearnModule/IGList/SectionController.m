@@ -10,9 +10,19 @@
 
 @interface SectionController ()
 
+@property (nonatomic, strong) IGListModel *model;
+
 @end
 
 @implementation SectionController
+
+- (void)didUpdateToObject:(IGListModel *)object {
+    _model = object;
+}
+
+- (NSInteger)numberOfItems {
+    return 1;
+}
 
 @end
 
@@ -27,7 +37,8 @@
                                                                forSectionController:self
                                                                             atIndex:index];
     cell.contentView.backgroundColor = [UIColor redColor];
-    cell.contentView.alpha = rand() * 100 / 100;
+    cell.contentView.layer.borderWidth = 2;
+    cell.contentView.layer.borderColor = [UIColor greenColor].CGColor;
     return cell;
 }
 
@@ -44,7 +55,8 @@
                                                                forSectionController:self
                                                                             atIndex:index];
     cell.contentView.backgroundColor = [UIColor orangeColor];
-    cell.contentView.alpha = rand() * 100 / 100;
+    cell.contentView.layer.borderWidth = 2;
+    cell.contentView.layer.borderColor = [UIColor greenColor].CGColor;
     return cell;
 }
 
