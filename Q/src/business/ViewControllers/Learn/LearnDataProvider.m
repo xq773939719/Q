@@ -16,6 +16,7 @@
 #import "ThreadViewController.h"
 #import "DeviceViewController.h"
 #import "BusinessFlutterViewController.h"
+#import "IGListViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -83,6 +84,11 @@
         @{
             @"title": @"Flutter学习",
             @"scheme": [BusinessFlutterViewController scheme],
+            @"params": @{}
+        },
+        @{
+            @"title": @"IGList学习",
+            @"scheme": [IGListViewController scheme],
             @"params": @{}
         },
     ];
