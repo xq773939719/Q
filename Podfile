@@ -140,6 +140,7 @@ def ThridPartyModules
   # pod 'Quick'
   # pod 'Nimble'
   
+  pod 'SteviaLayout'
 
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'

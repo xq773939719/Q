@@ -65,6 +65,7 @@
 #import "RxCocoa-Swift.h"
 #import "RxRelay-Swift.h"
 #import "RxSwift-Swift.h"
+#import "SteviaLayout-Swift.h"
 #import "SwiftDate-Swift.h"
 #import "SwiftTheme-Swift.h"
 
