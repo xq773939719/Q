@@ -46,7 +46,6 @@
 #import <SocketRocket/SocketRocket.h>
 #import <SSZipArchive/SSZipArchive.h>
 
-#import <Texture/Texture.h>
 #import <Typeset/Typeset.h>
 #import <Toast/Toast.h>
 
@@ -70,7 +69,7 @@
 #import "RxCocoa-Swift.h"
 #import "RxRelay-Swift.h"
 #import "RxSwift-Swift.h"
-#import "SteviaLayout-Swift.h"
+#import "Stevia-Swift.h"
 #import "SwiftDate-Swift.h"
 #import "SwiftTheme-Swift.h"
 

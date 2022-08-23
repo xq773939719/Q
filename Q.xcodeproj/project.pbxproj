@@ -10,6 +10,7 @@
 		15053EB72888491200735614 /* IGListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EB62888491200735614 /* IGListViewController.m */; };
 		15053EBA288851EA00735614 /* IGListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EB9288851EA00735614 /* IGListModel.m */; };
 		15053EBD288857FA00735614 /* SectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EBC288857FA00735614 /* SectionController.m */; };
+		150C566D28B513F7008ABB1E /* LearnScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C566C28B513F7008ABB1E /* LearnScrollViewController.m */; };
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
 		1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F165279A756C00A7482A /* ThirdNavigationController.m */; };
 		1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F168279A756C00A7482A /* HomeNavigationController.m */; };
@@ -104,6 +105,8 @@
 		15053EB9288851EA00735614 /* IGListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGListModel.m; sourceTree = "<group>"; };
 		15053EBB288857FA00735614 /* SectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionController.h; sourceTree = "<group>"; };
 		15053EBC288857FA00735614 /* SectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionController.m; sourceTree = "<group>"; };
+		150C566B28B513F7008ABB1E /* LearnScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnScrollViewController.h; sourceTree = "<group>"; };
+		150C566C28B513F7008ABB1E /* LearnScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnScrollViewController.m; sourceTree = "<group>"; };
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
@@ -263,6 +266,15 @@
 				15053EBC288857FA00735614 /* SectionController.m */,
 			);
 			path = IGList;
+			sourceTree = "<group>";
+		};
+		150C566A28B513CA008ABB1E /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				150C566B28B513F7008ABB1E /* LearnScrollViewController.h */,
+				150C566C28B513F7008ABB1E /* LearnScrollViewController.m */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 		15277E4A2798223300FA882E = {
@@ -460,6 +472,7 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
+				150C566A28B513CA008ABB1E /* ScrollView */,
 				15C101A1287C0EFF00EFCD84 /* Flutter */,
 				15053EB4288848E700735614 /* IGList */,
 				159269DB27FDEE95002ECDF1 /* Device */,
@@ -892,6 +905,7 @@
 				15053EBA288851EA00735614 /* IGListModel.m in Sources */,
 				15053EB72888491200735614 /* IGListViewController.m in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
+				150C566D28B513F7008ABB1E /* LearnScrollViewController.m in Sources */,
 				15053EBD288857FA00735614 /* SectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
