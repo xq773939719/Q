@@ -132,7 +132,6 @@ def ThridPartyModules
   pod 'SwiftDate'
   
   pod 'Alamofire'
-  pod 'AsyncDisplayKit'
 
   pod 'SwifterSwift'
   pod 'SQLite.swift'
@@ -141,7 +140,13 @@ def ThridPartyModules
   # pod 'Quick'
   # pod 'Nimble'
   
+  # 新增
   pod 'SteviaLayout'
+  # pod 'AsyncDisplayKit' 废弃 目前在 Texture
+  pod 'Texture'
+  pod 'BlocksKit'
+  pod 'Typeset'
+  pod 'Mantle'
 
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
