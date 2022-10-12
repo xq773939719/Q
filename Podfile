@@ -1,4 +1,4 @@
-install! 'cocoapods'
+install! 'cocoapods', :deterministic_uuids => false
 
 workspace 'Q'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
@@ -121,8 +121,8 @@ def ThridPartyModules
   
   pod 'ReachabilitySwift'
   
-  pod 'Charts'
-  pod 'ChartsRealm'
+  # pod 'Charts'
+  # pod 'ChartsRealm'
   
   pod 'SwiftDate'
   
@@ -144,9 +144,10 @@ def ThridPartyModules
   pod 'ShareSDK3/ShareSDKUI'
   pod 'ShareSDK3/ShareSDKConfigurationFile'
   pod 'ShareSDK3/ShareSDKExtension'
-  pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
-  pod 'ShareSDK3/ShareSDKPlatforms/QQ'
-  pod 'ShareSDK3/PlatformConnector/SinaWeibo'
+  pod 'ShareSDK3/ShareSDKPlatforms'
+  # pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+  # pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+  # pod 'ShareSDK3/PlatformConnector/SinaWeibo'
   
   
   pod 'Cache'  # 缓存

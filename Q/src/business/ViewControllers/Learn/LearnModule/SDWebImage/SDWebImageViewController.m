@@ -30,7 +30,9 @@
         [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(height);
         }];
+        
     }];
+    
 }
 
 - (void)setupViews {
