@@ -17,7 +17,7 @@
 #import "DeviceViewController.h"
 #import "BusinessFlutterViewController.h"
 #import "IGListViewController.h"
-#import "LearnScrollViewController.h"
+#import "SDWebImageViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -26,67 +26,31 @@
 @implementation LearnDataProvider
 
 - (NSArray<LearnCellModel *> *)models {
-    NSMutableArray *array = [NSMutableArray array];
-    NSArray<NSDictionary *> *datas = [[self class] datas];
-    [datas enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        LearnCellModel *cellModel = [LearnCellModel new];
-        cellModel.title = obj[@"title"];
-        cellModel.onClick = ^{
-            [[Router share] route:obj[@"scheme"] withParams:obj[@"params"]];
-        };
-        [array addObject:cellModel];
-    }];
+    NSMutableArray<LearnCellModel *> *array = [NSMutableArray array];
+    
+    [[self class] addCellModel:array cellTitle:@"OpenGL" scheme:[OpenGLViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Reactive与ViewModel" scheme:[ReactiveViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"AFNetworking" scheme:[AFNetworkingViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"YYKit" scheme:[YYKitViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Swift" scheme:[SwiftViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"MultiThread" scheme:[ThreadViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"WebView" scheme:[WebViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Device" scheme:[DeviceViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Flutter" scheme:[BusinessFlutterViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"IGListKit" scheme:[IGListViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"SDWebImage" scheme:[SDWebImageViewController scheme] params:@{}];
     
     return [array copy];
 }
 
-+ (NSArray<NSDictionary *> *)datas {
-    return @[
-        @{
-            @"title": @"OpenGL学习",
-            @"scheme": [OpenGLViewController scheme],
-        },
-        @{
-            @"title": @"Reactive与ViewModel学习",
-            @"scheme": [ReactiveViewController scheme],
-        },
-        @{
-            @"title": @"AFNetworking学习",
-            @"scheme": [AFNetworkingViewController scheme],
-        },
-        @{
-            @"title": @"YYKik学习",
-            @"scheme": [YYKitViewController scheme],
-        },
-        @{
-            @"title": @"Swift语法",
-            @"scheme": [SwiftViewController scheme],
-        },
-        @{
-            @"title": @"多线程",
-            @"scheme": [ThreadViewController scheme],
-        },
-        @{
-            @"title": @"WebView学习",
-            @"scheme": [WebViewController scheme],
-        },
-        @{
-            @"title": @"UIDevice学习",
-            @"scheme": [DeviceViewController scheme],
-        },
-        @{
-            @"title": @"Flutter学习",
-            @"scheme": [BusinessFlutterViewController scheme],
-        },
-        @{
-            @"title": @"IGList学习",
-            @"scheme": [IGListViewController scheme],
-        },
-        @{
-            @"title": @"嵌套ScrollView",
-            @"scheme": [LearnScrollViewController scheme],
-        }
-    ];
++ (void)addCellModel:(NSMutableArray<LearnCellModel *> *)array
+           cellTitle:(NSString *)title
+              scheme:(NSString *)scheme
+              params:(NSDictionary *)params {
+    [array addObject:[[LearnCellModel alloc] initWithTitle:title
+                                                   onCilck:^{
+        [[Router share] route:scheme withParams:params];
+    }]];
 }
 
 @end

@@ -10,7 +10,6 @@
 		15053EB72888491200735614 /* IGListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EB62888491200735614 /* IGListViewController.m */; };
 		15053EBA288851EA00735614 /* IGListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EB9288851EA00735614 /* IGListModel.m */; };
 		15053EBD288857FA00735614 /* SectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15053EBC288857FA00735614 /* SectionController.m */; };
-		150C566D28B513F7008ABB1E /* LearnScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C566C28B513F7008ABB1E /* LearnScrollViewController.m */; };
 		15277E632798223400FA882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15277E622798223400FA882E /* Assets.xcassets */; };
 		1527F18F279A756C00A7482A /* ThirdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F165279A756C00A7482A /* ThirdNavigationController.m */; };
 		1527F190279A756C00A7482A /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527F168279A756C00A7482A /* HomeNavigationController.m */; };
@@ -29,10 +28,10 @@
 		152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD08427A4FD14000DCBFE /* JavaScriptCore.framework */; };
 		152FD08827A4FD1E000DCBFE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E5279985BB00E4A8E4 /* AudioToolbox.framework */; };
 		152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD09627A52DDC000DCBFE /* OpenGLViewController.m */; };
-		152FD09927A52EBD000DCBFE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD09827A52EBD000DCBFE /* GLKit.framework */; };
+		152FD09927A52EBD000DCBFE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD09827A52EBD000DCBFE /* GLKit.framework */; platformFilter = ios; };
 		1530E4B42799816100E4A8E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4B32799813300E4A8E4 /* libc++.tbd */; };
 		1530E4D12799855600E4A8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47027996E3A00E4A8E4 /* UIKit.framework */; };
-		1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D22799855B00E4A8E4 /* OpenGLES.framework */; };
+		1530E4D32799855B00E4A8E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D22799855B00E4A8E4 /* OpenGLES.framework */; platformFilter = ios; };
 		1530E4D42799856200E4A8E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E47227996E4C00E4A8E4 /* CoreGraphics.framework */; };
 		1530E4D62799856D00E4A8E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D52799856D00E4A8E4 /* AVFoundation.framework */; };
 		1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4D72799857300E4A8E4 /* Metal.framework */; };
@@ -52,6 +51,7 @@
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		157555C1287C63C500F41968 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; };
 		157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		158955B228F687BD006A4E7E /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158955B028F687BD006A4E7E /* SDWebImageViewController.m */; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
 		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
@@ -105,8 +105,6 @@
 		15053EB9288851EA00735614 /* IGListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGListModel.m; sourceTree = "<group>"; };
 		15053EBB288857FA00735614 /* SectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionController.h; sourceTree = "<group>"; };
 		15053EBC288857FA00735614 /* SectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionController.m; sourceTree = "<group>"; };
-		150C566B28B513F7008ABB1E /* LearnScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnScrollViewController.h; sourceTree = "<group>"; };
-		150C566C28B513F7008ABB1E /* LearnScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnScrollViewController.m; sourceTree = "<group>"; };
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
@@ -175,6 +173,9 @@
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
 		157555BF287C63BD00F41968 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
+		158955AB28F68099006A4E7E /* Q.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Q.entitlements; sourceTree = "<group>"; };
+		158955B028F687BD006A4E7E /* SDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
+		158955B128F687BD006A4E7E /* SDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
 		158C122927A40D720071FD9E /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Person.proto; sourceTree = "<group>"; };
 		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
@@ -268,15 +269,6 @@
 			path = IGList;
 			sourceTree = "<group>";
 		};
-		150C566A28B513CA008ABB1E /* ScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				150C566B28B513F7008ABB1E /* LearnScrollViewController.h */,
-				150C566C28B513F7008ABB1E /* LearnScrollViewController.m */,
-			);
-			path = ScrollView;
-			sourceTree = "<group>";
-		};
 		15277E4A2798223300FA882E = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +292,7 @@
 		15277E552798223300FA882E /* Q */ = {
 			isa = PBXGroup;
 			children = (
+				158955AB28F68099006A4E7E /* Q.entitlements */,
 				1527F1E6279AD79E00A7482A /* Q-Bridging-Header.h */,
 				1598CAE827983B3D00511EFD /* main.m */,
 				15D2EE17287C4A39001B402A /* Info-Release.plist */,
@@ -375,6 +368,7 @@
 		1527F175279A756C00A7482A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				159269C427FD6DDB002ECDF1 /* Template */,
 				1527F1DD279AD04600A7482A /* Learn */,
 				1527F177279A756C00A7482A /* Home */,
 				1527F17A279A756C00A7482A /* Third */,
@@ -472,11 +466,10 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
-				150C566A28B513CA008ABB1E /* ScrollView */,
+				158955AF28F68790006A4E7E /* SDWebImage */,
 				15C101A1287C0EFF00EFCD84 /* Flutter */,
 				15053EB4288848E700735614 /* IGList */,
 				159269DB27FDEE95002ECDF1 /* Device */,
-				159269C427FD6DDB002ECDF1 /* Template */,
 				153C836827FD65D70037BD08 /* WebView */,
 				15C50A5D27F87F33009018D8 /* AF */,
 				152FD09127A52DBA000DCBFE /* OpenGL */,
@@ -508,6 +501,15 @@
 				157530B127A53B8B0075C149 /* BusinessRouteManager.m */,
 			);
 			path = RouteManager;
+			sourceTree = "<group>";
+		};
+		158955AF28F68790006A4E7E /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				158955B128F687BD006A4E7E /* SDWebImageViewController.h */,
+				158955B028F687BD006A4E7E /* SDWebImageViewController.m */,
+			);
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		158C122727A40D720071FD9E /* proto */ = {
@@ -689,6 +691,7 @@
 				D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */,
 				15D2EE16287C2B5A001B402A /* Embed Frameworks */,
 				15D2EE19287C4CA2001B402A /* ShellScript */,
+				6E0C91B0AAF2A8C2FDCE68BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -846,6 +849,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6E0C91B0AAF2A8C2FDCE68BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Q/Pods-Q-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Q/Pods-Q-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Q/Pods-Q-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D3E3FFCB9F8594468496714B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,6 +900,7 @@
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
 				15C101A4287C0F2200EFCD84 /* BusinessFlutterViewController.m in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
+				158955B228F687BD006A4E7E /* SDWebImageViewController.m in Sources */,
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
@@ -905,7 +926,6 @@
 				15053EBA288851EA00735614 /* IGListModel.m in Sources */,
 				15053EB72888491200735614 /* IGListViewController.m in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
-				150C566D28B513F7008ABB1E /* LearnScrollViewController.m in Sources */,
 				15053EBD288857FA00735614 /* SectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -977,7 +997,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1038,7 +1058,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1050,6 +1070,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
@@ -1060,17 +1081,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Q/Q.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1108,6 +1131,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-isystem",
@@ -1241,6 +1265,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Q/**";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1257,17 +1282,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				APPLY_RULES_IN_COPY_HEADERS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Q/Q.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DXFP8TLN85;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1304,6 +1331,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-isystem",
@@ -1423,6 +1451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Q/**";
 				SWIFT_INSTALL_OBJC_HEADER = YES;

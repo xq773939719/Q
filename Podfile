@@ -36,42 +36,43 @@ def ThridPartyModules
   # 布局
   pod 'Masonry'
   pod 'YogaKit'
+  pod 'SnapKit'
+  pod 'SteviaLayout'
+  
+  
+  pod 'ComponentKit' # UI组件
+  pod 'SkeletonView' # 骨架视图
 
   # 响应式
   pod 'ReactiveCocoa'
   pod 'ReactiveObjC'
   pod 'RxSwift'
   pod 'RxCocoa'
-
-  # 图片
-  pod 'SDWebImage'
   
-  # UICollectionView
-  pod 'IGListKit'
+  pod 'IGListKit' # UICollectionView
   
   # CrashReporter
   pod 'PLCrashReporter'
 
-  # Socket 库
+  # 通讯
   pod 'CocoaAsyncSocket'
+  pod 'SocketRocket'
   
-  # JSON Dictionary
-  pod 'MJExtension'
-
-  pod "Aspects"
-  
-  # 动画
-  pod 'lottie-ios'
+  pod 'MJExtension' # JSON Dictionary
+  pod "Aspects" # AOP
+  pod 'lottie-ios' # 动画
+  pod 'pop' # Facebook开源动画库
+  # pod 'LFLiveKit' # 直播处理
 
   # 数据解析
   pod 'JSONModel'
+  pod 'Mantle'
 
   # 数据库
   pod 'FMDB'
   pod 'RealmSwift'
 
-  # YYKit
-  pod 'YYKit'
+  pod 'YYKit' # YYKit
 
   # PromiseKit
   pod "PromiseKit"
@@ -108,19 +109,13 @@ def ThridPartyModules
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
 
-  # 图像
-  pod 'GPUImage'
-  
-  # UI
-  pod 'ComponentKit'
+  pod 'GPUImage' # 图像
+  pod 'SDWebImage' # 图像展示
   
   # Crash 防护
   pod 'JJException'
-  
-  pod 'SocketRocket'
-  
-  # 主题框架
-  pod 'SwiftTheme'
+
+  pod 'SwiftTheme' # 主题框架
   
   pod 'GRDB.swift'
   
@@ -136,18 +131,28 @@ def ThridPartyModules
   pod 'SwifterSwift'
   pod 'SQLite.swift'
   pod 'SwiftLint'
-  pod 'SnapKit'
   # pod 'Quick'
   # pod 'Nimble'
   
-  # 新增
-  pod 'SteviaLayout'
-  # pod 'AsyncDisplayKit' 废弃 目前在 Texture
-  pod 'Texture'
+  pod 'Texture' # pod 'AsyncDisplayKit' 废弃 目前在 Texture
   pod 'BlocksKit'
   pod 'Typeset'
-  pod 'Mantle'
+  pod 'FSCalendar' # 日历
 
+  # 分享
+  pod 'ShareSDK3'
+  pod 'ShareSDK3/ShareSDKUI'
+  pod 'ShareSDK3/ShareSDKConfigurationFile'
+  pod 'ShareSDK3/ShareSDKExtension'
+  pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+  pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+  pod 'ShareSDK3/PlatformConnector/SinaWeibo'
+  
+  
+  pod 'Cache'  # 缓存
+  pod 'SwiftMessages'   # 弹框提示
+  # pod 'ImagePicker' # 图片选择
+  
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
 

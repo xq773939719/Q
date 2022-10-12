@@ -8,10 +8,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^LearnCellModelClickBlock)(void);
+
 @interface LearnCellModel : NSObject
 
-@property(nonatomic, strong) NSString *title;
-@property(nonatomic, copy) void (^onClick)(void);
+@property(nonatomic, strong, readonly) NSString *title;
+@property(nonatomic, copy, readonly) LearnCellModelClickBlock onClick;
+
+- (instancetype)initWithTitle:(NSString *)title onCilck:(LearnCellModelClickBlock)onClick NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
 
 @end
 
