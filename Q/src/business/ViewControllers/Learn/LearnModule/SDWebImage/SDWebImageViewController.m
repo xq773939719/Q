@@ -19,6 +19,7 @@
 }
 
 - (void)setupData {
+    av_register_all();
     [super setupData];
     NSURL *url = [NSURL URLWithString:@"http://192.168.2.1:8080/1010.jpg"];
     self.imageView.sd_imageTransition = [SDWebImageTransition fadeTransition];

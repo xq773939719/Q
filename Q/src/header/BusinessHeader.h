@@ -10,5 +10,6 @@
 
 #import <QTools/QTools.h>
 #import "FrameworkHeader.h"
+#import "../FFmpeg/FFmpeg-iOS/ffmpeg.h"
 
 #endif /* BusinessHeader_h */
