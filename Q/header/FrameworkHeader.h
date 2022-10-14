@@ -13,10 +13,13 @@
 
 #import <BlocksKit/BlocksKit.h>
 
+#import <ChameleonFramework/Chameleon.h>
+#import <Chronos/Chronos.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <ComponentKit/ComponentKit.h>
 // #import <Firebase/Firebase.h>
 #import <FBLPromises/FBLPromises.h>
+#import <FFmpeg/ffmpeg.h>
 #import <FLEX/FLEX.h>
 #import <FMDB/FMDB.h>
 #import <Flutter/Flutter.h>
@@ -35,7 +38,9 @@
 
 #import <Mantle/Mantle.h>
 #import <Masonry/Masonry.h>
+#import <MobileVLCKit/MobileVLCKit.h>
 #import <MJExtension/MJExtension.h>
+
 #import <NSLogger/NSLogger.h>
 
 #import <pop/POP.h>

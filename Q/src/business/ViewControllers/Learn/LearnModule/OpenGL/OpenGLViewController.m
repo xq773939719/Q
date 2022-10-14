@@ -16,4 +16,9 @@
     return @"q://vc/gl";
 }
 
+- (void)setupData {
+    [super setupData];
+    avdevice_register_all();
+}
+
 @end

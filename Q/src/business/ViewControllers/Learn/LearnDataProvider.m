@@ -18,6 +18,7 @@
 #import "BusinessFlutterViewController.h"
 #import "IGListViewController.h"
 #import "SDWebImageViewController.h"
+#import "ChronosViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -39,6 +40,7 @@
     [[self class] addCellModel:array cellTitle:@"Flutter" scheme:[BusinessFlutterViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"IGListKit" scheme:[IGListViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"SDWebImage" scheme:[SDWebImageViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Chronos" scheme:[ChronosViewController scheme] params:@{}];
     
     return [array copy];
 }

@@ -151,8 +151,10 @@ def ThridPartyModules
   
   
   pod 'Cache'  # 缓存
-  pod 'SwiftMessages'   # 弹框提示
+  pod 'SwiftMessages' # 弹框提示
   # pod 'ImagePicker' # 图片选择
+  
+  pod 'ChameleonFramework' # 颜色库
   
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
