@@ -26,6 +26,7 @@
 #import <FSCalendar/FSCalendar.h>
 
 #import <GPUImage/GPUImage.h>
+#import "GrowingTracker.h"
 
 #import <IGListKit/IGListKit.h>
 #import <IGListDiffKit/IGListDiffKit.h>

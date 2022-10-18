@@ -155,6 +155,7 @@ def ThridPartyModules
   # pod 'ImagePicker' # 图片选择
   
   pod 'ChameleonFramework' # 颜色库
+  pod 'GrowingAnalytics-cdp/Autotracker'
   
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
