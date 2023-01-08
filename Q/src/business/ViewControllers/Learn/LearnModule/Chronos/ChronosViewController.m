@@ -21,10 +21,6 @@
 - (void)setupViews {
     [super setupViews];
     [self.view addSubview:self.container];
-}
-
-- (void)layoutViews {
-    [super layoutViews];
     [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];

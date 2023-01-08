@@ -1630,7 +1630,6 @@
 					"-weak_framework",
 					"\"JavaScriptCore\"",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D -Xcc -Wno-error=non-modular-include-in-framework-module COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1821,7 +1820,6 @@
 					"-weak_framework",
 					"\"JavaScriptCore\"",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D -Xcc -Wno-error=non-modular-include-in-framework-module COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = Q.Q.X;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
