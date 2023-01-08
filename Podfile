@@ -151,7 +151,7 @@ def ThridPartyModules
   
   
   pod 'Cache'  # 缓存
-  pod 'SwiftMessages' # 弹框提示
+  # pod 'SwiftMessages' # 弹框提示
   # pod 'ImagePicker' # 图片选择
   
   pod 'ChameleonFramework' # 颜色库
