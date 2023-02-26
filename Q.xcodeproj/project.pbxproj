@@ -64,9 +64,6 @@
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		157555C1287C63C500F41968 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; };
 		157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1588351328F958EF00F5AFF5 /* ChronosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588351128F9589F00F5AFF5 /* ChronosViewController.m */; };
-		1588357428F960C400F5AFF5 /* Chronos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151460BD28F94E59008A763E /* Chronos.framework */; };
-		1588357528F960C400F5AFF5 /* Chronos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151460BD28F94E59008A763E /* Chronos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1588357728F9612A00F5AFF5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1588357628F9612A00F5AFF5 /* Security.framework */; };
 		1588357828F9613400F5AFF5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B3BAE028F81FD50063A72A /* libiconv.tbd */; };
 		1588357A28F9614200F5AFF5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1588357928F9614200F5AFF5 /* CFNetwork.framework */; };
@@ -118,7 +115,6 @@
 			files = (
 				157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */,
 				158837AA28F96CFF00F5AFF5 /* MobileVLCKit.framework in Embed Frameworks */,
-				1588357528F960C400F5AFF5 /* Chronos.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +138,6 @@
 		151460B228F94402008A763E /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		151460B428F9440E008A763E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		151460B628F9445B008A763E /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpeg.framework; path = Q/Framework/FFmpeg/FFmpeg.framework; sourceTree = "<group>"; };
-		151460BD28F94E59008A763E /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chronos.framework; path = Q/Framework/Chronos/Chronos.framework; sourceTree = "<group>"; };
 		15277E532798223300FA882E /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15277E622798223400FA882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15277E672798223400FA882E /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
@@ -211,8 +206,6 @@
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
 		157555BF287C63BD00F41968 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
-		1588351128F9589F00F5AFF5 /* ChronosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChronosViewController.m; sourceTree = "<group>"; };
-		1588351228F9589F00F5AFF5 /* ChronosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChronosViewController.h; sourceTree = "<group>"; };
 		1588351628F95A4800F5AFF5 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chronos.framework; sourceTree = "<group>"; };
 		1588351828F95A4800F5AFF5 /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFmpeg.framework; sourceTree = "<group>"; };
 		1588351B28F95A4800F5AFF5 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
@@ -349,7 +342,6 @@
 				1530E4E0279985A000E4A8E4 /* QuartzCore.framework in Frameworks */,
 				151460B928F944AC008A763E /* FFmpeg.framework in Frameworks */,
 				152FD08627A4FD1C000DCBFE /* JavaScriptCore.framework in Frameworks */,
-				1588357428F960C400F5AFF5 /* Chronos.framework in Frameworks */,
 				1588357C28F9614D00F5AFF5 /* CoreVideo.framework in Frameworks */,
 				151460A428F94390008A763E /* CoreImage.framework in Frameworks */,
 				1530E4D82799857300E4A8E4 /* Metal.framework in Frameworks */,
@@ -610,7 +602,6 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
-				1588351028F9589F00F5AFF5 /* Chronos */,
 				158955AF28F68790006A4E7E /* SDWebImage */,
 				15C101A1287C0EFF00EFCD84 /* Flutter */,
 				15053EB4288848E700735614 /* IGList */,
@@ -646,15 +637,6 @@
 				157530B127A53B8B0075C149 /* BusinessRouteManager.m */,
 			);
 			path = RouteManager;
-			sourceTree = "<group>";
-		};
-		1588351028F9589F00F5AFF5 /* Chronos */ = {
-			isa = PBXGroup;
-			children = (
-				1588351128F9589F00F5AFF5 /* ChronosViewController.m */,
-				1588351228F9589F00F5AFF5 /* ChronosViewController.h */,
-			);
-			path = Chronos;
 			sourceTree = "<group>";
 		};
 		1588351428F95A4800F5AFF5 /* Framework */ = {
@@ -1005,7 +987,6 @@
 				1588357D28F9615100F5AFF5 /* Foundation.framework */,
 				1588357928F9614200F5AFF5 /* CFNetwork.framework */,
 				1588357628F9612A00F5AFF5 /* Security.framework */,
-				151460BD28F94E59008A763E /* Chronos.framework */,
 				151460B628F9445B008A763E /* FFmpeg.framework */,
 				151460B428F9440E008A763E /* Photos.framework */,
 				151460B228F94402008A763E /* QuickLook.framework */,
@@ -1290,7 +1271,6 @@
 				15053EB72888491200735614 /* IGListViewController.m in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
 				15053EBD288857FA00735614 /* SectionController.m in Sources */,
-				1588351328F958EF00F5AFF5 /* ChronosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1463,7 +1443,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/Q/**",
 					"$(PROJECT_DIR)/Q/Framework/FFmpeg",
-					"$(PROJECT_DIR)/Q/Framework/Chronos",
 					"$(PROJECT_DIR)/Q/Framework/VLC",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1668,7 +1647,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/Q/**",
 					"$(PROJECT_DIR)/Q/Framework/FFmpeg",
-					"$(PROJECT_DIR)/Q/Framework/Chronos",
 					"$(PROJECT_DIR)/Q/Framework/VLC",
 				);
 				GENERATE_INFOPLIST_FILE = YES;

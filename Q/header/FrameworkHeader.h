@@ -14,7 +14,6 @@
 #import <BlocksKit/BlocksKit.h>
 
 #import <ChameleonFramework/Chameleon.h>
-#import <Chronos/Chronos.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <ComponentKit/ComponentKit.h>
 // #import <Firebase/Firebase.h>
@@ -84,6 +83,7 @@
 #import "RxRelay-Swift.h"
 #import "RxSwift-Swift.h"
 #import "Stevia-Swift.h"
+#import "SwifterSwift-Swift.h"
 #import "SwiftDate-Swift.h"
 #import "SwiftTheme-Swift.h"
 #import "SkeletonView-Swift.h"
