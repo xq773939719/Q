@@ -10,6 +10,15 @@ use_modular_headers!
 inhibit_all_warnings!
 set_arc_compatibility_flag!
 
+post_install do |installer|
+ installer.pods_project.targets.each do |target|
+  target.build_configurations.each do |config|
+   config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+   config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+ end
+end
+
 #------ 业务组件 ------#
 def BusinessModules
 
@@ -40,7 +49,7 @@ def ThridPartyModules
   pod 'SteviaLayout'
   
   
-  pod 'ComponentKit' # UI组件
+  # pod 'ComponentKit' # UI组件
   pod 'SkeletonView' # 骨架视图
 
   # 响应式
@@ -64,6 +73,9 @@ def ThridPartyModules
   pod 'pop' # Facebook开源动画库
   # pod 'LFLiveKit' # 直播处理
 
+  pod 'Resolver'
+  pod 'Factory'
+  
   # 数据解析
   pod 'JSONModel'
   pod 'Mantle'

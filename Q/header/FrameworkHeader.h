@@ -15,7 +15,7 @@
 
 #import <ChameleonFramework/Chameleon.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import <ComponentKit/ComponentKit.h>
+// #import <ComponentKit/ComponentKit.h>
 // #import <Firebase/Firebase.h>
 #import <FBLPromises/FBLPromises.h>
 #import <FFmpeg/ffmpeg.h>
@@ -71,6 +71,7 @@
 #import "Cache-Swift.h"
 // #import "Charts-Swift.h"
 // #import "ChartsRealm-Swift.h"
+#import "Factory-Swift.h"
 #import "GRDB-Swift.h"
 // #import "ImagePicker-Swift.h"
 #import "Lottie-Swift.h"
@@ -79,6 +80,7 @@
 #import "RealmSwift-Swift.h"
 #import "ReactiveSwift-Swift.h"
 #import "ReactiveCocoa-Swift.h"
+#import "Resolver-Swift.h"
 #import "RxCocoa-Swift.h"
 #import "RxRelay-Swift.h"
 #import "RxSwift-Swift.h"
