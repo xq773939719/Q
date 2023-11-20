@@ -116,7 +116,7 @@ def ThridPartyModules
 
   # JS热修复 交互
   pod 'JSPatch'
-  pod 'WebViewJavascriptBridge'
+  # pod 'WebViewJavascriptBridge'
 
   # 正则表达式
   pod 'RegexKitLite-NoWarning'
