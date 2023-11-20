@@ -152,11 +152,11 @@ def ThridPartyModules
   pod 'FSCalendar' # 日历
 
   # 分享
-  pod 'ShareSDK3'
-  pod 'ShareSDK3/ShareSDKUI'
-  pod 'ShareSDK3/ShareSDKConfigurationFile'
-  pod 'ShareSDK3/ShareSDKExtension'
-  pod 'ShareSDK3/ShareSDKPlatforms'
+  # pod 'ShareSDK3'
+  # pod 'ShareSDK3/ShareSDKUI'
+  # pod 'ShareSDK3/ShareSDKConfigurationFile'
+  # pod 'ShareSDK3/ShareSDKExtension'
+  # pod 'ShareSDK3/ShareSDKPlatforms'
   # pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
   # pod 'ShareSDK3/ShareSDKPlatforms/QQ'
   # pod 'ShareSDK3/PlatformConnector/SinaWeibo'
