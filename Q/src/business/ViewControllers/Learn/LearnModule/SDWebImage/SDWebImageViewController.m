@@ -20,11 +20,14 @@
 
 - (void)setupData {
     [super setupData];
-    NSURL *url = [NSURL URLWithString:@"http://192.168.2.1:8080/1010.jpg"];
+    NSURL *url = [NSURL URLWithString:@"https://rental-camera.jp/wp-content/uploads/2022/02/IMG_4K.jpg"];
     self.imageView.sd_imageTransition = [SDWebImageTransition fadeTransition];
     [self.imageView sd_setImageWithURL:url
                       placeholderImage:[UIImage imageWithColor:[UIColor grayColor]]
                              completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        if (!image || error) {
+            return;
+        }
         CGFloat ratio = image.size.width / image.size.height;
         CGFloat height = CGRectGetWidth(self.imageView.frame) / ratio;
         [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {
