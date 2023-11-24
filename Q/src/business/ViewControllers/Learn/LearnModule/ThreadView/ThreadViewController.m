@@ -34,6 +34,15 @@
         LoggerInfo(@"dispatch: %@", @"2");
     });
     LoggerInfo(@"dispatch: %@", @"1");
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        LoggerInfo(@"dispatch: %@", @"3");
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            LoggerInfo(@"dispatch: %@", @"4");
+        });
+        // 子线程dispatch同步主队列 该处阻塞
+        LoggerInfo(@"dispatch: %@", @"5");
+    });
 }
 
 - (void)operation {
