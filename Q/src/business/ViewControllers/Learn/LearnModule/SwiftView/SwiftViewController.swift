@@ -6,6 +6,7 @@
 
 import UIKit
 import SnapKit
+import SwiftUI
 
 class SwiftViewController : BaseViewController {
     
@@ -14,9 +15,9 @@ class SwiftViewController : BaseViewController {
     }
     
     lazy var container: UIView = {
-        let view = UIView(frame: .zero)
-        view.backgroundColor = UIColor(hexString: "#423421")
-        return view;
+        let vc = UIHostingController(rootView: SwiftUIView())
+        let view = vc.view ?? UIView(frame: .zero)
+        return view
     }()
    
     override func setupViews() {

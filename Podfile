@@ -3,7 +3,7 @@ install! 'cocoapods', :deterministic_uuids => false
 workspace 'Q'
 # source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '16.0'
 
 use_frameworks!
 use_modular_headers!
