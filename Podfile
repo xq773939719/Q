@@ -59,6 +59,7 @@ def ThridPartyModules
   pod 'RxCocoa'
   
   pod 'IGListKit' # UICollectionView
+  pod 'Carbon'
   
   # CrashReporter
   pod 'PLCrashReporter'
