@@ -57,6 +57,7 @@ def ThridPartyModules
   pod 'ReactiveObjC'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'ReSwift'
   
   pod 'IGListKit' # UICollectionView
   pod 'Carbon'
