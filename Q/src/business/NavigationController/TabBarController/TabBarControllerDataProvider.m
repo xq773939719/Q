@@ -19,11 +19,11 @@
     
     NSMutableArray *array = [NSMutableArray array];
     
+    [array addObject: [LearnNavigationController share]];
     [array addObject: [HomeNavigationController share]];
     [array addObject: [FeatureNavigationController share]];
     [array addObject: [ThirdNavigationController share]];
     [array addObject: [MineNavigationController share]];
-    [array addObject: [LearnNavigationController share]];
     
     return [array copy];
 }

@@ -29,6 +29,7 @@ class RXSwiftViewController : BaseViewController {
     override func setupData() {
         someObservables()
         someObservers()
+        observablesAndObservers()
     }
    
     override func setupViews() {
@@ -90,7 +91,10 @@ extension RXSwiftViewController {
     
     // next(value) + complete + error(error)
     func observeable() -> Observable<[String: Any]> {
-        Observable.create { observer in
+        let a = Observable.just([:])
+        let b = Observable.of([:])
+        _ = Observable.combineLatest(a, b)
+        return Observable.create { observer in
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 for i in 0...10 {
                     observer.onNext(["\(i)": i])
@@ -127,7 +131,7 @@ extension RXSwiftViewController {
         }
     }
     
-    // success(result) + complete + error(error)
+    // success(result) | complete | error(error)
     func maybe() -> Maybe<[String: Any]> {
         return Maybe.create { maybe in
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
@@ -221,4 +225,136 @@ extension Reactive where Base: UIButton {
           print("Button文本: ", button.currentTitle ?? "")
       }
   }
+}
+
+// MARK: - Observable & Observer
+
+extension RXSwiftViewController {
+    
+    func observablesAndObservers() {
+        // 异步型
+        asyncSubject() // 只会抛出订阅后的 最后一个元素与complete
+        // 通知型
+        publishSubject() // 抛出订阅之后的元素和completed
+        // 重复型
+        replaySubject() // 缓存bufferSize的元素, 抛出缓存的元素不关心何时订阅
+        // 行为型
+        behaviorSubject() // 订阅时会发送默认元素，之后与publishSubject类似
+        // ControlProperty
+    }
+    
+    func asyncSubject() {
+        let disposeBag = DisposeBag()
+        let subject = AsyncSubject<String>()
+
+        subject
+          .subscribe { print("asyncSubject:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+        subject.onNext("🐹")
+        subject.onCompleted()
+    }
+    
+    func publishSubject() {
+        let disposeBag = DisposeBag()
+        let subject = PublishSubject<String>()
+
+        subject
+          .subscribe { print("publishSubject 1 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+
+        subject
+          .subscribe { print("publishSubject 2 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🅰️")
+        subject.onNext("🅱️")
+    }
+    
+    func replaySubject() {
+        let disposeBag = DisposeBag()
+        let subject = ReplaySubject<String>.create(bufferSize: 10)
+
+        subject
+          .subscribe { print("replaySubject 1 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+
+        subject
+          .subscribe { print("replaySubject 2 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🅰️")
+        subject.onNext("🅱️")
+    }
+    
+    func behaviorSubject() {
+        let disposeBag = DisposeBag()
+        let subject = BehaviorSubject(value: "🔴")
+
+        subject
+          .subscribe { print("behaviorSubject 1 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+
+        subject
+          .subscribe { print("behaviorSubject 2 Event:", $0) }
+          .disposed(by: disposeBag)
+
+        subject.onNext("🍐")
+        subject.onNext("🍊")
+    }
+    
+}
+
+// MARK: - Operator
+
+extension RXSwiftViewController {
+    
+    // filter/map/zip 等操作符列表 -> 高阶函数
+    
+}
+
+// MARK: - Disposable
+
+extension RXSwiftViewController {
+    
+    // ① self.disposable =
+    // ② private let disposeBag = DisposeBag()
+    // ③ .takeUntil(self.rx.deallocated)
+    
+    
+}
+
+
+// MARK: - Schedulers
+
+extension RXSwiftViewController {
+    
+    // .subscribeOn(耗时操作异步线程) 决定构建数据序列在哪个线程
+    // .observeOn(工作线程) 决定监听处理序列在哪个线程
+    // MainScheduler
+    // SerialDispatchQueueScheduler 串行 DispatchQueue, ConcurrentDispatchQueueScheduler 并行 DispatchQueue
+    // OperationQueueScheduler
+    
+}
+
+// MARK: - Error
+
+extension RXSwiftViewController {
+    
+    // retry
+    // retryWhen
+    // catchError
+    // Result
+    
 }
