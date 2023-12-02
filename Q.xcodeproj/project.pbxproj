@@ -87,6 +87,7 @@
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
 		15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D2EE17287C4A39001B402A /* Info-Release.plist */; };
 		15E8B0A42B15DDB800692A20 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */; };
+		15F617BA2B1A2BBA007526BB /* RXSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F617B92B1A2BBA007526BB /* RXSwiftViewController.swift */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
 
@@ -316,6 +317,7 @@
 		15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		15DE7B602802B2B400454A64 /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
 		15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		15F617B92B1A2BBA007526BB /* RXSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftViewController.swift; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FA9F44D6697284972CB5A /* Pods-Q.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.release.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.release.xcconfig"; sourceTree = "<group>"; };
@@ -605,8 +607,9 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
-				158955AF28F68790006A4E7E /* SDWebImage */,
+				15F617B82B1A2B5E007526BB /* RXSwift */,
 				15C101A1287C0EFF00EFCD84 /* Flutter */,
+				158955AF28F68790006A4E7E /* SDWebImage */,
 				15053EB4288848E700735614 /* IGList */,
 				159269DB27FDEE95002ECDF1 /* Device */,
 				153C836827FD65D70037BD08 /* WebView */,
@@ -985,6 +988,14 @@
 			path = header;
 			sourceTree = "<group>";
 		};
+		15F617B82B1A2B5E007526BB /* RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				15F617B92B1A2BBA007526BB /* RXSwiftViewController.swift */,
+			);
+			path = RXSwift;
+			sourceTree = "<group>";
+		};
 		F117ED212ED8CC3B2B2E7D2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,6 +1241,7 @@
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,
 				15C101A4287C0F2200EFCD84 /* BusinessFlutterViewController.m in Sources */,
+				15F617BA2B1A2BBA007526BB /* RXSwiftViewController.swift in Sources */,
 				1527F19A279A756C00A7482A /* BusinessEntranceManager.m in Sources */,
 				158955B228F687BD006A4E7E /* SDWebImageViewController.m in Sources */,
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,

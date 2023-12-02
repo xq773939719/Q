@@ -39,6 +39,7 @@
     [[self class] addCellModel:array cellTitle:@"Flutter" scheme:[BusinessFlutterViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"IGListKit" scheme:[IGListViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"SDWebImage" scheme:[SDWebImageViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"RXSwift" scheme:[RXSwiftViewController scheme] params:@{}];
     
     return [array copy];
 }
