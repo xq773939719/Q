@@ -174,6 +174,11 @@ def ThridPartyModules
   # 跨平台
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
 
+  # 内存检测
+  pod 'FBRetainCycleDetector'
+  pod 'MLeaksFinder'
+  pod 'OOMDetector'
+
   #------ 调试组件 ------#
   pod 'LookinServer', :configurations => ['Debug']
   pod 'FLEX', :configurations => ['Debug']   # Xcode界面调试工具
