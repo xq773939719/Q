@@ -13,7 +13,7 @@ set_arc_compatibility_flag!
 post_install do |installer|
  installer.pods_project.targets.each do |target|
   target.build_configurations.each do |config|
-   config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+   config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
   end
  end
@@ -98,6 +98,9 @@ def ThridPartyModules
   # Firebase SDK
   # pod 'Firebase'
   
+  # 组件化
+  pod "CTMediator"
+
   # 日志框架
   pod 'CocoaLumberjack'
   pod "NSLogger"
@@ -111,7 +114,7 @@ def ThridPartyModules
   pod 'Protobuf'
 
   # 压缩解压
-  pod 'SSZipArchive'
+  # pod 'SSZipArchive'
 
   # 弹窗
   pod 'Toast'
@@ -175,9 +178,9 @@ def ThridPartyModules
   # pod 'Hummer', :git => 'git@git.zhlh6.cn:didi/Hummer.git', :branch => 'master'
 
   # 内存检测
-  pod 'FBRetainCycleDetector'
-  pod 'MLeaksFinder'
-  pod 'OOMDetector'
+  # pod 'FBRetainCycleDetector'
+  # pod 'MLeaksFinder'
+  # pod 'OOMDetector'
 
   #------ 调试组件 ------#
   pod 'LookinServer', :configurations => ['Debug']

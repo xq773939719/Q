@@ -31,7 +31,8 @@
     return instance;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewDidLoad {
+    [super viewDidLoad];
     [self createViewControllers];
 }
 
