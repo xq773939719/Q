@@ -48,6 +48,8 @@ def ThridPartyModules
   pod 'SnapKit'
   pod 'SteviaLayout'
   
+  # 图片
+  pod 'Kingfisher'
   
   # pod 'ComponentKit' # UI组件
   pod 'SkeletonView' # 骨架视图

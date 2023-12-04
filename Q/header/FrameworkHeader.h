@@ -77,6 +77,7 @@
 #import "GRDB-Swift.h"
 // #import "ImagePicker-Swift.h"
 #import "Lottie-Swift.h"
+#import "Kingfisher-Swift.h"
 #import "Promises-Swift.h"
 #import "Reachability-Swift.h"
 #import "RealmSwift-Swift.h"
