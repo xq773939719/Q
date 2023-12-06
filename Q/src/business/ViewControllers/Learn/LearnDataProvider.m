@@ -18,6 +18,7 @@
 #import "BusinessFlutterViewController.h"
 #import "IGListViewController.h"
 #import "SDWebImageViewController.h"
+#import "RuntimeViewController.h"
 
 @interface LearnDataProvider ()
 
@@ -28,6 +29,7 @@
 - (NSArray<LearnCellModel *> *)models {
     NSMutableArray<LearnCellModel *> *array = [NSMutableArray array];
     
+    [[self class] addCellModel:array cellTitle:@"Runtime" scheme:[RuntimeViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"OpenGL" scheme:[OpenGLViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"Reactive与ViewModel" scheme:[ReactiveViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"AFNetworking" scheme:[AFNetworkingViewController scheme] params:@{}];

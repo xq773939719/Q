@@ -32,17 +32,21 @@ static NSString *cellId = @"LearnViewControllerCellId";
     return self;
 }
 
-- (void)setupViews {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.rootContainer);
-        make.size.equalTo(self.rootContainer);
+        make.edges.equalTo(self.rootContainer);
     }];
+}
+
+- (void)setupViews {
+    
 }
 
 #pragma mark - Lazy Load
