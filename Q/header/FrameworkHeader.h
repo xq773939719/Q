@@ -74,6 +74,7 @@
 // #import "Charts-Swift.h"
 // #import "ChartsRealm-Swift.h"
 #import "Factory-Swift.h"
+#import "FlexLayout-Swift.h"
 #import "GRDB-Swift.h"
 // #import "ImagePicker-Swift.h"
 #import "Lottie-Swift.h"

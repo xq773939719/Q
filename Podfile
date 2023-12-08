@@ -47,6 +47,7 @@ def ThridPartyModules
   pod 'YogaKit'
   pod 'SnapKit'
   pod 'SteviaLayout'
+  pod 'FlexLayout'
   
   # 图片
   pod 'Kingfisher'
