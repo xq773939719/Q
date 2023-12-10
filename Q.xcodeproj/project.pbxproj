@@ -62,7 +62,6 @@
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
 		155CB9422B20C838000E73ED /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155CB9412B20C838000E73ED /* RuntimeViewController.m */; };
-		155CB9452B20C87E000E73ED /* RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155CB9442B20C87E000E73ED /* RuntimeModel.m */; };
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		157555C1287C63C500F41968 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; };
 		157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -209,8 +208,6 @@
 		155B9F0027DB707700358B50 /* ReactiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveModel.m; sourceTree = "<group>"; };
 		155CB9402B20C838000E73ED /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		155CB9412B20C838000E73ED /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
-		155CB9432B20C87E000E73ED /* RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeModel.h; sourceTree = "<group>"; };
-		155CB9442B20C87E000E73ED /* RuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeModel.m; sourceTree = "<group>"; };
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
 		157555BF287C63BD00F41968 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
@@ -648,8 +645,6 @@
 			children = (
 				155CB9402B20C838000E73ED /* RuntimeViewController.h */,
 				155CB9412B20C838000E73ED /* RuntimeViewController.m */,
-				155CB9432B20C87E000E73ED /* RuntimeModel.h */,
-				155CB9442B20C87E000E73ED /* RuntimeModel.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1251,7 +1246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
-				155CB9452B20C87E000E73ED /* RuntimeModel.m in Sources */,
 				155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
