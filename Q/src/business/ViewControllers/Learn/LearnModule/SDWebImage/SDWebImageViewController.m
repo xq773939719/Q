@@ -21,6 +21,7 @@
 - (void)setupData {
     [super setupData];
     NSURL *url = [NSURL URLWithString:@"https://rental-camera.jp/wp-content/uploads/2022/02/IMG_4K.jpg"];
+    url = [[NSBundle mainBundle] URLForResource:@"big_image.png" withExtension:nil];
     self.imageView.sd_imageTransition = [SDWebImageTransition fadeTransition];
     [self.imageView sd_setImageWithURL:url
                       placeholderImage:[UIImage imageWithColor:[UIColor grayColor]]
