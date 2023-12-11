@@ -2,3 +2,4 @@ Pods
 .idea
 Podfile.lock
 *.xcuserstate
+.DS_Store

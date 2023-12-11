@@ -52,7 +52,7 @@ def ThridPartyModules
   # 图片
   pod 'Kingfisher'
   
-  # pod 'ComponentKit' # UI组件
+  pod 'ComponentKit' # UI组件
   pod 'SkeletonView' # 骨架视图
 
   # 响应式
@@ -84,6 +84,7 @@ def ThridPartyModules
   # 数据解析
   pod 'JSONModel'
   pod 'Mantle'
+  pod 'SwiftyJSON'
 
   # 数据库
   pod 'FMDB'
@@ -99,7 +100,7 @@ def ThridPartyModules
   # pod 'FBSDKCoreKit'
   
   # Firebase SDK
-  # pod 'Firebase'
+  pod 'Firebase'
   
   # 组件化
   pod "CTMediator"
@@ -171,7 +172,7 @@ def ThridPartyModules
   
   
   pod 'Cache'  # 缓存
-  # pod 'SwiftMessages' # 弹框提示
+  pod 'SwiftMessages' # 弹框提示
   # pod 'ImagePicker' # 图片选择
   
   pod 'ChameleonFramework' # 颜色库
