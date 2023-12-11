@@ -52,7 +52,7 @@ def ThridPartyModules
   # 图片
   pod 'Kingfisher'
   
-  pod 'ComponentKit' # UI组件
+  # pod 'ComponentKit' # UI组件
   pod 'SkeletonView' # 骨架视图
 
   # 响应式
@@ -113,6 +113,7 @@ def ThridPartyModules
   # pod 'gRPC'
   # pod 'gRPC-Core'
   # pod 'gRPC-ProtoRPC'
+  pod 'Base64'
   
   # proto
   pod 'Protobuf'

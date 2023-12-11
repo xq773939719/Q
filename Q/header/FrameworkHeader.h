@@ -11,13 +11,14 @@
 #import <AsyncDisplayKit/ASDisplayNode.h>
 #import <Aspects/Aspects.h>
 
+#import <Base64/MF_Base64Additions.h>
 #import <BlocksKit/BlocksKit.h>
 
 #import <ChameleonFramework/Chameleon.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <CTMediator/CTMediator.h>
 // #import <ComponentKit/ComponentKit.h>
-// #import <Firebase/Firebase.h>
+#import <Firebase/Firebase.h>
 #import <FBLPromises/FBLPromises.h>
 #import <FFmpeg/ffmpeg.h>
 #import <FLEX/FLEX.h>
@@ -40,6 +41,7 @@
 #import <Masonry/Masonry.h>
 #import <MobileVLCKit/MobileVLCKit.h>
 #import <MJExtension/MJExtension.h>
+// #import <MLeaksFinder/MLeaksFinder.h>
 
 #import <NSLogger/NSLogger.h>
 
@@ -94,5 +96,7 @@
 #import "SwiftDate-Swift.h"
 #import "SwiftTheme-Swift.h"
 #import "SkeletonView-Swift.h"
+#import "SwiftMessages-Swift.h"
+#import "SwiftyJSON-Swift.h"
 
 #endif /* FrameworkHeader_h */
