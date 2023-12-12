@@ -25,6 +25,7 @@
 #import <FMDB/FMDB.h>
 #import <Flutter/Flutter.h>
 #import <FSCalendar/FSCalendar.h>
+#import <fishhook/fishhook.h>
 
 #import <GPUImage/GPUImage.h>
 

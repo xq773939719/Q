@@ -160,6 +160,7 @@ def ThridPartyModules
   pod 'BlocksKit'
   pod 'Typeset'
   pod 'FSCalendar' # 日历
+  pod 'fishhook'
 
   # 分享
   # pod 'ShareSDK3'
