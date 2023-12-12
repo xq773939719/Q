@@ -10,7 +10,7 @@
 
 #import "OpenGLViewController.h"
 #import "ReactiveViewController.h"
-#import "AFNetworkingViewController.h"
+#import "NetworkViewController.h"
 #import "YYKitViewController.h"
 #import "Q-Swift.h"
 #import "ThreadViewController.h"
@@ -32,7 +32,7 @@
     [[self class] addCellModel:array cellTitle:@"Runtime" scheme:[RuntimeViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"OpenGL" scheme:[OpenGLViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"Reactive与ViewModel" scheme:[ReactiveViewController scheme] params:@{}];
-    [[self class] addCellModel:array cellTitle:@"AFNetworking" scheme:[AFNetworkingViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Network" scheme:[NetworkViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"YYKit" scheme:[YYKitViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"Swift" scheme:[SwiftViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"MultiThread" scheme:[ThreadViewController scheme] params:@{}];

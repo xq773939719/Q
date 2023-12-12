@@ -85,7 +85,7 @@
 		15C101A4287C0F2200EFCD84 /* BusinessFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C101A3287C0F2200EFCD84 /* BusinessFlutterViewController.m */; };
 		15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5327F864F6009018D8 /* SwiftViewController.swift */; };
 		15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5B27F869A8009018D8 /* YYKitViewController.m */; };
-		15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */; };
+		15C50A6027F87F42009018D8 /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A5F27F87F42009018D8 /* NetworkViewController.m */; };
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
 		15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D2EE17287C4A39001B402A /* Info-Release.plist */; };
 		15E8B0A42B15DDB800692A20 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */; };
@@ -314,8 +314,8 @@
 		15C50A5327F864F6009018D8 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		15C50A5A27F869A8009018D8 /* YYKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
 		15C50A5B27F869A8009018D8 /* YYKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitViewController.m; sourceTree = "<group>"; };
-		15C50A5E27F87F42009018D8 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
-		15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		15C50A5E27F87F42009018D8 /* NetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkViewController.h; sourceTree = "<group>"; };
+		15C50A5F27F87F42009018D8 /* NetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkViewController.m; sourceTree = "<group>"; };
 		15C50A6227F89921009018D8 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		15C50A6327F89921009018D8 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		15D2EE17287C4A39001B402A /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
@@ -619,7 +619,7 @@
 				15053EB4288848E700735614 /* IGList */,
 				159269DB27FDEE95002ECDF1 /* Device */,
 				153C836827FD65D70037BD08 /* WebView */,
-				15C50A5D27F87F33009018D8 /* AF */,
+				15C50A5D27F87F33009018D8 /* Network */,
 				152FD09127A52DBA000DCBFE /* OpenGL */,
 				155B9EED27DB2FFF00358B50 /* Reactive */,
 				15C50A5227F864DB009018D8 /* SwiftView */,
@@ -977,13 +977,13 @@
 			path = SwiftView;
 			sourceTree = "<group>";
 		};
-		15C50A5D27F87F33009018D8 /* AF */ = {
+		15C50A5D27F87F33009018D8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				15C50A5E27F87F42009018D8 /* AFNetworkingViewController.h */,
-				15C50A5F27F87F42009018D8 /* AFNetworkingViewController.m */,
+				15C50A5E27F87F42009018D8 /* NetworkViewController.h */,
+				15C50A5F27F87F42009018D8 /* NetworkViewController.m */,
 			);
-			path = AF;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		15C50A6127F89907009018D8 /* ThreadView */ = {
@@ -1253,7 +1253,7 @@
 				155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
 				15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */,
-				15C50A6027F87F42009018D8 /* AFNetworkingViewController.m in Sources */,
+				15C50A6027F87F42009018D8 /* NetworkViewController.m in Sources */,
 				159269C627FD6DED002ECDF1 /* Template.swift in Sources */,
 				1527F196279A756C00A7482A /* ThirdViewController.m in Sources */,
 				15C50A5427F864F7009018D8 /* SwiftViewController.swift in Sources */,

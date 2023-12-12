@@ -1,5 +1,5 @@
 //
-//  AFNetworkingViewController.h
+//  NetworkViewController.h
 //
 //  Created by XQ on 2022/4/2.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AFNetworkingViewController : BaseViewController
+@interface NetworkViewController : BaseViewController
 
 @end
 
