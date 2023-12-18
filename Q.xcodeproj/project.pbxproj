@@ -63,6 +63,9 @@
 		155B9EFE27DB701A00358B50 /* ReactiveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9EFD27DB701A00358B50 /* ReactiveViewModel.m */; };
 		155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 155B9F0027DB707700358B50 /* ReactiveModel.m */; };
 		155CB9422B20C838000E73ED /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155CB9412B20C838000E73ED /* RuntimeViewController.m */; };
+		156BBEB52B303A23000B5D6A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E88F632B29AA2D007CA39A /* StoreViewController.swift */; };
+		156BBEB62B303C0C000B5D6A /* LayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED55E82B298719001F63EB /* LayoutService.swift */; };
+		156BBEB82B3040A8000B5D6A /* ultra_big_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 156BBEB72B3040A7000B5D6A /* ultra_big_pic.jpg */; };
 		157530B227A53B8B0075C149 /* BusinessRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157530B127A53B8B0075C149 /* BusinessRouteManager.m */; };
 		157555C1287C63C500F41968 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; };
 		157555C2287C63C500F41968 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157555BF287C63BD00F41968 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -89,6 +92,8 @@
 		15C50A6427F89922009018D8 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C50A6327F89921009018D8 /* ThreadViewController.m */; };
 		15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D2EE17287C4A39001B402A /* Info-Release.plist */; };
 		15E8B0A42B15DDB800692A20 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */; };
+		15ED55E32B297D3C001F63EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED55E22B297D3C001F63EB /* Store.swift */; };
+		15ED55E72B298328001F63EB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED55E62B298328001F63EB /* DataService.swift */; };
 		15F617BA2B1A2BBA007526BB /* RXSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F617B92B1A2BBA007526BB /* RXSwiftViewController.swift */; };
 		C1403E6C51AD67D6E798A6FA /* Pods_Q.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */; };
 /* End PBXBuildFile section */
@@ -210,10 +215,10 @@
 		155B9F0027DB707700358B50 /* ReactiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveModel.m; sourceTree = "<group>"; };
 		155CB9402B20C838000E73ED /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		155CB9412B20C838000E73ED /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		156BBEB72B3040A7000B5D6A /* ultra_big_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ultra_big_pic.jpg; sourceTree = "<group>"; };
 		157530B027A53B8B0075C149 /* BusinessRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessRouteManager.h; sourceTree = "<group>"; };
 		157530B127A53B8B0075C149 /* BusinessRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessRouteManager.m; sourceTree = "<group>"; };
 		157555BF287C63BD00F41968 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Q/Framework/Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
-		1588351628F95A4800F5AFF5 /* Chronos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chronos.framework; sourceTree = "<group>"; };
 		1588351828F95A4800F5AFF5 /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFmpeg.framework; sourceTree = "<group>"; };
 		1588351B28F95A4800F5AFF5 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
 		1588351C28F95A4800F5AFF5 /* Flutter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; };
@@ -321,7 +326,11 @@
 		15D2EE17287C4A39001B402A /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		15DE7B5F2802B27D00454A64 /* FrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkHeader.h; sourceTree = "<group>"; };
 		15DE7B602802B2B400454A64 /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
+		15E88F632B29AA2D007CA39A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		15ED55E22B297D3C001F63EB /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		15ED55E62B298328001F63EB /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		15ED55E82B298719001F63EB /* LayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutService.swift; sourceTree = "<group>"; };
 		15F617B92B1A2BBA007526BB /* RXSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftViewController.swift; sourceTree = "<group>"; };
 		1BC6E60A19D76623B1C18B8C /* Pods_Q.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2FACE48C52389856EA1C3E /* Pods-Q.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q.debug.xcconfig"; path = "Target Support Files/Pods-Q/Pods-Q.debug.xcconfig"; sourceTree = "<group>"; };
@@ -612,6 +621,7 @@
 		154EBD8A279E9BC00048CFF5 /* LearnModule */ = {
 			isa = PBXGroup;
 			children = (
+				15ED55E42B298228001F63EB /* StoreViewController */,
 				155CB93F2B20C7FF000E73ED /* Runtime */,
 				15F617B82B1A2B5E007526BB /* RXSwift */,
 				15C101A1287C0EFF00EFCD84 /* Flutter */,
@@ -664,20 +674,11 @@
 			isa = PBXGroup;
 			children = (
 				158837A728F96CF900F5AFF5 /* VLC */,
-				1588351528F95A4800F5AFF5 /* Chronos */,
 				1588351728F95A4800F5AFF5 /* FFmpeg */,
 				1588351928F95A4800F5AFF5 /* Flutter */,
 				1588352328F95A4800F5AFF5 /* IJKMediaPlayer */,
 			);
 			path = Framework;
-			sourceTree = "<group>";
-		};
-		1588351528F95A4800F5AFF5 /* Chronos */ = {
-			isa = PBXGroup;
-			children = (
-				1588351628F95A4800F5AFF5 /* Chronos.framework */,
-			);
-			path = Chronos;
 			sourceTree = "<group>";
 		};
 		1588351728F95A4800F5AFF5 /* FFmpeg */ = {
@@ -858,6 +859,7 @@
 		158955AF28F68790006A4E7E /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				156BBEB72B3040A7000B5D6A /* ultra_big_pic.jpg */,
 				1553BB112B25C7E4008B84C6 /* big_image.png */,
 				158955B128F687BD006A4E7E /* SDWebImageViewController.h */,
 				158955B028F687BD006A4E7E /* SDWebImageViewController.m */,
@@ -931,6 +933,7 @@
 		1598CADC27983B1400511EFD /* src */ = {
 			isa = PBXGroup;
 			children = (
+				15ED55E12B297D28001F63EB /* common */,
 				1598CADD27983B1400511EFD /* business */,
 			);
 			path = src;
@@ -1002,6 +1005,24 @@
 				15DE7B602802B2B400454A64 /* BusinessHeader.h */,
 			);
 			path = header;
+			sourceTree = "<group>";
+		};
+		15ED55E12B297D28001F63EB /* common */ = {
+			isa = PBXGroup;
+			children = (
+				15ED55E22B297D3C001F63EB /* Store.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		15ED55E42B298228001F63EB /* StoreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15ED55E62B298328001F63EB /* DataService.swift */,
+				15ED55E82B298719001F63EB /* LayoutService.swift */,
+				15E88F632B29AA2D007CA39A /* StoreViewController.swift */,
+			);
+			path = StoreViewController;
 			sourceTree = "<group>";
 		};
 		15F617B82B1A2B5E007526BB /* RXSwift */ = {
@@ -1162,6 +1183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1553BB122B25C7E5008B84C6 /* big_image.png in Resources */,
+				156BBEB82B3040A8000B5D6A /* ultra_big_pic.jpg in Resources */,
 				15D2EE18287C4A39001B402A /* Info-Release.plist in Resources */,
 				15277E632798223400FA882E /* Assets.xcassets in Resources */,
 				154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */,
@@ -1249,6 +1271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156BBEB62B303C0C000B5D6A /* LayoutService.swift in Sources */,
+				156BBEB52B303A23000B5D6A /* StoreViewController.swift in Sources */,
 				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
 				155B9F0127DB707700358B50 /* ReactiveModel.m in Sources */,
 				155B9EF027DB302F00358B50 /* ReactiveViewController.m in Sources */,
@@ -1264,6 +1288,7 @@
 				154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */,
 				1527F191279A756C00A7482A /* MineNavigationController.m in Sources */,
 				1527F19C279A756C00A7482A /* BusinessApplicationDelegate.m in Sources */,
+				15ED55E72B298328001F63EB /* DataService.swift in Sources */,
 				1527F199279A756C00A7482A /* FeatureViewController.m in Sources */,
 				15C50A5C27F869A8009018D8 /* YYKitViewController.m in Sources */,
 				152FD09727A52DDC000DCBFE /* OpenGLViewController.m in Sources */,
@@ -1287,6 +1312,7 @@
 				15053EBA288851EA00735614 /* IGListModel.m in Sources */,
 				15053EB72888491200735614 /* IGListViewController.m in Sources */,
 				155CB9422B20C838000E73ED /* RuntimeViewController.m in Sources */,
+				15ED55E32B297D3C001F63EB /* Store.swift in Sources */,
 				159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */,
 				15053EBD288857FA00735614 /* SectionController.m in Sources */,
 			);

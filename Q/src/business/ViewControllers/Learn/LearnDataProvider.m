@@ -8,11 +8,11 @@
 
 #import "LearnCellModel.h"
 
+#import "Q-Swift.h"
 #import "OpenGLViewController.h"
 #import "ReactiveViewController.h"
 #import "NetworkViewController.h"
 #import "YYKitViewController.h"
-#import "Q-Swift.h"
 #import "ThreadViewController.h"
 #import "DeviceViewController.h"
 #import "BusinessFlutterViewController.h"
@@ -42,6 +42,7 @@
     [[self class] addCellModel:array cellTitle:@"IGListKit" scheme:[IGListViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"SDWebImage" scheme:[SDWebImageViewController scheme] params:@{}];
     [[self class] addCellModel:array cellTitle:@"RXSwift" scheme:[RXSwiftViewController scheme] params:@{}];
+    [[self class] addCellModel:array cellTitle:@"Store" scheme:[StoreViewController scheme] params:@{}];
     
     return [array copy];
 }

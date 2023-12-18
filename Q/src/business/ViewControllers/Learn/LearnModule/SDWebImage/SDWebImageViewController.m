@@ -20,22 +20,22 @@
 
 - (void)setupData {
     [super setupData];
-    NSURL *url = [NSURL URLWithString:@"https://rental-camera.jp/wp-content/uploads/2022/02/IMG_4K.jpg"];
-    url = [[NSBundle mainBundle] URLForResource:@"big_image.png" withExtension:nil];
-    self.imageView.sd_imageTransition = [SDWebImageTransition fadeTransition];
-    [self.imageView sd_setImageWithURL:url
-                      placeholderImage:[UIImage imageWithColor:[UIColor grayColor]]
-                             completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        if (!image || error) {
-            return;
-        }
-        CGFloat ratio = image.size.width / image.size.height;
-        CGFloat height = CGRectGetWidth(self.imageView.frame) / ratio;
-        [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(height);
-        }];
-        
-    }];
+    NSURL *url = [NSURL URLWithString:@"https://i0.hdslb.com/bfs/face/2a3c1f758f7e7823315322f8af0d16faec1da207.jpg"];
+    // url = [[NSBundle mainBundle] URLForResource:@"big_image.png" withExtension:nil];
+//    self.imageView.sd_imageTransition = [SDWebImageTransition fadeTransition];
+//    [self.imageView sd_setImageWithURL:url
+//                      placeholderImage:[UIImage imageWithColor:[UIColor grayColor]]
+//                             completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//        if (!image || error) {
+//            return;
+//        }
+//        CGFloat ratio = image.size.width / image.size.height;
+//        CGFloat height = CGRectGetWidth(self.imageView.frame) / ratio;
+//        [self.imageView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.height.mas_equalTo(height);
+//        }];
+//
+//    }];
     
 }
 
@@ -43,7 +43,7 @@
     [super setupViews];
     [self addSubview:self.imageView];
     [self.imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.center.width.equalTo(self.rootContainer);
+        make.center.height.width.equalTo(self.rootContainer);
     }];
 }
 
@@ -51,6 +51,9 @@
     if (_imageView) return _imageView;
     _imageView = [UIImageView new];
     _imageView.contentMode = UIViewContentModeScaleAspectFit;
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"ultra_big_pic.jpg" ofType:nil];
+    UIImage *image = [UIImage imageWithContentsOfFile:file];
+    _imageView.image = image;
     
     // 旋转手势
     UIRotationGestureRecognizer *rotationGestureRecognizer = [UIRotationGestureRecognizer new];

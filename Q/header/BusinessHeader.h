@@ -8,7 +8,7 @@
 #ifndef BusinessHeader_h
 #define BusinessHeader_h
 
-#import <QTools/QTools.h>
+#import "QTools.h"
 #import "FrameworkHeader.h"
 
 #endif /* BusinessHeader_h */

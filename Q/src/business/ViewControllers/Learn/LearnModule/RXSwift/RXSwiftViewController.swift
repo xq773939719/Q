@@ -1,6 +1,5 @@
 //
 //  RXSwift.swift
-//  Q
 //
 //  Created by XQ on 2023/12/1.
 //
