@@ -54,6 +54,7 @@ def ThridPartyModules
   
   # pod 'ComponentKit' # UI组件
   pod 'SkeletonView' # 骨架视图
+  pod 'TopmostView'
 
   # 响应式
   pod 'ReactiveCocoa'

@@ -32,6 +32,95 @@
  
  */
 
+@implementation Task
+
+- (void)resume {
+    LoggerInfo(@"[%@] -> Start.%@", [self class], self);
+    __weak typeof(self) weakSelf = self;
+    
+    // 1
+    void (^A)(void(^)(void), void(^)(NSError *)) = ^(void(^successHandler)(void), void(^failureHandler)(NSError *)){
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) {
+            return;
+        }
+        LoggerInfo(@"[%@] -> 1.%@", @(__func__), strongSelf);
+        [TopmostView.viewForApplicationWindow makeToast:@"1"];
+        NSInteger delay = 1; // 非同一个runloop
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (successHandler) {
+                successHandler();
+            }
+        });
+    };
+    
+    // 2
+    void (^B)(void(^)(void), void(^)(NSError *)) = ^(void(^successHandler)(void), void(^failureHandler)(NSError *)){
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) {
+            return;
+        }
+        LoggerInfo(@"[%@] -> 2.%@",  @(__func__), strongSelf);
+        [TopmostView.viewForApplicationWindow makeToast:@"2"];
+        NSInteger delay = 1; // 非同一个runloop
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (successHandler) {
+                successHandler();
+            }
+        });
+    };
+    
+    // 3
+    void (^C)(void(^)(void), void(^)(NSError *)) = ^(void(^successHandler)(void), void(^failureHandler)(NSError *)){
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) {
+            return;
+        }
+        LoggerInfo(@"[%@] -> 3.%@",  @(__func__), strongSelf);
+        [TopmostView.viewForApplicationWindow makeToast:@"3"];
+        NSInteger delay = 1; // 非同一个runloop
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (successHandler) {
+                successHandler();
+            }
+        });
+    };
+    
+    void (^selfHolder)(void) = ^() {
+        LoggerInfo(@"[%@] -> Holder.%@", @(__func__), self);
+        [TopmostView.viewForApplicationWindow makeToast:@"SelfHolder End."];
+    };
+    
+    void (^successHandler)(void) = ^() {
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) return;
+        LoggerInfo(@"[%@] ->Success End.%@", @(__func__), strongSelf);
+        [TopmostView.viewForApplicationWindow makeToast:@"Success End."];
+        selfHolder();
+    };
+    void (^failureHandler)(NSError *) = ^(NSError *error) {
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) return;
+        LoggerInfo(@"[%@] ->Failure End.%@", @(__func__), strongSelf);
+        [TopmostView.viewForApplicationWindow makeToast:@"Failure End."];
+        selfHolder();
+    };
+    
+    // 前提: Task对象使用时如果没有被外部强引用
+    // 现象: 内部嵌套block完成链式调用，但是会出现无法完成链式的情况。
+    // ① 以上5个block如果全部使用strongSelf，非同一个runloop周期内，1 -> 2 -> 3 根本无法链式调用，只会执行完1 task就销毁了。
+    // ② 但是以上最后两个block(因为作为了入参传递)一旦有一处使用到self，则强引用self，，1 -> 2 -> 3可以顺利链式执行到最后。
+    
+    /// 1 -> 2 -> 3 -> successHandle || failureHandler
+    A(^(){
+        B(^{
+            C(successHandler, failureHandler);
+        }, failureHandler);
+    }, failureHandler);
+    
+}
+
+@end
 
 @interface RuntimeViewController ()
 
@@ -59,9 +148,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSObject *a = [NSObject new];
-    [a performSelector:@selector(func)];
-    [NSObject performSelector:@selector(classFunc)];
+    UITapGestureRecognizer *tap = [UITapGestureRecognizer new];
+    [self.view addGestureRecognizer:tap];
+    [[tap rac_gestureSignal] subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
+        Task *task = [Task new];
+        [task resume];
+    }];
 }
 
 @end

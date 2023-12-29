@@ -8,6 +8,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface Task : NSObject
+
+- (void)resume;
+
+@end
+
 @interface RuntimeViewController : BaseViewController
 
 @end
