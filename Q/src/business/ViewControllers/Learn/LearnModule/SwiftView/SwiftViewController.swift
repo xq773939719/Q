@@ -27,6 +27,16 @@ class SwiftViewController : BaseViewController {
             make.center.equalTo(self.view)
             make.size.equalTo(self.view)
         })
+        let gesture: UITapGestureRecognizer = UITapGestureRecognizer()
+        _ = gesture.rx.event
+            .take(until: self.rx.deallocated)
+            .subscribe { _ in
+                let config = PopupConfig()
+                config.container = self
+                let vc: Popup = Popup(config)
+                vc.show()
+            }
+        self.container.addGestureRecognizer(gesture)
     }
     
 }

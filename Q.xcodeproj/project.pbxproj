@@ -79,6 +79,7 @@
 		158837AA28F96CFF00F5AFF5 /* MobileVLCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158837A828F96CF900F5AFF5 /* MobileVLCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		158955B228F687BD006A4E7E /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158955B028F687BD006A4E7E /* SDWebImageViewController.m */; };
 		158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C123927A419590071FD9E /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		158F4DCB2B46C3A400DDF763 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158F4DCA2B46B8CB00DDF763 /* Popup.swift */; };
 		159269C627FD6DED002ECDF1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159269C527FD6DED002ECDF1 /* Template.swift */; };
 		159269C927FD77BF002ECDF1 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269C827FD77BF002ECDF1 /* TemplateViewController.m */; };
 		159269DE27FDEEBB002ECDF1 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159269DD27FDEEBB002ECDF1 /* DeviceViewController.m */; };
@@ -304,6 +305,7 @@
 		158C122A27A40D720071FD9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		158C123927A419590071FD9E /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		158C123A27A419590071FD9E /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		158F4DCA2B46B8CB00DDF763 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		159269C527FD6DED002ECDF1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		159269C727FD77BF002ECDF1 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
 		159269C827FD77BF002ECDF1 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
@@ -974,6 +976,7 @@
 		15C50A5227F864DB009018D8 /* SwiftView */ = {
 			isa = PBXGroup;
 			children = (
+				158F4DCA2B46B8CB00DDF763 /* Popup.swift */,
 				15C50A5327F864F6009018D8 /* SwiftViewController.swift */,
 				15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */,
 			);
@@ -1271,6 +1274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158F4DCB2B46C3A400DDF763 /* Popup.swift in Sources */,
 				156BBEB62B303C0C000B5D6A /* LayoutService.swift in Sources */,
 				156BBEB52B303A23000B5D6A /* StoreViewController.swift in Sources */,
 				158C123B27A419590071FD9E /* Person.pbobjc.m in Sources */,
