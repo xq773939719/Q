@@ -55,6 +55,7 @@
 		1530E4E2279985A500E4A8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E1279985A500E4A8E4 /* MobileCoreServices.framework */; };
 		1530E4E4279985B000E4A8E4 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1530E4E3279985B000E4A8E4 /* VideoToolbox.framework */; };
 		153C837127FD669A0037BD08 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C837027FD669A0037BD08 /* WebViewController.swift */; };
+		15498F4B2B47B63A00B7F25B /* TableViewPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15498F4A2B47B4B300B7F25B /* TableViewPopup.swift */; };
 		154EBD8F279E9E5C0048CFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */; };
 		154EBD92279EB8BB0048CFF5 /* LearnCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */; };
 		154EBD95279EB90D0048CFF5 /* LearnDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBD94279EB90D0048CFF5 /* LearnDataProvider.m */; };
@@ -202,6 +203,7 @@
 		1530E4E727998D7400E4A8E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1530E4E827998D7E00E4A8E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		153C837027FD669A0037BD08 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		15498F4A2B47B4B300B7F25B /* TableViewPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPopup.swift; sourceTree = "<group>"; };
 		154EBD8E279E9E5C0048CFF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154EBD90279EB8BB0048CFF5 /* LearnCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnCellModel.h; sourceTree = "<group>"; };
 		154EBD91279EB8BB0048CFF5 /* LearnCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnCellModel.m; sourceTree = "<group>"; };
@@ -979,6 +981,7 @@
 				158F4DCA2B46B8CB00DDF763 /* Popup.swift */,
 				15C50A5327F864F6009018D8 /* SwiftViewController.swift */,
 				15E8B0A32B15DDB800692A20 /* SwiftUIView.swift */,
+				15498F4A2B47B4B300B7F25B /* TableViewPopup.swift */,
 			);
 			path = SwiftView;
 			sourceTree = "<group>";
@@ -1274,6 +1277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15498F4B2B47B63A00B7F25B /* TableViewPopup.swift in Sources */,
 				158F4DCB2B46C3A400DDF763 /* Popup.swift in Sources */,
 				156BBEB62B303C0C000B5D6A /* LayoutService.swift in Sources */,
 				156BBEB52B303A23000B5D6A /* StoreViewController.swift in Sources */,

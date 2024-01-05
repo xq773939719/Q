@@ -1,6 +1,5 @@
 //
 //  Popup.swift
-//  Q
 //
 //  Created by XQ on 2024/1/4.
 //
@@ -13,23 +12,20 @@ import Stevia
 @objc(PopupCallback)
 @objcMembers
 public class PopupCallback: NSObject {
-    
     public var onSetupViews: (() -> Void)?
     public var onLayoutViews: (() -> Void)?
     public var onWillShow: (() -> Void)?
     public var onDidShow: (() -> Void)?
     public var onWillHide: (() -> Void)?
     public var onDidHide: (() -> Void)?
-    
 }
 
 @objc(PopupConfig)
 @objcMembers
 public class PopupConfig: NSObject {
-    public var container: UIViewController?
     public var animateDuration: TimeInterval = 0.375
     public var backgroundColor: UIColor = .init(white: 0, alpha: 0.5)
-    public var callback: PopupCallback = PopupCallback()
+    public private(set) var popupCallback: PopupCallback = PopupCallback()
 }
 
 @objc(Popup)
@@ -48,7 +44,7 @@ public class Popup : UIViewController {
         return view
     }()
     
-    private lazy var container: UIStackView = {
+    public private(set) lazy var container: UIStackView = {
         let view: UIStackView = UIStackView()
         view.axis = .vertical
         view.alignment = .fill
@@ -60,8 +56,8 @@ public class Popup : UIViewController {
     }()
     
     @objc
-    public init(_ config: PopupConfig) {
-        self.config = config
+    public init(_ popupConfig: PopupConfig) {
+        self.config = popupConfig
         super.init(nibName: nil, bundle: nil)
         self.modalPresentationStyle = .overFullScreen
     }
@@ -82,10 +78,7 @@ public class Popup : UIViewController {
 extension Popup {
     
     @objc
-    public func show() {
-        guard let container = config.container else {
-            return
-        }
+    public func show(in container: UIViewController) {
         container.present(self, animated: false)
         self.willShow()
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(0)) {
@@ -104,6 +97,7 @@ extension Popup {
             UIView.animate(withDuration: self.config.animateDuration) {
                 self.onHide()
             } completion: { _ in
+                self.dismiss(animated: false)
                 self.didHide()
             }
         }
@@ -112,20 +106,22 @@ extension Popup {
 
 extension Popup {
     
-    private func setupViews() {
+    @objc
+    internal func setupViews() {
         view.addSubview(maskBackground)
         view.addSubview(container)
-        config.callback.onSetupViews?()
+        config.popupCallback.onSetupViews?()
     }
     
-    private func layoutViews() {
+    @objc
+    internal func layoutViews() {
         maskBackground.fillContainer()
         view.layout(
             (>=0),
-            |-0-container.height(300)-0-|,
+            |-0-container-0-|,
             0
         )
-        config.callback.onLayoutViews?()
+        config.popupCallback.onLayoutViews?()
         view.layoutIfNeeded()
     }
     
@@ -143,7 +139,7 @@ extension Popup {
 extension Popup {
     
     private func willShow() {
-        config.callback.onWillShow?()
+        config.popupCallback.onWillShow?()
     }
     
     private func onShow() {
@@ -151,11 +147,11 @@ extension Popup {
     }
     
     private func didShow() {
-        config.callback.onDidShow?()
+        config.popupCallback.onDidShow?()
     }
     
     private func willHide() {
-        config.callback.onWillHide?()
+        config.popupCallback.onWillHide?()
     }
     
     private func onHide() {
@@ -163,8 +159,7 @@ extension Popup {
     }
     
     private func didHide() {
-        self.dismiss(animated: false)
-        config.callback.onDidHide?()
+        config.popupCallback.onDidHide?()
     }
     
 }
