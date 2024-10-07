@@ -94,8 +94,8 @@ def ThridPartyModules
   pod 'YYKit' # YYKit
 
   # PromiseKit
-  pod "PromiseKit"
-  pod 'PromisesSwift'
+  # pod "PromiseKit"
+  # pod 'PromisesSwift'
   
   # FaceBook SDK
   # pod 'FBSDKCoreKit'

@@ -47,7 +47,7 @@
 #import <NSLogger/NSLogger.h>
 
 #import <pop/POP.h>
-#import <PromiseKit/PromiseKit.h>
+//#import <PromiseKit/PromiseKit.h>
 
 #import <Reachability/Reachability.h>
 #import <ReactiveObjC/ReactiveObjC.h>
@@ -83,7 +83,7 @@
 // #import "ImagePicker-Swift.h"
 #import "Lottie-Swift.h"
 #import "Kingfisher-Swift.h"
-#import "Promises-Swift.h"
+//#import "Promises-Swift.h"
 #import "Reachability-Swift.h"
 #import "RealmSwift-Swift.h"
 #import "ReactiveSwift-Swift.h"
